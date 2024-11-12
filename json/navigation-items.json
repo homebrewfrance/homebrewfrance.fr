@@ -1,0 +1,44 @@
+{
+    "navigationItems": [
+        {
+            "name": "Accueil",
+            "url": "https://beta.homebrew-france.site/",
+            "id": "accueilLink",
+            "category": "nav-link"
+        },
+        {
+            "name": "Téléchargements",
+            "url": "https://beta.homebrew-france.site/telechargements/",
+            "id": "telechargementsLink",
+            "category": "nav-link"
+        },
+        {
+            "name": "Docs",
+            "id": "docsDrop",
+            "category": "dropdown-item"
+        },
+        {
+            "name": "Multi-Checker",
+            "id": "multicheckerDrop",
+            "category": "dropdown-item"
+        },
+        {
+            "name": "Recrutements",
+            "url": "https://beta.homebrew-france.site/devenir-helper/",
+            "id": "recrutementsLink",
+            "category": "nav-link"
+        },
+        {
+            "name": "Boutique",
+            "url": "https://beta.homebrew-france.site/boutique/",
+            "id": "boutiqueLink",
+            "category": "nav-link"
+        },
+        {
+            "name": "A propos",
+            "url": "https://beta.homebrew-france.site/a-propos/",
+            "id": "aproposLink",
+            "category": "nav-link"
+        }
+    ]
+}

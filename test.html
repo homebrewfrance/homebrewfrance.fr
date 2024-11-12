@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+	<head>
+		<title>Erreur 403</title>
+		<script src="scripts/cookies.js"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+		<link rel="stylesheet" href="style/stylesheets/style.css">
+		<link rel="stylesheet" href="style/stylesheets/navbar__f.css">
+        <link rel="icon" type="image/x-icon" href="https://homebrew-france.fr/style/assets/generic/fav.ico">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <meta charset="UTF-8">
+	</head>
+	<body page_name="packs">
+		<span id="cookieBoxGen"></span>
+		<nav class="navbar navbar-expand-lg fixed-top">
+			<a class="navbar-brand" href=""><img src="" width="45" height="45" id="navbarIconSRC"></a>
+			<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"></button>
+		</nav>
+		<nav id="navSpace"></nav>
+		<div class="top-img">
+			<h2>Page de TEST   403 <img src="https://homebrew-france.fr/style/assets/generic/loading.gif" width="45px"></h2>
+            <p></p>
+		</div>
+		<hr class="hr-top">
+		<div class="page">
+			<pre></pre>
+            <p>test -> récupérer la dernière release du ls aio pack </p>
+			<p><label id="download-link"></label></p>
+			<pre></pre>
+            <textarea id="test-code" style="width: 100%; height: 1024px; background-color: rgb(48, 48, 48); color: white;"></textarea>
+		</div>
+        <script id="test">
+            async function getLatestReleaseAssets(owner, repo) {
+            const url = `https://api.github.com/repos/shadow2560/switch_AIO_LS_pack/releases/latest`;
+                
+            try {
+                const response = await fetch(url, {
+                    headers: {
+                        'Accept': 'application/vnd.github.v3+json'
+                    }
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Erreur: ${response.statusText}`);
+                }
+
+                const releaseData = await response.json();
+                
+                const assets = releaseData.assets.map(asset => ({
+                    name: asset.name,
+                    download_url: asset.browser_download_url,
+                    size: asset.size,
+                    download_count: asset.download_count,
+                    content_type: asset.content_type
+                }));
+
+                    return assets;
+                } catch (error) {
+                    console.error('Erreur lors de la récupération des assets:', error);
+                    return [];
+                }
+            }
+
+            getLatestReleaseAssets('shadow2560', 'switch_AIO_LS_pack').then(assets => {
+                console.log(assets[2].download_url);
+                document.getElementById('download-link').innerHTML = assets[2].download_url;
+                const testarea = document.getElementById('test-code');
+                const test = document.getElementById('test');
+                testarea.innerHTML = test.innerHTML;
+            });
+        </script>
+
+
+<div class="grid-downloads" id="SWITCHLSAIO">
+    <center><h3 style="font-weight: 600;">Nintendo Switch</h3></center>
+    <center><h4>LS-AIO</h4></center>
+    <center><small class="grid-small"><strong>Compatibilité : </strong><span class="switchVer">X.X.X</span></small></center>
+    <center><small class="grid-small"><strong>Auteur : </strong><a href="https://github.com/shadow2560">shadow2560</a></small></center>
+    <center>
+        <button id="downloadBtn"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Télécharger</button>
+        <a href="https://github.com/shadow2560/switch_AIO_LS_pack"><button class="packs-github-btn"><i class="fa-brands fa-github"></i>&nbsp;GitHub</button></a>
+    </center>
+</div>
+
+<script>
+    async function fetchLatestRelease() {
+        const repo = 'shadow2560/switch_AIO_LS_pack'; // Remplacez par le chemin de votre repo
+        const url = `https://api.github.com/repos/${repo}/releases/latest`;
+        
+        try {
+            const response = await fetch(url);
+            if (!response.ok) throw new Error('Network response was not ok');
+            const data = await response.json();
+
+            // Recherchez le lien de téléchargement (nro dans cet exemple)
+            const asset = data.assets.find(asset => asset.name.endsWith('.nro'));
+            if (asset) {
+                const downloadButton = document.getElementById('downloadBtn');
+                downloadButton.innerHTML = `<a href="${asset.browser_download_url}" style="color: inherit; text-decoration: none;"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Télécharger</a>`;
+            }
+        } catch (error) {
+            console.error('There was a problem with the fetch operation:', error);
+        }
+    }
+
+    // Appeler la fonction pour récupérer la dernière release
+    fetchLatestRelease();
+</script>
+	</body>
+	<script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+	<script src="scripts/navbar.js"></script>
+	<script src="scripts/footer.js"></script>
+</html>
+	

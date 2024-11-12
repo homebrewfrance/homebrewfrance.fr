@@ -1,0 +1,113 @@
+<!--        © 2021 - 2024 - Homebrew France            -->
+<!--      GNU GENERAL PUBLIC LICENSE version 3         -->
+<!--       https://homebrew-france.fr/LICENSE          -->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" website-id="HBFWEBed2024LWS">
+	<head>
+        <title>Devenir Helper</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="Devenir Helper • Homebrew France" property="og:title"/>
+		<meta content="Rejoignez notre équipe en tant que Helper sur notre serveur. Consultez les critères de recrutement et postulez pour aider notre communauté à grandir." property="og:description"/>
+		<meta content="https://homebrew-france.fr/devenir-helper" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.site/meta-imgs/recrutements.png" property="og:image"/>
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="apple-mobile-web-app-capable" content="YES"/>
+		
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../style/stylesheets/style.css" />
+		<link rel="stylesheet" href="../style/stylesheets/navbar__f.css" />
+        <link rel="stylesheet" href="../style/stylesheets/form.css" />
+        <link rel="icon" type="image/x-icon" href="https://cdn.homebrew-france.site/generic/fav.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+        
+        <!-- Scripts -->
+        <script async src="../scripts/analyticsServices_manager.js"></script>
+	</head>
+	<body page_id="HBF_Recruitements1">
+        <div id="navSpace"></div>
+		<div class="page">
+            <div class="indicator">
+                <span>Devenir Helper</span>
+            </div>
+            <hr id="indicatorSeparator">
+			<pre></pre>
+            <h3 class="titles" style="font-size: 29px;">Formulaire :</h3>
+            <p>Remplissez le formulaire ci-dessous et cliquez sur "Envoyer" pour postuler en tant que Helper sur le serveur. Vous serez redirigé sur un Captcha sur le site Formspree.</p>
+            <form action="https://formspree.io/f/mpzvwjke" method="POST" class="formHelper">
+                <h4><strong>Nom d'utilisateur</strong> Discord :</h4>
+                <input placeholder="@" name="Pseudo" id="pseudo" oninput="preventRemoval()" required><br>
+                <script>
+                    function preventRemoval() {
+                      var input = document.getElementById("pseudo");
+                      if (!input.value.startsWith("@")) {
+                        input.value = "@" + input.value;
+                      }
+                    }
+                </script>
+                <br>
+                <h4>Adresse <strong>e-mail</strong>  :</h4>
+                <input type="email" id="email" name="Adresse-mail" pattern=".+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}" size="20" required />
+                <pre></pre>
+                <h4><strong>Domaines</strong> d'aide :</h4>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="consoles[]" value="PSP" class="formulaire-helper" for="consoles[]"> PlayStation Portable (PSP)</input></br>
+                    <input type="checkbox" name="consoles[]" value="PS4" class="formulaire-helper" for="consoles[]"> PlayStation 4</input></br>
+                    <input type="checkbox" name="consoles[]" value="Xbox-OG" class="formulaire-helper" for="consoles[]"> Xbox (1 ère génération)</input></br>
+                    <input type="checkbox" name="consoles[]" value="Xbox-360" class="formulaire-helper" for="consoles[]"> Xbox 360</br>
+                    <input type="checkbox" name="consoles[]" value="Wii" class="formulaire-helper" for="consoles[]"> Nintendo Wii</input></br>
+                    <input type="checkbox" name="consoles[]" value="Wii-U" class="formulaire-helper" for="consoles[]"> Nintendo Wii U</input></br>
+                    <input type="checkbox" name="consoles[]" value="DSi" class="formulaire-helper" for="consoles[]"> Nintendo DSi</input></br>
+                </div>
+                <label style="margin-left: 2.3%;">Autre(s) (préciser) :</label>
+                <input name="Autres consoles (optionnel)" id="autres-rep">
+                <pre></pre>
+                <h4>Paragraphe de <strong>motivation</strong> :</h4>
+                <textarea name="Arguments" style="width: 100%; height: 150px; margin-bottom: 15px;" id="motivation" required></textarea>
+                </br>
+                <h4><strong>Serveurs</strong> sur lesquels vous aidez déjà :</h4>
+                <div class="checkbox-container">
+                    <input type="checkbox" name="serveurs[]" value="Nintendo-Homebrew" class="formulaire-helper" for="serveurs[]"> Nintendo-Homebrew</input><br>
+                    <input type="checkbox" name="serveurs[]" value="LS-Atelier" class="formulaire-helper" for="serveurs[]"> LS-Atelier</input><br>
+                    <input type="checkbox" name="serveurs[]" value="SigHya" class="formulaire-helper" for="serveurs[]"> SigHya</input><br>
+                    <input type="checkbox" name="serveurs[]" value="MikeGamers" class="formulaire-helper" for="serveurs[]"> MikeGamers</input><br>
+                    <input type="checkbox" name="serveurs[]" value="Jihel" class="formulaire-helper" for="serveurs[]"> Jihel Jay</input><br>
+                    <input type="checkbox" name="serveurs[]" value="DSiModeHacking" class="formulaire-helper" for="serveurs[]"> DS(i) Mode Hacking!</input><br>
+                    <input type="checkbox" name="serveurs[]" value="PlayStation-Homebrew" class="formulaire-helper" for="serveurs[]"> PlayStation-Homebrew</input><br>
+                    <input type="checkbox" name="serveurs[]" value="Deejay" class="formulaire-helper" for="serveurs[]"> Deejay</input><br>
+                    <input type="checkbox" name="serveurs[]" value="Classic-Gamer" class="formulaire-helper" for="serveurs[]"> Classic Gamer</input><br>
+                </div>
+                <label style="margin-left: 2.3%;">Autre(s) (préciser) :</label>
+                <input type="text" name="Autres serveurs (optionnel)" id="autres-rep2"></input>
+                <pre></pre>
+                <h4>Date de <strong>naissance</strong> :</h4>
+                <input id="date-naissance" type="date" name="Date de naissance" ></input>
+                <pre></pre>
+                <h4><strong>Disponibilités</strong> générales :</h4>
+                <p>Semaine (L/M/M/J/V) :</p>
+                <p>De <input class="time" type="time" name="Disponibilités (L/M/M/J/V) (heure début)" required></input> à <input class="time" type="time" name="Disponibilités (L/M/M/J/V) (heure fin)" required></input></p>
+                <p>Week-end (S/D) :</p>
+                <p>De <input class="time" type="time" name="Disponibilités (S/D) (heure début)" required></input> à <input class="time" type="time" name="Disponibilités (S/D) (heure fin)" required></input></p>
+                <div style="text-align: center;">
+                    <input type="checkbox" name="Règlement lu" value="Oui" class="formulaire-helper" for="Règlement lu" required></input> Je confirme avoir pris connaissance du règlement de la communauté.</br>
+                    <input type="checkbox" name="Avoir plus de 15 ans" value="Oui" class="formulaire-helper" for="A plus de 15 ans" required></input> Je certifie être âgé de 15 ans ou plus.</br>
+                </div>
+                <button type="submit" class="default-button" style="margin-left: 0; width: 100%; padding: 10px; font-size: 24px;">Envoyer</button>
+            </form>
+        </div>
+
+        <!-- Scripts -->
+        <script src="../scripts/maintenance_Toggler.js"></script>
+        <script src="../scripts/navigationBar_creation.js"></script>
+        <script src="../scripts/footer_creation.js"></script>
+        <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-9864634157908409" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    </body>
+</html>
