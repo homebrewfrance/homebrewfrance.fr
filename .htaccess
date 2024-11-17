@@ -25,8 +25,19 @@ RewriteRule ^(.*)$ https://%{HTTP_HOST}%{REQUEST_URI} [redirect=301,L]
 
 </IfModule>
 
+# Activer la gestion des erreurs personnalisées
+ErrorDocument 404 /404.html
+ErrorDocument 403 /403.html
+ErrorDocument 503 /503.html
+
+
 <IfModule mod_headers.c>
     Header set Access-Control-Allow-Origin "*"
     Header set Access-Control-Allow-Methods "GET, POST, PUT, DELETE, OPTIONS"
     Header set Access-Control-Allow-Headers "Content-Type, Authorization"
 </IfModule>
+
+# Redirection vers 503.html pour toutes les pages sauf les dossiers spécifiés
+# RewriteEngine On
+# RewriteCond %{REQUEST_URI} !^/(scripts|devenir-helper|style)/
+# RewriteRule ^(.*)$ /503.html [L]

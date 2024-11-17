@@ -95,7 +95,13 @@ nav {
   display: none;
 }
 
-@media only screen and (min-width: 700px) {
+@media only screen and (min-width: 800px) {
+  .dropdown-item::after {
+    content: "\f13a";
+    font-family: "Font Awesome 6 Free";
+    font-weight: 900;
+    margin-left: 8px;
+  }
   #navbarToggler {
     display: none;
   }
@@ -125,12 +131,6 @@ nav {
     min-width: -moz-max-content;
     min-width: max-content;
   }
-  .dropdown-item::after {
-    content: "\f13a";
-    font-family: "Font Awesome 6 Free";
-    font-weight: 900;
-    margin-left: 8px;
-  }
   .footer-container {
     display: flex;
     justify-content: space-between;
@@ -143,7 +143,7 @@ nav {
     height: auto;
   }
 }
-@media only screen and (max-width: 700px) {
+@media only screen and (max-width: 800px) {
   #desktopItems {
     display: none;
   }
@@ -285,6 +285,10 @@ footer a:hover {
 }
 footer a {
   transition: 0.4s;
+  text-decoration-color: #545454;
+  -moz-text-decoration-color: #545454;
+  font-family: "Lexend", "sans-serif";
+  color: white;
 }
 
 .footer-p {
@@ -293,16 +297,11 @@ footer a {
 }
 
 .footer-container p {
-  font-family: Lexend, "sans-serif";
+  font-family: "Lexend", "sans-serif";
   color: white;
 }
 
 .footer-container small {
-  font-family: Lexend, "sans-serif";
-  color: white;
-}
-
-.footer-container a {
-  font-family: Lexend, "sans-serif";
+  font-family: "Lexend", "sans-serif";
   color: white;
 }/*# sourceMappingURL=navbar__f.css.map */

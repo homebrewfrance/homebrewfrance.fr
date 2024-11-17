@@ -61,17 +61,6 @@ confidential.href = 'https://homebrew-france.fr/confidentialite/';
 confidential.innerHTML = '<u>Confidentialité</u>';
 rightFooter.appendChild(confidential);
 
-var separatorSpan3 = document.createElement('span');
-separatorSpan3.className = 'separator';
-separatorSpan3.style.color = 'rgb(173, 173, 173)';
-separatorSpan3.innerHTML = '&nbsp;•&nbsp;';
-rightFooter.appendChild(separatorSpan3);
-
-var supportUkraineLink = document.createElement('a');
-supportUkraineLink.href = 'https://war.ukraine.ua/support-ukraine/';
-supportUkraineLink.innerHTML = '<u><img class="ua-flag" src="https://homebrew-france.fr/style/assets/generic/ukraine.png"> Support Ukraine</u>';
-rightFooter.appendChild(supportUkraineLink);
-
 footer.appendChild(rightFooter);
 
 bodyElement.appendChild(footer);

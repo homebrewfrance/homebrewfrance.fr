@@ -117,16 +117,20 @@ function createDropdownItemsDesktop(dropdownsItems) {
 function createDropdownItemsMobile(dropdownsItems) {
     for (let index = 0; index < dropdownsItems.length; index++) {
         const dropItem = document.createElement('a');
-        var dropItemIcon = document.createElement('img');
-        dropItemIcon.src = dropdownsItems[index].iconLink;
-        dropItemIcon.style.height = '20px';
-        dropItemIcon.style.width = '20px';
-        dropItemIcon.style.marginRight = '9px';
         dropItem.href = dropdownsItems[index].url;
         dropItem.innerHTML = dropdownsItems[index].name;
         dropItem.className = 'drop-item';
         dropItem.id = dropdownsItems[index].id;
-        dropItem.prepend(dropItemIcon);
+        var iconLink = dropdownsItems[index].iconLink;
+        if (iconLink) {
+            var dropItemIcon = document.createElement('img');
+            dropItemIcon.src = iconLink;
+            dropItemIcon.style.height = '20px';
+            dropItemIcon.style.width = '20px';
+            dropItemIcon.style.marginRight = '9px';
+            dropItem.prepend(dropItemIcon);
+        }
+
         const dropdownTargetId = dropdownsItems[index].dropdownId + '-menu';
         console.log('Tentative d\'ajouter à:', dropdownTargetId);
         const dropdownTarget = document.querySelector('#mobileItems div#' + dropdownTargetId);
@@ -137,6 +141,7 @@ function createDropdownItemsMobile(dropdownsItems) {
         }
     }
 }
+
 
 document.addEventListener('contextmenu', function(e) {
     e.preventDefault();

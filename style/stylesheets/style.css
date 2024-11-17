@@ -7,6 +7,39 @@
   }
 }
 @media only screen and (max-width: 800px) {
+  .btn-container-home {
+    align-items: center;
+    justify-content: center;
+  }
+  .indicator {
+    font-size: 45px;
+    word-break: break-all;
+  }
+  #fup-indicator {
+    width: 45px;
+  }
+  #presentation-communaute, #presentation-fup {
+    font-size: 19px;
+    text-justify: inter-word;
+    margin-top: 18px;
+  }
+  .discord-title, .error-title {
+    line-height: 1;
+    margin-bottom: 12px;
+    margin-top: 20%;
+    text-align: center;
+    font-size: 55px;
+  }
+  .warning, .header_discord {
+    border-radius: 20px;
+  }
+  .discord-img, .error-img {
+    display: none;
+  }
+  .home-header, .error-container {
+    display: flex;
+    flex-direction: column;
+  }
   .titles {
     font-size: 23px;
   }
@@ -38,8 +71,8 @@
   }
   .grid-shop {
     width: 100%;
-    margin-bottom: 5px;
-    margin-top: 5px;
+    margin-bottom: 10px;
+    margin-top: 10px;
   }
   .grid-downloads {
     width: 100%;
@@ -59,6 +92,55 @@
   }
 }
 @media only screen and (min-width: 800px) {
+  .indicator {
+    font-size: 65px;
+  }
+  #fup-indicator {
+    width: 80px;
+  }
+  .grid-shop:hover, .grid-downloads:hover {
+    transform: scale(1.02);
+    background-color: rgba(31, 32, 35, 0.9098039216);
+  }
+  #presentation-communaute, #presentation-fup {
+    font-size: 29px;
+  }
+  .warning, .header_discord {
+    border-radius: 50px;
+  }
+  .discord-img, .error-img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 450px;
+    width: 50%;
+    padding: 25px;
+  }
+  .discord-desc, .error-desc {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    max-height: 450px;
+    width: 50%;
+  }
+  .img-ds-ratio {
+    height: 100%;
+    width: auto;
+    -o-object-fit: contain;
+       object-fit: contain;
+  }
+  .home-header, .error-container {
+    display: flex;
+    flex-direction: row;
+  }
+  .error-container {
+    justify-content: center;
+    justify-items: center;
+    justify-self: center;
+    align-content: center;
+    align-items: center;
+    align-self: center;
+  }
   .titles {
     font-size: 29px;
   }
@@ -119,6 +201,9 @@
     background-color: rgba(31, 32, 35, 0.3137254902);
     border-radius: 25px;
   }
+  .discord-title, .error-title {
+    font-size: 65px;
+  }
 }
 input:focus {
   box-shadow: 0px 1px 13px 2px rgba(112, 112, 112, 0.75);
@@ -127,13 +212,12 @@ input:focus {
 }
 
 .navigationElements::before {
-  content: "⯈  ";
+  content: "â¯ˆ  ";
 }
 
 .indicator {
-  font-size: 65px;
-  font-family: "Space Grotesk", sans-serif;
-  font-weight: 300;
+  font-family: "Lexend", sans-serif;
+  font-weight: 200;
   margin-top: 75px;
 }
 
@@ -149,10 +233,6 @@ input:focus {
   padding: 6px;
   background: rgba(32, 39, 54, 0.8);
   border: none;
-  backdrop-filter: blur(16px);
-  -moz-backdrop-filter: blur(16px);
-  -moz-backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   border-radius: 15px;
 }
 
@@ -171,9 +251,6 @@ input:focus {
   height: auto;
   overflow-wrap: anywhere;
   margin-bottom: 7px;
-  backdrop-filter: blur(25px);
-  -moz-backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
 }
 
 ul {
@@ -189,9 +266,6 @@ ul {
   padding: 16px;
   height: auto;
   overflow-wrap: anywhere;
-  backdrop-filter: blur(16px);
-  -moz-backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
 }
 
 .page {
@@ -202,17 +276,6 @@ ul {
   text-decoration: none;
 }
 
-.button-man {
-  border: 1px solid white;
-  background-color: #607d8b;
-  padding: 4px;
-  margin: 5px;
-}
-
-.button-man:hover {
-  background-color: #37474f;
-}
-
 html {
   scroll-behavior: smooth;
   height: auto;
@@ -221,20 +284,15 @@ html {
 a {
   color: #ffffff;
   transition: 0.3s;
+  text-decoration: none;
 }
 
 body {
   width: 100%;
-  /*background-color: #121316;
-  background: radial-gradient(circle, rgba(138,43,226,0.4), rgba(75,0,130,0.15), transparent 100%);*/
   background: radial-gradient(circle, rgba(138, 43, 226, 0.4), rgba(75, 0, 130, 0.15), transparent 70%), #121316;
   scroll-behavior: smooth;
   background-attachment: fixed;
   font-family: "Poppins", sans-serif;
-  /*background-image: url('https://homebrew-france.fr/style/assets/generic/background.png'); 
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;*/
   color: white;
 }
 
@@ -248,7 +306,7 @@ h1, h2, h3, h4, h5 {
   font-weight: 500;
 }
 
-.discord-title {
+.discord-title, .error-title {
   background: linear-gradient(to bottom, white, #999999);
   --webkit-background-clip: text;
   -webkit-background-clip: text;
@@ -314,29 +372,16 @@ thead, tfoot {
   text-align: center;
 }
 
-/* PACKS */
-/*.page button {
-          background-color: #303337;
-          backdrop-filter: blur(16px);
-          -moz-backdrop-filter: blur(16px);
-	-webkit-backdrop-filter: blur(16px);
-	border-radius: 10px;
-	border: none;
-	transition: 0.3s;
-	font-family: $primary-font;
-	padding: 8px;
-	font-size: 19px;
-	margin: 10px;
-          font-weight: 600;
-	color: white;
-}*/
+.btn-container-home {
+  display: flex;
+  flex-direction: row;
+}
+
+/* ----BOUTONS ---- */
 .page button {
   margin-block: 15px;
   font-family: "Space Grotesk", sans-serif;
   border-radius: 50px;
-  backdrop-filter: blur(16px);
-  -moz-backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   font-weight: 400;
   padding-inline: 18px;
   padding-block: 4px;
@@ -421,18 +466,8 @@ thead, tfoot {
   background-color: rgba(52, 55, 59, 0.768627451);
 }
 
-button .disabled {
-  border-radius: 10px;
-  background-color: rgba(28, 28, 28, 0.7490196078);
-  padding: 6px;
-  margin: 5px;
-  color: rgb(108, 108, 108);
-  border: none;
-  font-size: 16px;
-  font-family: "Poppins", sans-serif;
-  transition: 0.8s;
-}
-
+/* ---- */
+/* ---- STYLES GENERIQUES ---- */
 .titles {
   background: linear-gradient(to bottom, white, #b6b6b6);
   --webkit-background-clip: text;
@@ -440,12 +475,11 @@ button .disabled {
           background-clip: text;
   color: transparent;
   font-weight: 600;
-  font-size: 35px;
   position: relative;
   display: inline-block;
   margin-bottom: 15px;
   margin-top: 25px;
-  word-wrap: break-word;
+  word-break: break-word;
 }
 
 .titles:after {
@@ -474,9 +508,6 @@ button .disabled {
   background-color: rgba(31, 32, 35, 0.631372549);
   border-radius: 25px;
   border: 1px solid #333;
-  backdrop-filter: blur(16px);
-  -moz-backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   width: 355px;
   float: left;
   margin: 8px auto;
@@ -503,9 +534,6 @@ button .disabled {
   background-color: rgba(31, 32, 35, 0.631372549);
   border-radius: 25px;
   border: 1px solid #333;
-  backdrop-filter: blur(16px);
-  -moz-backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   padding-bottom: 0px;
   transition: 0.2s;
   display: flex;
@@ -530,11 +558,6 @@ button .disabled {
 }
 .grid-shop .prix-actuel::after {
   content: "€";
-}
-
-.grid-shop:hover {
-  transform: scale(1.02);
-  background-color: rgba(31, 32, 35, 0.9098039216);
 }
 
 .reductions {
@@ -564,9 +587,6 @@ button .disabled {
 
 .add-infos-shop {
   background: rgba(59, 64, 71, 0.58);
-  backdrop-filter: blur(16px);
-  -moz-backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   border: none;
   border-radius: 10px;
   width: 100%;
@@ -586,9 +606,6 @@ button .disabled {
   background-color: rgba(31, 32, 35, 0.631372549);
   border-radius: 25px;
   border: 1px solid #333;
-  backdrop-filter: blur(16px);
-  -moz-backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   padding: 15px;
   transition: 0.3s;
 }
@@ -625,11 +642,6 @@ button .disabled {
   bottom: 4px;
 }
 
-.grid-downloads:hover {
-  transform: scale(1.02);
-  background-color: rgba(31, 32, 35, 0.9098039216);
-}
-
 /**/
 .warning, .header_discord {
   background: rgba(0, 0, 0, 0.2);
@@ -637,112 +649,9 @@ button .disabled {
   font-size: 17px;
   font-family: "Space Grotesk", sans-serif;
   border: 1px solid #75418d;
-  border-radius: 50px;
-  backdrop-filter: blur(16px);
-  -moz-backdrop-filter: blur(16px);
-  -webkit-backdrop-filter: blur(16px);
   width: 100%;
   font-weight: 400;
   padding-inline: 18px;
   padding-block: 8px;
   box-shadow: 0 0 10px rgba(222, 150, 255, 0.3);
-}
-
-.home-header {
-  display: flex;
-  flex-direction: row;
-}
-
-.discord-img {
-  display: flex;
-  align-items: center; /* Centrer verticalement si l'image est plus petite que le conteneur */
-  justify-content: center; /* Centrer horizontalement */
-  max-height: 450px; /* Hauteur maximale du conteneur */
-  width: 50%;
-  padding: 25px;
-}
-
-.discord-desc {
-  justify-content: center;
-  align-items: center;
-  display: flex;
-  max-height: 450px;
-  width: 50%;
-}
-
-.img-ds-ratio {
-  height: 100%; /* Prend toute la hauteur disponible */
-  width: auto; /* Maintient le ratio */
-  -o-object-fit: contain;
-     object-fit: contain; /* Empêche le rognage et conserve le ratio */
-}
-
-.banner-container {
-  display: flex;
-  box-shadow: 0px 2px 3px #000000;
-  border: none;
-  border-radius: 10px;
-}
-
-.slideshow {
-  display: flex;
-  width: 100%;
-  border: none;
-}
-
-.slideshow:hover {
-  cursor: default;
-}
-
-.slide img {
-  width: 100%;
-  height: auto;
-}
-
-.prev, .next {
-  padding: 4px;
-  height: 100%;
-  font-size: 24px;
-  cursor: pointer;
-  color: #ffffff;
-  transition: 0.3s;
-  border: none;
-}
-
-.prev {
-  border-top-left-radius: 10px;
-  border-bottom-left-radius: 10px;
-  background: rgba(59, 64, 71, 0.58);
-}
-
-.next {
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  background: rgba(59, 64, 71, 0.58);
-}
-
-.next:hover {
-  background: rgba(117, 117, 117, 0.5);
-}
-
-.prev:hover {
-  background: rgba(117, 117, 117, 0.5);
-}
-
-.prev-btn {
-  left: 0;
-}
-
-.next-btn {
-  right: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-.formHelper h4 {
-  font-size: 19px;
-  margin-top: 15px;
-  margin-bottom: 10px;
 }/*# sourceMappingURL=style.css.map */

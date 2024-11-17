@@ -1,7 +1,5 @@
 .time {
     background: rgba(84, 91, 102, 0.26);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-radius: 30px;
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -16,8 +14,6 @@
 }
 #pseudo, #autres-rep, #autres-rep2, #date-naissance, #email, #djmoderes, #membership-duration {
     background: rgba(84, 91, 102, 0.26);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-radius: 50px;
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -30,8 +26,6 @@
 
 #motivation {
     background: rgba(84, 91, 102, 0.26);
-    backdrop-filter: blur(10px);
-    -webkit-backdrop-filter: blur(10px);
     border-radius: 25px;
     border: none;
     font-family: 'Poppins', sans-serif;
@@ -64,10 +58,9 @@ input[type="checkbox"] {
 }
 
 form {
-	background-color: #1f2023a1;
+	background-color: #1f2023d2;
 	border-radius: 25px;
 	border: 1px solid #333;
-    backdrop-filter: blur(16px);
     margin: 5px;
     padding: 13px;
 }

@@ -126,7 +126,7 @@ function createItemShop(modifConsoles, consolesPucees) {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://homebrew-france.fr/json/shop-items.json')
+    fetch('https://beta.homebrew-france.site/json/shop-items.json')
     .then(response => response.json())
     .then(data => {
         const modifConsoles = data.modifConsoles;

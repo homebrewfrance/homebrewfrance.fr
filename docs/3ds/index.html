@@ -3,7 +3,7 @@
 <!--       https://homebrew-france.fr/LICENSE          -->
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" website-id="HBFWEBed2024LWS">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="fr" data-website-id="HBFWEB-V3-LWS">
 	<head>
         <title>Nintendo 3DS | Docs</title>
 
@@ -16,6 +16,11 @@
 		<meta content="https://cdn.homebrew-france.site/docs/dsi_docs.png" property="og:image"/>
         <meta name="HandheldFriendly" content="true"/>
         <meta name="apple-mobile-web-app-capable" content="YES"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.site/generic/website-icon.png" />
         
         <!-- Link -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -29,7 +34,7 @@
         <script async src="../../scripts/analyticsServices_manager.js"></script>
         <script async src="../../scripts/navItemsHighlights_docs.js"></script>
 	</head>
-    <body page_id="DOC-3DS">
+    <body data-page-id="DOC-3DS">
         <a class="top-page-button" href="#"><div href="#" class="top-page-button" title="Remonter en haut de la page">
             <center>&#9650;</center>
         </div></a>
@@ -322,13 +327,13 @@
                     <li style="list-style-type: decimal;">Extrayez l'archive que vous avez téléchargé précédemment.</li>
                     <li style="list-style-type: decimal;">Placez tout le contenu à la <a href="https://homebrew-france.fr/sdroot">racine de la carte SD</a> de votre console.</li>
                     <li style="list-style-type: decimal;">Vérifiez la présence de ces fichiers sur votre carte SD :</li>
-                    -&nbsp;<code>SD:/luma/titles/000400300000BC02/code.ips</code> (Miiverse, JPN)<br>
-                    -&nbsp;<code>SD:/luma/titles/000400300000BD02/code.ips</code> (Miiverse, USA)<br>
-                    -&nbsp;<code>SD:/luma/titles/000400300000BE02/code.ips</code> (Miiverse, EUR)<br>
-                    -&nbsp;<code>SD:/luma/sysmodules/0004013000002F02.ips</code> (SSL)<br>
-                    -&nbsp;<code>SD:/luma/sysmodules/0004013000003202.ips</code> (FRD/Friends)<br>
-                    -&nbsp;<code>SD:/luma/sysmodules/0004013000003802.ips</code> (ACT/NNID)<br>
-                    -&nbsp;<code>SD:/3ds/juxt-prod.pem</code> (Juxtaposition certificate)
+                    -&nbsp;<code style="word-break: break-all;">SD:/luma/titles/000400300000BC02/code.ips</code> (Miiverse, JPN)<br>
+                    -&nbsp;<code style="word-break: break-all;">SD:/luma/titles/000400300000BD02/code.ips</code> (Miiverse, USA)<br>
+                    -&nbsp;<code style="word-break: break-all;">SD:/luma/titles/000400300000BE02/code.ips</code> (Miiverse, EUR)<br>
+                    -&nbsp;<code style="word-break: break-all;">SD:/luma/sysmodules/0004013000002F02.ips</code> (SSL)<br>
+                    -&nbsp;<code style="word-break: break-all;">SD:/luma/sysmodules/0004013000003202.ips</code> (FRD/Friends)<br>
+                    -&nbsp;<code style="word-break: break-all;">SD:/luma/sysmodules/0004013000003802.ips</code> (ACT/NNID)<br>
+                    -&nbsp;<code style="word-break: break-all;">SD:/3ds/juxt-prod.pem</code> (Juxtaposition certificate)
                     <li style="list-style-type: decimal;">Réinsérez la carte SD dans votre console.</li>
                 </ul>
                 <h id="luma-patches" class="subtitles">2) Activation des patches Luma</h>
@@ -394,220 +399,224 @@
                 <h class="subtitles">1) Old 3DS (Nintendo 3DS, Nintendo 3DS XL, Nintendo 2DS) :</h>
                 <p>Voici les consoles qu’est capable d’émuler une « Old » Nintendo 3DS ainsi que les
                     émulateurs recommandés :</p>
-                    <table border="1" cellpadding="10" style="overflow: scroll;">
-                        <thead>
-                          <tr>
-                            <th>Console</th>
-                            <th>Émulateur/Hyperviseur</th>
-                            <th>Compatibilité</th>
-                            <th>Disponibilité</th>
-                          </tr>
-                        </thead>
-                        <tbody>
-                          <tr>
-                            <td>SNES</td>
-                            <td>Snes9x</td>
-                            <td style="background-color:#66bb6a;">Très bonne</td>
-                            <td><a href="https://db.universal-team.net/3ds/snes9x-updated-fork">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>NES</td>
-                            <td>VirtuaNES</td>
-                            <td style="background-color:#66bb6a;">Très bonne</td>
-                            <td><a href="https://db.universal-team.net/3ds/virtuanes">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>Megadrive/MasterSystem/GameGear</td>
-                            <td>Picodrive</td>
-                            <td style="background-color:#66bb6a;">Très bonne</td>
-                            <td><a href="https://db.universal-team.net/3ds/picodrive">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>PCEngine</td>
-                            <td>TemperPCE</td>
-                            <td style="background-color:#66bb6a;">Très bonne</td>
-                            <td><a href="https://db.universal-team.net/3ds/temperpce">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>GameBoy Advance</td>
-                            <td>open_agb_firm</td>
-                            <td style="background-color:#43a047;">Parfaite</td>
-                            <td><a href="https://db.universal-team.net/3ds/open_agb_firm">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>GameBoy Advance</td>
-                            <td>VC Injects</td>
-                            <td style="background-color:#43a047;">Parfaite</td>
-                            <td><a href="https://gbatemp.net/threads/release-ultimate-gba-vc-injector-for-3ds.438057/">GBATemp</a></td>
-                          </tr>
-                          <tr>
-                            <td>GameBoy/GameBoy Color</td>
-                            <td>GameYob (version NDS)</td>
-                            <td style="background-color:#66bb6a;">Très bonne</td>
-                            <td><a href="https://db.universal-team.net/ds/gameyob">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>GameBoy/GameBoy Color</td>
-                            <td>GameYob (version 3DS)</td>
-                            <td style="background-color:#66bb6a;">Très bonne</td>
-                            <td><a href="https://db.universal-team.net/3ds/gameyob-3ds">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>Nintendo DS/Nintendo DSi</td>
-                            <td>TWiLightMenu++ (via nds-bootstrap)</td>
-                            <td style="background-color:#ffa726;">Bonne</td>
-                            <td><a href="https://db.universal-team.net/ds/twilight-menu">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>Atari 2600</td>
-                            <td>StellaDS (NDS)</td>
-                            <td style="background-color:#388e3c;">Excellente</td>
-                            <td><a href="https://db.universal-team.net/ds/stellads">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>Atari 5200</td>
-                            <td>A5200DS (NDS)</td>
-                            <td style="background-color:#388e3c;">Excellente</td>
-                            <td><a href="https://db.universal-team.net/ds/a5200ds">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>Atari 7800</td>
-                            <td>A7800DS (NDS)</td>
-                            <td style="background-color:#388e3c;">Excellente</td>
-                            <td><a href="https://db.universal-team.net/ds/a7800ds">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>ColecoVision</td>
-                            <td>ColecoDS (NDS)</td>
-                            <td style="background-color:#388e3c;">Excellente</td>
-                            <td><a href="https://db.universal-team.net/ds/colecods">Universal-Updater</a></td>
-                          </tr>
-                        </tbody>
-                      </table>
+                    <div style="overflow: scroll; width: 100%;">
+                        <table border="1" cellpadding="10">
+                            <thead>
+                            <tr>
+                                <th>Console</th>
+                                <th>Émulateur/Hyperviseur</th>
+                                <th>Compatibilité</th>
+                                <th>Disponibilité</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td>SNES</td>
+                                <td>Snes9x</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/snes9x-updated-fork">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>NES</td>
+                                <td>VirtuaNES</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/virtuanes">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>Megadrive/MasterSystem/GameGear</td>
+                                <td>Picodrive</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/picodrive">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>PCEngine</td>
+                                <td>TemperPCE</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/temperpce">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>GameBoy Advance</td>
+                                <td>open_agb_firm</td>
+                                <td style="background-color:#43a047;">Parfaite</td>
+                                <td><a href="https://db.universal-team.net/3ds/open_agb_firm">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>GameBoy Advance</td>
+                                <td>VC Injects</td>
+                                <td style="background-color:#43a047;">Parfaite</td>
+                                <td><a href="https://gbatemp.net/threads/release-ultimate-gba-vc-injector-for-3ds.438057/">GBATemp</a></td>
+                            </tr>
+                            <tr>
+                                <td>GameBoy/GameBoy Color</td>
+                                <td>GameYob (version NDS)</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/ds/gameyob">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>GameBoy/GameBoy Color</td>
+                                <td>GameYob (version 3DS)</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/gameyob-3ds">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>Nintendo DS/Nintendo DSi</td>
+                                <td>TWiLightMenu++ (via nds-bootstrap)</td>
+                                <td style="background-color:#ffa726;">Bonne</td>
+                                <td><a href="https://db.universal-team.net/ds/twilight-menu">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>Atari 2600</td>
+                                <td>StellaDS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/stellads">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>Atari 5200</td>
+                                <td>A5200DS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/a5200ds">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>Atari 7800</td>
+                                <td>A7800DS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/a7800ds">Universal-Updater</a></td>
+                            </tr>
+                            <tr>
+                                <td>ColecoVision</td>
+                                <td>ColecoDS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/colecods">Universal-Updater</a></td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
 
                       <h class="subtitles">2) New 3DS (New Nintendo 3DS, New Nintendo 3DS XL, New Nintendo 2DS XL) :</h><br />
                       <p>Voici les consoles qu’est capable d’émuler une « New » Nintendo 3DS ainsi que les
                       émulateurs recommandés :</p>
-                      <table border="1" cellpadding="10" style="overflow: scroll;">
-                        <thead>
-                          <tr>
-                            <th>Console</th>
-                            <th>Émulateur/Hyperviseur</th>
-                            <th>Compatibilité</th>
-                            <th>Disponibilité</th>
-                          </tr>
-                        </thead>
-                        <tbody>
+                      <div style="overflow: scroll; width: 100%;">
+                        <table border="1" cellpadding="10">
+                            <thead>
                             <tr>
-                            <td>SNES</td>
-                            <td>Snes9x</td>
-                            <td style="background-color:#66bb6a;">Très bonne</td>
-                            <td><a href="https://db.universal-team.net/3ds/snes9x-updated-fork">Universal-Updater</a></td>
+                                <th>Console</th>
+                                <th>Émulateur/Hyperviseur</th>
+                                <th>Compatibilité</th>
+                                <th>Disponibilité</th>
                             </tr>
-                            <tr>
-                            <td>NES</td>
-                            <td>VirtuaNES</td>
-                            <td style="background-color:#66bb6a;">Très bonne</td>
-                            <td><a href="https://db.universal-team.net/3ds/virtuanes">Universal-Updater</a></td>
-                            </tr>
-                            <tr>
-                            <td>Megadrive/MasterSystem/GameGear</td>
-                            <td>Picodrive</td>
-                            <td style="background-color:#66bb6a;">Très bonne</td>
-                            <td><a href="https://db.universal-team.net/3ds/picodrive">Universal-Updater</a></td>
-                            </tr>
-                            <tr>
-                            <td>PCEngine</td>
-                            <td>TemperPCE</td>
-                            <td style="background-color:#66bb6a;">Très bonne</td>
-                            <td><a href="https://db.universal-team.net/3ds/temperpce">Universal-Updater</a></td>
-                            </tr>
-                            <tr>
-                                <td>GameBoy Advance</td>
-                                <td>mGBA</td>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                <td>SNES</td>
+                                <td>Snes9x</td>
                                 <td style="background-color:#66bb6a;">Très bonne</td>
-                                <td><a href="">Universal-Updater</a></td>
-                              </tr>
+                                <td><a href="https://db.universal-team.net/3ds/snes9x-updated-fork">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>NES</td>
+                                <td>VirtuaNES</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/virtuanes">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>Megadrive/MasterSystem/GameGear</td>
+                                <td>Picodrive</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/picodrive">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>PCEngine</td>
+                                <td>TemperPCE</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/temperpce">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                    <td>GameBoy Advance</td>
+                                    <td>mGBA</td>
+                                    <td style="background-color:#66bb6a;">Très bonne</td>
+                                    <td><a href="">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>GameBoy Advance</td>
+                                <td>open_agb_firm</td>
+                                <td style="background-color:#43a047;">Parfaite</td>
+                                <td><a href="https://db.universal-team.net/3ds/open_agb_firm">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>GameBoy Advance</td>
+                                <td>VC Injects</td>
+                                <td style="background-color:#43a047;">Parfaite</td>
+                                <td><a href="https://gbatemp.net/threads/release-ultimate-gba-vc-injector-for-3ds.438057/">GBATemp</a></td>
+                                </tr>
                             <tr>
-                            <td>GameBoy Advance</td>
-                            <td>open_agb_firm</td>
-                            <td style="background-color:#43a047;">Parfaite</td>
-                            <td><a href="https://db.universal-team.net/3ds/open_agb_firm">Universal-Updater</a></td>
+                                <td>GameBoy/GameBoy Color</td>
+                                <td>GameYob (version NDS)</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/ds/gameyob">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>GameBoy/GameBoy Color</td>
+                                <td>GameYob (version 3DS)</td>
+                                <td style="background-color:#66bb6a;">Très bonne</td>
+                                <td><a href="https://db.universal-team.net/3ds/gameyob-3ds">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>Nintendo DS/Nintendo DSi</td>
+                                <td>TWiLightMenu++ (via nds-bootstrap)</td>
+                                <td style="background-color:#ffa726;">Bonne</td>
+                                <td><a href="https://db.universal-team.net/ds/twilight-menu">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>Atari 2600</td>
+                                <td>StellaDS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/stellads">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>Atari 5200</td>
+                                <td>A5200DS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/a5200ds">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>Atari 7800</td>
+                                <td>A7800DS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/a7800ds">Universal-Updater</a></td>
+                                </tr>
+                                <tr>
+                                <td>ColecoVision</td>
+                                <td>ColecoDS (NDS)</td>
+                                <td style="background-color:#388e3c;">Excellente</td>
+                                <td><a href="https://db.universal-team.net/ds/colecods">Universal-Updater</a></td>
                             </tr>
                             <tr>
-                            <td>GameBoy Advance</td>
-                            <td>VC Injects</td>
-                            <td style="background-color:#43a047;">Parfaite</td>
-                            <td><a href="https://gbatemp.net/threads/release-ultimate-gba-vc-injector-for-3ds.438057/">GBATemp</a></td>
-                            </tr>
-                          <tr>
-                            <td>GameBoy/GameBoy Color</td>
-                            <td>GameYob (version NDS)</td>
-                            <td style="background-color:#66bb6a;">Très bonne</td>
-                            <td><a href="https://db.universal-team.net/ds/gameyob">Universal-Updater</a></td>
+                                <td>PlayStation 1</td>
+                                <td>PCSX-Rearmed (via RetroArch)</td>
+                                <td style="background-color:#ffa000;">Assez bonne</td>
+                                <td>Universal-Updater (via le script RetroArch)</td>
                             </tr>
                             <tr>
-                            <td>GameBoy/GameBoy Color</td>
-                            <td>GameYob (version 3DS)</td>
-                            <td style="background-color:#66bb6a;">Très bonne</td>
-                            <td><a href="https://db.universal-team.net/3ds/gameyob-3ds">Universal-Updater</a></td>
+                                <td>Nintendo 64</td>
+                                <td>DaedalusX64 (release)</td>
+                                <td style="background-color:#e53935;">Mauvaise</td>
+                                <td><a href="https://db.universal-team.net/3ds/daedalusx64-3ds">Universal-Updater</a></td>
                             </tr>
                             <tr>
-                            <td>Nintendo DS/Nintendo DSi</td>
-                            <td>TWiLightMenu++ (via nds-bootstrap)</td>
-                            <td style="background-color:#ffa726;">Bonne</td>
-                            <td><a href="https://db.universal-team.net/ds/twilight-menu">Universal-Updater</a></td>
+                                <td>Nintendo 64</td>
+                                <td>DaedalusX64 (beta)</td>
+                                <td style="background-color:#f57c00;">Médiocre</td>
+                                <td><a href="https://db.universal-team.net/3ds/daedalusx64-3ds">Universal-Updater</a></td>
                             </tr>
                             <tr>
-                            <td>Atari 2600</td>
-                            <td>StellaDS (NDS)</td>
-                            <td style="background-color:#388e3c;">Excellente</td>
-                            <td><a href="https://db.universal-team.net/ds/stellads">Universal-Updater</a></td>
+                                <td>Nintendo VirtualBoy</td>
+                                <td>r3Dragon</td>
+                                <td style="background-color:#f57c00;">Médiocre</td>
+                                <td><a href="https://db.universal-team.net/3ds/r3ddragon">Universal-Updater</a></td>
                             </tr>
-                            <tr>
-                            <td>Atari 5200</td>
-                            <td>A5200DS (NDS)</td>
-                            <td style="background-color:#388e3c;">Excellente</td>
-                            <td><a href="https://db.universal-team.net/ds/a5200ds">Universal-Updater</a></td>
-                            </tr>
-                            <tr>
-                            <td>Atari 7800</td>
-                            <td>A7800DS (NDS)</td>
-                            <td style="background-color:#388e3c;">Excellente</td>
-                            <td><a href="https://db.universal-team.net/ds/a7800ds">Universal-Updater</a></td>
-                            </tr>
-                            <tr>
-                            <td>ColecoVision</td>
-                            <td>ColecoDS (NDS)</td>
-                            <td style="background-color:#388e3c;">Excellente</td>
-                            <td><a href="https://db.universal-team.net/ds/colecods">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>PlayStation 1</td>
-                            <td>PCSX-Rearmed (via RetroArch)</td>
-                            <td style="background-color:#ffa000;">Assez bonne</td>
-                            <td>Universal-Updater (via le script RetroArch)</td>
-                          </tr>
-                          <tr>
-                            <td>Nintendo 64</td>
-                            <td>DaedalusX64 (release)</td>
-                            <td style="background-color:#e53935;">Mauvaise</td>
-                            <td><a href="https://db.universal-team.net/3ds/daedalusx64-3ds">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>Nintendo 64</td>
-                            <td>DaedalusX64 (beta)</td>
-                            <td style="background-color:#f57c00;">Médiocre</td>
-                            <td><a href="https://db.universal-team.net/3ds/daedalusx64-3ds">Universal-Updater</a></td>
-                          </tr>
-                          <tr>
-                            <td>Nintendo VirtualBoy</td>
-                            <td>r3Dragon</td>
-                            <td style="background-color:#f57c00;">Médiocre</td>
-                            <td><a href="https://db.universal-team.net/3ds/r3ddragon">Universal-Updater</a></td>
-                          </tr>
-                        </tbody>
-                      </table>
+                            </tbody>
+                        </table>
+                    </div>
 
                       <h2 class="titles" id="desinstallation-hack">X. Désinstallation du hack</h2>
                       <div class="disclaimer">
