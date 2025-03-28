@@ -64,12 +64,12 @@ Aide-PlayStation FR :
 
 # Nos partenaires :
 <div style="display: flex; flex-direction: row;">
-  <a href="https://sighya.fr"><img src="https://cdn.homebrew-france.fun/partner/sighya.png" width="150px"></a>
-  <a href="https://hacktuality.com/"><img src="https://cdn.homebrew-france.fun/partner/hacktuality.png" width="150px"></a>
-  <a href="https://jtech-informatique.fr"><img src="https://cdn.homebrew-france.fun/partner/jtech-informatique.png" width="150px"></a>
-  <a href="https://www.instant-gaming.com/fr/?igr=homebrewfrance%2F"><img src="https://cdn.homebrew-france.fun/partner/instant-gaming.png" width="150px"></a>
-  <a href="https://fixurphone.fr"><img src="https://cdn.homebrew-france.fun/partner/fixurphone.png" width="150px"></a>
-  <a href="https://luminix.app"><img src="https://cdn.homebrew-france.fun/partner/neochronix.png" width="150px"></a>
+  <a href="https://sighya.fr"><img src="https://cdn.homebrew-france.fun/partner/sighya.png" width="100px"></a>
+  <a href="https://hacktuality.com/"><img src="https://cdn.homebrew-france.fun/partner/hacktuality.png" width="100px"></a>
+  <a href="https://jtech-informatique.fr"><img src="https://cdn.homebrew-france.fun/partner/jtech-informatique.png" width="100px"></a>
+  <a href="https://www.instant-gaming.com/fr/?igr=homebrewfrance%2F"><img src="https://cdn.homebrew-france.fun/partner/instant-gaming.png" width="100px"></a>
+  <a href="https://fixurphone.fr"><img src="https://cdn.homebrew-france.fun/partner/fixurphone.png" width="100px"></a>
+  <a href="https://luminix.app"><img src="https://cdn.homebrew-france.fun/partner/neochronix.png" width="100px"></a>
 </div>
 
 # Copyrights :
