@@ -75,7 +75,7 @@ Aide-PlayStation FR :
 # Copyrights :
 Tous les contenus de ce site (images, vidéos et documents) appartiennent à Homebrew France, sauf mention contraire.\
 © 2021-2025 - Homebrew France\
-© 2025 - FIXurPHONE\
+© 2025 - FIXurPHONE
 
 # Transparence :
 Les fonctionnalités suivantes ont été conçues à l'aide de l'intelligence artificielle :
