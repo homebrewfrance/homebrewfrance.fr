@@ -1,0 +1,42 @@
+/* ---------------------- This file is used to manage all fonts from homebrewfrance.fr ----------------- */
+/* ------------- Ce fichier est utilisé pour gérer toutes les polices de homebrewfrance.fr ------------- */
+
+// Poppins Font - Variable
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+// Sora Font - Variable
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap');
+
+// Space Grotesk - Variable
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300..700&display=swap');
+
+// DM Sans - Variable
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+// Syne - Extrabold 
+@import url('https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap');
+
+$primary-font: 'Poppins', sans-serif;
+$secondary-font: 'Space Grotesk', sans-serif;
+$main-el-font: 'Sora', sans-serif;
+
+/* ----- PRIMARY FONT ----- */
+@mixin Primary-Default { font-family: $primary-font; }
+@mixin Primary-Regular { font-family: $primary-font; font-size: 0.88vw; }
+@mixin Primary-Little { font-family: $primary-font; font-size: 0.83vw; }
+@mixin Primary-Presentation { font-family: $primary-font; font-size: 1.51vw; }
+@mixin Primary-Big { font-family: $primary-font; font-size: 1.98vw; }
+
+/* ----- SECONDARY FONT ----- */
+@mixin Secondary-Default { font-family: $secondary-font; }
+@mixin Secondary-Regular { font-family: $secondary-font; font-size: 0.88vw; }
+@mixin Secondary-Little { font-family: $secondary-font; font-size: 0.83vw; }
+@mixin Secondary-Presentation { font-family: $secondary-font; font-size: 1.51vw; }
+@mixin Secondary-Big { font-family: $secondary-font; font-size: 1.98vw; }
+
+/* ----- MAIN-EL-FONT ----- */
+@mixin MainEL-Default { font-family: $main-el-font; }
+@mixin MainEL-Regular { font-family: $main-el-font; font-size: 0.88vw; }
+@mixin MainEL-Little { font-family: $main-el-font; font-size: 0.83vw; }
+@mixin MainEL-Presentation { font-family: $main-el-font; font-size: 1.51vw; }
+@mixin MainEL-Big { font-family: $main-el-font; font-size: 1.98vw; }

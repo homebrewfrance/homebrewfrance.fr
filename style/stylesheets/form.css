@@ -1,0 +1,147 @@
+/* 
+	Homebrew France Web V4
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+.time {
+    background: rgba(45, 49, 54, 0.26);
+    border-radius: 12px;
+    border: 1px solid #333;
+    font-family: 'Poppins', sans-serif;
+    padding: 7px;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+    margin: 3px;
+}
+
+.el {
+    margin-bottom: 12px;
+}
+
+.time:focus {
+    box-shadow: 0px 2px 5px #000000;			
+}
+#pseudo, #autres-rep, #autres-rep2, #date-naissance, #date-bannissement, #email, #djmoderes, #membership-duration {
+    background: rgba(45, 49, 54, 0.26);
+    border: 1px solid #333;
+    border-radius: 15px;
+    font-family: 'Poppins', sans-serif;
+    padding: 7px;
+    font-size: 19px;
+    font-weight: 200;
+    color: white;
+}
+
+.required-fields {
+    color: rgb(255, 133, 133);
+}
+
+#motivation {
+    background: rgba(45, 49, 54, 0.26);
+    border-radius: 15px;
+    border: 1px solid #333;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 200;
+    color: white;
+}
+
+#pseudo:focus, #autres-rep:focus, #autres-rep2:focus, #motivation:focus, #date-naissance:focus, #time:focus, #time2:focus, #djmoderes:focus, #membership-duration:focus {
+    box-shadow: 0px 2px 5px #000000;
+}
+.checkbox-container {
+    margin-left: 3%;
+}
+.formulaire-helper {
+    width: 450px;
+    height: auto;
+}
+
+
+input[type="checkbox"]:focus {
+    transform: none!important;
+}
+
+textarea {
+    resize: none;
+}
+
+
+input[type="checkbox"] {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 16px;
+    height: 16px;
+    font-weight: 200;
+}
+input[type="radio"] {
+    margin: 0;
+    padding: 0;
+}
+
+label {
+    margin: 0;
+}
+
+form {
+	background-color: #151518c4;
+	border-radius: 25px;
+	border: 1px solid #333;
+	box-shadow: 0px 10px 15px -4px #0000005e;
+    margin-block: 10px;
+    padding: 30px;
+}
+
+.formHelper h4 {
+    font-size: 19px;
+    margin-bottom: 5px;
+}
+
+textarea {
+    transition: 0.4s;
+}
+
+input {
+    font-weight: 200;
+    transition: 0.4s;
+}
+
+input:focus, textarea:focus {
+    outline: none!important;
+    box-shadow: 0px 2px 5px #000000;
+    cursor: text;
+}
+
+input:focus {
+    transform: scale(1.03);
+}
+
+textarea:focus {
+    transform: scale(1.008);
+}
+
+input:hover, textarea:hover {
+    cursor: default;
+}
+
+@media only screen and (max-width: 800px) {
+    form {
+        padding: 15px;
+    }
+}

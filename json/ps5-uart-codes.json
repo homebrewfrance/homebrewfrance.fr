@@ -1,0 +1,1696 @@
+{
+    "items": [
+        {
+            "code": "80000001",
+            "description": "Failed to access the thermal sensor"
+        },
+        {
+            "code": "80000004",
+            "description": "AC/DC power fail"
+        },
+        {
+            "code": "80000005",
+            "description": "SoC CPU power fail"
+        },
+        {
+            "code": "80000006",
+            "description": "SoC GFX power fail"
+        },
+        {
+            "code": "80000007",
+            "description": "SoC high temperature abnorm"
+        },
+        {
+            "code": "80000008",
+            "description": "Drive Dead Notify Timeout"
+        },
+        {
+            "code": "80000009",
+            "description": "AC in detect fail. Unexpected power loss/shutdown failure"
+        },
+        {
+            "code": "8000000A",
+            "description": "VRM HOT fatal"
+        },
+        {
+            "code": "8000000B",
+            "description": "Thermal shutdown unexpected"
+        },
+        {
+            "code": "8000000C",
+            "description": "SoC temperatur alert"
+        },
+        {
+            "code": "80050000",
+            "description": "SoC CPU VRM power failure (2 phases)"
+        },
+        {
+            "code": "80060000",
+            "description": "SoC GFX VRM power failure (6 phases)"
+        },
+        {
+            "code": "80068000",
+            "description": "SoC GFX VRM power failure (6 phases)"
+        },
+        {
+            "code": "80097CE4",
+            "description": "- Unknown (APU power)"
+        },
+        {
+            "code": "80800000",
+            "description": "Fatal shutdown by OS request. Kernel panic shutdown (case: single GDDR6 RAM ic failure. replaced -> fine) [CE-108262-9]"
+        },
+        {
+            "code": "80800014",
+            "description": "Fatal shutdown by OS request. TPM 2.0 chip / power failure"
+        },
+        {
+            "code": "8080001A",
+            "description": "Fatal shutdown by OS request. Non-native TPM 2.0 chip (after APU boot)"
+        },
+        {
+            "code": "80800020",
+            "description": "Fatal shutdown by OS request. RAM GDDR6 unspecific defect (replace)"
+        },
+        {
+            "code": "80800022",
+            "description": "Fatal shutdown by OS request. (Check cracked APU)"
+        },
+        {
+            "code": "80800023",
+            "description": "Fatal shutdown by OS request."
+        },
+        {
+            "code": "80800024",
+            "description": "Fatal shutdown by OS request. (Check cracked APU)"
+        },
+        {
+            "code": "80801028",
+            "description": "Fatal shutdown by OS request."
+        },
+        {
+            "code": "80801101",
+            "description": "RAM GDDR6 1 defect (replace)"
+        },
+        {
+            "code": "80801102",
+            "description": "RAM GDDR6 2 defect (replace)"
+        },
+        {
+            "code": "80801103",
+            "description": "RAM GDDR6 1 2 defect (replace)"
+        },
+        {
+            "code": "80801104",
+            "description": "RAM GDDR6 3 defect (replace)"
+        },
+        {
+            "code": "80801105",
+            "description": "RAM GDDR6 1 3 defect (replace)"
+        },
+        {
+            "code": "80801106",
+            "description": "RAM GDDR6 2 3 defect (replace)"
+        },
+        {
+            "code": "80801107",
+            "description": "RAM GDDR6 1 2 3 defect (replace)"
+        },
+        {
+            "code": "80801108",
+            "description": "RAM GDDR6 4 defect (replace)"
+        },
+        {
+            "code": "80801109",
+            "description": "RAM GDDR6 1 4 defect (replace)"
+        },
+        {
+            "code": "8080110A",
+            "description": "RAM GDDR6 2 4 defect (replace)"
+        },
+        {
+            "code": "8080110B",
+            "description": "RAM GDDR6 1 2 4 defect (replace)"
+        },
+        {
+            "code": "8080110C",
+            "description": "RAM GDDR6 3 4 defect (replace)"
+        },
+        {
+            "code": "8080110D",
+            "description": "RAM GDDR6 1 3 4 defect (replace)"
+        },
+        {
+            "code": "8080110E",
+            "description": "RAM GDDR6 2 3 4 defect (replace)"
+        },
+        {
+            "code": "8080110F",
+            "description": "RAM GDDR6 1 2 3 4 defect (replace)"
+        },
+        {
+            "code": "80801110",
+            "description": "RAM GDDR6 5 defect (replace)"
+        },
+        {
+            "code": "80801111",
+            "description": "RAM GDDR6 1 5 defect (replace)"
+        },
+        {
+            "code": "80801112",
+            "description": "RAM GDDR6 2 5 defect (replace)"
+        },
+        {
+            "code": "80801113",
+            "description": "RAM GDDR6 1 2 5 defect (replace)"
+        },
+        {
+            "code": "80801114",
+            "description": "RAM GDDR6 3 5 defect (replace)"
+        },
+        {
+            "code": "80801115",
+            "description": "RAM GDDR6 1 3 5 defect (replace)"
+        },
+        {
+            "code": "80801116",
+            "description": "RAM GDDR6 2 3 5 defect (replace)"
+        },
+        {
+            "code": "80801117",
+            "description": "RAM GDDR6 1 2 3 5 defect (replace)"
+        },
+        {
+            "code": "80801118",
+            "description": "RAM GDDR6 4 5 defect (replace)"
+        },
+        {
+            "code": "80801119",
+            "description": "RAM GDDR6 1 4 5 defect (replace)"
+        },
+        {
+            "code": "8080111A",
+            "description": "RAM GDDR6 2 4 5 defect (replace)"
+        },
+        {
+            "code": "8080111B",
+            "description": "RAM GDDR6 1 2 4 5 defect (replace)"
+        },
+        {
+            "code": "8080111C",
+            "description": "RAM GDDR6 3 4 5 defect (replace)"
+        },
+        {
+            "code": "8080111D",
+            "description": "RAM GDDR6 1 3 4 5 defect (replace)"
+        },
+        {
+            "code": "8080111E",
+            "description": "RAM GDDR6 2 3 4 5 defect (replace)"
+        },
+        {
+            "code": "8080111F",
+            "description": "RAM GDDR6 1 2 3 4 5 defect (replace)"
+        },
+        {
+            "code": "80801120",
+            "description": "RAM GDDR6 6 defect (replace)"
+        },
+        {
+            "code": "80801121",
+            "description": "RAM GDDR6 1 6 defect (replace)"
+        },
+        {
+            "code": "80801122",
+            "description": "RAM GDDR6 2 6 defect (replace)"
+        },
+        {
+            "code": "80801123",
+            "description": "RAM GDDR6 1 2 6 defect (replace)"
+        },
+        {
+            "code": "80801124",
+            "description": "RAM GDDR6 3 6 defect (replace)"
+        },
+        {
+            "code": "80801125",
+            "description": "RAM GDDR6 1 3 6 defect (replace)"
+        },
+        {
+            "code": "80801126",
+            "description": "RAM GDDR6 2 3 6 defect (replace)"
+        },
+        {
+            "code": "80801127",
+            "description": "RAM GDDR6 1 2 3 6 defect (replace)"
+        },
+        {
+            "code": "80801128",
+            "description": "RAM GDDR6 4 6 defect (replace)"
+        },
+        {
+            "code": "80801129",
+            "description": "RAM GDDR6 1 4 6 defect (replace)"
+        },
+        {
+            "code": "8080112A",
+            "description": "RAM GDDR6 2 4 6 defect (replace)"
+        },
+        {
+            "code": "8080112B",
+            "description": "RAM GDDR6 1 2 4 6 defect (replace)"
+        },
+        {
+            "code": "8080112C",
+            "description": "RAM GDDR6 3 4 6 defect (replace)"
+        },
+        {
+            "code": "8080112D",
+            "description": "RAM GDDR6 1 3 4 6 defect (replace)"
+        },
+        {
+            "code": "8080112E",
+            "description": "RAM GDDR6 2 3 4 6 defect (replace)"
+        },
+        {
+            "code": "8080112F",
+            "description": "RAM GDDR6 1 2 3 4 6 defect (replace)"
+        },
+        {
+            "code": "80801130",
+            "description": "RAM GDDR6 5 6 defect (replace)"
+        },
+        {
+            "code": "80801131",
+            "description": "RAM GDDR6 1 5 6 defect (replace)"
+        },
+        {
+            "code": "80801132",
+            "description": "RAM GDDR6 2 5 6 defect (replace)"
+        },
+        {
+            "code": "80801133",
+            "description": "RAM GDDR6 1 2 5 6 defect (replace)"
+        },
+        {
+            "code": "80801134",
+            "description": "RAM GDDR6 3 5 6 defect (replace)"
+        },
+        {
+            "code": "80801135",
+            "description": "RAM GDDR6 1 3 5 6 defect (replace)"
+        },
+        {
+            "code": "80801136",
+            "description": "RAM GDDR6 2 3 5 6 defect (replace)"
+        },
+        {
+            "code": "80801137",
+            "description": "RAM GDDR6 1 2 3 5 6 defect (replace)"
+        },
+        {
+            "code": "80801138",
+            "description": "RAM GDDR6 4 5 6 defect (replace)"
+        },
+        {
+            "code": "80801139",
+            "description": "RAM GDDR6 1 4 5 6 defect (replace)"
+        },
+        {
+            "code": "8080113A",
+            "description": "RAM GDDR6 2 4 5 6 defect (replace)"
+        },
+        {
+            "code": "8080113B",
+            "description": "RAM GDDR6 1 2 4 5 6 defect (replace)"
+        },
+        {
+            "code": "8080113C",
+            "description": "RAM GDDR6 3 4 5 6 defect (replace)"
+        },
+        {
+            "code": "8080113D",
+            "description": "RAM GDDR6 1 3 4 5 6 defect (replace)"
+        },
+        {
+            "code": "8080113E",
+            "description": "RAM GDDR6 2 3 4 5 6 defect (replace)"
+        },
+        {
+            "code": "8080113F",
+            "description": "RAM GDDR6 1 2 3 4 5 6 defect (replace)"
+        },
+        {
+            "code": "80801140",
+            "description": "RAM GDDR6 7 defect (replace)"
+        },
+        {
+            "code": "80801141",
+            "description": "RAM GDDR6 1 7 defect (replace)"
+        },
+        {
+            "code": "80801142",
+            "description": "RAM GDDR6 2 7 defect (replace)"
+        },
+        {
+            "code": "80801143",
+            "description": "RAM GDDR6 1 2 7 defect (replace)"
+        },
+        {
+            "code": "80801144",
+            "description": "RAM GDDR6 3 7 defect (replace)"
+        },
+        {
+            "code": "80801145",
+            "description": "RAM GDDR6 1 3 7 defect (replace)"
+        },
+        {
+            "code": "80801146",
+            "description": "RAM GDDR6 2 3 7 defect (replace)"
+        },
+        {
+            "code": "80801147",
+            "description": "RAM GDDR6 1 2 3 7 defect (replace)"
+        },
+        {
+            "code": "80801148",
+            "description": "RAM GDDR6 4 7 defect (replace)"
+        },
+        {
+            "code": "80801149",
+            "description": "RAM GDDR6 1 4 7 defect (replace)"
+        },
+        {
+            "code": "8080114A",
+            "description": "RAM GDDR6 2 4 7 defect (replace)"
+        },
+        {
+            "code": "8080114B",
+            "description": "RAM GDDR6 1 2 4 7 defect (replace)"
+        },
+        {
+            "code": "8080114C",
+            "description": "RAM GDDR6 3 4 7 defect (replace)"
+        },
+        {
+            "code": "8080114D",
+            "description": "RAM GDDR6 1 3 4 7 defect (replace)"
+        },
+        {
+            "code": "8080114E",
+            "description": "RAM GDDR6 2 3 4 7 defect (replace)"
+        },
+        {
+            "code": "8080114F",
+            "description": "RAM GDDR6 1 2 3 4 7 defect (replace)"
+        },
+        {
+            "code": "80801150",
+            "description": "RAM GDDR6 5 7 defect (replace)"
+        },
+        {
+            "code": "80801151",
+            "description": "RAM GDDR6 1 5 7 defect (replace)"
+        },
+        {
+            "code": "80801152",
+            "description": "RAM GDDR6 2 5 7 defect (replace)"
+        },
+        {
+            "code": "80801153",
+            "description": "RAM GDDR6 1 2 5 7 defect (replace)"
+        },
+        {
+            "code": "80801154",
+            "description": "RAM GDDR6 3 5 7 defect (replace)"
+        },
+        {
+            "code": "80801155",
+            "description": "RAM GDDR6 1 3 5 7 defect (replace)"
+        },
+        {
+            "code": "80801156",
+            "description": "RAM GDDR6 2 3 5 7 defect (replace)"
+        },
+        {
+            "code": "80801157",
+            "description": "RAM GDDR6 1 2 3 5 7 defect (replace)"
+        },
+        {
+            "code": "80801158",
+            "description": "RAM GDDR6 4 5 7 defect (replace)"
+        },
+        {
+            "code": "80801159",
+            "description": "RAM GDDR6 1 4 5 7 defect (replace)"
+        },
+        {
+            "code": "8080115A",
+            "description": "RAM GDDR6 2 4 5 7 defect (replace)"
+        },
+        {
+            "code": "8080115B",
+            "description": "RAM GDDR6 1 2 4 5 7 defect (replace)"
+        },
+        {
+            "code": "8080115C",
+            "description": "RAM GDDR6 3 4 5 7 defect (replace)"
+        },
+        {
+            "code": "8080115D",
+            "description": "RAM GDDR6 1 3 4 5 7 defect (replace)"
+        },
+        {
+            "code": "8080115E",
+            "description": "RAM GDDR6 2 3 4 5 7 defect (replace)"
+        },
+        {
+            "code": "8080115F",
+            "description": "RAM GDDR6 1 2 3 4 5 7 defect (replace)"
+        },
+        {
+            "code": "80801160",
+            "description": "RAM GDDR6 6 7 defect (replace)"
+        },
+        {
+            "code": "80801161",
+            "description": "RAM GDDR6 1 6 7 defect (replace)"
+        },
+        {
+            "code": "80801162",
+            "description": "RAM GDDR6 2 6 7 defect (replace)"
+        },
+        {
+            "code": "80801163",
+            "description": "RAM GDDR6 1 2 6 7 defect (replace)"
+        },
+        {
+            "code": "80801164",
+            "description": "RAM GDDR6 3 6 7 defect (replace)"
+        },
+        {
+            "code": "80801165",
+            "description": "RAM GDDR6 1 3 6 7 defect (replace)"
+        },
+        {
+            "code": "80801166",
+            "description": "RAM GDDR6 2 3 6 7 defect (replace)"
+        },
+        {
+            "code": "80801167",
+            "description": "RAM GDDR6 1 2 3 6 7 defect (replace)"
+        },
+        {
+            "code": "80801168",
+            "description": "RAM GDDR6 4 6 7 defect (replace)"
+        },
+        {
+            "code": "80801169",
+            "description": "RAM GDDR6 1 4 6 7 defect (replace)"
+        },
+        {
+            "code": "8080116A",
+            "description": "RAM GDDR6 2 4 6 7 defect (replace)"
+        },
+        {
+            "code": "8080116B",
+            "description": "RAM GDDR6 1 2 4 6 7 defect (replace)"
+        },
+        {
+            "code": "8080116C",
+            "description": "RAM GDDR6 3 4 6 7 defect (replace)"
+        },
+        {
+            "code": "8080116D",
+            "description": "RAM GDDR6 1 3 4 6 7 defect (replace)"
+        },
+        {
+            "code": "8080116E",
+            "description": "RAM GDDR6 2 3 4 6 7 defect (replace)"
+        },
+        {
+            "code": "8080116F",
+            "description": "RAM GDDR6 1 2 3 4 6 7 defect (replace)"
+        },
+        {
+            "code": "80801170",
+            "description": "RAM GDDR6 5 6 7 defect (replace)"
+        },
+        {
+            "code": "80801171",
+            "description": "RAM GDDR6 1 5 6 7 defect (replace)"
+        },
+        {
+            "code": "80801172",
+            "description": "RAM GDDR6 2 5 6 7 defect (replace)"
+        },
+        {
+            "code": "80801173",
+            "description": "RAM GDDR6 1 2 5 6 7 defect (replace)"
+        },
+        {
+            "code": "80801174",
+            "description": "RAM GDDR6 3 5 6 7 defect (replace)"
+        },
+        {
+            "code": "80801175",
+            "description": "RAM GDDR6 1 3 5 6 7 defect (replace)"
+        },
+        {
+            "code": "80801176",
+            "description": "RAM GDDR6 2 3 5 6 7 defect (replace)"
+        },
+        {
+            "code": "80801177",
+            "description": "RAM GDDR6 1 2 3 5 6 7 defect (replace)"
+        },
+        {
+            "code": "80801178",
+            "description": "RAM GDDR6 4 5 6 7 defect (replace)"
+        },
+        {
+            "code": "80801179",
+            "description": "RAM GDDR6 1 4 5 6 7 defect (replace)"
+        },
+        {
+            "code": "8080117A",
+            "description": "RAM GDDR6 2 4 5 6 7 defect (replace)"
+        },
+        {
+            "code": "8080117B",
+            "description": "RAM GDDR6 1 2 4 5 6 7 defect (replace)"
+        },
+        {
+            "code": "8080117C",
+            "description": "RAM GDDR6 3 4 5 6 7 defect (replace)"
+        },
+        {
+            "code": "8080117D",
+            "description": "RAM GDDR6 1 3 4 5 6 7 defect (replace)"
+        },
+        {
+            "code": "8080117E",
+            "description": "RAM GDDR6 2 3 4 5 6 7 defect (replace)"
+        },
+        {
+            "code": "8080117F",
+            "description": "RAM GDDR6 1 2 3 4 5 6 7 defect (replace)"
+        },
+        {
+            "code": "80801180",
+            "description": "RAM GDDR6 8 defect (replace)"
+        },
+        {
+            "code": "80801181",
+            "description": "RAM GDDR6 1 8 defect (replace)"
+        },
+        {
+            "code": "80801182",
+            "description": "RAM GDDR6 2 8 defect (replace)"
+        },
+        {
+            "code": "80801183",
+            "description": "RAM GDDR6 1 2 8 defect (replace)"
+        },
+        {
+            "code": "80801184",
+            "description": "RAM GDDR6 3 8 defect (replace)"
+        },
+        {
+            "code": "80801185",
+            "description": "RAM GDDR6 1 3 8 defect (replace)"
+        },
+        {
+            "code": "80801186",
+            "description": "RAM GDDR6 2 3 8 defect (replace)"
+        },
+        {
+            "code": "80801187",
+            "description": "RAM GDDR6 1 2 3 8 defect (replace)"
+        },
+        {
+            "code": "80801188",
+            "description": "RAM GDDR6 4 8 defect (replace)"
+        },
+        {
+            "code": "80801189",
+            "description": "RAM GDDR6 1 4 8 defect (replace)"
+        },
+        {
+            "code": "8080118A",
+            "description": "RAM GDDR6 2 4 8 defect (replace)"
+        },
+        {
+            "code": "8080118B",
+            "description": "RAM GDDR6 1 2 4 8 defect (replace)"
+        },
+        {
+            "code": "8080118C",
+            "description": "RAM GDDR6 3 4 8 defect (replace)"
+        },
+        {
+            "code": "8080118D",
+            "description": "RAM GDDR6 1 3 4 8 defect (replace)"
+        },
+        {
+            "code": "8080118E",
+            "description": "RAM GDDR6 2 3 4 8 defect (replace)"
+        },
+        {
+            "code": "8080118F",
+            "description": "RAM GDDR6 1 2 3 4 8 defect (replace)"
+        },
+        {
+            "code": "80801190",
+            "description": "RAM GDDR6 5 8 defect (replace)"
+        },
+        {
+            "code": "80801191",
+            "description": "RAM GDDR6 1 5 8 defect (replace)"
+        },
+        {
+            "code": "80801192",
+            "description": "RAM GDDR6 2 5 8 defect (replace)"
+        },
+        {
+            "code": "80801193",
+            "description": "RAM GDDR6 1 2 5 8 defect (replace)"
+        },
+        {
+            "code": "80801194",
+            "description": "RAM GDDR6 3 5 8 defect (replace)"
+        },
+        {
+            "code": "80801195",
+            "description": "RAM GDDR6 1 3 5 8 defect (replace)"
+        },
+        {
+            "code": "80801196",
+            "description": "RAM GDDR6 2 3 5 8 defect (replace)"
+        },
+        {
+            "code": "80801197",
+            "description": "RAM GDDR6 1 2 3 5 8 defect (replace)"
+        },
+        {
+            "code": "80801198",
+            "description": "RAM GDDR6 4 5 8 defect (replace)"
+        },
+        {
+            "code": "80801199",
+            "description": "RAM GDDR6 1 4 5 8 defect (replace)"
+        },
+        {
+            "code": "8080119A",
+            "description": "RAM GDDR6 2 4 5 8 defect (replace)"
+        },
+        {
+            "code": "8080119B",
+            "description": "RAM GDDR6 1 2 4 5 8 defect (replace)"
+        },
+        {
+            "code": "8080119C",
+            "description": "RAM GDDR6 3 4 5 8 defect (replace)"
+        },
+        {
+            "code": "8080119D",
+            "description": "RAM GDDR6 1 3 4 5 8 defect (replace)"
+        },
+        {
+            "code": "8080119E",
+            "description": "RAM GDDR6 2 3 4 5 8 defect (replace)"
+        },
+        {
+            "code": "8080119F",
+            "description": "RAM GDDR6 1 2 3 4 5 8 defect (replace)"
+        },
+        {
+            "code": "808011A0",
+            "description": "RAM GDDR6 6 8 defect (replace)"
+        },
+        {
+            "code": "808011A1",
+            "description": "RAM GDDR6 1 6 8 defect (replace)"
+        },
+        {
+            "code": "808011A2",
+            "description": "RAM GDDR6 2 6 8 defect (replace)"
+        },
+        {
+            "code": "808011A3",
+            "description": "RAM GDDR6 1 2 6 8 defect (replace)"
+        },
+        {
+            "code": "808011A4",
+            "description": "RAM GDDR6 3 6 8 defect (replace)"
+        },
+        {
+            "code": "808011A5",
+            "description": "RAM GDDR6 1 3 6 8 defect (replace)"
+        },
+        {
+            "code": "808011A6",
+            "description": "RAM GDDR6 2 3 6 8 defect (replace)"
+        },
+        {
+            "code": "808011A7",
+            "description": "RAM GDDR6 1 2 3 6 8 defect (replace)"
+        },
+        {
+            "code": "808011A8",
+            "description": "RAM GDDR6 4 6 8 defect (replace)"
+        },
+        {
+            "code": "808011A9",
+            "description": "RAM GDDR6 1 4 6 8 defect (replace)"
+        },
+        {
+            "code": "808011AA",
+            "description": "RAM GDDR6 2 4 6 8 defect (replace)"
+        },
+        {
+            "code": "808011AB",
+            "description": "RAM GDDR6 1 2 4 6 8 defect (replace)"
+        },
+        {
+            "code": "808011AC",
+            "description": "RAM GDDR6 3 4 6 8 defect (replace)"
+        },
+        {
+            "code": "808011AD",
+            "description": "RAM GDDR6 1 3 4 6 8 defect (replace)"
+        },
+        {
+            "code": "808011AE",
+            "description": "RAM GDDR6 2 3 4 6 8 defect (replace)"
+        },
+        {
+            "code": "808011AF",
+            "description": "RAM GDDR6 1 2 3 4 6 8 defect (replace)"
+        },
+        {
+            "code": "808011B0",
+            "description": "RAM GDDR6 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011B1",
+            "description": "RAM GDDR6 1 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011B2",
+            "description": "RAM GDDR6 2 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011B3",
+            "description": "RAM GDDR6 1 2 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011B4",
+            "description": "RAM GDDR6 3 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011B5",
+            "description": "RAM GDDR6 1 3 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011B6",
+            "description": "RAM GDDR6 2 3 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011B7",
+            "description": "RAM GDDR6 1 2 3 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011B8",
+            "description": "RAM GDDR6 4 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011B9",
+            "description": "RAM GDDR6 1 4 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011BA",
+            "description": "RAM GDDR6 2 4 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011BB",
+            "description": "RAM GDDR6 1 2 4 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011BC",
+            "description": "RAM GDDR6 3 4 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011BD",
+            "description": "RAM GDDR6 1 3 4 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011BE",
+            "description": "RAM GDDR6 2 3 4 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011BF",
+            "description": "RAM GDDR6 1 2 3 4 5 6 8 defect (replace)"
+        },
+        {
+            "code": "808011C0",
+            "description": "RAM GDDR6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011C1",
+            "description": "RAM GDDR6 1 7 8 defect (replace)"
+        },
+        {
+            "code": "808011C2",
+            "description": "RAM GDDR6 2 7 8 defect (replace)"
+        },
+        {
+            "code": "808011C3",
+            "description": "RAM GDDR6 1 2 7 8 defect (replace)"
+        },
+        {
+            "code": "808011C4",
+            "description": "RAM GDDR6 3 7 8 defect (replace)"
+        },
+        {
+            "code": "808011C5",
+            "description": "RAM GDDR6 1 3 7 8 defect (replace)"
+        },
+        {
+            "code": "808011C6",
+            "description": "RAM GDDR6 2 3 7 8 defect (replace)"
+        },
+        {
+            "code": "808011C7",
+            "description": "RAM GDDR6 1 2 3 7 8 defect (replace)"
+        },
+        {
+            "code": "808011C8",
+            "description": "RAM GDDR6 4 7 8 defect (replace)"
+        },
+        {
+            "code": "808011C9",
+            "description": "RAM GDDR6 1 4 7 8 defect (replace)"
+        },
+        {
+            "code": "808011CA",
+            "description": "RAM GDDR6 2 4 7 8 defect (replace)"
+        },
+        {
+            "code": "808011CB",
+            "description": "RAM GDDR6 1 2 4 7 8 defect (replace)"
+        },
+        {
+            "code": "808011CC",
+            "description": "RAM GDDR6 3 4 7 8 defect (replace)"
+        },
+        {
+            "code": "808011CD",
+            "description": "RAM GDDR6 1 3 4 7 8 defect (replace)"
+        },
+        {
+            "code": "808011CE",
+            "description": "RAM GDDR6 2 3 4 7 8 defect (replace)"
+        },
+        {
+            "code": "808011CF",
+            "description": "RAM GDDR6 1 2 3 4 7 8 defect (replace)"
+        },
+        {
+            "code": "808011D0",
+            "description": "RAM GDDR6 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011D1",
+            "description": "RAM GDDR6 1 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011D2",
+            "description": "RAM GDDR6 2 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011D3",
+            "description": "RAM GDDR6 1 2 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011D4",
+            "description": "RAM GDDR6 3 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011D5",
+            "description": "RAM GDDR6 1 3 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011D6",
+            "description": "RAM GDDR6 2 3 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011D7",
+            "description": "RAM GDDR6 1 2 3 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011D8",
+            "description": "RAM GDDR6 4 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011D9",
+            "description": "RAM GDDR6 1 4 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011DA",
+            "description": "RAM GDDR6 2 4 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011DB",
+            "description": "RAM GDDR6 1 2 4 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011DC",
+            "description": "RAM GDDR6 3 4 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011DD",
+            "description": "RAM GDDR6 1 3 4 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011DE",
+            "description": "RAM GDDR6 2 3 4 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011DF",
+            "description": "RAM GDDR6 1 2 3 4 5 7 8 defect (replace)"
+        },
+        {
+            "code": "808011E0",
+            "description": "RAM GDDR6 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011E1",
+            "description": "RAM GDDR6 1 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011E2",
+            "description": "RAM GDDR6 2 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011E3",
+            "description": "RAM GDDR6 1 2 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011E4",
+            "description": "RAM GDDR6 3 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011E5",
+            "description": "RAM GDDR6 1 3 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011E6",
+            "description": "RAM GDDR6 2 3 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011E7",
+            "description": "RAM GDDR6 1 2 3 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011E8",
+            "description": "RAM GDDR6 4 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011E9",
+            "description": "RAM GDDR6 1 4 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011EA",
+            "description": "RAM GDDR6 2 4 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011EB",
+            "description": "RAM GDDR6 1 2 4 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011EC",
+            "description": "RAM GDDR6 3 4 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011ED",
+            "description": "RAM GDDR6 1 3 4 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011EE",
+            "description": "RAM GDDR6 2 3 4 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011EF",
+            "description": "RAM GDDR6 1 2 3 4 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011F0",
+            "description": "RAM GDDR6 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011F1",
+            "description": "RAM GDDR6 1 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011F2",
+            "description": "RAM GDDR6 2 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011F3",
+            "description": "RAM GDDR6 1 2 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011F4",
+            "description": "RAM GDDR6 3 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011F5",
+            "description": "RAM GDDR6 1 3 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011F6",
+            "description": "RAM GDDR6 2 3 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011F7",
+            "description": "RAM GDDR6 1 2 3 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011F8",
+            "description": "RAM GDDR6 4 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011F9",
+            "description": "RAM GDDR6 1 4 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011FA",
+            "description": "RAM GDDR6 2 4 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011FB",
+            "description": "RAM GDDR6 1 2 4 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011FC",
+            "description": "RAM GDDR6 3 4 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011FD",
+            "description": "RAM GDDR6 1 3 4 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011FE",
+            "description": "RAM GDDR6 2 3 4 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "808011FF",
+            "description": "RAM GDDR6 1 2 3 4 5 6 7 8 defect (replace)"
+        },
+        {
+            "code": "80801620",
+            "description": "(related: RAM) (analog to 808011xx)"
+        },
+        {
+            "code": "80801630",
+            "description": "(related: RAM) (analog to 808011xx)"
+        },
+        {
+            "code": "80801640",
+            "description": "(related: RAM) (analog to 808011xx)"
+        },
+        {
+            "code": "80801690",
+            "description": "(related: RAM) (analog to 808011xx)"
+        },
+        {
+            "code": "808016B0",
+            "description": "(related: RAM) (analog to 808011xx)"
+        },
+        {
+            "code": "808016F0",
+            "description": "(related: RAM) (analog to 808011xx)"
+        },
+        {
+            "code": "80801F12",
+            "description": "(related: RAM) (analog to 808011xx)"
+        },
+        {
+            "code": "80802001",
+            "description": "SSD controller (coprocessor) <-> APU data"
+        },
+        {
+            "code": "80802220",
+            "description": "Fatal shutdown by OS request."
+        },
+        {
+            "code": "80810001",
+            "description": "Power sequence error [CE-105402-2]"
+        },
+        {
+            "code": "80810002",
+            "description": "Power sequence NVS access error"
+        },
+        {
+            "code": "80810013",
+            "description": "Power sequence DRAM init error"
+        },
+        {
+            "code": "80810014",
+            "description": "Power sequence Link Up error"
+        },
+        {
+            "code": "8081001A",
+            "description": "*? (related: SSD IC)"
+        },
+        {
+            "code": "80830000",
+            "description": "Shutdown/freeze after loading SAM-IPL: problem with DDR6 dataline (replace)"
+        },
+        {
+            "code": "80830018",
+            "description": "*? (related: Power)"
+        },
+        {
+            "code": "80830019",
+            "description": "*? (related: Power)"
+        },
+        {
+            "code": "808300F0",
+            "description": "Secure charger error"
+        },
+        {
+            "code": "808300F1",
+            "description": "*? Secure charger error"
+        },
+        {
+            "code": "80830060",
+            "description": "*? (case: white light and turns off, case2: solved by replacing all gddr6 ram ics)"
+        },
+        {
+            "code": "80840000",
+            "description": "PCIe link down"
+        },
+        {
+            "code": "80870001",
+            "description": "SSD controller RAM protect error"
+        },
+        {
+            "code": "80870002",
+            "description": "SSD controller RAM partity error"
+        },
+        {
+            "code": "80870003",
+            "description": "SSD controller boot failed [CE-105628-2] (Case edm-033 fuse 7001 blown, cap short at AQCM near ssd pmic)"
+        },
+        {
+            "code": "80870004",
+            "description": "SSD controller boot failed NoRecord [CE-105629-3]"
+        },
+        {
+            "code": "80870005",
+            "description": "SSD controller boot failed state error"
+        },
+        {
+            "code": "80871001",
+            "description": "SSD/DDR4 controller error (power failure/short circuit) (DA9081 1.2V S:apu)"
+        },
+        {
+            "code": "80871054",
+            "description": "SSD/Flash bank/s error*"
+        },
+        {
+            "code": "80871055",
+            "description": "SSD/Flash bank/s error"
+        },
+        {
+            "code": "80871062",
+            "description": "SSD controller <-> Syscon data line error (jumper)"
+        },
+        {
+            "code": "808710FF",
+            "description": "SSD controller <-> TPM 2.0 data line error (MISO MOSI)"
+        },
+        {
+            "code": "80880000",
+            "description": "SSD/DDR4 controller boot EAP error"
+        },
+        {
+            "code": "80891001",
+            "description": "SSD/DDR4 controller boot EFC error (power failure/short circuit) (DA9081 ..)"
+        },
+        {
+            "code": "80892003",
+            "description": "SSD/DDR4 controller boot EFC error (power failure/short circuit) (DA9081 ..)"
+        },
+        {
+            "code": "80894003",
+            "description": "SSD/DDR4 controller boot EFC error (power failure/short circuit) (DA9081 2.5V)"
+        },
+        {
+            "code": "8089400A",
+            "description": "SSD/DDR4 controller boot EFC error (power failure/short circuit)"
+        },
+        {
+            "code": "8089400F",
+            "description": "SSD/DDR4 controller boot EFC error (power failure/short circuit) (DA9081 1.2V S:fan)"
+        },
+        {
+            "code": "808940B8",
+            "description": "SSD/DDR4 controller boot EFC error SSD bank/s error"
+        },
+        {
+            "code": "808Axxxx",
+            "description": "SSD controller temperatur error (xxxx = temperatur)"
+        },
+        {
+            "code": "808B0027",
+            "description": "SSD controller watch dog timer error. WiFi/BT problem/power failure (02x 3.3V / F7002 5V)"
+        },
+        {
+            "code": "808B005F",
+            "description": "SSD controller watch dog timer error. *?"
+        },
+        {
+            "code": "808B00FF",
+            "description": "SSD controller watch dog timer error. case: XDPE faulty. After replacement PS5 working again"
+        },
+        {
+            "code": "808B0098",
+            "description": "SSD controller watch dog timer error. DDR4 error (communication problem)"
+        },
+        {
+            "code": "808C2092",
+            "description": "USB C error"
+        },
+        {
+            "code": "808C3090",
+            "description": "USB C error"
+        },
+        {
+            "code": "808C3790",
+            "description": "USB C error"
+        },
+        {
+            "code": "808C3F90",
+            "description": "USB C error"
+        },
+        {
+            "code": "808C4890",
+            "description": "USB C error"
+        },
+        {
+            "code": "808C4E90",
+            "description": "USB C error"
+        },
+        {
+            "code": "808C4F90",
+            "description": "USB C error"
+        },
+        {
+            "code": "808D0000",
+            "description": "Thermal shutdown SoC"
+        },
+        {
+            "code": "808D0001",
+            "description": "Thermal shutdown Sensor 1"
+        },
+        {
+            "code": "808D0002",
+            "description": "Thermal shutdown Sensor 2"
+        },
+        {
+            "code": "808D0002",
+            "description": "Thermal shutdown Sensor 3"
+        },
+        {
+            "code": "808E0000",
+            "description": "Communication error close error: highly software bug"
+        },
+        {
+            "code": "808E0001",
+            "description": "Communication error open error: highly software bug"
+        },
+        {
+            "code": "808E0002",
+            "description": "Communication error host write flag error: hardware or software bug"
+        },
+        {
+            "code": "808E0003",
+            "description": "Communication error EMC read flag error: hardware or software bug"
+        },
+        {
+            "code": "808E0004",
+            "description": "Communication error write flag error: hardware or software bug"
+        },
+        {
+            "code": "808E0005",
+            "description": "Communication error wait SIG1 error: hardware or software bug"
+        },
+        {
+            "code": "808E0006",
+            "description": "Communication error reset from host"
+        },
+        {
+            "code": "808E0007",
+            "description": "Communication error checksum error at SPM data"
+        },
+        {
+            "code": "808E829A",
+            "description": "- Unknown (TPM)"
+        },
+        {
+            "code": "808E0109",
+            "description": "- Unknown (TPM)"
+        },
+        {
+            "code": "808E0005",
+            "description": "- Unknown (TPM)"
+        },
+        {
+            "code": "808F0001",
+            "description": "TPM 2.0 chip timout"
+        },
+        {
+            "code": "808F0002",
+            "description": "TPM 2.0 chip reset"
+        },
+        {
+            "code": "808F0003",
+            "description": "TPM 2.0 chip TIS error"
+        },
+        {
+            "code": "808F00FF",
+            "description": "TPM 2.0 chip undef"
+        },
+        {
+            "code": "8090xxxx",
+            "description": "Fatal shutdown by error additional code"
+        },
+        {
+            "code": "80910002",
+            "description": "SSD PMIC error (power failure/short circuit) (504X 2V) [CE-105681-1]"
+        },
+        {
+            "code": "80910200",
+            "description": "SSD PMIC error (power failure/short circuit) (DA9081 1.2V S:apu)"
+        },
+        {
+            "code": "80910800",
+            "description": "SSD PMIC error (power failure/short circuit) (DA9081 1.2V S:fan)"
+        },
+        {
+            "code": "80912000",
+            "description": "SSD PMIC error (power faulure/short circuit) (DA9081 2.5V)"
+        },
+        {
+            "code": "80918000",
+            "description": "SSD PMIC error (power faulure/short circuit) (DA9081 0.8V)"
+        },
+        {
+            "code": "80C00114",
+            "description": "Watch dog for SoC"
+        },
+        {
+            "code": "80C00115",
+            "description": "Watch dog for EAP"
+        },
+        {
+            "code": "80C0012C",
+            "description": "BD drive detached"
+        },
+        {
+            "code": "80C0012D",
+            "description": "EMC Watch Dog Timer Error"
+        },
+        {
+            "code": "80C0012E",
+            "description": "ADC error button"
+        },
+        {
+            "code": "80C0012F",
+            "description": "ADC error BD drive"
+        },
+        {
+            "code": "80C00130",
+            "description": "ADC error AC in detect"
+        },
+        {
+            "code": "80C00131",
+            "description": "USB A over current"
+        },
+        {
+            "code": "80C00132",
+            "description": "FAN servo parameter access error"
+        },
+        {
+            "code": "80C00133",
+            "description": "WiFi/BT FW header invalid in DDR error"
+        },
+        {
+            "code": "80C00134",
+            "description": "WiFi/BT Firmware error"
+        },
+        {
+            "code": "80C00135",
+            "description": "WiFi/BT memory malloc failed"
+        },
+        {
+            "code": "80C00136",
+            "description": "WiFi/BT device not found (02x 1.8V)"
+        },
+        {
+            "code": "80C00137",
+            "description": "WiFi/BT misc error"
+        },
+        {
+            "code": "80C00138",
+            "description": "SSD Controller interrupt HW error"
+        },
+        {
+            "code": "80C00139",
+            "description": "BD drive eject assert delayed"
+        },
+        {
+            "code": "80C0013A",
+            "description": "WiFi related (case: Bad WiFi ic. After replacement fine.)"
+        },
+        {
+            "code": "80C00140",
+            "description": "APU Freeze (No Response) - GDDR6 data line problem (replace)"
+        },
+        {
+            "code": "80D001xx",
+            "description": "WiFi/BT error bulk out"
+        },
+        {
+            "code": "80D002xx",
+            "description": "WiFi/BT error bulk in"
+        },
+        {
+            "code": "80D002F5",
+            "description": "WiFi/BT error"
+        },
+        {
+            "code": "80D003xx",
+            "description": "WiFi/BT error init"
+        },
+        {
+            "code": "80D004xx",
+            "description": "WiFi/BT error download firmware"
+        },
+        {
+            "code": "80D00402",
+            "description": "WiFi/BT error"
+        },
+        {
+            "code": "80D004FD",
+            "description": "WiFi/BT error (case: Wifi ripped pad. After tracerepair fine.)"
+        },
+        {
+            "code": "80D004F5",
+            "description": "WiFi/BT error"
+        },
+        {
+            "code": "80D005xx",
+            "description": "WiFi/BT error release device"
+        },
+        {
+            "code": "80D006xx",
+            "description": "WiFi/BT error exec Cmd0"
+        },
+        {
+            "code": "80D007xx",
+            "description": "WiFi/BT error exec Cmd1"
+        },
+        {
+            "code": "80D0FFFD",
+            "description": "WiFi/BT error (case: Wifi ripped pad. After tracerepair fine.)"
+        },
+        {
+            "code": "B0xxxxxx",
+            "description": "XDPE bus error"
+        },
+        {
+            "code": "B0082108",
+            "description": "XDPE bus error"
+        },
+        {
+            "code": "B0088108",
+            "description": "XDPE bus error (case: defect XDPE chip. After replacement PS5 working again.)"
+        },
+        {
+            "code": "C0010303",
+            "description": "APU access error I2C"
+        },
+        {
+            "code": "C0020103",
+            "description": "APU access error SB-TSI I2C thermal sensor"
+        },
+        {
+            "code": "C0020203",
+            "description": "APU access error SB-TSI I2C thermal sensor"
+        },
+        {
+            "code": "C0020303",
+            "description": "APU access error SB-TSI I2C thermal sensor"
+        },
+        {
+            "code": "C00C0002",
+            "description": "VRM controller access error"
+        },
+        {
+            "code": "C00C0203",
+            "description": "VRM controller access error"
+        },
+        {
+            "code": "C00C0303",
+            "description": "VRM controller access error"
+        },
+        {
+            "code": "C00C6000",
+            "description": "VRM controller access error"
+        },
+        {
+            "code": "C00C8000",
+            "description": "VRM controller access error"
+        },
+        {
+            "code": "C00D0002",
+            "description": "PMIC access error (case: APU freeze/GDDR6 RAM issue/no light no beep)"
+        },
+        {
+            "code": "C0160203",
+            "description": "PMIC SSD access error (Short above F7502)"
+        },
+        {
+            "code": "C0160303",
+            "description": "PMIC SSD access error (Short above F7502)"
+        },
+        {
+            "code": "C0810002",
+            "description": "HDMI IC problem/power failure"
+        },
+        {
+            "code": "C0810303",
+            "description": "HDMI IC problem/data line short circuit/power failure"
+        },
+        {
+            "code": "C0900303",
+            "description": "USB C PD controller access error"
+        },
+        {
+            "code": "C0910303",
+            "description": "USB C DP MUX access error"
+        },
+        {
+            "code": "C0920002",
+            "description": "USB C Redriver access error"
+        },
+        {
+            "code": "E1200000",
+            "description": "XDPE phase pwm controller error VRM 2 phases"
+        },
+        {
+            "code": "E1203F18",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E120B298",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E1E00619",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E1E0061D",
+            "description": "XDPE phase pwm controller error VRM 2 phases"
+        },
+        {
+            "code": "E1E01519",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E1E0191D",
+            "description": "XDPE phase pwm controller error VRM 2 phases"
+        },
+        {
+            "code": "E1E01D06",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E2200000",
+            "description": "XDPE phase pwm controller error VRM 6 phases"
+        },
+        {
+            "code": "E2200116",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E2200195",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E2E00619",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E2E0061D",
+            "description": "XDPE phase pwm controller error VRM 6 phases"
+        },
+        {
+            "code": "E2E0191D",
+            "description": "XDPE phase pwm controller error VRM 6 phases"
+        },
+        {
+            "code": "E2E01506",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E2E01D06",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E3121F70",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E3122155",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E3122219",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "E3122336",
+            "description": "*? (related: XDPE)"
+        },
+        {
+            "code": "FFFFFFFF",
+            "description": "No Error"
+        }
+    ]
+}

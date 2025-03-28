@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+Sitemap: https://homebrewfrance.fr/sitemap.xml
+Disallow: /multi-checker/alcoolemie/index.html

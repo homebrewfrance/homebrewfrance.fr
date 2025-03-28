@@ -1,0 +1,46 @@
+{
+    "navigationItems": [
+        {
+            "name": "Accueil",
+            "url": "https://homebrewfrance.fr/",
+            "id": "accueilLink",
+            "icon": "<i class=\"fa-solid fa-house\"></i>",
+            "category": "nav-link"
+        },
+        {
+            "name": "Téléchargements",
+            "url": "https://homebrewfrance.fr/telechargements/",
+            "id": "telechargementsLink",
+            "icon": "<i class=\"fas fa-file-download\"></i>",
+            "category": "nav-link"
+        },
+        {
+            "name": "Docs",
+            "id": "docsDrop",
+            "category": "dropdown-item"
+        },
+        {
+            "name": "Multi-Checker",
+            "id": "multicheckerDrop",
+            "category": "dropdown-item"
+        },
+        {
+            "name": "Recrutements",
+            "url": "https://homebrewfrance.fr/devenir-helper/",
+            "id": "recrutementsLink",
+            "category": "nav-link"
+        },
+        {
+            "name": "Boutique",
+            "url": "https://homebrewfrance.fr/boutique/",
+            "id": "boutiqueLink",
+            "category": "nav-link"
+        },
+        {
+            "name": "À propos",
+            "url": "https://homebrewfrance.fr/a-propos/",
+            "id": "aproposLink",
+            "category": "nav-link"
+        }
+    ]
+}
