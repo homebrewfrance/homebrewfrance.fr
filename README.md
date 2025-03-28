@@ -1,3 +1,5 @@
+[![Discord](https://img.shields.io/discord/883623179979984896?logo=discord&label=Homebrew%20France)](https://discord.gg/le-homebrew-france-883623179979984896) ![GitHub Repo stars](https://img.shields.io/github/stars/homebrewfrance/homebrewfrance.fr)
+
 <img src="https://cdn.homebrew-france.fun/github/hbf-web.png">
 
 # Homebrew France - Web Services
