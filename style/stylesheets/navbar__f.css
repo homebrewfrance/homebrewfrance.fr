@@ -123,14 +123,23 @@ html, body {
   top: 0;
   display: flex;
   height: 80px auto;
-  background-color: rgba(31, 32, 35, 0.4392156863);
+  background-color: rgba(21, 21, 24, 0.6039215686);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  border-bottom: 0.8px solid rgba(66, 66, 66, 0.425);
-  padding-block: 15px;
+  border: 0.8px solid rgba(66, 66, 66, 0.425);
+  padding-block: 12px;
   z-index: 550;
-  width: 100%;
   overflow: visible;
+  border-radius: 50px;
+  padding-inline: 15px;
+  margin-top: 9px;
+  box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.368627451);
+}
+
+.navbar-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
 
 .active {
@@ -220,6 +229,7 @@ html, body {
   display: none;
   width: auto;
   transition: 0.3s;
+  padding: 7px;
 }
 
 .lumiaIconNav {
@@ -242,10 +252,6 @@ html, body {
   .nav-link, .dropdown-item {
     margin-inline: 25px;
   }
-  .navbar {
-    padding-inline: 7%;
-    justify-content: center;
-  }
   #navbarToggler {
     display: none;
   }
@@ -254,20 +260,18 @@ html, body {
   }
   .dropdown-menu {
     position: absolute;
-    background-color: rgba(31, 32, 35, 0.4392156863);
+    background-color: rgba(21, 21, 24, 0.6039215686);
+    box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.368627451);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-right: 0.8px solid rgba(66, 66, 66, 0.425);
-    border-left: 0.8px solid rgba(66, 66, 66, 0.425);
-    border-bottom: 0.8px solid rgba(66, 66, 66, 0.425);
-    border-bottom-left-radius: 11px;
-    border-bottom-right-radius: 11px;
+    border: 0.8px solid rgba(66, 66, 66, 0.425);
+    border-radius: 15px;
     transition: 0.3s;
     font-family: "Sora", sans-serif;
     top: 100%;
-    left: 0;
+    left: -40px;
     z-index: 7000;
-    margin-top: 15px;
+    margin-top: 20px;
   }
   .showDropdown {
     display: flex;
@@ -291,43 +295,10 @@ html, body {
     flex-direction: row;
   }
 }
-@media only screen and (min-width: 1000px) and (max-width: 1030px) {
-  .nav-link, .dropdown-item {
+@media only screen and (max-width: 800px) {
+  .navbar {
+    width: 95%;
     margin-inline: 11px;
-  }
-  .navbar {
-    padding-inline: 4%;
-    justify-content: center;
-  }
-}
-@media only screen and (min-width: 1030px) and (max-width: 1180px) {
-  .nav-link, .dropdown-item {
-    margin-inline: 12px;
-  }
-  .navbar {
-    padding-inline: 4%;
-    justify-content: center;
-  }
-}
-@media only screen and (min-width: 1180px) and (max-width: 1280px) {
-  .navbar {
-    padding-inline: 5%;
-    justify-content: center;
-  }
-}
-@media only screen and (min-width: 1230px) and (max-width: 1380px) {
-  .nav-link, .dropdown-item {
-    margin-inline: 16px;
-  }
-  #navbarToggler {
-    display: none;
-  }
-  #mobileItems {
-    display: none;
-  }
-  .navbar {
-    padding-inline: 6%;
-    justify-content: center;
   }
 }
 @media only screen and (min-width: 1000px) and (max-width: 1230px) {
@@ -345,7 +316,8 @@ html, body {
   }
   .dropdown-menu {
     position: absolute;
-    background-color: rgba(31, 32, 35, 0.4392156863);
+    background-color: rgba(21, 21, 24, 0.6039215686);
+    box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.368627451);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-right: 0.8px solid rgba(66, 66, 66, 0.425);
@@ -419,7 +391,6 @@ html, body {
   .navbar {
     display: flex;
     flex-direction: column;
-    padding-inline: 3%;
   }
   .dropdown-item {
     display: flex;
@@ -428,7 +399,8 @@ html, body {
     text-align: left;
   }
   .dropdown-menu {
-    background-color: rgba(31, 32, 35, 0.4392156863);
+    background-color: rgba(21, 21, 24, 0.6039215686);
+    box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.368627451);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
     border-radius: 11px;
@@ -487,7 +459,7 @@ html, body {
   align-items: center;
   margin-block: 2px;
   margin-inline: 4px;
-  border-radius: 6px;
+  border-radius: 11px;
 }
 .drop-item img {
   vertical-align: middle;
@@ -550,7 +522,7 @@ html, body {
 }
 
 footer {
-  background-color: rgba(31, 32, 35, 0.4392156863);
+  background-color: rgba(21, 21, 24, 0.6039215686);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
   padding-block: 18px;

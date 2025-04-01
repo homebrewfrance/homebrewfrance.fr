@@ -1000,10 +1000,9 @@ thead, tfoot {
 	border-radius: 3px;
 }*/
 .credits-container {
-  background-color: rgba(21, 21, 24, 0.768627451);
+  background-color: rgba(31, 32, 35, 0.3137254902);
   border-radius: 25px;
-  border: 1px solid #333;
-  box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.368627451);
+  border: 1px solid rgba(153, 153, 153, 0);
   padding: 20px;
   margin-block: 12px;
 }

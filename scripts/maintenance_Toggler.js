@@ -55,12 +55,12 @@ console.log(pageID);
 
 
 if (pageID.startsWith('DOC') && (!pageID.includes('Revanced'))) {
-    var doc_warning = document.createElement('div');
+    /*var doc_warning = document.createElement('div');
     doc_warning.className = 'doc-warning';
     doc_warning.innerHTML = `
         <div><img src="https://cdn.homebrew-france.fun/generic/lumia-guides.png" id="lumia_ic_warn">&nbsp;${global_doc_warning} (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020740345">Art. L335-3 du <span title="Code de la propriété intellectuelle">C.P.I</span>)</a></div> <div id="closeWarning" title="Fermer" style="margin-left: 15px;"><i class="fas fa-times-circle"></i></div>
     `
-    bodyElement.appendChild(doc_warning);
+    bodyElement.appendChild(doc_warning);*/
 }
 
 if (pageID.startsWith('DOC')) {
@@ -83,6 +83,7 @@ if (pageID.startsWith('DOC')) {
     })
 }
 
+
 function updateDeviceHeight() {
     const deviceHeight = window.innerHeight;
     document.documentElement.style.setProperty('--device-height', `${deviceHeight}px`);
@@ -92,9 +93,12 @@ function updateDeviceWidth() {
     const deviceWidth = window.innerWidth;
     document.documentElement.style.setProperty('--device-width', `${deviceWidth}px`);
 }
+
+
   
 
 updateDeviceHeight();
 updateDeviceWidth();
+
 window.addEventListener('resize', updateDeviceHeight);
 window.addEventListener('resize', updateDeviceWidth);

@@ -16,6 +16,7 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+var htmlpage = document.getElementsByTagName('html')[0];
 const body = document.getElementsByTagName('body')[0];
 const usrAgent = navigator.userAgent;
 var websiteIcon = "https://cdn.homebrew-france.fun/generic/beta_website-icon.png";
@@ -27,24 +28,23 @@ if (pageID.startsWith('DOC')) {
 }
 
 const nav = document.createElement('div');
-nav.className = 'navbar'
+nav.className = 'navbar-container'
 nav.innerHTML = `
-<div id="navContainer">
-    <img id="navIcon" src="${websiteIcon}" ${optionalClass} style="height: 45px; width: 45px;" title="${websiteIconTitle}">
-    <div id="navbarToggler">
-        <img id="hamburgerMenu" src="https://cdn.homebrew-france.fun/generic/hamburger-icon.png" style="height: 38px; width: 38px;">
+<div class="navbar">
+    <div id="navContainer">
+        <img id="navIcon" src="${websiteIcon}" ${optionalClass} style="height: 45px; width: 45px;" title="${websiteIconTitle}">
+        <div id="navbarToggler">
+            <img id="hamburgerMenu" src="https://cdn.homebrew-france.fun/generic/hamburger-icon.png" style="height: 38px; width: 38px;">
+        </div>
     </div>
+    <span id="desktopItems">
+    </span>
+    <span id="mobileItems">
+    </span>
 </div>
-<span id="desktopItems">
-</span>
-<span id="mobileItems">
-</span>
 `;
 
-body.appendChild(nav);
-
-const navContainer = document.createElement('div');
-navContainer.id = "navContainer";
+htmlpage.appendChild(nav);
 
 const navIcon = document.getElementById('navIcon');
 navIcon.onclick = function() {
@@ -156,6 +156,16 @@ function createDropdownItemsMobile(dropdownsItems) {
     }
 }
 
+function updateNavbarWidth() {
+    var navbarElement = document.getElementsByClassName('navbar')[0];
+    if (navbarElement) {
+        const navbarWidth = navbarElement.offsetWidth;  
+        document.documentElement.style.setProperty('--navbar-width', `${navbarWidth}px`);
+        const navbarHeight = navbarElement.offsetHeight;  
+        document.documentElement.style.setProperty('--navbar-height', `${navbarHeight}px`);
+    }
+}
+
 document.addEventListener('DOMContentLoaded', function () {
     const navbarToggler = document.getElementById("navbarToggler");
     const mobileNavMenu = document.getElementById("mobileItems");
@@ -170,6 +180,8 @@ document.addEventListener('DOMContentLoaded', function () {
             const navigationItems = data.navigationItems;
             createNavbarItemsDesktop(navigationItems);
             createNavbarItemsMobile(navigationItems);
+            updateNavbarWidth();
+            window.addEventListener('resize', updateNavbarWidth);
 
             document.querySelectorAll('.dropdown-item').forEach(item => {
                 const dropdownMenuDesktop = document.querySelector('#desktopItems div#' + item.id + '-menu');

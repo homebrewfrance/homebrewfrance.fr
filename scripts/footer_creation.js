@@ -40,7 +40,7 @@ footer.innerHTML = `
                 <a href="https://github.com/homebrewfrance/" title="Notre organisation GitHub"><i class="fa-brands fa-github"></i></a>
                 <a href="https://homebrewfrance.fr/discord/" title="Notre serveur Discord"><i class="fa-brands fa-discord"></i></a>
                 <a href="https://instagram.com/homebrewfrance" title="Notre compte Instagram"><i class="fa-brands fa-instagram"></i></a>
-                <a href="mailto:support@homebrewfrance.fr" title="Nous contacter par e-mail" style="margin-left: 5px;"><i class="fa-solid fa-envelope"></i></a>
+                <a href="https://www.linkedin.com/company/homebrewfrance" title="Notre page LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             </div>
             <a title="Contester un bannissement" href="https://homebrewfrance.fr/deban/">Débannissement</a>
             <a title="Recrutements" href="https://homebrewfrance.fr/devenir-helper">Recrutements</a>
