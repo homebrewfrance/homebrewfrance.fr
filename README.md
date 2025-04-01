@@ -10,10 +10,11 @@ Un site web conçu pour la communauté Homebrew France.
 - **Lumia-Guides :** des guides en ligne vous permettant de jailbreak certaines consoles et installer certains logiciels et tweaks.
 - **Boutique :** une boutique en ligne pour acheter des services de modification de consoles et pour acheter des consoles modifiées.
 
-# Langages utilisés :
-- **HTML :** pour la mise en page.
-- **SCSS :** pour la mise en forme du site.
-- **JavaScript :** pour les interactions dans le site.
+# Langages, outils et framework utilisés :
+![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
+![jQuery](https://img.shields.io/badge/jquery-%230769AD.svg?style=for-the-badge&logo=jquery&logoColor=white)
+![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
+![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
 
 # Crédits du site :
 [Dhalian](https://github.com/Dhalian) :
