@@ -1,5 +1,5 @@
 /* 
-	Homebrew France Web V4
+	Homebrew France Web V4.0.0-Beta
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -17,6 +17,10 @@
 */
 
 @import 'fonts.scss';
+
+/**/
+
+/* ----- DEBUT GESTION DE L'ACCEPTATION DES COOKIES ----- */
 
 .cookie-box {
 	position: fixed;
@@ -51,6 +55,12 @@
     box-shadow: 0 0 10px rgba(222, 150, 255, 0.5);
 	transform: scale(1.05);
 }
+
+/* ----- FIN GESTION DE L'ACCEPTATION DES COOKIES ----- */
+
+/**/
+
+
 
 .hbf-version {
 	color: #9a78d8;
@@ -105,6 +115,10 @@ html, body {
 .grayed:hover::after {
     content: none!important;
 }
+
+/**/
+
+/* ----- DEBUT STYLES BARRE DE NAVIGATION // DROPDOWN MENUS ----- */
 
 .navbar {
     position: fixed;
@@ -226,6 +240,9 @@ html, body {
     box-shadow: none!important;
 }
 
+/* ----- FIN STYLES DE LA BARRE DE NAVIGATION // DROPDOWN MENUS ----- */
+
+/**/
 
 @media only screen and (min-width: 1380px) {
     .cookie-button {
@@ -576,6 +593,7 @@ footer {
         margin-inline: 4px;
     }
 }
+
 .footer-p {
     text-align: center;
     color: white;

@@ -1,6 +1,6 @@
 @charset "UTF-8";
 /* 
-	Homebrew France Web V4
+	Homebrew France Web V4.0.0-Beta
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -409,214 +409,25 @@
     margin-top: 8px;
   }
 }
-.newsletter {
-  position: fixed;
-  max-width: 60%;
-  flex-direction: column;
-  display: flex;
-  z-index: 99999;
-  background: rgba(34, 30, 30, 0.5);
-  border-radius: 25px;
-  -webkit-backdrop-filter: blur(12px);
-          backdrop-filter: blur(12px);
-  padding: 15px;
+/* ---- DEBUT STYLES GENERIQUES ---- */
+.warning, .header_discord {
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 17px;
+  font-family: "Space Grotesk", sans-serif;
+  border: 1px solid #75418d;
   width: 100%;
-}
-
-.newslettericon {
-  width: 40px;
-  height: 40px;
-  aspect-ratio: 1/1;
-  border-radius: 50%;
-  align-self: center;
-  justify-self: center;
-  margin-right: 11px;
-}
-
-.blurred {
-  filter: blur(8px);
-}
-
-.partner-category {
-  color: #9a78d8;
-  background-color: #362744;
-  font-size: 16px;
-  border-radius: 7px;
-  padding-inline: 5px;
-  padding-block: 2px;
-  font-family: "Space Grotesk", sans-serif;
-  align-items: center;
-  margin-left: 6px;
-  transform: translateY(-2px);
-}
-
-.docs {
-  align-items: center;
-  justify-content: center;
-  display: flex;
-}
-
-.socials-container {
-  justify-content: space-between;
-}
-
-.coordonnees-container {
-  word-break: break-word;
-}
-
-.pres, .pres-fup {
-  border-radius: 25px;
-  background-color: rgba(31, 32, 35, 0.3137254902);
-}
-.pres p, .pres-fup p {
-  color: #9e9e9e;
-}
-
-.fondator::after {
-  font-family: "Font Awesome 6 Free";
-  font-weight: 900;
-  content: "\f521";
-  margin-left: 5px;
-  color: rgb(141, 141, 141);
-}
-
-.qrcode {
-  border-radius: 13px;
-}
-
-.music-link:hover {
-  cursor: pointer;
-}
-
-.article-container {
-  overflow: scroll;
-  flex-wrap: wrap !important;
-  display: flex;
-}
-
-.article-date {
-  color: #9a78d8;
-  background-color: #362744;
-  font-size: 16px;
-  border-radius: 7px;
-  padding-inline: 5px;
-  font-family: "Space Grotesk", sans-serif;
-  align-items: center;
-}
-
-.article-error {
-  color: #d87878;
-  background-color: #442727;
-  font-size: 16px;
-  border-radius: 7px;
-  padding-inline: 3px;
-}
-
-.article-author-value {
-  color: #c9c9c9;
-}
-
-.navigationElements::before {
-  content: "Ã¢Â¯Ë†  ";
-}
-
-.indicator {
-  font-family: "Sora", sans-serif;
   font-weight: 400;
-  text-align: center;
+  padding-block: 8px;
+  box-shadow: 0 0 10px rgba(222, 150, 255, 0.3);
+  margin-top: 17px;
+  align-content: space-between;
+  border-radius: 11px;
 }
 
-.indicator-desc {
-  font-family: "Poppins", sans-serif;
-  font-weight: 250;
-  margin-top: 11px;
-  text-align: center;
+.alcool:hover {
+  cursor: default;
 }
 
-#indicatorSeparator {
-  height: 1px;
-  background-color: rgba(76, 76, 76, 0.4784313725);
-  border: none;
-  margin-top: 25px;
-}
-
-#rss-feed {
-  display: flex;
-}
-
-#nobuyoshi-grid {
-  padding: 6px;
-  background: rgba(32, 39, 54, 0.8);
-  border: none;
-  border-radius: 15px;
-}
-
-.nobuyoshi-item a:hover {
-  text-shadow: none;
-}
-
-.nobuyoshi-item {
-  display: flex;
-  flex-direction: column;
-  background-color: rgba(20, 20, 22, 0.631372549);
-  border-radius: 25px;
-  border: 1px solid #333;
-  transition: 0.3s;
-  overflow-wrap: anywhere;
-  margin: 10px;
-  animation-name: articleAnim;
-  animation-duration: 2s;
-  animation-delay: 0s;
-  animation-fill-mode: backwards;
-  position: relative;
-  transition: 0.3s;
-  align-items: center;
-  padding-inline: 2px;
-  margin-inline: 8px !important;
-  padding-top: 35px !important;
-  padding: 15px;
-  box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.368627451);
-}
-
-.nobuyoshi-error {
-  display: flex;
-  flex-direction: row;
-  border-radius: 25px;
-  transition: 0.3s;
-  padding: 23px;
-  height: 155 auto;
-  overflow-wrap: anywhere;
-  margin-bottom: 7px;
-  animation-name: articleAnim;
-  animation-duration: 2s;
-  animation-delay: 0s;
-  animation-fill-mode: backwards;
-  position: relative;
-  transition: 0.3s;
-  background-color: rgba(51, 29, 29, 0.631372549) !important;
-  border: 1px solid #ff9696 !important;
-}
-
-@keyframes articleAnim {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
-@keyframes gridAnim {
-  from {
-    transform: translateY(20px);
-    opacity: 0;
-  }
-  to {
-    transform: translateY(0);
-    opacity: 1;
-  }
-}
 ul {
   margin-left: 30px;
   margin-block: 13px;
@@ -763,49 +574,222 @@ img {
   height: auto;
 }
 
-div.gallery {
-  border-radius: 15px;
-  border: 1px solid #ccc;
-  width: 180px;
-  background-color: white;
-  margin: 8px auto;
-  float: left;
-}
-
-div.gallery:hover {
-  border: 1px solid #777;
-}
-
-div.gallery img {
-  width: 100%;
-  height: auto;
-  border: 1px solid #000;
-  border-radius: 15px;
-}
-
-div.desc {
-  padding: 15px;
-  text-align: center;
-}
-
-table, td {
-  border: 1px solid #fff;
-  padding: 10px;
-  text-align: center;
-}
-
-thead, tfoot {
-  background-color: #333;
-  text-align: center;
-}
-
 .btn-container-home {
   display: flex;
   flex-direction: row;
   margin-left: -8px;
 }
 
-/* ----BOUTONS ---- */
+.cat-separator {
+  margin-top: 5%;
+}
+
+.titles {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(180deg, rgb(255, 255, 255) 33%, rgb(216, 216, 216) 50%, rgb(8, 8, 8) 100%);
+  --webkit-background-clip: text;
+  -webkit-background-clip: text;
+          background-clip: text;
+  color: transparent;
+  font-weight: 700;
+  margin-top: 45px;
+  margin-bottom: 5px;
+  word-break: break-word;
+}
+
+.titles-desc {
+  color: rgb(133, 133, 133);
+  font-size: 16px;
+  margin-bottom: 17px;
+}
+
+.credits-container {
+  background-color: rgba(31, 32, 35, 0.3137254902);
+  border-radius: 25px;
+  border: 1px solid rgba(153, 153, 153, 0);
+  padding: 20px;
+  margin-block: 12px;
+}
+
+.blurred {
+  filter: blur(8px);
+}
+
+.partner-category {
+  color: #9a78d8;
+  background-color: #362744;
+  font-size: 16px;
+  border-radius: 7px;
+  padding-inline: 5px;
+  padding-block: 2px;
+  font-family: "Space Grotesk", sans-serif;
+  align-items: center;
+  margin-left: 6px;
+  transform: translateY(-2px);
+}
+
+.docs {
+  align-items: center;
+  justify-content: center;
+  display: flex;
+}
+
+.socials-container {
+  justify-content: space-between;
+}
+
+.coordonnees-container {
+  word-break: break-word;
+}
+
+.pres, .pres-fup {
+  border-radius: 25px;
+  background-color: rgba(31, 32, 35, 0.3137254902);
+}
+.pres p, .pres-fup p {
+  color: #9e9e9e;
+}
+
+.fondator::after {
+  font-family: "Font Awesome 6 Free";
+  font-weight: 900;
+  content: "\f521";
+  margin-left: 5px;
+  color: rgb(141, 141, 141);
+}
+
+.qrcode {
+  border-radius: 13px;
+}
+
+.music-link:hover {
+  cursor: pointer;
+}
+
+.article-container {
+  overflow: scroll;
+  flex-wrap: wrap !important;
+  display: flex;
+}
+
+.article-date {
+  color: #9a78d8;
+  background-color: #362744;
+  font-size: 16px;
+  border-radius: 7px;
+  padding-inline: 5px;
+  font-family: "Space Grotesk", sans-serif;
+  align-items: center;
+}
+
+.article-error {
+  color: #d87878;
+  background-color: #442727;
+  font-size: 16px;
+  border-radius: 7px;
+  padding-inline: 3px;
+}
+
+.article-author-value {
+  color: #c9c9c9;
+}
+
+/* ---- FIN STYLES GENERIQUES ---- */
+/**/
+/* ---- DEBUT STYLES HAUT DE PAGE ---- */
+.indicator {
+  font-family: "Sora", sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.indicator-desc {
+  font-family: "Poppins", sans-serif;
+  font-weight: 250;
+  margin-top: 11px;
+  text-align: center;
+}
+
+#indicatorSeparator {
+  height: 1px;
+  background-color: rgba(76, 76, 76, 0.4784313725);
+  border: none;
+  margin-top: 25px;
+}
+
+/* ---- FIN STYLES HAUT DE PAGE ---- */
+/**/
+/* ---- DEBUT STYLES GRIDS GENERIQUES ---- */
+#rss-feed {
+  display: flex;
+}
+
+#nobuyoshi-grid {
+  padding: 6px;
+  background: rgba(32, 39, 54, 0.8);
+  border: none;
+  border-radius: 15px;
+}
+
+.nobuyoshi-item a:hover {
+  text-shadow: none;
+}
+
+.nobuyoshi-item {
+  display: flex;
+  flex-direction: column;
+  background-color: rgba(20, 20, 22, 0.631372549);
+  border-radius: 25px;
+  border: 1px solid #333;
+  transition: 0.3s;
+  overflow-wrap: anywhere;
+  margin: 10px;
+  animation-name: articleAnim;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: backwards;
+  position: relative;
+  transition: 0.3s;
+  align-items: center;
+  padding-inline: 2px;
+  margin-inline: 8px !important;
+  padding-top: 35px !important;
+  padding: 15px;
+  box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.368627451);
+}
+
+.nobuyoshi-error {
+  display: flex;
+  flex-direction: row;
+  border-radius: 25px;
+  transition: 0.3s;
+  padding: 23px;
+  height: 155 auto;
+  overflow-wrap: anywhere;
+  margin-bottom: 7px;
+  animation-name: articleAnim;
+  animation-duration: 2s;
+  animation-delay: 0s;
+  animation-fill-mode: backwards;
+  position: relative;
+  transition: 0.3s;
+  background-color: rgba(51, 29, 29, 0.631372549) !important;
+  border: 1px solid #ff9696 !important;
+}
+
+@keyframes articleAnim {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+/* ---- FIN STYLES ARTICLES ---- */
+/**/
+/* ---- DEBUT STYLES BOUTONS ---- */
 .page button, .grid-downloads button, .grid-staff button, .popup button {
   margin-top: 15px;
   font-family: "Space Grotesk", sans-serif;
@@ -963,50 +947,19 @@ thead, tfoot {
   cursor: pointer;
 }
 
-/* ---- */
-/* ---- STYLES GENERIQUES ---- */
-.cat-separator {
-  margin-top: 5%;
+/* ----- FIN STYLES BOUTONS ----- */
+/**/
+/* ---- DEBUT STYLES GRIDS GENERIQUES ---- */
+@keyframes gridAnim {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
 }
-
-.titles {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(180deg, rgb(255, 255, 255) 33%, rgb(216, 216, 216) 50%, rgb(8, 8, 8) 100%);
-  --webkit-background-clip: text;
-  -webkit-background-clip: text;
-          background-clip: text;
-  color: transparent;
-  font-weight: 700;
-  margin-top: 45px;
-  margin-bottom: 5px;
-  word-break: break-word;
-}
-
-.titles-desc {
-  color: rgb(133, 133, 133);
-  font-size: 16px;
-  margin-bottom: 17px;
-}
-
-/*.titles:after {
-	content: '';
-	position: absolute;
-	width: 100%;
-	height: 1px;
-	background-color: rgba(255, 255, 255, 0.13);
-	bottom: -5px;
-	left: 0;
-	border: none;
-	border-radius: 3px;
-}*/
-.credits-container {
-  background-color: rgba(31, 32, 35, 0.3137254902);
-  border-radius: 25px;
-  border: 1px solid rgba(153, 153, 153, 0);
-  padding: 20px;
-  margin-block: 12px;
-}
-
 .grid-container {
   display: flex;
   flex-direction: row;
@@ -1014,7 +967,9 @@ thead, tfoot {
   -ms-flex-wrap: wrap;
 }
 
-/* ---- A PROPOS ---- */
+/* ---- FIN STYLES GRIDS GENERIQUES ---- */
+/**/
+/* ---- DEBUT STYLES A PROPOS (https://homebrewfrance.fr/a-propos) ---- */
 .grid-downloads, .grid-shop {
   animation-name: gridAnim;
   animation-duration: 2s;
@@ -1110,7 +1065,9 @@ thead, tfoot {
   height: fit-content;
 }
 
-/* ---- BOUTIQUE ---- */
+/* ---- FIN STYLES A PROPOS (https://homebrewfrance.fr/a-propos) ---- */
+/**/
+/* ---- DEBUT STYLES BOUTIQUE (https://homebrewfrance.fr/boutique) ---- */
 .container-presta {
   gap: 120px;
 }
@@ -1240,7 +1197,9 @@ thead, tfoot {
   box-shadow: 0px 2px 3px #000000;
 }
 
-/* ---- TELECHARGEMENTS ---- */
+/* ---- FIN STYLES BOUTIQUE (https://homebrewfrance.fr/boutique) ---- */
+/**/
+/* ---- DEBUT STYLES RESSOURCES (https://homebrewfrance.fr/ressources) ---- */
 .grid-downloads {
   height: auto;
   background-color: rgba(21, 21, 24, 0.768627451);
@@ -1297,21 +1256,5 @@ thead, tfoot {
   margin-bottom: 4px;
 }
 
-/**/
-.warning, .header_discord {
-  background: rgba(0, 0, 0, 0.2);
-  font-size: 17px;
-  font-family: "Space Grotesk", sans-serif;
-  border: 1px solid #75418d;
-  width: 100%;
-  font-weight: 400;
-  padding-block: 8px;
-  box-shadow: 0 0 10px rgba(222, 150, 255, 0.3);
-  margin-top: 17px;
-  align-content: space-between;
-  border-radius: 11px;
-}
-
-.alcool:hover {
-  cursor: default;
-}/*# sourceMappingURL=style.css.map */
+/* ---- FIN STYLES RESSOURCES (https://homebrewfrance.fr/ressources) ---- */
+/**//*# sourceMappingURL=style.css.map */
