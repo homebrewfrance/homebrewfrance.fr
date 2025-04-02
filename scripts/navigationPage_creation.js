@@ -19,7 +19,6 @@
 const navList = document.getElementById("navList");
 const docList = document.getElementById('docList');
 const checkerList = document.getElementById('checkerList');
-var body = document.getElementsByTagName('body')[0];
 
 function navItemsAppend(navigationItems) {
     for (let index = 0; index < navigationItems.length; index++) {
