@@ -34,6 +34,13 @@ RewriteRule ^sideloading-ios$ https://homebrewfrance.fr/docs/sideloading-ios [R=
 RewriteRule ^revanced$ https://homebrewfrance.fr/docs/revanced [R=301,L]
 RewriteRule ^xbox$ https://homebrewfrance.fr/docs/xbox [R=301,L]
 
+# Redirection de la doc YTLITE vers le guide ReVanced
+RewriteRule ^docs/ytliteplus$ /docs/revanced/ios-alternative [R=301,L]
+
+# Redirection des anciennes nomenclatures
+RewriteRule ^telechargements$ /ressources [R=301,L]
+RewriteRule ^devenir-helper$ /recrutements [R=301,L]
+
 # Erreurs personnalisées
 ErrorDocument 404 /error/404.html
 ErrorDocument 403 /error/403.html
