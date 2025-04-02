@@ -30,9 +30,9 @@ footer.innerHTML = `
     </div>
     <div class="right-footer">   
         <div class="footer-column" style="margin-right: 25px;">
-            <a title="Plan du site" href="https://homebrewfrance.fr/navigation/">Plan du site</a>
-            <a title="Mentions Légales"  href="https://homebrewfrance.fr/mentions-legales">Mentions légales</a>
-            <a title="Règles de confidentialité"  href="https://homebrewfrance.fr/confidentialite/">Confidentialité</a>
+            <a title="Plan du site" href="https://beta.homebrewfrance.fr/navigation/">Plan du site</a>
+            <a title="Mentions Légales"  href="https://beta.homebrewfrance.fr/mentions-legales">Mentions légales</a>
+            <a title="Règles de confidentialité"  href="https://beta.homebrewfrance.fr/confidentialite/">Confidentialité</a>
         </div>
 
         <div class="footer-column">
@@ -42,8 +42,8 @@ footer.innerHTML = `
                 <a href="https://instagram.com/homebrewfrance" title="Notre compte Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/company/homebrewfrance" title="Notre page LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
             </div>
-            <a title="Contester un bannissement" href="https://homebrewfrance.fr/deban/">Débannissement</a>
-            <a title="Recrutements" href="https://homebrewfrance.fr/devenir-helper">Recrutements</a>
+            <a title="Contester un bannissement" href="https://beta.homebrewfrance.fr/deban/">Débannissement</a>
+            <a title="Recrutements" href="https://beta.homebrewfrance.fr/recrutements">Recrutements</a>
         </div>
     </div>
 `;
