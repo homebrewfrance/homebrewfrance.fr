@@ -76,6 +76,7 @@ Aide-PlayStation FR :
 - [Règles de confidentialité](https://homebrewfrance.fr/confidentalite)
 - [Débannissement](https://homebrewfrance.fr/deban)
 ## Docs :
+Tous les guides et les documentations. 
 - [Nintendo 3DS](https://homebrewfrance.fr/docs/3ds)
 - [Nintendo DSi](https://homebrewfrance.fr/docs/dsi)
 - [Nintendo Switch](https://homebrewfrance.fr/docs/switch)
@@ -88,6 +89,7 @@ Aide-PlayStation FR :
 - [Spicetify](https://homebrewfrance.fr/docs/spicetify)
 - [Sideloading](https://homebrewfrance.fr/docs/sideloading)
 ## Checker :
+Des outils en ligne permettant de vérifier la compatibilité de votre console avec certains guides ou exploits.
 - [Nintendo Switch](https://homebrewfrance.fr/checker/switch)
 - [PlayStation 3](https://homebrewfrance.fr/checker/ps3)
 - [PlayStation 4](https://homebrewfrance.fr/checker/ps4)
