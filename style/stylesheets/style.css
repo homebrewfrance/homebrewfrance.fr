@@ -1256,5 +1256,38 @@ img {
   margin-bottom: 4px;
 }
 
+.tags-selector {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.category-downloads {
+  background-color: rgba(56, 56, 56, 0.568627451);
+  border-radius: 8px;
+  border: none;
+  padding-inline: 6px;
+  padding-block: 4px;
+  font-size: 14px;
+  margin-inline: 6px;
+  transition: 0.3s;
+}
+
+.category-downloads:hover {
+  transform: scale(1.03);
+  cursor: pointer;
+}
+
+#packSearch, #themeSearch {
+  background: rgba(26, 28, 31, 0.26);
+  border-radius: 10px;
+  border: 1px solid #333;
+  padding-inline: 6px;
+  padding-block: 4px;
+  color: white;
+  font-family: "Poppins";
+}
+
 /* ---- FIN STYLES RESSOURCES (https://homebrewfrance.fr/ressources) ---- */
 /**//*# sourceMappingURL=style.css.map */
