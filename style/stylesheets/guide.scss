@@ -33,7 +33,6 @@
 	}
 	
 	select, input {
-		width: 100%;
         font-size: 14px;
 	}
 	.submit {
@@ -89,6 +88,16 @@
 	}
 	.warning {
 		padding-inline: 10px;
+	}
+	.wiki-console {
+		display: flex; 
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.wiki-image {
+		margin-bottom: 25px;
+		margin-top: 30px;
 	}
 }
 
@@ -162,7 +171,23 @@
         font-size: 16px;
 	}
 
+	.wiki-console {
+		display: flex; 
+		flex-direction: row;
+	}
+
+	.wiki-image {
+		margin-right: 35px;
+	}
 }
+
+.wiki-console {
+	align-items: center;
+	justify-content: center;
+	margin-top: 2%; 
+}
+
+
 
 .os-container {
 	border: 1px solid #272727;
@@ -815,20 +840,38 @@ td, th {
 }
 
 
-.top-page-button {
+.top-page-button, .donation-button {
 	border-radius: 50%;
 	background-color: #1f202370;
 	width: 48px;
 	height: 48px;
-	padding: 8px;
 	font-size: 19px;
+	color: white;
+	transition: 0.5s;
+	border: 1px solid #333;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	backdrop-filter: blur(10px);
+	opacity: 0.8;
+}
+
+.donation-button {
+	padding: 10px;
+	margin-bottom: 8px;
+}
+
+.top-page-donations {
+	display: flex;
+	flex-direction: column;
 	right: 15px;
 	bottom: 18px;
 	z-index: 5000;
 	position: fixed;
-	color: white;
-	transition: 0.5s;
-	border: 1px solid #333;
+}
+
+.top-page-button:hover, .donation-button:hover {
+	transform: scale(1.1);
 }
 
 .top-page-button:hover {
@@ -1034,6 +1077,11 @@ code {
 
 .page-docu {
 	background-color:#121316;
+	margin-top: 35px;
+}
+
+.nav-menu-horiz {
+	margin-top: 35px;
 }
 
 html {

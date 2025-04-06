@@ -28,7 +28,7 @@ else {
         <div style="display: flex; flex-direction: row">
             <div id="accepterCookies" class="cookie-button">Accepter</div>
             <div id="refuserCookies" class="cookie-button">Refuser</div>
-            <div id="enSavoirPlus" class="cookie-button">En savoir plus</div>
+            <div id="enSavoirPlus" class="cookie-button">Plus d'infos</div>
         </div>
     `;
 	console.log(pageID);

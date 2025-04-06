@@ -40,7 +40,7 @@ function createNavMenu() {
             navElementsContainerVert.appendChild(clonedNavMenuItem);
         }
     }
-    if ((!pageID.includes('Switch')) && (!pageID.includes('Revanced')) && (!pageID.includes('3DS'))) {
+    if ((!pageID.includes('Switch')) && (!pageID.includes('Revanced')) && (!pageID.includes('3DS')) && (pageID != 'DOC-PS4') && (pageID != 'DOC-PSV')) {
         var downloadPDFBtn = document.createElement('div');
         downloadPDFBtn.className = 'nav-menu-item';
         downloadPDFBtn.id = 'downloadPDF';

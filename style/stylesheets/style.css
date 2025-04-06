@@ -105,6 +105,15 @@
   }
 }
 @media only screen and (max-width: 800px) {
+  .btn-container-home {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .tags-selector {
+    flex-direction: column;
+    display: flex;
+  }
   .coordonnees-el {
     width: 100%;
     margin-block: 12px;
@@ -251,6 +260,10 @@
   }
   .popup {
     width: 80%;
+  }
+  .tags-search-container {
+    flex-direction: column;
+    display: flex;
   }
 }
 @media only screen and (min-width: 800px) {
@@ -574,12 +587,6 @@ img {
   height: auto;
 }
 
-.btn-container-home {
-  display: flex;
-  flex-direction: row;
-  margin-left: -8px;
-}
-
 .cat-separator {
   margin-top: 5%;
 }
@@ -798,7 +805,7 @@ img {
   padding-inline: 18px;
   padding-block: 4px;
   color: white;
-  margin-inline: 8px;
+  margin-inline: 4px;
   transition: 0.3s;
   font-size: 15px;
 }
@@ -1219,6 +1226,7 @@ img {
   font-size: 22px;
   font-family: "Sora", sans-serif;
   font-weight: 500;
+  word-break: break-all;
 }
 .grid-downloads h4  {
   color: #707070;
@@ -1257,10 +1265,15 @@ img {
 }
 
 .tags-selector {
-  display: flex;
-  flex-direction: row;
   justify-content: space-between;
   align-items: center;
+}
+
+.categories {
+  display: flex;
+  flex-direction: row;
+  overflow: scroll;
+  width: 100%;
 }
 
 .category-downloads {
