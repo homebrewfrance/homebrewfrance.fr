@@ -1,5 +1,5 @@
 <!--    
-	Homebrew France Web V4.0.0-Beta
+	Homebrew France Web V4.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -44,14 +44,14 @@
 	</head>
 	<body data-page-id="ERR-503">
         <nav id="navSpace"></nav>
-		<div class="navbar"><a href="https://homebrewfrance.fr/"><h2>Homebrew<strong>France</strong></h2></a></div>
+		<div class="navbar" style="width: 100%;"><a href="https://homebrewfrance.fr/"><h2 style="font-family: 'Sora';">Homebrew<strong>France</strong></h2></a></div>
 		<div class="page">
             <div class="indicator-container">
                 <div class="indicator">Erreur : 503</div>
                 <div class="indicator-desc">Une maintenance est en cours sur le site web.</div>
             </div>
             <h3 class="titles">Nous revenons bientôt !</h3>
-			<p>Une mise à jour du site Internet arrive prochainement ! La maintenance durera jusqu'au <strong>9 avril à 15h30 (UTC+2:00)</strong>.</p>
+			<p>Une mise à jour du site Internet arrive prochainement ! La maintenance durera jusqu'au <strong>16 avril à 15h30 (UTC+2:00)</strong>.</p>
             <div id="countdown">
                 <p>Temps restant avant la fin de la maintenance : <span id="time-remaining">Calcul en cours...</span></p>
             </div>
@@ -60,15 +60,14 @@
             <p>Retrouvez-nous sur notre serveur Discord ! Vous pouvez rejoindre en <a href="https://discord.homebrewfrance.fr">cliquant ici</a>.</p>
             <h3 class="titles">Ces pages sont toujours accessibles :</h3>
             <div>
-                <a href="http://homebrewfrance.site/multi-checker/switch/"><button class="default-button">Nintendo Switch Serial Checker</button></a>
-                <a href="http://homebrewfrance.fr/devenir-helper"><button class="default-button">Devenir Helper</button></a>
+                <a href="http://homebrewfrance.fr/recrutements"><button class="default-button">Devenir Helper</button></a>
             </div>
 		</div>
 
         <!-- Scripts -->
         <script>
             function updateCountdown() {
-                const maintenanceEnd = new Date("2025-04-09T15:30:00+02:00").getTime();
+                const maintenanceEnd = new Date("2025-04-16T15:30:00+02:00").getTime();
                 const now = new Date().getTime();
                 const timeLeft = maintenanceEnd - now;
 

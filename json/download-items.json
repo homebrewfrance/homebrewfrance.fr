@@ -1,6 +1,24 @@
 {
     "themes": [
         {
+            "name": "Cyberpunk Edgerunners 2",
+            "description": "Un autre thème dans l'univers Cyberpunk Edgerunners.",
+            "author": "Xanatel",
+            "console": "Nintendo Switch",
+            "category": "Thèmes Nintendo Switch",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners2/cyberpunk_edgerunners2.nxtheme",
+            "image": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners2/icon.jpg"
+        },
+        {
+            "name": "Cyberpunk Edgerunners 1",
+            "description": "Un thème dans l'univers Cyberpunk Edgerunners.",
+            "author": "Xanatel",
+            "console": "Nintendo Switch",
+            "category": "Thèmes Nintendo Switch",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners1/cyberpunk_edgerunners1.nxtheme",
+            "image": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners1/icon.jpg"
+        },
+        {
             "name": "Ascendance of a Bookworm",
             "description": "Un thème sur Ascendance of a Bookworm, avec la musique du troisième opening.",
             "author": "FireChat",

@@ -8,8 +8,8 @@
             "category": "nav-link"
         },
         {
-            "name": "Téléchargements",
-            "url": "https://homebrewfrance.fr/telechargements/",
+            "name": "Ressources",
+            "url": "https://homebrewfrance.fr/ressources/",
             "id": "telechargementsLink",
             "icon": "<i class=\"fas fa-file-download\"></i>",
             "category": "nav-link"
@@ -20,15 +20,9 @@
             "category": "dropdown-item"
         },
         {
-            "name": "Multi-Checker",
+            "name": "Checker",
             "id": "multicheckerDrop",
             "category": "dropdown-item"
-        },
-        {
-            "name": "Recrutements",
-            "url": "https://homebrewfrance.fr/devenir-helper/",
-            "id": "recrutementsLink",
-            "category": "nav-link"
         },
         {
             "name": "Boutique",

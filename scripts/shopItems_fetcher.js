@@ -1,5 +1,5 @@
 /* 
-	Homebrew France Web V4.0.0-Beta
+	Homebrew France Web V4.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
