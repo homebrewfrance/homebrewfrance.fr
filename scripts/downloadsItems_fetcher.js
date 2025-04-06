@@ -35,12 +35,12 @@ function createItemShop(themes, packs) {
             itemGitButton = '<i class="fa-solid fa-code"></i>&nbsp;CodeBerg';
         }
         var div = document.createElement('div');
-        div.className = "grid-downloads " + packs[itemIndex].console + "-grid";
+        div.className = "grid-downloads " + packs[itemIndex].console + "-grid " + packs[itemIndex].exploit;
         div.id = packs[itemIndex].itemID;
         div.innerHTML =     
             `
-                <h3 style="font-weight: 700;">${packs[itemIndex].name}</h3>
-                <h4 style="text-align: center;">${packs[itemIndex].exploit}</h4>
+                <h3 id="consolePack" style="font-weight: 700;">${packs[itemIndex].name}</h3>
+                <h4 id="exploitPack" style="text-align: center;">${packs[itemIndex].exploit}</h4>
                 <small><strong>Compatibilité :</strong>&nbsp;${packs[itemIndex].compatibility}</small>
                 <small style="color: white;"><strong>Auteur :</strong>&nbsp;<a href="${packs[itemIndex].authorLink}">${packs[itemIndex].author}</a></small>
                 <div class="btn-container">
@@ -137,6 +137,42 @@ function createQRPopups(themes) {
 }
 
 
+function searchPack() {
+    var packSearchButton = document.getElementById('packSearchButton');
+    var packSearch = document.getElementById('packSearch');
+    packSearch.addEventListener('keyup', function () {
+        var packSearchValue = document.getElementById('packSearch').value.toLowerCase();
+        var packsDownloadContainer = document.getElementById('packs-download');
+        var searchGridItems = packsDownloadContainer.querySelectorAll('.grid-downloads')
+
+        Array.from(searchGridItems).forEach(function (item) {
+            if (!item.innerHTML.toLowerCase().includes(packSearchValue)) {
+                item.style.display = "none";
+            } else {
+                item.style.display = ""; 
+            }
+        });
+    });
+}
+
+function searchTheme() {
+    var themeSearchButton = document.getElementById('themeSearchButton');
+    var themeSearch = document.getElementById('themeSearch');
+    themeSearch.addEventListener('keyup', function () {
+        var themeSearchValue = document.getElementById('themeSearch').value.toLowerCase();
+        var themesDownloadContainer = document.getElementById('themes-download');
+        var searchGridItems = themesDownloadContainer.querySelectorAll('.grid-downloads')
+
+        Array.from(searchGridItems).forEach(function (item) {
+            if (!item.innerHTML.toLowerCase().includes(themeSearchValue)) {
+                item.style.display = "none";
+            } else {
+                item.style.display = ""; 
+            }
+        });
+    });
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     fetch('https://homebrewfrance.fr/beta/json/download-items.json')
     .then(response => response.json())
@@ -146,7 +182,8 @@ document.addEventListener('DOMContentLoaded', function() {
 
         createItemShop(themes, packs);
         createQRPopups(themes);
-        getLatestReleaseDownloadURL();
+        searchPack();
+        searchTheme();
     })
     .catch(error => console.error('Error loading navigation data:', error));
 });
