@@ -86,7 +86,6 @@ Tous les guides et les documentations.
 - [Xbox](https://homebrewfrance.fr/docs/xbox)
 - [YouTube ReVanced](https://homebrewfrance.fr/docs/revanced)
 - [YouTube Lite Plus](https://homebrewfrance.fr/docs/ytliteplus)
-- [Spicetify](https://homebrewfrance.fr/docs/spicetify)
 - [Sideloading](https://homebrewfrance.fr/docs/sideloading)
 ## Checker :
 Des outils en ligne permettant de vérifier la compatibilité de votre console avec certains guides ou exploits.
