@@ -1077,6 +1077,30 @@ code {
 	color: white;
 }
 
+.altstore-add-btn {
+	background: rgb(0,46,80);
+	border: 1px solid rgb(29, 115, 134)!important;
+	transition: 0.3s;
+	border-radius: 14px;
+	padding: 8px;
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	font-family: 'Montserrat';
+	font-size: 17px;
+}
+
+.altstore-add-btn:hover {
+	transform: scale(1.04);
+	box-shadow: 0px 10px 15px -4px #00000093;
+}
+
+.altstore-add-btn:active {
+	transform: scale(0.98);
+}
+
 .page-docu li {
 	margin-top: 15px;
 }
