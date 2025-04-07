@@ -69,23 +69,26 @@ function createNavMenu() {
 function downloadPDF() {
     var dlPDFicon = document.getElementById('dlPDFicon');
     document.getElementById("downloadPDF").addEventListener("click", function() {
-        let element = document.querySelector(".page-docu").cloneNode(true);
-        let buttonToRemove = element.querySelector("#downloadPDF");
-        if (buttonToRemove) buttonToRemove.remove();
-    
-        element.style.width = "100%";
-        element.style.margin = "0%";
-        element.style.maxWidth = "210mm"; 
-        element.style.height = "auto";
-        element.style.maxHeight = "none";
-    
-        html2pdf(element, {
-            margin: 0, 
-            filename: pageID + '_' + Date.now() + '.pdf',
-            image: { type: 'jpeg', quality: 1 },
-            html2canvas: { scale: 3, useCORS: true },
-            jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-        });     
+        window.location.href= "#";
+        setTimeout(() => {
+            let element = document.querySelector(".page-docu").cloneNode(true);
+            let buttonToRemove = element.querySelector("#downloadPDF");
+            if (buttonToRemove) buttonToRemove.remove();
+        
+            element.style.width = "100%";
+            element.style.margin = "0%";
+            element.style.maxWidth = "210mm"; 
+            element.style.height = "auto";
+            element.style.maxHeight = "none";
+        
+            html2pdf(element, {
+                margin: 0, 
+                filename: pageID + '_' + Date.now() + '.pdf',
+                image: { type: 'jpeg', quality: 1 },
+                html2canvas: { scale: 3, useCORS: true },
+                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
+            });     
+        }, "2000");
     });
 }
 

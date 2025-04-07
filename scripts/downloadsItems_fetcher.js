@@ -144,13 +144,19 @@ function searchPack() {
         var packSearchValue = document.getElementById('packSearch').value.toLowerCase();
         var packsDownloadContainer = document.getElementById('packs-download');
         var searchGridItems = packsDownloadContainer.querySelectorAll('.grid-downloads')
+        var compteurElements = 0;
 
         Array.from(searchGridItems).forEach(function (item) {
             if (!item.innerHTML.toLowerCase().includes(packSearchValue)) {
                 item.style.display = "none";
             } else {
-                item.style.display = ""; 
+                item.style.display = "";
+                compteurElements++;
             }
+            var packNumResults = document.getElementById('packNumResults');
+            packNumResults.innerHTML = `
+                <p id="compteurResultats">${compteurElements} résultats</p>
+            `;
         });
     });
 }
@@ -162,13 +168,19 @@ function searchTheme() {
         var themeSearchValue = document.getElementById('themeSearch').value.toLowerCase();
         var themesDownloadContainer = document.getElementById('themes-download');
         var searchGridItems = themesDownloadContainer.querySelectorAll('.grid-downloads')
+        var compteurElements = 0;
 
         Array.from(searchGridItems).forEach(function (item) {
             if (!item.innerHTML.toLowerCase().includes(themeSearchValue)) {
                 item.style.display = "none";
             } else {
                 item.style.display = ""; 
+                compteurElements++;
             }
+            var themeNumResults = document.getElementById('themeNumResults');
+            themeNumResults.innerHTML = `
+                <p id="compteurResultats">${compteurElements} résultats</p>
+            `;
         });
     });
 }
