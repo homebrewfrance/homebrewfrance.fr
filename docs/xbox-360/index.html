@@ -1,0 +1,159 @@
+<!--    
+	Homebrew France Web V4.0.0
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V4-LWS">
+	<head>
+        <title>Xbox (2001) | Docs</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<meta charset="utf-8"/>
+		<meta content="Xbox 360 | Docs" property="og:title"/>
+		<meta content="Documentation complète sur la Xbox OG." property="og:description"/>
+		<meta content="https://docs.homebrewfrance.fr/xbox" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.fun/docs/dsi_docs.png" property="og:image"/>
+        <meta name="twitter:card" content="summary_large_image" />
+		<meta name="twitter:site" content="@HomebrewFrance" />
+		<meta name="twitter:title" content="Homebrew France - La communauté n°1 pour le jailbreak de consoles" />
+		<meta name="twitter:description" content="Rejoignez Homebrew France, la communauté dédiée au jailbreak de consoles avec support et guides en ligne." />
+		<meta name="twitter:image" content="https://cdn.homebrew-france.fun/generic/website-icon.png" />
+        
+        <!-- Link -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../style/stylesheets/guide.css"/>
+        <link rel="stylesheet" href="../../style/stylesheets/navbar__f.css"/>
+        <link rel="icon" type="image/png" href="https://cdn.homebrew-france.fun/generic/lumia-guides.png"/>
+		<link rel="preconnect" href="https://fonts.googleapis.com"/>
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+                                                
+        <!-- Scripts -->
+        <script async src="../../scripts/analyticsServices_manager.js"></script>
+	</head>
+    <body data-page-id="DOC-Xbox360">
+        <div class="top-page-donations">
+            <a href="https://ko-fi.com/G2G3INK2N"><div class="donation-button" title="Faire un don">
+                <img src="https://storage.ko-fi.com/cdn/cup-border.png"></i>
+            </div></a>
+            <a href="#"><div class="top-page-button" title="Remonter en haut de la page">
+                &#9650;
+            </div></a>
+        </div>
+
+        <div id="navSpace"></div>
+        <div class="docu-container">
+			<div class="nav-menu-horiz" style="overflow: scroll;">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-horiz"></div>
+			</div>
+			<div class="nav-menu-vert">
+				<h class="subtitles">Navigation :</h><br>
+                <div class="nav-elements-vert"></div>
+			</div>
+            <div class="page-docu">
+                <h1 class="top">Microsoft Xbox 360 - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Lumia</span>&nbsp;<strong>Guides</strong></span></h1>
+                <div class="indic">
+                    <p class="indic-text">Rejoignez <a href="https://discord.homebrewfrance.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+                </div>
+                <div class="wiki-console">
+                    <img class="wiki-image" width="250px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/03/Xbox-360-Consoles-Infobox.png/230px-Xbox-360-Consoles-Infobox.png">
+                    <div>
+                        <p><strong>Nom :</strong> Xbox 360</p>
+                        <p><strong>Constructeur :</strong> Microsoft</p>
+                        <p><strong>Année de sortie (EU) :</strong> 2005</p>
+                        <p><strong></strong></p>
+                    </div>
+                </div>
+                <h2 class="titles">Préambule</h2>
+                <p>Ce guide vous permettra le softmod de votre console Xbox 360<br>
+                Ce softmod ne requiert qu'une clé USB.<br>
+                Ce softmod n'est encore qu'éxpérimental, il n'est pas permanent.<br>
+                A chaque redémarrage de la console, il sera nécessaire de renouveler l'exploit.</p>
+    
+                <h2 class="titles" id="verifs-prealables">I. Vérifications préalables</h2>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li>Un ordinateur.</li>
+                        <li>Une clé USB d'une capacité d'au moins 2Go formatée en FAT32.</li>
+                        <li>La <a href="https://www.xbox.com/system-update-usb">version 17559 du dashboard Xbox 360</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <ul style="list-style-type: decimal;">
+                    <li>Rendez-vous sur votre console. Allez dans les Paramètres ➜ "Système" ➜ "Paramètres de la console" ➜ "Infos système". <br>Vérifiez que la version de l'interface est 2.0.17559.0</li>
+                    <img src="https://cdn.homebrew-france.fun/docs/xbox-360/maj-console4.png">
+                    <li>Si vous n'êtes pas sur cette version, réalisez les étapes suivantes, sinon, faites directement la <a href="#prepa-usb">partie II.</a></li>
+                    <li>Ouvrez le <code>.zip</code> de la version 17559 du dashboard Xbox, téléchargé précédemment.</li>
+                    <li>Récupérez son contenu et glissez le sur une clé USB formatée au préalable en FAT32.</li>
+                    <li>Branchez la clé dans votre console et acceptez la mise à jour.</li>
+                    <p>Votre console est prête à être softmod.</p>
+                </ul>
+                <h2 class="titles" id="prepa-usb">II. Préparation de la clé USB</h2>
+                <div class="prerequis">
+                    <h3>PREREQUIS :</h3>
+                    <ul>
+                        <li>La dernière version de <a href=" http://phoenix.xboxunity.net/#/news">Aurora</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li>La dernière version de <a href="https://github.com/grimdoomer/Xbox360BadUpdate/releases/tag/v1.1">BadUpdate</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li>La dernière version de <a href="https://github.com/FreeMyXe/FreeMyXe/releases/tag/beta5">FreeMyXe</a>  <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li>La dernière version de <a href="https://drive.google.com/open?id=1F073PdhAwH6IH3fmoMM2HGcxdVukPhBx">Rock Band Blitz (Trial)</a></li>
+                    </ul>
+                </div>
+                <ul style="list-style-type: decimal;">
+                    <li>Rendez-vous dans l'Explorateur de fichiers, cliquez sur "Afficher" ➜ "Afficher" ➜ "Extensions de noms de fichiers".</li>
+                    <li>Formatez votre clé USB en FAT32 si ce n'est pas déjà fait.</li>
+                    <li>Rendez-vous sur le <a href="https://github.com/grimdoomer/Xbox360BadUpdate/releases/tag/v1.1">GitHub de BadUpdate</a>. Téléchargez les fichiers <code>
+                        Xbox360BadUpdate-Retail-USB-v1.1.zip</code> et <code>Tools.zip</code>.</li>
+                    <li>Ouvrez l'archive <code>Xbox360BadUpdate-Retail-USB-v1.1.zip</code> et copiez les dossiers <code>BadUpdatePayload</code> et <code>Content</code> à la racine de la clé USB.</li>
+                    <li>Sur la clé USB, allez dans le dossier <code>BadUpdatePayload</code> et supprimez le fichier <code>default.xex</code></li>
+                    <li>Ouvrez ensuite l'archive de FreeMyXe, prenez le fichier <code>FreeMyXe.xex</code> et copiez le dans le dossier <code>BadUpdatePayload</code> de votre clé USB.</li>
+                    <li>Renommez ensuite le fichier <code>FreeMyXe.xex</code> en <code>default.xex</code>.</li>
+                    <li>Ouvrez l'archive de Rock Band Blitz, copiez le dossier <code>Content</code> à la racine de la clé USB.</li>
+                    <li>Ouvrez l'archive de xexmenu, copiez le dossier <code>C0DE9999</code> dans le dossier <code>Content/0000000000000000</code> de la clé USB.</li>
+                    <li>Créez un dossier <code>Aurora</code> à la racine de votre clé USB. Ouvrez l'archive de Aurora, téléchargée précédemment.</li>
+                    <li>Copiez tout son contenu dans le dossier <code>Aurora</code> créé juste avant.</li>
+                    <li>Extrayez l'archive <code>Tools.zip</code>, dans l'archive. Ouvrez le dossier <code>XePatcher</code> contenu à l'intérieur.</li>
+                    <li>Dans le dossier, maintenez la touche MAJ, sur une zone vide, faites clic-droit.</li>
+                    <li>Cliquez sur "Ouvrir un terminal". Dans le terminal, tapez la commande suivante :</li>
+                    <p><code>XexTool.exe -m r -r a {LETTRE_CLE_USB}:\Aurora\Aurora.xex</code></p>
+                    <i>Remplacez <code>{LETTRE_CLE_USB}</code> par la lettre de votre clé USB.</i>
+                </ul>
+
+
+
+
+
+
+
+                    <div class="indic">
+                        <p class="indic-text">A présent votre clé USB est formatée en FATX, un format propriétaire dérivé du FAT utilisé spécifiquement pour la Xbox.</p>
+                    </div>
+                    <div class="disclaimer">
+                        <p class="indic-text"><strong>Attention :</strong> si votre PC vous demander de formater la clé USB avant de l'utiliser, ne le faîtes pas, fermez simplement la fenêtre.</p>
+                    </div>
+            </div>            
+        </div>
+        
+        <!-- Scripts -->
+        <script src="../../scripts/navItemsHighlights_docs.js"></script>
+        <script src="../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../scripts/navigationBar_creation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    </body>
+</html>

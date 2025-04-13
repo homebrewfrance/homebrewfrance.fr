@@ -40,9 +40,9 @@ function createItemShop(themes, packs) {
         div.innerHTML =     
             `
                 <h3 id="consolePack" style="font-weight: 700;">${packs[itemIndex].name}</h3>
-                <h4 id="exploitPack" style="text-align: center;">${packs[itemIndex].exploit}</h4>
-                <small><strong>Compatibilité :</strong>&nbsp;${packs[itemIndex].compatibility}</small>
-                <small style="color: white;"><strong>Auteur :</strong>&nbsp;<a href="${packs[itemIndex].authorLink}">${packs[itemIndex].author}</a></small>
+                <h4 id="exploitPack" style="text-align: center; margin-top: 4px;">${packs[itemIndex].exploit}</h4>
+                <small id="compatPack" style="color: white; margin-top: 4px"><strong>Compatibilité :</strong>&nbsp;${packs[itemIndex].compatibility}</small>
+                <small style="color: white; margin-top: 4px"><strong>Auteur :</strong>&nbsp;<a href="${packs[itemIndex].authorLink}">${packs[itemIndex].author}</a></small>
                 <div class="btn-container">
                     <a href="https://github.com/Le-Homebrew-France/Packs-Homebrew-France/releases/latest/download/${packs[itemIndex].lienDL}" id="${packs[itemIndex].console}">
                         <button class="default-button">
@@ -50,7 +50,7 @@ function createItemShop(themes, packs) {
                         &nbsp;Télécharger</button>
                     </a>
                     <a href="${packs[itemIndex].gitLink}">
-                        <button class="default-button git-button">${itemGitButton}</button>
+                        <button class="default-button git-button">${itemGitButton}&nbsp;</button>
                     </a>
                 </div>
             `;
@@ -138,7 +138,6 @@ function createQRPopups(themes) {
 
 
 function searchPack() {
-    var packSearchButton = document.getElementById('packSearchButton');
     var packSearch = document.getElementById('packSearch');
     packSearch.addEventListener('keyup', function () {
         var packSearchValue = document.getElementById('packSearch').value.toLowerCase();
@@ -162,7 +161,6 @@ function searchPack() {
 }
 
 function searchTheme() {
-    var themeSearchButton = document.getElementById('themeSearchButton');
     var themeSearch = document.getElementById('themeSearch');
     themeSearch.addEventListener('keyup', function () {
         var themeSearchValue = document.getElementById('themeSearch').value.toLowerCase();
