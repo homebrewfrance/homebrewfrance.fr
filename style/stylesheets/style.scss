@@ -115,6 +115,7 @@ $title-font: 'Sora', sans-serif;
 		.btn-container-home {
 			justify-self: center;
 			align-self: center;
+			margin-left: -4px;
 		}
 	}
 }
@@ -194,6 +195,7 @@ $title-font: 'Sora', sans-serif;
 	.btn-container-home {
 		align-items: center;
 		justify-content: center;
+		margin-left: 0px!important;
 	}
 
 	.indicator {
@@ -267,10 +269,6 @@ $title-font: 'Sora', sans-serif;
 		margin-bottom: 10px;
 		margin-left: 2%;
 		margin-right: 2%;
-	}
-	.warning {
-		padding-left: 10px;
-		padding-right: 10px;
 	}
 	.pres, .pres-fup {
 		width: 100%;
@@ -431,9 +429,6 @@ $title-font: 'Sora', sans-serif;
 		width: 350px;
 	}
 
-	.warning {
-		padding-inline: 3%;
-	}
 	.grid-shop:hover, .grid-downloads:hover, .add-infos-shop:hover {
 			transform: scale(1.02);
             cursor: default;
@@ -478,18 +473,25 @@ $title-font: 'Sora', sans-serif;
 
 /* ---- DEBUT STYLES GENERIQUES ---- */
 
-.warning, .header_discord {
+.warning {
 	background: rgba(0, 0, 0, 0.2);
 	font-size: 17px;
 	font-family: 'Space Grotesk', sans-serif;
 	border: 1px solid #75418d;
-	width: 100%;
+	width: var(--navbar-width);
 	font-weight: 400;
 	padding-block: 8px;
+	padding-inline: 20px;
 	box-shadow: 0 0 10px rgba(222, 150, 255, 0.3);
 	margin-top: 17px;
-	align-content: space-between;
-	border-radius: 11px;
+	border-radius: 18px;
+}
+
+.warning-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 8px;
+	padding-inline: 10px;
 }
 
 .alcool:hover {

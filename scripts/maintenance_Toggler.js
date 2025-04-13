@@ -17,6 +17,7 @@
 */
 
 const warningsList = [
+    //"Voici la nouvelle version des services web Homebrew France !<br> Voir le <a style=\"color: #ade5ff;\" href=\"https://github.com/homebrewfrance/homebrewfrance.fr/releases/tag/V4.0.0\">changelog</a> sur GitHub.",
 ]
 
 const global_doc_warning = 'Ce guide ne doit pas être utilisé dans le but de contourner des protections et d\'exécuter des logiciels piratés.';
@@ -28,6 +29,8 @@ var page = document.getElementsByClassName('page')[0];
 var pageDocu = document.getElementsByClassName('page-docu')[0];
 
 if (warningsList.length >= 1) {
+    var warningContainer = document.createElement('div');
+    warningContainer.className = 'warning-container';
     var warning = document.createElement('div');
 }
 
@@ -35,18 +38,19 @@ for (i = 0; i < warningsList.length; i++) {
     if (warningsList.length >= 1) {
         var warningText = document.createElement('div');
         warning.className = "warning";
-        warningText.innerHTML = "<i class=\"fa fa-exclamation-triangle\"></i>&nbsp;" + warningsList[i];
+        warningText.innerHTML = "<!--i style\"color: rgb(201, 201, 201)!important;\" class=\"fa fa-exclamation-triangle\"></i>&nbsp;&nbsp;-->" + warningsList[i];
         if (warningsList.length != 0) {
             warning.appendChild(warningText);
+            warningContainer.appendChild(warning);
         }
         
         if (!pageID.startsWith('DOC') && !pageID.startsWith('MLTI')) {
             if (warningsList.length != 0) {
-                page.prepend(warning);
+                page.prepend(warningContainer);
             }
         } 
         else {
-            pageDocu.prepend(warning);
+            pageDocu.prepend(warningContainer);
         }
     }
 }
@@ -94,11 +98,21 @@ function updateDeviceWidth() {
     document.documentElement.style.setProperty('--device-width', `${deviceWidth}px`);
 }
 
+function updateNavbarWidth() {
+    var navbarElement = document.getElementsByClassName('navbar')[0];
+    if (navbarElement) {
+        const navbarWidth = navbarElement.offsetWidth; 
+        document.documentElement.style.setProperty('--navbar-width', `${navbarWidth}px`);
+    }
+}
+
 
   
 
 updateDeviceHeight();
 updateDeviceWidth();
+updateNavbarWidth();
 
 window.addEventListener('resize', updateDeviceHeight);
 window.addEventListener('resize', updateDeviceWidth);
+window.addEventListener('resize', updateNavbarWidth);
