@@ -331,17 +331,15 @@ footer a:hover {
 	height: 45px auto;
 	align-self: center;
 	justify-self: center;
-	width: calc(100% - 15px);
+	width: 100%;
 	z-index: 6000;
 	align-items: center;
 	justify-content: space-between;
 	padding-inline: 15px;
-	background-color: #570000a2;
+	background-color: #57000059;
 	backdrop-filter: blur(10px);
 	padding-bottom: 18px;
 	padding-top: 15px;
-	margin: 10px;
-	border-radius: 10px;
 }
 
 ::-webkit-scrollbar {
