@@ -174,6 +174,7 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileNavMenu.classList.toggle("showLinks");
     });
 
+
     fetch('https://homebrewfrance.fr/beta/json/navigation-items.json')
         .then(response => response.json())
         .then(data => {
@@ -224,7 +225,14 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         })
         .catch(error => console.error('Erreur:', error));
-    
+        var navbarEl = document.getElementsByClassName('navbar')[0];
+        if (mobileNavMenu.className == '') {
+
+        }
+        else {
+            navbarEl.classList.toggle('navbarMobileRadius');
+        }
+        
     fetch('https://homebrewfrance.fr/beta/json/dropdowns-items.json')
         .then(response => response.json())
         .then(data => {
