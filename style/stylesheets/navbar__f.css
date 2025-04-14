@@ -199,7 +199,6 @@ html, body {
 .nav-link, .dropdown-item {
   font-family: "Sora", sans-serif;
   font-size: 0.88vw;
-  font-size: 16px !important;
   font-weight: 600;
   color: rgb(206, 206, 206);
   text-decoration: none;
@@ -259,6 +258,7 @@ html, body {
   }
   .nav-link, .dropdown-item {
     margin-inline: 25px;
+    font-size: 16px;
   }
   #navbarToggler {
     display: none;
@@ -306,15 +306,38 @@ html, body {
 @media only screen and (max-width: 800px) {
   .navbar {
     width: 95%;
-    margin-inline: 11px;
+  }
+  .nav-link, .dropdown-item {
+    margin-inline: 25px;
+    font-size: 15px;
   }
 }
-@media only screen and (min-width: 1000px) and (max-width: 1230px) {
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+  .navbar {
+    width: 85%;
+    margin-inline: 11px;
+  }
+  .nav-link, .dropdown-item {
+    margin-inline: 25px;
+    font-size: 15px;
+  }
+}
+@media only screen and (min-width: 1000px) and (max-width: 1380px) {
+  .cookie-button {
+    font-size: 17px;
+  }
+  .cookie-box {
+    flex-direction: row;
+  }
   .dropdown-item::after {
     content: "\f0d7";
     font-family: "Font Awesome 6 Free";
     font-weight: 900;
     margin-left: 8px;
+  }
+  .nav-link, .dropdown-item {
+    margin-inline: 25px;
+    font-size: 14px;
   }
   #navbarToggler {
     display: none;
@@ -328,17 +351,14 @@ html, body {
     box-shadow: 0px 10px 15px -4px rgba(0, 0, 0, 0.368627451);
     backdrop-filter: blur(10px);
     -webkit-backdrop-filter: blur(10px);
-    border-right: 0.8px solid rgba(66, 66, 66, 0.425);
-    border-left: 0.8px solid rgba(66, 66, 66, 0.425);
-    border-bottom: 0.8px solid rgba(66, 66, 66, 0.425);
-    border-bottom-left-radius: 11px;
-    border-bottom-right-radius: 11px;
+    border: 0.8px solid rgba(66, 66, 66, 0.425);
+    border-radius: 15px;
     transition: 0.3s;
     font-family: "Sora", sans-serif;
     top: 100%;
-    left: 0;
-    z-index: 1000;
-    margin-top: 15px;
+    left: -40px;
+    z-index: 7000;
+    margin-top: 20px;
   }
   .showDropdown {
     display: flex;
@@ -352,10 +372,6 @@ html, body {
   }
   footer {
     padding-inline: 7%;
-  }
-  .hbf-logo-container {
-    display: flex;
-    flex-direction: row;
   }
 }
 @media only screen and (max-width: 1000px) {
@@ -597,7 +613,6 @@ footer .fa-brands {
   font-weight: 900;
   margin-right: 7px;
   color: rgba(197, 197, 197, 0.5960784314);
-  font-size: 17px;
 }
 
 #telechargementsLinkSpan::before {
@@ -606,7 +621,6 @@ footer .fa-brands {
   font-weight: 900;
   margin-right: 7px;
   color: rgba(197, 197, 197, 0.5960784314);
-  font-size: 17px;
 }
 
 #docsDrop span::before {
@@ -615,7 +629,6 @@ footer .fa-brands {
   font-weight: 900;
   margin-right: 7px;
   color: rgba(197, 197, 197, 0.5960784314);
-  font-size: 17px;
 }
 
 #multicheckerDrop span::before {
@@ -624,7 +637,6 @@ footer .fa-brands {
   font-weight: 900;
   margin-right: 7px;
   color: rgba(197, 197, 197, 0.5960784314);
-  font-size: 17px;
 }
 
 #recrutementsLinkSpan::before {
@@ -633,7 +645,6 @@ footer .fa-brands {
   font-weight: 900;
   margin-right: 7px;
   color: rgba(197, 197, 197, 0.5960784314);
-  font-size: 17px;
 }
 
 #boutiqueLinkSpan::before {
@@ -642,7 +653,6 @@ footer .fa-brands {
   font-weight: 900;
   margin-right: 7px;
   color: rgba(197, 197, 197, 0.5960784314);
-  font-size: 17px;
 }
 
 #aproposLinkSpan::before {
@@ -651,5 +661,4 @@ footer .fa-brands {
   font-weight: 900;
   margin-right: 7px;
   color: rgba(197, 197, 197, 0.5960784314);
-  font-size: 17px;
 }/*# sourceMappingURL=navbar__f.css.map */

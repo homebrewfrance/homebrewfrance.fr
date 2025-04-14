@@ -192,6 +192,16 @@
   }
   .discord-title, .error-title {
     display: none;
+    color: white;
+  }
+  .discord-desc, .error-desc {
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    color: #cacaca;
+  }
+  .discord-desc strong, .error-desc strong {
+    color: white;
   }
   .discord-title-mobile {
     line-height: 1;
@@ -199,6 +209,7 @@
     margin-top: 20%;
     text-align: center;
     font-size: 55px;
+    color: white;
   }
   .titles {
     font-size: 23px;

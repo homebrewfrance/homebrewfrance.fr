@@ -195,7 +195,6 @@ html, body {
 
 .nav-link, .dropdown-item {
     @include MainEL-Regular;
-    font-size: 16px!important;
     font-weight: 600;
     color: rgb(206, 206, 206);
     text-decoration: none;
@@ -262,6 +261,11 @@ html, body {
 
     .nav-link, .dropdown-item {
         margin-inline: 25px;
+        font-size: 16px;
+    }
+
+    @mixin globalNavIcons {
+        font-size: 16px;
     }
     
 
@@ -316,12 +320,41 @@ html, body {
 @media only screen and (max-width: 800px) {
     .navbar {
         width: 95%;
+    }
+    .nav-link, .dropdown-item {
+        margin-inline: 25px;
+        font-size: 15px;
+    }
+
+    @mixin globalNavIcons {
+        font-size: 15px;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .navbar {
+        width: 85%;
         margin-inline: 11px;
+    }
+    .nav-link, .dropdown-item {
+        margin-inline: 25px;
+        font-size: 15px;
+    }
+
+    @mixin globalNavIcons {
+        font-size: 15px;
     }
 }
 
 
-@media only screen and (min-width: 1000px) and (max-width: 1230px) {
+@media only screen and (min-width: 1000px) and (max-width: 1380px) {
+    .cookie-button {
+        font-size: 17px;
+    }
+    .cookie-box {
+        flex-direction: row;
+    }
+
     .dropdown-item::after {
         content: "\f0d7"; 
         font-family: "Font Awesome 6 Free";
@@ -329,7 +362,15 @@ html, body {
         margin-left: 8px;
     }
 
+
+    .nav-link, .dropdown-item {
+        margin-inline: 25px;
+        font-size: 14px;
+    }
     
+    @mixin globalNavIcons {
+        font-size: 14px;
+    }
 
     #navbarToggler {
         display: none;
@@ -338,23 +379,21 @@ html, body {
         display: none;
     }
 
+
     .dropdown-menu {
         position: absolute; 
         background-color: #1515189a;
         box-shadow: 0px 10px 15px -4px #0000005e;
         backdrop-filter: blur(10px);
         -webkit-backdrop-filter: blur(10px);
-        border-right: 0.8px solid rgba(66, 66, 66, 0.425);
-        border-left: 0.8px solid rgba(66, 66, 66, 0.425);
-        border-bottom: 0.8px solid rgba(66, 66, 66, 0.425);
-        border-bottom-left-radius: 11px;
-        border-bottom-right-radius: 11px;
+        border: 0.8px solid rgba(66, 66, 66, 0.425);
+        border-radius: 15px;
         transition: 0.3s;
         font-family: 'Sora', sans-serif;
         top: 100%; 
-        left: 0; 
-        z-index: 1000;
-        margin-top: 15px;
+        left: -40px; 
+        z-index: 7000;
+        margin-top: 20px;
     }
 
     .showDropdown {
@@ -369,10 +408,6 @@ html, body {
     }
     footer {
         padding-inline: 7%;
-    }
-    .hbf-logo-container {
-        display: flex;
-        flex-direction: row;
     }
 
 } 
@@ -629,7 +664,6 @@ footer {
     font-weight: 900;
     margin-right: 7px;
     color: #c5c5c598;
-    font-size: 17px;
 }
 #accueilLinkSpan::before {
     content: "\f015"; 
