@@ -27,21 +27,11 @@ function createItemStaff(staff) {
         var gridStaff = document.createElement('div');
         gridStaff.className = 'grid-staff';
         var nameValue = staff[itemIndex].name;
-        var crownIcon = "&nbsp;<i class=\"fa-solid fa-crown\"></i>";
 
         var avatar = document.createElement('img');
         
-        if (nameValue.includes(crownIcon)) {
-            var avatarLink = 'https://cdn.homebrew-france.fun/a-propos/staff/' + staff[itemIndex].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "").replace(crownIcon, '') + '.png';
-        }
-        else if (staff[itemIndex].avatarFormat == '') {
-            var avatarLink = 'https://cdn.homebrew-france.fun/a-propos/staff/default.png';
-        }
-        else {
-            var avatarLink = 'https://cdn.homebrew-france.fun/a-propos/staff/' + staff[itemIndex].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + '.png';
-        }
+        var avatarLink = 'https://cdn.homebrew-france.fun/a-propos/staff/' + staff[itemIndex].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + '.png';
         
-
         avatar.src = avatarLink;
         avatar.width = '100';
         avatar.height = '100';
@@ -122,37 +112,44 @@ function createItemStaff(staff) {
 
 
         if (staff[itemIndex].musicLink && staff[itemIndex].musicLink !== "") {
-            var musicLink = document.createElement('a');
-            musicLink.className = "music-link";
-            var musicName = document.createElement('small');
-            var popup = document.createElement('div');
-            var popupID = staff[itemIndex].name + "MusicPopup";
-            musicLink.id = staff[itemIndex].name + "MusicLink";
-            musicLink.style.marginBottom = '8px';
- 
-            musicName.innerHTML = '<i class="fa-solid fa-music"></i>&nbsp;' + staff[itemIndex].musicName;
-            musicLink.appendChild(musicName);
-                        
-            popup.className = 'popup';
-            popup.id = popupID;
+            var musicLinkElement = document.createElement('span');
+            musicLinkElement.style.marginBottom = '8px';
+            musicLinkElement.innerHTML =
+            `
+                <a class="music-link" id="${staff[itemIndex].name}MusicLink">
+                    <small>
+                        <i class="fa-solid fa-music"></i>&nbsp;${staff[itemIndex].musicName}
+                    </small>
+                </a>
+            `;
 
-            var closeBtn = document.createElement('div');
-            if (staff[itemIndex].name.includes(crownIcon)) {
-                staff[itemIndex].name = staff[itemIndex].name.replace(crownIcon, "");
-                closeBtn.id = staff[itemIndex].name + "MusicBtn";
+            var popupID = staff[itemIndex].name + "MusicPopup";
+
+            var popupElement = document.createElement('div');
+            popupElement.innerHTML = 
+            `
+                <div class="popup" id="${popupID}">
+                <div class="close-btn" id="${staff[itemIndex].name}MusicBtn"><p><i class="fas fa-window-close"></i>&nbsp;&nbsp;Fermer</p></div>
+                <a href="${staff[itemIndex].musicLink}" title="Écouter ${staff[itemIndex].musicName} sur la plateforme de streaming"><div class="music-stream-btn" id="${staff[itemIndex].name}MusicStreamBtn"><p id="${staff[itemIndex].name}MusicStreamBtnContent"></p></div></a>
+
+            `
+            var html = document.getElementsByTagName('html')[0];
+            html.appendChild(popupElement);
+            gridStaff.appendChild(musicLinkElement);
+
+            var MusicStreamBtnContent = document.getElementById(`${staff[itemIndex].name}MusicStreamBtnContent`);        
+            if (staff[itemIndex].musicPlatform == 'spotify') {
+                MusicStreamBtnContent.innerHTML = 
+                `
+                    <i class="fa-brands fa-spotify"></i>&nbsp;Écouter sur Spotify
+                `;
             }
             else {
-                closeBtn.id = staff[itemIndex].name + "MusicBtn";
+                MusicStreamBtnContent.innerHTML = 
+                `
+                    <i class="fa-brands fa-youtube"></i>&nbsp;Écouter sur YouTube
+                `;
             }
-            
-            closeBtn.className = 'close-btn';
-            closeBtnInner = document.createElement('p');
-            closeBtnInner.innerHTML = '<i class="fas fa-window-close"></i>&nbsp;&nbsp;Fermer';
-            closeBtn.appendChild(closeBtnInner);
-            popup.appendChild(closeBtn);
-            var html = document.getElementsByTagName('html')[0];
-            html.appendChild(popup);
-            gridStaff.appendChild(musicLink);
         }
 
         gridContainer.appendChild(gridStaff);

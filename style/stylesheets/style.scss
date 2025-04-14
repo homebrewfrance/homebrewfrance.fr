@@ -898,7 +898,7 @@ img {
 	height: 15px;
 }
 
-.refresh-btn, .more-btn, .close-btn {
+.refresh-btn, .more-btn, .close-btn, .music-stream-btn {
 	background: rgba(34, 30, 30, 0.5);
 	border: 1px solid #616161;
 	backdrop-filter: blur(10px);
@@ -912,7 +912,7 @@ img {
 	font-size: 19px!important;
 }
 
-.refresh-btn:hover, .more-btn:hover, .close-btn:hover {
+.refresh-btn:hover, .more-btn:hover, .close-btn:hover, .music-stream-btn:hover {
 	box-shadow: 0 0 8px rgba(255, 255, 255, 0.308);
 	cursor: pointer;
 }
