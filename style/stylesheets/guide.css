@@ -20,6 +20,16 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Paytone+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @media only screen and (max-width: 1041px) {
+  .doc-header {
+    display: flex;
+    flex-direction: column;
+  }
+  .spacer-invert {
+    margin-inline: 5px;
+  }
+  .spacer {
+    margin-block: 7px;
+  }
   .top {
     font-size: 33px;
   }
@@ -99,6 +109,16 @@
   }
 }
 @media only screen and (min-width: 1041px) {
+  .spacer {
+    margin-inline: 12px;
+  }
+  .spacer-invert {
+    margin-inline: 5px;
+  }
+  .doc-header {
+    display: flex;
+    flex-direction: row;
+  }
   .input-switch, .input-ps3, .submit {
     width: 550px;
   }
@@ -252,18 +272,6 @@ footer a:hover {
   text-decoration: none;
 }
 
-/*select, input, .submit{
-	background-color: #1f2023a1;
-	border-radius: 10px;
-	border: 1px solid #333;
-	backdrop-filter: blur(16px);
-	color: white;
-	text-align: center;
-	padding-top: 13px;
-	padding-bottom: 13px;
-    transition: 0.3s;
-	font-family: 'Poppins', sans-serif;
-}*/
 .kofi-button {
   position: fixed;
   z-index: 5000;
@@ -668,6 +676,24 @@ hr {
   border-radius: 11px;
 }
 
+.doc-header {
+  font-size: 13px;
+  color: #a1a1a1;
+  margin-bottom: 17px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.doc-header img {
+  border-radius: 50%;
+}
+
+.doc-header-section {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .navbar-toggler-icon {
   filter: invert(1);
 }
@@ -852,7 +878,7 @@ td, th {
 
 .top {
   margin-top: 50px;
-  margin-bottom: 17px;
+  margin-bottom: 7px;
   text-align: center;
 }
 
