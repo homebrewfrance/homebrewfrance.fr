@@ -44,7 +44,7 @@ function createItemShop(themes, packs) {
                 <small id="compatPack" style="color: white; margin-top: 4px"><strong>Compatibilité :</strong>&nbsp;${packs[itemIndex].compatibility}</small>
                 <small style="color: white; margin-top: 4px"><strong>Auteur :</strong>&nbsp;<a href="${packs[itemIndex].authorLink}">${packs[itemIndex].author}</a></small>
                 <div class="btn-container">
-                    <a href="https://github.com/Le-Homebrew-France/Packs-Homebrew-France/releases/latest/download/${packs[itemIndex].lienDL}" id="${packs[itemIndex].console}">
+                    <a href="${packs[itemIndex].lienDL}" id="${packs[itemIndex].console}">
                         <button class="default-button">
                         <i class="fa fa-download" aria-hidden="true"></i>
                         &nbsp;Télécharger</button>

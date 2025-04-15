@@ -175,7 +175,7 @@ document.addEventListener('DOMContentLoaded', function () {
     });
 
 
-    fetch('https://homebrewfrance.fr/beta/json/navigation-items.json')
+    fetch('https://homebrewfrance.fr/json/navigation-items.json')
         .then(response => response.json())
         .then(data => {
             const navigationItems = data.navigationItems;
@@ -233,7 +233,7 @@ document.addEventListener('DOMContentLoaded', function () {
             navbarEl.classList.toggle('navbarMobileRadius');
         }
         
-    fetch('https://homebrewfrance.fr/beta/json/dropdowns-items.json')
+    fetch('https://homebrewfrance.fr/json/dropdowns-items.json')
         .then(response => response.json())
         .then(data => {
             const dropdownsItems = data.dropdownsItems;

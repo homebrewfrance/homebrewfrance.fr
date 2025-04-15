@@ -112,7 +112,7 @@
             "author": "Homebrew France",
             "authorLink" : "https://github.com/homebrewfrance/",
             "compatibility": "11.17",
-            "lienDL": "3DS_AIO_KARTMINER.zip",
+            "lienDL": "https://github.com/Le-Homebrew-France/Packs-Homebrew-France/releases/latest/download/3DS_AIO_KARTMINER.zip",
             "console": "ds3",
             "gitType": "github",
             "gitLink": "https://github.com/homebrewfrance/Packs-Homebrew-France"
@@ -124,7 +124,7 @@
             "author": "Homebrew France",
             "authorLink" : "https://github.com/homebrewfrance/",
             "compatibility": "11.15, 11.16 et 11.17",
-            "lienDL": "3DS_AIO_BROWSERHAX.zip",
+            "lienDL": "https://github.com/Le-Homebrew-France/Packs-Homebrew-France/releases/latest/download/3DS_AIO_BROWSERHAX.zip",
             "console": "ds3",
             "gitType": "github",
             "gitLink": "https://github.com/homebrewfrance/Packs-Homebrew-France"
@@ -137,7 +137,7 @@
             "author": "Homebrew France",
             "authorLink" : "https://github.com/homebrewfrance/",
             "compatibility": "Toutes les versions",
-            "lienDL": "3DS_AIO_NTRBOOTHAX.zip",
+            "lienDL": "https://github.com/Le-Homebrew-France/Packs-Homebrew-France/releases/latest/download/3DS_AIO_NTRBOOTHAX.zip",
             "console": "ds3",
             "gitType": "github",
             "gitLink": "https://github.com/homebrewfrance/Packs-Homebrew-France"
@@ -149,7 +149,7 @@
             "author": "Homebrew France",
             "authorLink" : "https://github.com/homebrewfrance/",
             "compatibility": "Toutes les versions",
-            "lienDL": "3DS_AIO_VANILLA.zip",
+            "lienDL": "https://github.com/Le-Homebrew-France/Packs-Homebrew-France/releases/latest/download/3DS_AIO_VANILLA.zip",
             "console": "ds3",
             "gitType": "github",
             "gitLink": "https://github.com/homebrewfrance/Packs-Homebrew-France"
@@ -161,6 +161,7 @@
             "author": "THZoria",
             "authorLink" : "https://github.com/THZoria/",
             "compatibility": "Toutes les versions",
+            "lienDL": "https://sighya.fr/",
             "console": "switch",
             "gitType": "codeberg",
             "gitLink": "https://codeberg.org/Zoria/AtmoPack-Vanilla/"

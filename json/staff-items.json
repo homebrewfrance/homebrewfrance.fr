@@ -38,9 +38,9 @@
                     "username": "Dhalian"
                 },
                 {
-                    "name": "x",
-                    "link": "https://x.com/dhalian_/",
-                    "username": "@dhalian_"
+                    "name": "linkedin",
+                    "link": "https://www.linkedin.com/in/dhalian/",
+                    "username": "Dhalian E"
                 }
             ]
         },
@@ -234,16 +234,6 @@
         },
         {
             "name": "Julia",
-            "role": "Helper",
-            "avatarFormat": "png",
-            "musicName": "",
-            "musicLink": "",
-            "musicPlatform": "",
-            "socials": [
-            ]
-        },
-        {
-            "name": "ndjembe",
             "role": "Helper",
             "avatarFormat": "png",
             "musicName": "",
