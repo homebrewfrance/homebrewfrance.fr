@@ -184,7 +184,7 @@ function searchTheme() {
 }
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://homebrewfrance.fr/beta/json/download-items.json')
+    fetch('https://homebrewfrance.fr/json/download-items.json')
     .then(response => response.json())
     .then(data => {
         const themes = data.themes;
