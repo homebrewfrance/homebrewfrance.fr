@@ -429,6 +429,11 @@
   }
 }
 /* ---- DEBUT STYLES GENERIQUES ---- */
+.legal {
+  margin-block: 18px;
+  font-family: "Inter";
+}
+
 .warning {
   background: rgba(0, 0, 0, 0.2);
   font-size: 17px;

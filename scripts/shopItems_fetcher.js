@@ -59,6 +59,7 @@ function createItemShop(modifConsoles, consolesPucees) {
         itemGrid.innerHTML = `
             <img src="${consolesPucees[itemIndex2].image}" style="width: 60%; height: auto; padding-top: 22px; padding-bottom: 11px;">
             <h3>${consolesPucees[itemIndex2].name}</h3>
+            <div class="edition">${consolesPucees[itemIndex2].edition}</div>
             <small><i>${consolesPucees[itemIndex2].description}</i></small>
             <h3 style="margin: 6px; display: flex; flex-direction: row; ">
                 <span class="prix-actuel">${consolesPucees[itemIndex2].prixActuel}</span>
@@ -82,7 +83,6 @@ function createItemShop(modifConsoles, consolesPucees) {
             return reduction + "% RÉDUCTION";
         }
         consolesPuceesID.appendChild(itemGrid);
-
     }
 
 
