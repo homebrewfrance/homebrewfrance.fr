@@ -27,6 +27,7 @@ function createItemShop(modifConsoles, consolesPucees) {
         itemGrid.className = 'grid-shop';
         itemGrid.innerHTML = `
             <img src="${modifConsoles[itemIndex].image}" class="fup-article-image">
+            <span class="copyright-shop">&copy; FIXurPHONE</span> 
             <h3>${modifConsoles[itemIndex].name}</h3>
             <small><i>${modifConsoles[itemIndex].description}</i></small>
             <h3 style="margin: 6px; display: flex; flex-direction: row; ">
@@ -58,8 +59,8 @@ function createItemShop(modifConsoles, consolesPucees) {
         itemGrid.className = 'grid-shop';
         itemGrid.innerHTML = `
             <img src="${consolesPucees[itemIndex2].image}" style="width: 60%; height: auto; padding-top: 22px; padding-bottom: 11px;">
+            <span class="copyright-shop">&copy; Nintendo</span> 
             <h3>${consolesPucees[itemIndex2].name}</h3>
-            <div class="edition">${consolesPucees[itemIndex2].edition}</div>
             <small><i>${consolesPucees[itemIndex2].description}</i></small>
             <h3 style="margin: 6px; display: flex; flex-direction: row; ">
                 <span class="prix-actuel">${consolesPucees[itemIndex2].prixActuel}</span>
@@ -83,6 +84,7 @@ function createItemShop(modifConsoles, consolesPucees) {
             return reduction + "% RÉDUCTION";
         }
         consolesPuceesID.appendChild(itemGrid);
+
     }
 
 
