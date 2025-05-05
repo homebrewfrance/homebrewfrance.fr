@@ -117,8 +117,8 @@
             "socials": [
                 {
                     "name": "discord",
-                    "link": "https://discord.com/invite/C94T8DR2sx",
-                    "username": "Nintendo [FR]"
+                    "link": "https://discord.gg/DTdbThYa",
+                    "username": "Team WF"
                 },
                 {
                     "name": "x",
@@ -175,6 +175,16 @@
                     "link": "https://github.com/Elghis",
                     "username": "Elghis"
                 }
+            ]
+        },
+        {
+            "name": "Feldright",
+            "role": "Helper",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
             ]
         },
         {
