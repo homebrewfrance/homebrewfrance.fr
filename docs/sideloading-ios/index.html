@@ -151,57 +151,33 @@
                     <li style="list-style-type: decimal;">Allez dans le menu de votre iPhone et vérifiez que SideStore est bien présent et que vous pouvez le
                     lancer sans problème.</li>
                 </ul>
-                <h2 class="titles" id="jitterbug-pairing" style="margin-bottom: 15px;">III. Appairer l'appareil avec JitterBug</h2>
+                <h2 class="titles" id="jitterbug-pairing" style="margin-bottom: 15px;">III. Appairer l'appareil avec iDevicePair</h2>
                 <div class="prerequis">
                 <h3>PRÉREQUIS :</h3>
                 <ul>
-                    <li><a href="https://github.com/osy/Jitterbug/releases/download/v1.3.1/jitterbugpair-win64.zip">La dernière version de JitterbugPair</a></code> <i class="fa fa-download" aria-hidden="true"></i></li>
+                    <li><a href="https://github.com/jkcoxson/idevice_pair/releases/latest/download/iDevicePair--windows-x86_64.exe">La dernière version de iDevicePair</a></code> <i class="fa fa-download" aria-hidden="true"></i></li>
                     <li>L'appareil Apple est connecté via USB à votre ordinateur.</li>
                     <li>Un code de verrouillage est configuré sur votre appareil.</li>
                 </ul>
                 </div>
                 <ul>
-                    <li style="list-style-type: decimal;">Dans l'explorateur de fichiers de votre ordinateur, faites un clic-droit sur le fichier <code>jitterbugpair-win64.zip</code> puis extrayez-le vers un dossier.</li>
-                    <li style="list-style-type: decimal;">Double-cliquez sur le fichier <code>jitterbugpair.exe</code> pour le lancer. Il devrait créer un fichier d'appairage avec l'extension <code>.mobiledevicepairing</code>.</li>
-                    <div class="indic">
-                        <p class="indic-text">Si le programme ne génère aucun fichier, vous avez deux solutions :</p>
-                        <ul>
-                            <li style="list-style-type: decimal;">Executez le programme en tant qu'administrateur.</li>
-                            <li style="list-style-type: decimal;">Dans le dossier où est présent <code>jitterbugpair.exe</code>, maintenez la touche MAJ et faites un clic-droit sur une zone vide du dossier. Cliquez ensuite sur "Ouvrir PowerShell ici" ou "Ouvrir le Terminal ici". Dans le terminal, tapez <code>./jitterbugpair.exe</code></code></li>
-                        </ul>
-                    </div>
-                    <li style="list-style-type: decimal;">Compressez le fichier d'appairage au format ZIP et transférez-le sur votre appareil Apple via Google Drive, un email, ou tout autre méthode.</li>
-                    <li style="list-style-type: decimal;">Sur votre appareil Apple, récupérez le fichier ZIP créé précédemment, ouvrez l'application "Fichiers", maintenez une pression longue sur le fichier ZIP contenant votre fichier d'appairage, puis sélectionnez "Décompresser".</li>
-                    <li style="list-style-type: decimal;">Lancez l'application "SideStore", puis appuyez sur "OK" lorsque vous y êtes invité.</li>
-                    <li style="list-style-type: decimal;">Si l'application "SideStore" n'apparaît pas, redémarrez votre appareil pour la faire apparaître.</li>
-                    <li style="list-style-type: decimal;">Sélectionnez votre fichier d'appairage décompressé, et "SideStore" sera appairé !</li>
+                    <li style="list-style-type: decimal;">Dévérouillez votre appareil iOS/iPadOS et restez à l'accueil.</li>
+                    <li style="list-style-type: decimal;">Cherchez le fichier <code>iDevicePair--windows-x86_64.exe</code> téléchargé précédemment et lancez le.</li>
+
+                    <li style="list-style-type: decimal;">Sur iDevicePair, allez dans le menu déroulant et sélectionnez "Generate"</li>
+                    <li style="list-style-type: decimal;">Lorsque cela vous est demandé sur votre appareil, appuyez sur "Faire confiance".</li>
+                    <li style="list-style-type: decimal;">Le fichier d'appairage devrait apparaître, faites en sorte que votre appareil soit encore sur l'écran d'accueil. Sur iDevicePair, scrollez vers la section "SideStore" et cliquez sur "Install", le mot "Success" devrait apparaître.</li>
                 </ul>
-                <div class="indic">
-                    <p class="indic-text"><strong>Remarque : </strong>Si vous mettez à jour votre appareil Apple, votre fichier d'appairage peut devenir invalide et il faudra recommencer la manipulation.</p>             
-                </div>
-                <h2 class="titles" style="margin-bottom: 15px;" id="config-wireguard">IV. Configuration de WireGuard VPN sur votre iPhone</h2>
+                <h2 class="titles" style="margin-bottom: 15px;" id="config-wireguard">IV. Configuration de StosVPN sur votre iPhone</h2>
                 <div class="prerequis">
                     <h3>PRÉREQUIS :</h3>
                     <ul>
-                        <li><a href="https://apps.apple.com/us/app/wireguard/id1441195209">L'application WireGuard VPN. (sur l'App Store)</a> <i class="fa fa-download" aria-hidden="true"></i></li>
-                        <li><a href="https://github.com/sidestore/sidestore/releases/download/0.1.1/sidestore.conf">Le fichier de configuration SideStore pour WireGuard. (à télécharger depuis Safari sur iPhone)</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li><a href="https://apps.apple.com/us/app/stosvpn/id6744003051">L'application StosVPN. (sur l'App Store)</a> <i class="fa fa-download" aria-hidden="true"></i></li>
                     </ul>
                 </div>
                 <ul>
                     <li style="list-style-type: decimal;">Rendez-vous dans l'App Store. Rercherchez "WireGuard" et installez l'application.</li>
-                    <div style="@media only screen and (min-width: 1041px) { display: flex; flex-direction: row; } @media only screen and (max-width: 1041px) { display: flex; flex-direction: row; }">
-                        <img src="https://cdn.homebrew-france.fun/docs/sideloading/wireguard-1.png" width="230px" class="img-iphone" />
-                    </div>
-                    <li style="list-style-type: decimal;">Sur votre iPhone, téléchargez le fichier de configuration WireGuard, dont le lien est disponible ci-dessus.</li>
-                    <div style="@media only screen and (min-width: 1041px) { display: flex; flex-direction: row; } @media only screen and (max-width: 1041px) { display: flex; flex-direction: row; }">
-                        <img src="https://cdn.homebrew-france.fun/docs/sideloading/wireguard-2.png" width="230px" class="img-iphone" />
-                    </div>
-                    <li style="list-style-type: decimal;">Rendez-vous dans l'application "Fichiers" et rendez vous dans votre dossier de "Téléchargements" et cherchez <code>SideStore.conf</code>, appuyez dessus puis appuyez sur l'icône de partage en haut puis sélectionnez "WireGuard". Cette action va envoyer le fichier de configuration directement vers WireGuard VPN.</li>
-                    <div style="@media only screen and (min-width: 1041px) { display: flex; flex-direction: row; } @media only screen and (max-width: 1041px) { display: flex; flex-direction: row; }">
-                        <img src="https://cdn.homebrew-france.fun/docs/sideloading/wireguard-4.png" width="230px" class="img-iphone" />
-                        <img src="https://cdn.homebrew-france.fun/docs/sideloading/wireguard-5.png" width="230px" class="img-iphone" />
-                    </div>
-                    <li style="list-style-type: decimal;">WireGuard VPN devrait se configurer automatiquement.</li>
+                    <li style="list-style-type: decimal;">Activez le VPN dans votre centre de contrôle iOS.</li>
                 </ul>
                 <h2 class="titles" style="margin-bottom: 15px;" id="ipa-install">V. Installation d'IPAs sur l'iPhone</h2>
                 <div class="indic">

@@ -77,6 +77,9 @@
                         <strong style="color: white!important;">Auteurs : &nbsp;</strong>
                         <img src="https://cdn.homebrew-france.fun/a-propos/staff/sbk.png" width="18px">
                         &nbsp;SBK
+                        <span class="spacer-invert"></span>
+						<img src="https://cdn.homebrew-france.fun/a-propos/staff/dhalian.png" width="18px">
+						&nbsp;Dhalian
                     </div>
                 </div>
                 <div class="indic">
@@ -99,13 +102,12 @@
                 <div class="prerequis">
                     <h3>PRÉREQUIS :</h3>
                     <ul>
-                        <li>Un jeu compatible avec le softmod.</li>
-                            <i>Note: le jeu recommandé est Splinter Cell, c'est d'ailleurs sur ce dernier que va se baser le guide.</i>
-                        <li>Un ordinateur.</li>
-                        <li>Une clé USB <strong>2.0</strong> d'une capacité de 2Go ou moins.</li>
+                        <li>Un PC sous Windows 10 minimum.</li>
+                        <li>Une clé USB supportant le standard <strong>USB 1.1</strong> d'une capacité de 2Go ou moins (certaines clés de 4Go peuvent fonctionner).</li>
                         <li>Un <a href="https://www.amazon.fr/gp/product/B076KL1YGF/">adaptateur USB femelle vers connectique de manette Xbox.</a> <i class="fa-solid fa-cart-shopping"></i></li>
                         <li>La dernière version du <a href="https://drive.google.com/file/d/1_7Ra-2cKSYBjT1pVWuCRTHvDGYuxKhKk/view?usp=drive_link">Xbox Softmodding Tool</a> <i class="fa-brands fa-google-drive"></i></li>
-                        <li>La dernière version de <a href="https://archive.org/details/Xplorer360Beta6.7z">Xplorer360</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li>La dernière version de <a href="https://api.eaton-works.com/download/FATXplorer/Beta/FATXplorerBeta64.zip">FATXPlorer Beta en 64-bits (x64)</a> ou <a href="https://api.eaton-works.com/download/FATXplorer/Beta/FATXplorerBeta32.zip">FATXPlorer Beta en 32-bits (x86)</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li>La dernière version de <a href="https://aka.ms/dotnet/9.0/windowsdesktop-runtime-win-x64.exe">.NET 9 Desktop Runtime 64-bit (x64)</a> ou <a href="https://aka.ms/dotnet/9.0/windowsdesktop-runtime-win-x86.exe">.NET 9 Desktop Runtime 32-bit (x86)</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
                     </ul>
                 </div>
                 <ul style="list-style-type: decimal;">
@@ -119,35 +121,16 @@
                     <div class="disclaimer">
                         <p class="indic-text"><strong>Attention :</strong> si votre PC vous demander de formater la clé USB avant de l'utiliser, ne le faîtes pas, fermez simplement la fenêtre.</p>
                     </div>
-                    <li>Extrayez l'archive de "Xbox Softmodding Tool" téléchargée précédemment. Une fois l'archive décompréssée, allez dans le dossier <code>Softmod Package</code> puis <code>Legacy</code>.</li>
-                    <li>Vous trouverez les sauvegardes modifiées qui vont servir à installer le softmod. On utilisera celle de "Splinter Cell" en version PAL (Europe/Australie) dans nôtre cas.</li>
-                    <div class="disclaimer">
-                        <p class="indic-text"><strong>Attention :</strong> il s'agit là du premier jeu <i>Splinter Cell</i>, celui qui se nomme simplement <i>Tom Clancy's Splinter Cell</i></p>
-                    </div>
-                    <li>Ouvrez l'archive <code>SC_PAL</code>, à l'intérieur se trouvera un dossier <code>UDATA</code> puis un dossier nommé <code>5553000C</code>. Mettez le dossier <code>5553000C</code> de côté.</li>
-                    <li>Revenez dans le dossier <code>Legacy</code>, ouvrez l'archive <code>Softmod Save</code> à l'intérieur de laquelle se trouve un dossier <code>UDATA</code> puis, un dossier nommé <code>21585554</code>. Mettez le dossier <code>21585554</code> de côté.</li>
-                    <li>Décompressez "Xplorer360" téléchargé précédemment. Ouvrez ensuite le logiciel.</li>
-                    <li>Pour ouvrir nôtre "carte mémoire", rendez-vous dans "Drive" puis "Open" puis dans "Harddrive or memcard". votre "carte mémoire" est normalement ouverte à présent avec un stockage "Partition 0" qui s'affiche sur la gauche, cliquez dessus pour être sûr qu'il soit bien sélectionné.</li>
-                    <li>Glissez et déposez les deux dossiers que vous avez mis de côté durant les étapes 6 et 7. Une fois la copie terminée, fermez le logiciel et retirez la clé USB de votre ordinateur.</li>
-                    <i>Note: il est recommandé de ne rien faire sur l'ordinateur durant le processus de copie. Ces manipulations peuvent s'avérer instables et "capricieuses".</i>
+                    <li>Ouvrez l'archive de FATXPlorer. Lancez <code>FATXplorer.exe</code></li>
+                    <li>Sélectionnez "Devices" ➜ "Mount data partition on X"</li>
+                    <li>Ne fermez pas FATXplorer. Ouvrez l'archive de <strong>Xbox Softmodding Tool</strong>, allez dans le dossier <strong>Softmod Package</strong> et extrayez le fichier <code>Endgame.zip</code> à la racine de la clé USB que vous venez de monter avec FATXplorer</li>
+                    <li>Retournez dans FATXplorer, cliquez sur "Devices", sélectionnez votre clé USB et cliquez sur "Unmount"</li>
+                    <li></li>
                 </ul>
                 <h2 class="titles" id="install-softmod">II. Installation du softmod</h2>
                 <ul style="list-style-type: decimal;">
-                    <p>Le softmod est bien présent sur nôtre clé USB si tout s'est bien déroulé. Comme dit précédemment, les manipulations effectuées peuvent être instables et "capricieuses". Voici une liste de ce qui peut mal se dérouler dans les étapes précédentes :<p>
-                    <ul>
-                        <li>La "carte mémoire" n'est plus reconnue par la console bien que la clé USB a été formatée et reconnue avec succès.</li>
-                        <li>La copie des sauvegardes s'est mal passée, sur la console, la "carte mémoire" apparaît comme vide ou avec une des sauvegardes manquante (sauvegarde Splinter Cell - "sauvegarde" Softmod).</li>
-    
-                    </ul>
-                    <p>Si dans votre carte mémoire vous avez les deux sauvegardes, vous pouvez maintenant les déplacer dans la console. Pour cela, il suffit de se rendre sur chaque sauvegarde une par une puis cliquer dessus et sélectionner "Copîer". Une fois les sauvegardes copiées, assurez-vous qu'elles soient bien présentes dans le disque dur de la console.</p>
-                    <p>Si toutes les étapes précédentes se sont déroulées avec succès, vous allez pouvoir effectuer l'étape finale de l'installation du softmod.</p>
-                    <li>Insérez le disque de <i>Tom Clancy's Splinter Cell</i> dans le lecteur de votre console et lancez le jeu.</li>
-                    <li>Une fois dans le jeu, deux cas de figure :</li>
-                    <ul>
-                        <li>Vous avez déjà une ou plusieurs sauvegardes du jeu, dans ce cas vous en aurez une de plus.</li>
-                        <li>Vous n'aviez pas de sauvegarde créée pour ce jeu, à présent vous en avez une.</li>
-                    </ul>
-                    <li>Chargez la sauvegarde qui correspond au softmod, elle porte le nom "Linux".</li>
+                    <li>Insérez la clé USB dans le port manette n°4 de votre console via l'adaptateur USB.</li>
+                    <li>Allumez la console et rendez-vous dans la section "Mémoire", votre clé USB va apparaître en tant que carte mémoire, sélectionnez là.</li>
                     <li>Vous arriverez sur la page d'installation du softmod. Si vous obtenez un écran noir et que rien ne se passe après une longue période, éteignez la console et recommencez les deux étapes précédentes.</li>
                     <li>Une fois sur la page du softmod, vous aurez à valider plusieurs choses en appuyant sur des boutons et de confirmer "I understand" et d'autres choses de ce type.</li>
                     <li>Une fois que l'installation est en cours, ne faîtes rien et soyez dans des conditions optimales ne risquant pas de faire éteindre la console subitement (évitez de réaliser cette manipulation lors d'un gros orage par exemple).</li>
