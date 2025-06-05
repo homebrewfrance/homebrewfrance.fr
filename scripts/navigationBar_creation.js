@@ -15,6 +15,32 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
+function isValidNavigationItem(item) {
+    return typeof item === 'object' &&
+           typeof item.id === 'string' &&
+           typeof item.name === 'string' &&
+           typeof item.category === 'string' &&
+           (typeof item.url === 'string' || item.url === undefined);
+}
+
+function validateNavigationItems(data) {
+    if (!Array.isArray(data)) return false;
+    return data.every(isValidNavigationItem);
+}
+
+function isValidDropdownItem(item) {
+    return typeof item === 'object' &&
+           typeof item.id === 'string' &&
+           typeof item.name === 'string' &&
+           typeof item.dropdownId === 'string' &&
+           (typeof item.url === 'string' || item.id.includes('grayed')) &&
+           (typeof item.iconLink === 'string' || item.iconLink === undefined);
+}
+
+function validateDropdownItems(data) {
+    if (!Array.isArray(data)) return false;
+    return data.every(isValidDropdownItem);
+}
 
 var htmlpage = document.getElementsByTagName('html')[0];
 const body = document.getElementsByTagName('body')[0];
@@ -179,8 +205,12 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             const navigationItems = data.navigationItems;
-            createNavbarItemsDesktop(navigationItems);
-            createNavbarItemsMobile(navigationItems);
+            if (validateNavigationItems(navigationItems)) {
+                createNavbarItemsDesktop(navigationItems);
+                createNavbarItemsMobile(navigationItems);
+            } else {
+                console.error('Erreur : données de navigation invalides.');
+            }
             updateNavbarWidth();
             window.addEventListener('resize', updateNavbarWidth);
 
@@ -239,8 +269,12 @@ document.addEventListener('DOMContentLoaded', function () {
             const dropdownsItems = data.dropdownsItems;
             var dropdownItemNavbar = document.getElementsByClassName('dropdown-item')[0];
             if (dropdownItemNavbar) {
-                createDropdownItemsDesktop(dropdownsItems);
-                createDropdownItemsMobile(dropdownsItems);
+                if (validateDropdownItems(dropdownsItems)) {
+                    createDropdownItemsDesktop(dropdownsItems);
+                    createDropdownItemsMobile(dropdownsItems);
+                } else {
+                    console.error('Erreur : données de navigation invalides.');
+                }
                 var navLinks = document.getElementsByClassName('nav-link');
                 var dropLinks = document.getElementsByClassName('dropdown-item');
             

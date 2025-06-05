@@ -173,6 +173,50 @@
 				<a href="https://github.com/homebrewfrance/homebrewfrance.fr"><img src="https://cdn.homebrew-france.fun/generic/get-it-on-github.png" width="130px" style="margin-left: 12px;"></a>
 				<a href="https://githuB.com/homebrewfrance/homebrewfrance.fr"><img src="https://cdn.homebrew-france.fun/github/hbf-web.png" width="170px" style="margin-left: 12px;"></a>
 			</div>
+			<div id="latest-commit">Chargement du dernier commit…</div>
+
+			<script>
+			/* Script réalisé à l'aide de l'intelligence artificielle */
+			const username = "homebrewfrance"; 
+			const repo = "homebrewfrance.fr"; 
+			const branch = "main"; 
+
+			fetch(`https://api.github.com/repos/${username}/${repo}/commits/${branch}`)
+				.then(res => res.json())
+				.then(data => {
+				const message = data.commit.message;
+				const author = data.commit.author.name;
+				const authorUrl = data.author?.html_url || "#";
+				const commitUrl = data.html_url;
+				const date = new Date(data.commit.author.date).toLocaleString();
+				const files = data.files || [];
+
+				const fileList = files.map(file => {
+					return `
+					<li>
+						<strong>${file.filename}</strong> :
+						+${file.additions}, -${file.deletions}
+					</li>
+					`;
+				}).join("");
+
+				document.getElementById("latest-commit").innerHTML = `
+					<div>
+					<p><strong>Dernière mise à jour :</strong><br>${message}</p>
+					<p><strong>Auteur :</strong> <a href="${authorUrl}" target="_blank">${author}</a></p>
+					<p><strong>Date :</strong> ${date}</p>
+					<p><strong>Fichiers modifiés :</strong></p>
+					<ul>${fileList}</ul>
+					<p><a href="${commitUrl}" target="_blank">Voir sur GitHub →</a></p>
+					</div>
+				`;
+				})
+				.catch(err => {
+				console.error(err);
+				document.getElementById("latest-commit").textContent = "Erreur lors du chargement du commit.";
+				});
+			</script>
+
 		</div>
 
         <!-- Scripts -->
