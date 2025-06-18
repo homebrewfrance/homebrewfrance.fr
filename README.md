@@ -108,22 +108,22 @@ Des outils en ligne permettant de vérifier la compatibilité de votre console a
 </div>
 
 # Copyrights :
-L'ensemble du contenu du présent site Internet, y compris nom de domaine, marques, logo, texte… est la propriété de Homebrew France sauf mention contraire. Il est protégé par les lois en vigueur de la législation française sur la propriété intellectuelle et distribué sous licence GNU GPLv3.\
+L'ensemble du contenu du présent site Internet, y compris nom de domaine, marques, logo, texte… est la propriété de Homebrew France sauf mention contraire. Il est protégé par les lois en vigueur de la législation française sur la propriété intellectuelle et distribué sous licence GNU GPLv3.
 
-Les marques PlayStation et Sony sont des marques déposées par Sony Interactive Entertainment Inc. Ce site n'est pas affilié, soutenu ou approuvé par Sony Interactive Entertainment ou PlayStation. Toute utilisation de ces marques est faite à des fins informatives uniquement.\
+Les marques PlayStation et Sony sont des marques déposées par Sony Interactive Entertainment Inc. Ce site n'est pas affilié, soutenu ou approuvé par Sony Interactive Entertainment ou PlayStation. Toute utilisation de ces marques est faite à des fins informatives uniquement.
 
-Les marques Nintendo et Nintendo Switch sont des marques déposées par la société Nintendo Co., Ltd.. Ce site n'est en aucun cas affilié, soutenu ou approuvé par Nintendo. Toute utilisation de ces marques est effectuée à titre informatif, et leur utilisation n'implique aucune relation commerciale ou officielle avec Nintendo. Les images de Nintendo Switch dans la boutique sont la propriété de Nintendo Co., Ltd. © 2025 - Nintendo Co., Ltd.\
+Les marques Nintendo et Nintendo Switch sont des marques déposées par la société Nintendo Co., Ltd.. Ce site n'est en aucun cas affilié, soutenu ou approuvé par Nintendo. Toute utilisation de ces marques est effectuée à titre informatif, et leur utilisation n'implique aucune relation commerciale ou officielle avec Nintendo. Les images de Nintendo Switch dans la boutique sont la propriété de Nintendo Co., Ltd. © 2025 - Nintendo Co., Ltd.
 
-L’utilisation des marques Nintendo et PlayStation se fait dans le respect des droits de propriété intellectuelle, uniquement dans un cadre informatif. Toute utilisation commerciale de ces éléments est interdite sans autorisation préalable des détenteurs de droits.\
+L’utilisation des marques Nintendo et PlayStation se fait dans le respect des droits de propriété intellectuelle, uniquement dans un cadre informatif. Toute utilisation commerciale de ces éléments est interdite sans autorisation préalable des détenteurs de droits.
 
-Le logo JTech Informatique ainsi que la marque JTech Informatique sont la propriété de JTech Groupe © 2025 - JTech Groupe\
+Le logo JTech Informatique ainsi que la marque JTech Informatique sont la propriété de JTech Groupe © 2025 - JTech Groupe
 
-Le logo FIXurPHONE ainsi que la marque FIXurPHONE sont la propriété de l'entreprise FIXurPHONE (Joris Debard) © 2025 FIXurPHONE\
+Le logo FIXurPHONE ainsi que la marque FIXurPHONE sont la propriété de l'entreprise FIXurPHONE (Joris Debard) © 2025 FIXurPHONE
 
-Le logo Luminix est la propriété de Synntraxx.\
+Le logo Luminix est la propriété de Synntraxx.
 
-Conformément aux termes de la licence GNU GPLv3, vous êtes libre de copier, modifier et distribuer ce contenu, à condition de respecter les conditions de la licence, notamment en conservant cette même licence pour toute redistribution du contenu modifié ou non.\
-Pour plus d'informations, veuillez consulter le texte intégral de la licence GNU GPLv3.\
+Conformément aux termes de la licence GNU GPLv3, vous êtes libre de copier, modifier et distribuer ce contenu, à condition de respecter les conditions de la licence, notamment en conservant cette même licence pour toute redistribution du contenu modifié ou non.
+Pour plus d'informations, veuillez consulter le texte intégral de la licence GNU GPLv3.
 
 © 2021-2025 - Homebrew France
 
