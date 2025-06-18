@@ -21,6 +21,7 @@ Un site web conçu pour la communauté Homebrew France.
 - Développement du site.
 - Création des packs Nintendo 3DS et DSi.
 - Ajouts et compléments sur la documentation PlayStation 2.
+- Mise à jour et compléments sur la documentation Xbox. 
 - Rédaction de la documentation PlayStation 1.
 - Rédaction de la documentation Nintendo DSi.
 - Rédaction de la documentation YouTube ReVanced.
@@ -34,7 +35,7 @@ Un site web conçu pour la communauté Homebrew France.
 - Création du pack Nintendo Switch (AtmoPack Vanilla).
 - Rédaction de la documentation Nintendo Switch.
 - Rédaction de la documentation PlayStation 2 originale, utilisée comme référence.
-- Rédaction de la documentation PlayStation 4™ (la procédure en 9.00).
+- Rédaction de la documentation PlayStation 4 (la procédure en 9.00).
 - Rédacteur de Hacktuality, relayé sur la page d'accueil.
 - Icône de SigHya et Hacktuality.
 
@@ -63,7 +64,7 @@ Aide-PlayStation FR :
 - Icône de Luminix.
 
 [Ayhanblackflag](https://discordapp.com/users/982732747942527136) :
-- Rédaction de la documentation PlayStation 4™ (la procédure en 11.0).
+- Rédaction de la documentation PlayStation 4 (la procédure en 11.0).
 
 # Pages du site : 
 ## Pages générales :
@@ -78,7 +79,7 @@ Aide-PlayStation FR :
 ## Docs :
 Tous les guides et les documentations. 
 - [Nintendo 3DS](https://homebrewfrance.fr/docs/3ds)
-- [Nintendo DSi](https://homebrewfrance.fr/docs/dsi)
+- [Nintendo DSi](https://homebrewfrance.fr/docs/dsi) (obsolète)
 - [Nintendo Switch](https://homebrewfrance.fr/docs/switch)
 - [PlayStation 2](https://homebrewfrance.fr/docs/ps2)
 - [PlayStation 4](https://homebrewfrance.fr/docs/ps4)
@@ -89,11 +90,11 @@ Tous les guides et les documentations.
 - [Sideloading](https://homebrewfrance.fr/docs/sideloading)
 ## Checker :
 Des outils en ligne permettant de vérifier la compatibilité de votre console avec certains guides ou exploits.
-- [Nintendo Switch](https://homebrewfrance.fr/checker/switch)
-- [PlayStation 3](https://homebrewfrance.fr/checker/ps3)
-- [PlayStation 4](https://homebrewfrance.fr/checker/ps4)
+- [Nintendo Switch](https://homebrewfrance.fr/checker/switch) (vérificateur de numéro de série)
+- [PlayStation 3](https://homebrewfrance.fr/checker/ps3) (vérificateur de numéro de modèle)
+- [PlayStation 4](https://homebrewfrance.fr/checker/ps4) (vérificateur de firmware)
 - [PlayStation 5](https://homebrewfrance.fr/checker/ps5) (lecteur de codes UART)
-- [PlayStation Vita](https://homebrewfrance.fr/checker/psvita)
+- [PlayStation Vita](https://homebrewfrance.fr/checker/psvita) (vérificateur de firmware)
 
 
 # Nos partenaires :
