@@ -1,5 +1,5 @@
 <!--    
-	Homebrew France Web V4.0.0
+	Homebrew France Web V4.1.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -125,7 +125,6 @@
                     <li>Sélectionnez "Devices" ➜ "Mount data partition on X"</li>
                     <li>Ne fermez pas FATXplorer. Ouvrez l'archive de <strong>Xbox Softmodding Tool</strong>, allez dans le dossier <strong>Softmod Package</strong> et extrayez le fichier <code>Endgame.zip</code> à la racine de la clé USB que vous venez de monter avec FATXplorer</li>
                     <li>Retournez dans FATXplorer, cliquez sur "Devices", sélectionnez votre clé USB et cliquez sur "Unmount"</li>
-                    <li></li>
                 </ul>
                 <h2 class="titles" id="install-softmod">II. Installation du softmod</h2>
                 <ul style="list-style-type: decimal;">
@@ -136,14 +135,14 @@
                     <li>Une fois que l'installation est en cours, ne faîtes rien et soyez dans des conditions optimales ne risquant pas de faire éteindre la console subitement (évitez de réaliser cette manipulation lors d'un gros orage par exemple).</li>
                     <li>Lorsque le processus d'installation est terminé, vous serez ammené sur le menu de la console (autrement appellé "Dashboard") qui sera très différent de ce qui se trouvait à l'origine. Si vous le souhaitez, vous pouvez modifier l'apparence de ce dashboard afin qu'il soit le plus fidèle possible à celui d'origine dans les étapes suivantes. Notez aussi que les sons systèmes sont absents, nous allons également les restaurer.</li>
                 </ul>
-                <h2 class="titles" id="adjusts">III. Ajustements et installations post-softmod (optionnel mais recommandé)</h2>
+                <h2 class="titles" id="adjusts">III. Ajustements et installations post-softmod (Optionnels mais recommandés)</h2>
                 <h class="subtitles">1. Connecter sa console</h>
                 <p>Connecter sa console est une étape très pratique pour permettre le transfert de fichiers d'une console à un PC sans devoir toujours passer par le support USB.</p>
                 <p>La Xbox doit obligatoirement être connectée en <strong>Ethernet</strong> à votre réseau Internet. Vous avez plusieurs cas de figure :</p>
                 <ul>
                     <li>Votre logement dispose de prises Ethernet (logements récents) : si celles-ci sont reliées à votre box, vous pouvez brancher la console sur l'une de ces prises.</li>
                     <li>Votre console se trouve à proximité de votre box : branchez la console directement en Ethernet sur l'une des prises RJ45 de votre box Internet.</li>
-                    <li>Votre box n'est pas à disposition : utilisez un répéteur Wi-Fi que vous possédez déjà et branchez la console dessus ou achetez un répéteur Wi-Fi : nous vous recommandons ce répéteur pour une quinzaine d'euros qui fera amplement l'affaire pour la Xbox. <a href="https://www.amazon.fr/MERCUSYS-ME10-Wireless-Compatible-Multicolour/dp/B09N9QP82Q/">Répéteur Wi-FI</a> <i class="fa-solid fa-cart-shopping"></i></li>
+                    <li>Votre box n'est pas à disposition : utilisez un répéteur Wi-Fi que vous possédez déjà, en <strong>mode Client</strong> et branchez la console dessus ou achetez un répéteur Wi-Fi : nous vous recommandons ce répéteur pour une quinzaine d'euros qui fera amplement l'affaire pour la Xbox. <a href="https://www.amazon.fr/MERCUSYS-ME10-Wireless-Compatible-Multicolour/dp/B09N9QP82Q/">Répéteur Wi-FI</a> <i class="fa-solid fa-cart-shopping"></i></li>
                 </ul>
                 <p>Si votre console ainsi que votre ordinateur sont tous deux connectés à votre réseau par n'importe quelle manière, vous pouvez continuer.</p>
                 <ul style="list-style-type: decimal;">
@@ -175,7 +174,78 @@
                     <li>Dans le dashboard UnleashX, rendez vous dans System ➜ Skins et séléctionnez OEM Unleashed puis redémarrez la console.</li>
                     <p>Le dashboard devrait maintenant ressembler à ceci : </p>
                     <img class="img-border" src="https://github.com/Frontesque/OEM-Unleashed/raw/main/images/preview.jpg?raw=true" width="540">
-
+                </ul>
+                <h class="subtitles">4. Mettre le dashboard en français</h>
+                <p>Toute l'interface est actuellement en anglais, nous allons y remédier. Nous devons pour cela changer la langue du softmod UnleashX et du thème OEM Unleashed.</p>
+                <ul style="list-style-type: decimal;">
+                    <li>Téléchargez le fichier de langage français <code>French.xml</code> UnleashX disponible <a href="https://cdn.homebrew-france.fun/docs/xbox/unleashx-language/French.xml">ici</a>.</li>
+                    <li>Téléchargez le fichier de configuration de UnleashX <code>config.xml</code>, traduit en français par Homebrew France <a href="https://cdn.homebrew-france.fun/docs/xbox/unleashx-language/config.xml">ici</a>.</li>
+                    <li>Connectez-vous à votre console via FTP. Copiez le fichier <code>French.xml</code> à la racine de la partition <code>E:</code></li>
+                    <li>Copiez le fichier <code>config.xml</code> dans le dossier <code>C:\Dashboard</code></li>
+                </ul>
+                <h2 class="titles" id="install-insignia">III. Installation d'Insignia (Optionnel)</h2><br>
+                <h class="subtitles">1. Inscription de la console</h>
+                <p>Insignia est un service vous permettant de jouer en ligne sur votre Xbox bien que les serveurs en ligne du Xbox Live soient fermés.</p>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li>Un accès à Internet pour la Xbox (voir <a href="#adjusts">III.- 1</a>).</li>
+                        <li>Une manette Xbox <strong>OFFICIELLE</strong>. (certains modèles dits "third-party" pourraient fonctionner quand même)</li>
+                        <li>La dernière version de <a href="https://github.com/insignia-live/setup-assistant-release/releases/download/2025-01-19/default.xbe">Insignia Setup-Assistant</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <ul style="list-style-type: decimal;">
+                    <li>Connectez-vous à votre console via FTP. Allez dans le dossier <code>E:\Applications</code>, créez un dossier <code>Insignia</code> puis copiez le fichier <code>default.xbe</code> du Insignia Setup-Assistant à l'intérieur de ce dossier.</li>
+                    <li>Sur le dashboard Xbox, rendez-vous dans "Applications" et lancez "Insignia Setup-Assistant".</li>
+                    <li>Dans l'interface, sélectionnez "Register Xbox"</li>
+                    <img class="img-border" src="https://cdn.homebrew-france.fun/docs/xbox/insignia1.png" width="450"><br>
+                    <img class="img-border" src="https://cdn.homebrew-france.fun/docs/xbox/insignia2.png" width="450"><br>
+                    <i>Vous devriez voir ce message</i>
+                </ul>
+                <h class="subtitles">2. Création du compte Insignia</h>
+                <ul style="list-style-type: decimal;">
+                    <li>Rendez vous sur le site <a href="https://insignia.live">insignia.live</a></li>
+                    <li>Vous trouverez un encart pour y entrer votre adresse mail, entrez-là puis cochez la case en dessous.</li>
+                    <img class="img-border" src="https://cdn.homebrew-france.fun/docs/xbox/insignia3.png" width="450"><br>
+                    <li>Vous allez ensuite recevoir un code d'enregistrement par e-mail. Consultez vos spams si le mail n'est pas parvenu.</li>
+                    <p>Le code devrait être de la forme suivante : <code>XXXXX-XXXXX-XXXXX-XXXXX-XXXXX</code>.</p>
+                </ul>
+                <h class="subtitles">3. Installation du dashboard Xbox original comme application</h>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li>La dernière version de <a href="https://gbatemp.net/download/c-xbox-tool.7615/download">C-Xbox</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li>La dernière version du <a href="https://drive.google.com/file/d/1FnRxxWGhkcNvmSEHH-s1Vu9Q9_R1HF9R/view?usp=drive_link">Xbox Softmodding Extras Tools Disc</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <ul style="list-style-type: decimal;">
+                    <li>Créez un dossier, nommez-le par exemple "Xbox" et placez le sur le bureau.</li>
+                    <li>Dans ce dossier, placez-y les deux fichiers téléchargés lors des prérequis ci-dessus.</li>
+                    <li>Décompressez le fichier <code>.zip</code> de C-Xbox, vous aurez accès à un dossier nommé <code>cxboxtool207</code> puis un éxecutable nommé <code>C-Xbox Tool.exe</code>, lancez-le.</li>
+                    <p>Vous arrivez sur cette page :</p>
+                    <img class="img-border" src="https://cdn.homebrew-france.fun/docs/xbox/msdash1.png" width="550">
+                    <li>Cliquez sur "Add"</li>
+                    <img class="img-border" src="https://cdn.homebrew-france.fun/docs/xbox/msdash2.png" width="550">
+                    <li>Dans "ISO to extract", cliquez ici puis rendez-vous dans le dossier où vous avez placé le <code>Softmodding Tools Extras Disc.iso</code></li>
+                    <img class="img-border" src="https://cdn.homebrew-france.fun/docs/xbox/msdash3.png" width="550">
+                    <li>Créez ensuite un dossier "Extracted" sur votre bureau.</li>
+                    <li>Dans "Target Folder", cliquez ici puis choisissez le dossier "Extracted" créé précédemment.</li>
+                    <img class="img-border" src="https://cdn.homebrew-france.fun/docs/xbox/msdash4.png" width="550">
+                    <li>Faites "Ok", le Xbox Softmodding Tool Extras Disc devrait être extrait dans un dossier dans "Extracted".</li>
+                    <li>Connectez-vous à votre console via FTP. Sur votre PC, dans le dossier "Extracted" vous trouverez le dossier "Xbox Softmodding Tool Extras Disc", copiez-le vers votre Xbox à l'emplacement <code>E:\Applications</code>.</li>
+                    <li>Sur votre console, allez sur "System" puis "File manager"</li>
+                    <i>Note: si le dashboard est en français ce sera "Système" puis "Gestion. Fichiers".</i>
+                    <li>Naviguez vers <code>E:\Applications\Xbox Softmodding Tool Extras Disc</code> puis lancez le fichier <code>default.xbe</code></li>
+                    <li>Une fois le logiciel lancé, sélectionnez "Dashboards" puis "MS Dashboard" puis procédez à l'installation.</li>
+                    <li>Pour accéder au dashboard Xbox original, à présent, vous devez vous rendre dans "System" puis "File explorer", naviguer vers <code>C:\</code> et lancer <code>xboxdash.xbe</code>.</li>
+                </ul>
+                <h class="subtitles">4. Configuration du jeu en ligne sur la console</h>
+                <ul style="list-style-type: decimal;">
+                    <li>Lancez le dashboard Xbox original, à présent, vous devez vous rendre dans "System" puis "File explorer", naviguer vers <code>C:\</code> et lancer <code>xboxdash.xbe</code>.</li>
+                    <li>Allez dans "Paramètres" puis "Réseau", allez sur "Paramètres"</li>
+                    <li>Allez sur "Serveurs DNS" puis passez l'obtention des DNS en mode manuel.</li>
+                    <li>En serveur primaire, mettez l'adresse IP suivante : <code>46.101.64.175</code></li>
+                    <li>En serveur secondaire, mettez l'adresse IP suivante : <code>8.8.8.8</code></li>
                 </ul>
             </div>            
         </div>
