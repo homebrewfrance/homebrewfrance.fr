@@ -24,7 +24,7 @@ footer.innerHTML = `
     <div class="left-footer">
         <div class="hbf-logo-container" style="padding: 0px; margin: 0px; cursor: pointer;">
             <p style="font-family: Sora; font-size: 24px; color: white;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong></p>
-            <div class="hbf-version">Version : 4.1.0</div>
+            <div class="hbf-version">Version : 4.0.0</div>
         </div>
         <small style="color: rgb(210, 210, 210); font-family: 'Poppins',sans-serif;"><a class="alcool" href="https://homebrewfrance.fr/multi-checker/alcoolemie">©</a> 2021 - 2025&nbsp;<span style="color: rgb(173, 173, 173)">|</span>&nbsp;Distribué sous licence <a href="https://homebrewfrance.fr/licence/">GNU GPLv3</a></small>
     </div>
@@ -36,12 +36,13 @@ footer.innerHTML = `
         </div>
 
         <div class="footer-column">
-            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            <!--div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
                 <a href="https://github.com/homebrewfrance/" title="Notre organisation GitHub"><i class="fa-brands fa-github"></i></a>
                 <a href="https://homebrewfrance.fr/discord/" title="Notre serveur Discord"><i class="fa-brands fa-discord"></i></a>
                 <a href="https://instagram.com/homebrewfrance" title="Notre compte Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/company/homebrewfrance" title="Notre page LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            </div>
+            </div-->
+            <a title="Devenir Modo" href="https://homebrewfrance.fr/devenir-modo">Devenir Modérateur</a>
             <a title="Contester un bannissement" href="https://homebrewfrance.fr/deban/">Débannissement</a>
             <a title="Recrutements" href="https://homebrewfrance.fr/recrutements">Recrutements</a>
         </div>

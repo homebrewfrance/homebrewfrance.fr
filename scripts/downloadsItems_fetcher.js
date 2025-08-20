@@ -68,6 +68,7 @@ function createItemShop(themes, packs) {
             <small style="text-align: center; padding-bottom: 12px;">${themes[itemIndex].description}</small><br>
             <small style="color: white;"><strong>Console :</strong>&nbsp;${themes[itemIndex].console}</small><small style="color: white;"><strong>Auteur :</strong>&nbsp;${themes[itemIndex].author}</small>
             <small style="color: white;"><strong>Catégorie :</strong>&nbsp;${themes[itemIndex].category}</small>
+            <small style="color: white;"><strong>Création :</strong>&nbsp;${themes[itemIndex].date}</small>
             <div class="btn-container">
                 <a href="${themes[itemIndex].lienDL}"><button class="default-button"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Télécharger</button></a>
             </div>

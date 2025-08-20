@@ -1,13 +1,25 @@
 {
     "themes": [
         {
+            "name": "Minimalist Purple",
+            "description": "Un thème minimaliste aux couleurs sombres et aux lueurs violettes.",
+            "author": "Homebrew France - Dhalian",
+            "console": "3DS",
+            "category": "Thèmes Luma3DS",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/minimalist_purple/minimalist_purple.zip",
+            "image": "https://cdn.homebrew-france.fun/themes/minimalist_purple/icon.png", 
+            "qr": "https://cdn.homebrew-france.fun/themes/minimalist_purple/qr.png",
+            "date": "8 Août 2025"
+        },
+        {
             "name": "Cyberpunk Edgerunners 2",
             "description": "Un autre thème dans l'univers Cyberpunk Edgerunners.",
             "author": "Xanatel",
             "console": "Nintendo Switch",
             "category": "Thèmes Nintendo Switch",
             "lienDL": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners2/cyberpunk_edgerunners2.nxtheme",
-            "image": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners2/icon.jpg"
+            "image": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners2/icon.jpg", 
+            "date": "14 Mars 2025"
         },
         {
             "name": "Cyberpunk Edgerunners 1",
@@ -16,7 +28,8 @@
             "console": "Nintendo Switch",
             "category": "Thèmes Nintendo Switch",
             "lienDL": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners1/cyberpunk_edgerunners1.nxtheme",
-            "image": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners1/icon.jpg"
+            "image": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners1/icon.jpg",
+            "date": "14 Mars 2025"
         },
         {
             "name": "Ascendance of a Bookworm",
@@ -24,9 +37,10 @@
             "author": "FireChat",
             "console": "3DS",
             "category": "Thèmes Luma3DS",
-            "lienDL": "https://cdn.homebrew-france.fun/themes/ascendance_of_a_bookworm_luma/theme.zip",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/ascendance_of_a_bookworm_luma/ascendance_of_a_bookworm_luma.zip",
             "image": "https://cdn.homebrew-france.fun/themes/ascendance_of_a_bookworm_luma/icon.png",
-            "qr": "https://cdn.homebrew-france.fun/themes/ascendance_of_a_bookworm_luma/qr.png"
+            "qr": "https://cdn.homebrew-france.fun/themes/ascendance_of_a_bookworm_luma/qr.png",
+            "date": "1 Février 2025"
         },
         {
             "name": "Miku Swimming In Ramen",
@@ -36,17 +50,30 @@
             "category": "Thèmes Luma3DS",
             "lienDL": "https://themeplaza.art/download/68900",
             "image": "https://cdn.homebrew-france.fun/themes/miku_swimming_in_ramen/icon.png",
-            "qr": "https://cdn.homebrew-france.fun/themes/miku_swimming_in_ramen/qr.png"
+            "qr": "https://cdn.homebrew-france.fun/themes/miku_swimming_in_ramen/qr.png",
+            "date": "17 Juillet 2023"
+        },
+		{
+            "name": "Emilien des Douze Coups de Midi",
+            "description": "Un thème Emilien des Douze Coups de Midi.",
+            "author": "Homebrew France - Dhalian",
+            "console": "3DS",
+            "category": "Thèmes Luma3DS",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/emilien_douze_coups.zip",
+            "image": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/icon.png", 
+            "qr": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/qr.png",
+            "date": "9 Août 2025"
         },
         {
             "name": "Les Douze Coups de Midi",
             "description": "Un thème basé sur le jeu télévisé \"Les Douze Coups de Midi\".",
-            "author": "Homebrew France",
+            "author": "Homebrew France - Dhalian",
             "console": "3DS",
             "category": "Thèmes Luma3DS",
-            "lienDL": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_luma/theme.zip",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_luma/douze_coups_de_midi_luma.zip",
             "image": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_luma/icon.png",
-            "qr": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_luma/qr.png"
+            "qr": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_luma/qr.png",
+            "date": "28 Janvier 2025"
         },
         {
             "name": "Les Douze Coups de Midi",
@@ -55,7 +82,8 @@
             "console": "DSi",
             "category": "Fonds Unlaunch",
             "lienDL": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_unlaunch/12coups.gif",
-            "image": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_unlaunch/12coups.gif"
+            "image": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_unlaunch/12coups.gif",
+            "date": "5 Juillet 2023"
         },
         {
             "name": "Les Douze Coups de Midi",
@@ -64,7 +92,8 @@
             "console": "DSi",
             "category": "Thèmes TWiLightMenu++",
             "lienDL": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_twilight/theme.zip",
-            "image": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_twilight/icon.png"
+            "image": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_twilight/icon.png",
+            "date": "5 Juillet 2023"
         },
         {
             "name": "Cauet Burger",
@@ -72,9 +101,10 @@
             "author": "Arkomega",
             "console": "3DS",
             "category": "Thèmes Luma3DS",
-            "lienDL": "https://cdn.homebrew-france.fun/themes/cauet_burger_luma/theme.zip",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/cauet_burger_luma/cauet_burger_luma.zip",
             "image": "https://cdn.homebrew-france.fun/themes/cauet_burger_luma/icon.png",
-            "qr": "https://cdn.homebrew-france.fun/themes/cauet_burger_luma/qr.png"
+            "qr": "https://cdn.homebrew-france.fun/themes/cauet_burger_luma/qr.png",
+            "date": "27 Août 2021"
         },
         {
             "name": "Cauet Burger (Original)",
@@ -83,7 +113,8 @@
             "console": "DSi",
             "category": "Splash Screen HiyaCFW",
             "lienDL": "https://cdn.homebrew-france.fun/themes/cauet_burger_2006_hiya/splash.zip",
-            "image": "https://cdn.homebrew-france.fun/themes/cauet_burger_2006_hiya/icon.gif"
+            "image": "https://cdn.homebrew-france.fun/themes/cauet_burger_2006_hiya/icon.gif",
+            "date": "6 Août 2022"
         },
         {
             "name": "Cauet Burger (Le retour)",
@@ -92,7 +123,8 @@
             "console": "DSi",
             "category": "Splash Screen HiyaCFW",
             "lienDL": "https://cdn.homebrew-france.fun/themes/cauet_burger_2022_hiya/splash.zip",
-            "image": "https://cdn.homebrew-france.fun/themes/cauet_burger_2022_hiya/icon.gif"
+            "image": "https://cdn.homebrew-france.fun/themes/cauet_burger_2022_hiya/icon.gif",
+            "date": "6 Août 2022"
         },
         {
             "name": "Cauet Burger",
@@ -101,7 +133,8 @@
             "console": "DSi",
             "category": "Fonds Unlaunch",
             "lienDL": "https://cdn.homebrew-france.fun/themes/cauet_burger_unlaunch/unlaunch_bg.zip",
-            "image": "https://cdn.homebrew-france.fun/themes/cauet_burger_unlaunch/icon.gif"
+            "image": "https://cdn.homebrew-france.fun/themes/cauet_burger_unlaunch/icon.gif",
+            "date": "6 Août 2022"
         }
     ],
     "packs": [
