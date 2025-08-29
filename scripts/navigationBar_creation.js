@@ -227,17 +227,17 @@ document.addEventListener('DOMContentLoaded', function () {
                             otherDrop.classList.remove('showDropdown');
                         }
 
-                        if (usrAgent.includes('Chrome')) {
+                        /*if (usrAgent.includes('Chrome')) {*/
                             if (allDrops.length > 0) {
                                 var navbar = document.getElementsByClassName('navbar')[0];
                                 navbar.style.backdropFilter = 'none';
-                                navbar.style.backgroundColor = '#1f2023e3';
+                                navbar.style.backgroundColor = '#151518e5';
                             }
                             else {
                                 var navbar = document.getElementsByClassName('navbar')[0];
                                 navbar.style.backdropFilter = 'blur(10px)';
                             }
-                        }
+                        /*}*/
                     });
                 }
 
