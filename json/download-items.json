@@ -1,6 +1,27 @@
 {
     "themes": [
         {
+            "name": "Emilien des Douze Coups de Midi",
+            "description": "Un thème Emilien des Douze Coups de Midi pour Nintendo DSi.",
+            "author": "Homebrew France - Dhalian",
+            "console": "DSi",
+            "category": "Thèmes TWiLightMenu++",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups_dsi/emilien_douze_coups_dsi.7z",
+            "image": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups_dsi/icon.png", 
+            "date": "24 Août 2025"
+        },
+        {
+            "name": "Emilien des Douze Coups de Midi",
+            "description": "Un thème Emilien des Douze Coups de Midi.",
+            "author": "Homebrew France - Dhalian",
+            "console": "3DS",
+            "category": "Thèmes Luma3DS",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/emilien_douze_coups.zip",
+            "image": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/icon.png", 
+            "date": "9 Août 2025",
+            "qr": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/qr.png"
+        },
+        {
             "name": "Minimalist Purple",
             "description": "Un thème minimaliste aux couleurs sombres et aux lueurs violettes.",
             "author": "Homebrew France - Dhalian",
@@ -52,17 +73,6 @@
             "image": "https://cdn.homebrew-france.fun/themes/miku_swimming_in_ramen/icon.png",
             "qr": "https://cdn.homebrew-france.fun/themes/miku_swimming_in_ramen/qr.png",
             "date": "17 Juillet 2023"
-        },
-		{
-            "name": "Emilien des Douze Coups de Midi",
-            "description": "Un thème Emilien des Douze Coups de Midi.",
-            "author": "Homebrew France - Dhalian",
-            "console": "3DS",
-            "category": "Thèmes Luma3DS",
-            "lienDL": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/emilien_douze_coups.zip",
-            "image": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/icon.png", 
-            "qr": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/qr.png",
-            "date": "9 Août 2025"
         },
         {
             "name": "Les Douze Coups de Midi",

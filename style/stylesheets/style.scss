@@ -710,8 +710,6 @@ img {
 }
 
 .partner-category {
-	color: #9a78d8;
-	background-color:  #362744 ;
 	font-size: 16px;
 	border-radius: 7px;
 	padding-inline: 5px;
@@ -720,6 +718,21 @@ img {
 	align-items: center;
 	margin-left: 6px;
 	transform: translateY(-2px);
+}
+
+.partner-classic {
+	color: #9a78d8;
+	background-color:  #362744 ;
+}
+
+.partner-orange {
+	color: #d8ab78;
+	background-color:  #443727 ;
+}
+
+.partner-red {
+	color: #d87878;
+	background-color:  #442727 ;
 }
 
 .docs {
