@@ -63,7 +63,7 @@ function createItemShop(themes, packs) {
         div.className = "grid-downloads";
         div.innerHTML = 
         `
-            <img src="${themes[itemIndex].image}" style="width: 24%; height: auto;">
+            <img src="${themes[itemIndex].image}" style="width: 70%; height: auto;">
             <h3 style="font-weight: 700;">${themes[itemIndex].name}</h3>
             <small style="text-align: center; padding-bottom: 12px;">${themes[itemIndex].description}</small><br>
             <small style="color: white;"><strong>Console :</strong>&nbsp;${themes[itemIndex].console}</small><small style="color: white;"><strong>Auteur :</strong>&nbsp;${themes[itemIndex].author}</small>

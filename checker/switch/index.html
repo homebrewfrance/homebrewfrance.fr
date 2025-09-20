@@ -24,10 +24,10 @@
         <!-- Meta -->
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<meta charset="utf-8" />
-		<meta content="NS Serial Checker" property="og:title"/>
-		<meta content="Un outil pour vérifier la compatibilité de votre console avec la faille RCM." property="og:description"/>
-		<meta content="https://homebrewfrance.fr/multi-checker/switch" property="og:url"/>
-		<meta content="https://cdn.homebrew-france.fun/generic/website-icon.png" property="og:image"/>
+		<meta content="Nintendo Switch | Serial Checker" property="og:title"/>
+		<meta content="Un outil pour vérifier la compatibilité de votre console Nintendo Switch avec la faille RCM." property="og:description"/>
+		<meta content="https://homebrewfrance.fr/checker/switch" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.fun/multi-checker/checker-icon.png" property="og:image"/>
 
 		
         <!-- Link -->
@@ -57,11 +57,17 @@
                 <p>Tapez le ensuite ci-dessous pour savoir si votre console est compatible avec la faille RCM.</p>
                 <multi-checker id="nintendoSwitch">
                     <center><form style="margin-block: 12px;" method="get">
-                        <div class="input-switch"><input type="text" name="numberInput" id="inputSwitchField" required  placeholder="Ex: XAJ10046000000"><i class="fa-solid fa-magnifying-glass"></i></div>
+                        <div class="input-switch"><input type="text" name="numberInput" id="inputSwitchField" required  placeholder="Ex: XAJ10046000000" maxlength="14"><i class="fa-solid fa-magnifying-glass"></i></div>
                         <input class="submit" type="submit" value="Vérifier la compatibilité >">
                     </center>
                 </multi-checker>
                 <center><div style="margin-top: 6px; font-size: 16px;" id="resultat" class="resultat"></div></center>
+            </div>
+            <div class="checker">
+                <h3><i class="fa fa-question-circle" aria-hidden="true">&nbsp;&nbsp;</i>Où vérifier le numéro de série :</h3>
+                <img src="https://cdn.homebrew-france.fun/multi-checker/switch-serial.png" width="450px" alt="Vérification du numéro de série">
+                <small style="color: rgb(139, 139, 139);"><i><strong>Crédits image :</strong> &copy; NINTENDO</i></small>
+                <p>Le numéro de série de votre console Nintendo Switch&#8482; se trouve sous la console, à proximité du port de recharge USB-C.<br>Veuillez entrer la totalité du numéro de série (les trois lettres du début comprises).</p>
             </div>
             <div class="checker">
                 <h3><i class="fa fa-question-circle" aria-hidden="true">&nbsp;&nbsp;</i>Informations :</h3>
@@ -69,6 +75,7 @@
                     <li style="list-style-type: none; margin-left: 5px; margin-block: 8px;"><i class='fas fa-angle-right'></i>&nbsp;<code>Votre console n'est pas patchée</code> signifie que votre console est compatible avec la faille Tegra RCM, elle est donc "hackable" sans installation de puce.</li>
                     <li style="list-style-type: none; margin-left: 5px; margin-block: 8px;"><i class='fas fa-angle-right'></i>&nbsp;<code>Votre console est potentiellement patchée</code> signifie que votre console est supposée compatible avec la faille Tegra RCM mais n'est pas "hackable" sans installation de puce.</li>
                     <li style="list-style-type: none; margin-left: 5px; margin-top: 8px;"><i class='fas fa-angle-right'></i>&nbsp;<code>Votre console est patchée</code> signifie que votre console est incompatible avec la faille Tegra RCM, elle n'est donc pas "hackable" sans installation de puce.</li>
+                    <p><i class='fas fa-angle-right'></i>&nbsp;Cet outil ne permet que de vérifier les numéros de série des Nintendo Switch premières du nom. Cet outil ne fonctionnera pas avec un numéro de série de Nintendo Switch 2.</p>
                 </ul>
             </div>
         </div>	

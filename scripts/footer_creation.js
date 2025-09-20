@@ -36,13 +36,12 @@ footer.innerHTML = `
         </div>
 
         <div class="footer-column">
-            <!--div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
+            <div style="display: flex; flex-direction: row; align-items: center; justify-content: center;">
                 <a href="https://github.com/homebrewfrance/" title="Notre organisation GitHub"><i class="fa-brands fa-github"></i></a>
                 <a href="https://homebrewfrance.fr/discord/" title="Notre serveur Discord"><i class="fa-brands fa-discord"></i></a>
                 <a href="https://instagram.com/homebrewfrance" title="Notre compte Instagram"><i class="fa-brands fa-instagram"></i></a>
                 <a href="https://www.linkedin.com/company/homebrewfrance" title="Notre page LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-            </div-->
-            <a title="Devenir Modo" href="https://homebrewfrance.fr/devenir-modo">Devenir Modérateur</a>
+            </div>
             <a title="Contester un bannissement" href="https://homebrewfrance.fr/deban/">Débannissement</a>
             <a title="Recrutements" href="https://homebrewfrance.fr/recrutements">Recrutements</a>
         </div>

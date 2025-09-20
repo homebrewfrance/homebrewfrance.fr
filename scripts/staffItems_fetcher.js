@@ -118,7 +118,7 @@ function createItemStaff(staff) {
             `
                 <a class="music-link" id="${staff[itemIndex].name}MusicLink">
                     <small>
-                        <i class="fa-solid fa-music"></i>&nbsp;${staff[itemIndex].musicName}
+                        <i class="fa-solid fa-music"></i> &nbsp;${staff[itemIndex].musicName}
                     </small>
                 </a>
             `;

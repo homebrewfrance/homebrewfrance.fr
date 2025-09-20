@@ -62,6 +62,7 @@ $title-font: 'Sora', sans-serif;
 	.nobuyoshi-item {
 		float: left;
 		width: 360px;
+		flex-grow: 1;
 	}
 	.home-header {
 		margin-top: 12%;
@@ -69,8 +70,12 @@ $title-font: 'Sora', sans-serif;
 		height: var(--device-height);
 		justify-content: center;
 	}
+
+	.home-header-2 {
+		justify-content: center;
+	}
 	
-	.home-header, .error-container {
+	.home-header, .error-container, .home-header-2 {
 		display: flex;
 		flex-direction: row;
 	}
@@ -81,6 +86,14 @@ $title-font: 'Sora', sans-serif;
 		max-height: 450px;
 		width: 50%;
 		padding: 25px;
+	}
+
+	.discord-img2 {
+		display: flex;
+		align-items: center; 
+		justify-content: center; 
+		max-height: 450px;
+		width: 50%;
 	}
 
 	.grid-shop {
@@ -97,7 +110,7 @@ $title-font: 'Sora', sans-serif;
 		flex-direction: row;
 		-ms-flex-direction: row;
 	}
-	.home-header, .error-container {
+	.home-header, .error-container, .home-header-2 {
 		display: flex;
 	}
 	.discord-img, .error-img {
@@ -106,6 +119,21 @@ $title-font: 'Sora', sans-serif;
 	.home-header {
 		margin-top: 20%;
 		height: var(--device-height);
+		justify-content: center;
+
+		.discord-title, .discord-desc {
+			text-align: center;
+		}
+
+		.btn-container-home {
+			justify-self: center;
+			align-self: center;
+			margin-left: -4px;
+		}
+	}
+
+	.home-header-2 {
+		margin-top: 20%;
 		justify-content: center;
 
 		.discord-title, .discord-desc {
@@ -505,11 +533,40 @@ $title-font: 'Sora', sans-serif;
 	border-radius: 18px;
 }
 
-.warning-container {
+
+.warning-inpage {
+	background: rgba(171, 0, 0, 0.2);
+	font-size: 17px;
+	font-family: 'Space Grotesk', sans-serif;
+	border: 1px solid #8d4141;
+	width: 100%;
+	font-weight: 400;
+	padding-block: 8px;
+	padding-inline: 20px;
+	box-shadow: 0 0 10px rgba(255, 150, 150, 0.3);
+	margin-top: 17px;
+	border-radius: 18px;
+}
+
+.annonce {
+	background: rgba(0, 0, 0, 0.2);
+	font-size: 17px;
+	font-family: 'Space Grotesk', sans-serif;
+	border: 1px solid #8d7f41;
+	width: var(--navbar-width);
+	font-weight: 400;
+	padding-block: 8px;
+	padding-inline: 20px;
+	box-shadow: 0 0 10px rgba(255, 243, 150, 0.3);
+	margin-top: 17px;
+	border-radius: 18px;
+	margin-inline: -10px;
+}
+
+.warning-container, .annonce-container {
 	display: flex;
 	justify-content: center;
 	margin-top: 8px;
-	padding-inline: 10px;
 }
 
 .alcool:hover {
@@ -873,7 +930,6 @@ img {
 	padding-top: 35px!important;
 	padding: 15px;
 	box-shadow: 0px 10px 15px -4px #0000005e;
-
 }
 
 .nobuyoshi-error {
@@ -932,6 +988,12 @@ img {
 }
 
 .home-header button {
+	padding-inline: 25px;
+	padding-block: 9px;
+	font-size: 17px;
+}
+
+.home-header-2 button {
 	padding-inline: 25px;
 	padding-block: 9px;
 	font-size: 17px;

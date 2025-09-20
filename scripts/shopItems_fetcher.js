@@ -35,14 +35,14 @@ function createItemShop(modifConsoles, consolesPucees) {
                 &nbsp;
                 <span class="prix-original">${modifConsoles[itemIndex].prixOriginal}</span>
             </h3>
-            <div class="btn-container" style="margin-bottom: 8px;">
+            <!--div class="btn-container" style="margin-bottom: 8px;">
                 <a href="${modifConsoles[itemIndex].lienArticle}">
                     <button class="shop-button"><i class="fas fa-shopping-cart"></i>&nbsp;Acheter</button>
                 </a>
                 <a href="${modifConsoles[itemIndex].lienArticle+'#descriptionTab'}">
                     <button class="shop-button"><i class="fas fa-plus-circle"></i>&nbsp;Plus d'infos</button>
                 </a>
-            </div>
+            </div-->
             <div class="reductions">${calculReduc(modifConsoles[itemIndex])}</div>
             <div class="fup-icon-small"><img src="https://cdn.homebrew-france.fun/partner/fixurphone.png" width="75px"></div>
         `;
@@ -67,14 +67,14 @@ function createItemShop(modifConsoles, consolesPucees) {
                 &nbsp;
                 <span class="prix-original">${consolesPucees[itemIndex2].prixOriginal}</span>
             </h3>
-            <div class="btn-container">
+            <!--div class="btn-container">
                 <a href="${consolesPucees[itemIndex2].lienArticle}">
                     <button class="shop-button"><i class="fas fa-shopping-cart"></i>&nbsp;Acheter</button>
                 </a>
                 <a href="${consolesPucees[itemIndex2].lienArticle+"#descriptionTab"}">
                     <button class="shop-button"><i class="fas fa-plus-circle"></i>&nbsp;Plus d'infos</button>
                 </a>
-            </div>
+            </div-->
             <div class="reductions">${calculReduc(consolesPucees[itemIndex2])}</div>
             <div class="fup-icon-small"><img src="https://cdn.homebrew-france.fun/partner/fixurphone.png" width="75px"></div>
         `;

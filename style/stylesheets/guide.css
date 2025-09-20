@@ -20,6 +20,11 @@
 @import url("https://fonts.googleapis.com/css2?family=Geist+Mono:wght@100..900&family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=Paytone+One&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @media only screen and (max-width: 1041px) {
+  .indicator-container {
+    margin-top: 120px;
+    margin-bottom: 25px;
+    margin-inline: 15px;
+  }
   .doc-header {
     display: flex;
     flex-direction: column;
@@ -79,8 +84,8 @@
     margin-right: 3%;
   }
   .page {
-    margin-left: 8%;
-    margin-right: 8%;
+    margin-left: 4%;
+    margin-right: 4%;
   }
   .page-docu {
     margin-left: 4%;
@@ -109,6 +114,15 @@
   }
 }
 @media only screen and (min-width: 1041px) {
+  .indicator-container {
+    margin-top: 110px;
+    margin-bottom: 25px;
+    margin-inline: 15px;
+  }
+  form {
+    padding-left: 5%;
+    padding-right: 5%;
+  }
   .spacer {
     margin-inline: 12px;
   }
@@ -160,7 +174,7 @@
     width: 100%;
   }
   .page {
-    margin-left: 17%;
+    margin-left: 15%;
     margin-right: 15%;
   }
   .page-docu {
@@ -676,6 +690,27 @@ hr {
   border-radius: 11px;
 }
 
+.annonce {
+  background: rgba(0, 0, 0, 0.2);
+  font-size: 17px;
+  font-family: "Space Grotesk", sans-serif;
+  border: 1px solid #8d7f41;
+  width: var(--navbar-width);
+  font-weight: 400;
+  padding-block: 8px;
+  padding-inline: 20px;
+  box-shadow: 0 0 10px rgba(255, 243, 150, 0.3);
+  margin-top: 17px;
+  border-radius: 18px;
+}
+
+.annonce-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+  padding-inline: 10px;
+}
+
 .doc-header {
   font-size: 13px;
   color: #a1a1a1;
@@ -1110,8 +1145,6 @@ html {
 
 form {
   color: white;
-  padding-left: 5%;
-  padding-right: 5%;
 }
 
 .indicator {
@@ -1127,12 +1160,6 @@ form {
   font-size: 35px;
   font-family: "Sora", sans-serif;
   text-align: center;
-}
-
-.indicator-container {
-  margin-top: 75px;
-  margin-bottom: 25px;
-  margin-inline: 15px;
 }
 
 .indicator-desc {

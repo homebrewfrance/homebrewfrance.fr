@@ -7,8 +7,6 @@ document.addEventListener('DOMContentLoaded', function () {
         const resultat = document.getElementById("resultat");
         const pageName = document.querySelector('body').getAttribute('page_name');
         const xawSelector = numberInputRaw.slice(0,3).toUpperCase();
-        console.log(numberInput);
-        console.log(xawSelector);
 
         function compatible() {
             resultat.innerHTML = '';
@@ -133,6 +131,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 var modelType = document.getElementsByClassName('model-type')[0];
                 modelType.innerHTML = '<strong>Modèle :</strong> Nintendo Switch <strong>V2</strong>&nbsp;/&nbsp;<strong>V1 Patch</strong>'
             } 
+            else if (numberInput.length < 11 || numberInput.length > 11) {
+                invalid();
+            } 
             else {
                 invalid();
             }
@@ -182,6 +183,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 var modelType = document.getElementsByClassName('model-type')[0];
                 modelType.innerHTML = '<strong>Modèle :</strong> Nintendo Switch <strong>V2</strong>&nbsp;/&nbsp;<strong>V1 Patch</strong>'
             } 
+            else if (numberInput.length < 11 || numberInput.length > 11) {
+                invalid();
+            } 
             else {
                 invalid();
             }
@@ -210,6 +214,11 @@ document.addEventListener('DOMContentLoaded', function () {
             incompatible();
             var modelType = document.getElementsByClassName('model-type')[0];
             modelType.innerHTML = '<strong>Modèle :</strong> Nintendo Switch <strong>OLED</strong>'
+        }
+        else if (xawSelector === "XTJ") {
+            incompatible();
+            var modelType = document.getElementsByClassName('model-type')[0];
+            modelType.innerHTML = '<strong>Modèle :</strong> Nintendo Switch <strong>OLED</strong>'
         } else {
             invalid();
         }
@@ -217,5 +226,5 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 document.addEventListener('DOMContentLoaded', function() {
-        document.getElementById('resultat').innerHTML = "<img src=\"https://cdn.homebrew-france.fun/generic/lumia-guides.png\" width=\"18px\" height=\"18px\"><p>Lumia Checker v0.4b</p>";
+        document.getElementById('resultat').innerHTML = "<img src=\"https://cdn.homebrew-france.fun/generic/lumia-guides.png\" width=\"18px\" height=\"18px\"><p>Lumia Checker v0.5b</p>";
 });

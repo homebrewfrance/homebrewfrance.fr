@@ -108,6 +108,28 @@
             ]
         },
         {
+            "name": "Feldright",
+            "role": "Modérateur",
+            "role2": "Helper",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+            ]
+        },
+        {
+            "name": "Jones",
+            "role": "Modérateur",
+            "role2": "Helper",
+            "avatarFormat": "gif",
+            "musicLink": "https://open.spotify.com/intl-fr/track/6Sy9BUbgFse0n0LPA5lwy5?si=d08c25a16a14404d",
+            "musicName": "Sandstorm - Darude",
+            "musicPlatform": "spotify",
+            "socials": [
+            ]
+        },
+        {
             "name": "Akira",
             "role": "Helper",
             "avatarFormat": "png",
@@ -115,11 +137,6 @@
             "musicLink": "",
             "musicPlatform": "",
             "socials": [
-                {
-                    "name": "discord",
-                    "link": "https://discord.gg/xfhZjmtv2z",
-                    "username": "Team WF"
-                },
                 {
                     "name": "x",
                     "link": "https://x.com/akirancr?s=21",
@@ -178,16 +195,6 @@
             ]
         },
         {
-            "name": "Feldright",
-            "role": "Helper",
-            "avatarFormat": "png",
-            "musicName": "",
-            "musicLink": "",
-            "musicPlatform": "",
-            "socials": [
-            ]
-        },
-        {
             "name": "Hades Bar",
             "role": "Helper",
             "avatarFormat": "png",
@@ -229,16 +236,6 @@
             "musicName": "",
             "musicLink": "",
             "musicPlatform": "",
-            "socials": [
-            ]
-        },
-        {
-            "name": "Jones",
-            "role": "Helper",
-            "avatarFormat": "gif",
-            "musicLink": "https://open.spotify.com/intl-fr/track/6Sy9BUbgFse0n0LPA5lwy5?si=d08c25a16a14404d",
-            "musicName": "Sandstorm - Darude",
-            "musicPlatform": "spotify",
             "socials": [
             ]
         },

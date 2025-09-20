@@ -18,8 +18,12 @@
 
 const warningsList = [
     //"Voici la nouvelle version des services web Homebrew France !<br> Voir le <a style=\"color: #ade5ff;\" href=\"https://github.com/homebrewfrance/homebrewfrance.fr/releases/tag/V4.0.0\">changelog</a> sur GitHub.",
-     '<strong>ANNONCE :</strong> Nous recrutons des nouveaux modérateurs pour la communauté ! Postulez maintenant sur <a style="color:rgb(142, 179, 255)" href="https://homebrewfrance.fr/devenir-modo">cette page</a>'
+    // '<strong>ANNONCE :</strong> Nous recrutons des nouveaux modérateurs pour la communauté ! Postulez maintenant sur <a style="color:rgb(142, 179, 255)" href="https://homebrewfrance.fr/devenir-modo">cette page</a>'
     //'<strong>ANNONCE :</strong> La session de recrutements de modérateurs 2025-2026 ouvrira Jeudi 7 août 2025 à 15h30 (UTC+1:00)'
+]
+
+const annoncesList = [
+    //'<strong>Homebrew France</strong> fête ses 4 ans d\'existence ! La communauté a été créée le 4 septembre 2021 !'
 ]
 
 const global_doc_warning = 'Ce guide ne doit pas être utilisé dans le but de contourner des protections et d\'exécuter des logiciels piratés.';
@@ -34,6 +38,12 @@ if (warningsList.length >= 1) {
     var warningContainer = document.createElement('div');
     warningContainer.className = 'warning-container';
     var warning = document.createElement('div');
+}
+
+if (annoncesList.length >= 1) {
+    var annonceContainer = document.createElement('div');
+    annonceContainer.className = 'annonce-container';
+    var annonce = document.createElement('div');
 }
 
 for (i = 0; i < warningsList.length; i++) {
@@ -53,6 +63,27 @@ for (i = 0; i < warningsList.length; i++) {
         } 
         else {
             pageDocu.prepend(warningContainer);
+        }
+    }
+}
+
+for (i = 0; i < annoncesList.length; i++) {
+    if (annoncesList.length >= 1) {
+        var annonceText = document.createElement('div');
+        annonce.className = "annonce";
+        annonceText.innerHTML = "<strong>ANNONCE :</strong>&nbsp;" + annoncesList[i];
+        if (annoncesList.length != 0) {
+            annonce.appendChild(annonceText);
+            annonceContainer.appendChild(annonce);
+        }
+        
+        if (!pageID.startsWith('DOC') && !pageID.startsWith('MLTI')) {
+            if (annoncesList.length != 0) {
+                page.prepend(annonceContainer);
+            }
+        } 
+        else {
+            pageDocu.prepend(annonceContainer);
         }
     }
 }

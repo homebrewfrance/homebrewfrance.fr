@@ -17,7 +17,7 @@
 */
 
 var rssFeed = document.getElementById('rss-feed');
-var nbArticles = 8;
+var nbArticles = 6;
 var items = []; 
 
 function fetchArticles(items) {

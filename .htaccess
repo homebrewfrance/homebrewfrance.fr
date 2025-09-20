@@ -15,8 +15,8 @@ RewriteEngine On
 # RewriteRule ^ https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
 
 # Redirection vers 503.html (exceptions pour certains dossiers et fichier 503.html)
-RewriteCond %{REQUEST_URI} !^/(scripts|recrutements|error|style|devenir-helper|discord\.homebrewfrance\.fr)(/.*)?$
-RewriteRule ^(.*)$ /error/503.html [R=302,L]
+# RewriteCond %{REQUEST_URI} !^/(scripts|recrutements|error|style|devenir-helper|discord\.homebrewfrance\.fr)(/.*)?$
+# RewriteRule ^(.*)$ /error/503.html [R=302,L]
 
 # Ajoute les en-têtes HTTP
 # Header set Retry-After "86400"

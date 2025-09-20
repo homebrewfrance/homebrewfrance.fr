@@ -54,7 +54,7 @@ function createNavMenu() {
         downloadPDF();
     }
 
-    var navBottom = document.createElement('div');
+    /*var navBottom = document.createElement('div');
     navBottom.className = "nav-bottom";
     navBottom.innerHTML = `
         <h4 style="font-family: 'Sora', sans-serif; font-size: 18px; align-items: center; display: flex;">
@@ -63,7 +63,7 @@ function createNavMenu() {
         </h4>
         <p style="font-size: 15px; color: rgb(210, 210, 210);">Made by Homebrew France</p>
     `;
-    navMenuHoriz.appendChild(navBottom);
+    navMenuHoriz.appendChild(navBottom);*/
 }
 
 function downloadPDF() {

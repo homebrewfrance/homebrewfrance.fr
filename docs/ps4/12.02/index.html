@@ -1,0 +1,144 @@
+<!--    
+	Homebrew France Web V4.1.0
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEB-V4-LWS">
+<head>
+    <title>PS4 BD-J | Guides</title>
+
+    <!-- Meta -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta charset="utf-8" />
+    <meta content="PS4 BD-J | Homebrew France Guides" property="og:title"/>
+    <meta content="Guide de préparation et lancement de l'exploit BD-J (Lapse + GoldHEN) pour PS4 (firmwares 9.00 à 12.02)." property="og:description"/>
+    <meta content="https://homebrewfrance.fr/docs/ps4/12.02" property="og:url"/>
+    <meta content="https://cdn.homebrew-france.fun/docs/lumia-docs.png" property="og:image"/>
+
+    <!-- Link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="../../../style/stylesheets/guide.css" />
+    <link rel="stylesheet" href="../../../style/stylesheets/navbar__f.css" />
+    <link rel="icon" type="image/png" href="https://cdn.homebrew-france.fun/generic/lumia-guides.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+    <!-- Scripts -->
+    <script async src="../../scripts/analyticsServices_manager.js"></script>
+</head>
+<body data-page-id="DOC-PS4-BDJ">
+    <div class="top-page-donations">
+        <a href="https://ko-fi.com/G2G3INK2N"><div class="donation-button" title="Faire un don">
+            <img src="https://storage.ko-fi.com/cdn/cup-border.png"></i>
+        </div></a>
+        <a href="#"><div class="top-page-button" title="Remonter en haut de la page">
+            &#9650;
+        </div></a>
+    </div>
+
+    <div id="navSpace"></div>
+    <div class="docu-container">
+        <div class="nav-menu-horiz" style="overflow: scroll;">
+            <h class="subtitles">Navigation :</h><br>
+            <div class="nav-elements-horiz"></div>
+        </div>
+        <div class="nav-menu-vert">
+            <h class="subtitles">Navigation :</h><br>
+            <div class="nav-elements-vert"></div>
+        </div>
+
+        <div class="page-docu">
+            <h1 class="top">PlayStation 4 - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Lumia</span>&nbsp;<strong>Guides</strong></span></h1>
+
+            <div class="indic" id="indic-discord">
+                <p class="indic-text">Rejoignez <a href="https://discord.homebrewfrance.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+            </div>
+            <h2 class="titles">Préambule</h2>
+            <p>Ce guide explique la préparation d'un Blu-ray BD-J (Lapse.iso) et l'utilisation de GoldHEN via USB ou via le serveur binLoader pour lancer l'exploit BD-J sur PS4 (firmwares 9.00 à 12.02).</p>
+
+            <div class="prerequis">
+                <h3>PRÉREQUIS :</h3>
+                <ul>
+                    <li>PS4 sur le firmware <strong>9.00 à 12.02</strong> — vérifiez dans <em>Paramètres ➜ Système ➜ Informations système</em>. Si vous êtes au-dessus, attendre un futur exploit.</li>
+                    <li>Lecteur Blu-ray : nécessaire pour graver l'ISO sur un disque vierge <strong>BD-R</strong> (les DVD ne fonctionnent pas).</li>
+                    <li>Ordinateur : avec un logiciel de gravure (ex. : ImgBurn sur Windows, K3b sur Linux).</li>
+                    <li>Clé USB (optionnelle mais recommandée) : formatée en <strong>FAT32</strong> pour charger des payloads comme GoldHEN.</li>
+                    <li>Télécharger l'ISO du projet BD-J + Lapse sur le GitHub du développeur Gezine : <strong><a href="https://github.com/Gezine/BD-JB-1250/releases/latest">BD-JB-1250</a></strong> — choisir <code>Lapse.iso</code> (version offline AIO 1.2 recommandée, inclut fixes pour écrans noirs et corruption de saves).</li>
+                    <li>Payload GoldHEN : téléchargez la version compatible avec votre firmware depuis des sources fiables (ex. <a href="https://www.mediafire.com/file/ysorfum1ijrzy6d/">MediaFire</a>, forums de confiance ou dépôts recommandés par la communauté).</li>
+                    <li>Désactiver les mises à jour automatiques : <em>Paramètres ➜ Système ➜ Mises à jour automatiques système ➜ Désactivé</em>.</li>
+                </ul>
+            </div>
+
+            <h2 class="titles" id="telechargement-bluray">I. Téléchargement et préparation du Blu-ray BD-JB</h2>
+            <p>Comme indiqué dans les Outils, si ce n'est pas déjà fait téléchargez <code>Lapse.iso</code> (version 1.2 recommandée, inclut les fixes pour bugs).</p>
+            <ul style="list-style-type: decimal;">
+                <li>Téléchargez l'outil de gravure (ex. ImgBurn sur Windows si nécessaire).</li>
+                <li>Sélectionnez <strong>"Write Image File to Disc"</strong>.</li>
+                <li>Choisissez l'image ISO <code>Lapse.iso</code>.</li>
+                <li>Insérez un <strong>BD-R vierge</strong> et gravez à vitesse lente (4x max) pour éviter les erreurs.</li>
+            </ul>
+            <div class="indic">
+                <p class="indic-text">Durée estimée : environ <strong>10–20 minutes</strong> selon votre graveur.</p>
+                <p class="indic-text">Vous pouvez acheter un BD-JB déjà prêt mais faites très attention aux arnaques en ligne.</p>
+            </div>
+
+            <h2 class="titles" id="prep-usb">II. Préparation de la clé USB pour le Payload (GoldHEN)</h2>
+            <ul style="list-style-type: decimal;">
+                <li>Formatez la clé en <strong>FAT32</strong> (clic droit ➜ Formater sur Windows ou outil équivalent sur Linux/macOS).</li>
+                <i>Note: Si votre clé fait 64 Go ou plus, utilisez un outil comme <strong>guiformat32</strong>. Il est souvent plus simple d'utiliser une petite clé (16–32 Go).</i>
+                <li>Créez à la racine un dossier nommé <code>payloads</code> (ou placez directement <code>payload.bin</code> à la racine pour l'auto-chargement).</li>
+                <li>Copiez <code>goldhen.bin</code> renommé en <code>payload.bin</code> dans la clé (la PS4 montera le périphérique comme <code>/mnt/usb0/</code>).</li>
+                <i>Note: Si aucun périphérique USB n'est présent, l'exploit peut lancer un serveur d'écoute sur le port <strong>9020</strong> et vous permettre d'envoyer le payload depuis un PC (méthode plus complexe).</i>
+            </ul>
+
+            <h2 class="titles" id="prep-ps4">III. Préparation de la PS4</h2>
+            <ul>
+                <li>Connectez la PS4 à Internet au moins une fois (nécessaire pour activer le lecteur Blu-ray).</li>
+                <li>Paramètres ➜ Notifications ➜ Désactivez <em>"Désactiver les pop-ups pendant la lecture vidéo"</em> (utile pour voir les logs).</li>
+                <li>Éteignez complètement la PS4 (pas en veille).</li>
+            </ul>
+
+            <h2 class="titles" id="lancement-exploit">IV. Lancement de l'exploit</h2>
+            <ul style="list-style-type: decimal;">
+                <li>Insérez la clé USB (si utilisée) dans la PS4.</li>
+                <li>Insérez le disque gravé dans le lecteur Blu-ray.</li>
+                <li>Allumez la PS4 et allez dans la section <strong>Blu-ray</strong> (icône disque).</li>
+                <li>Lancez le disque : il se comportera comme un Blu-ray normal et chargera l'exploit BD-J.</li>
+                <li>Attendez 1–2 minutes : des notifications pop-up (logs) apparaîtront. Si succès, Lapse se chaînera automatiquement.</li>
+                <li>Si la clé USB est connectée : elle chargera <code>payload.bin</code> et lancera GoldHEN (l'icône HEN apparaîtra en haut à droite).</li>
+                <li>Sans USB : un serveur <em>binLoader</em> s'ouvrira sur le port <strong>9020</strong>. Utilisez un outil sur PC (ex. PS4 Payload Injector) pour envoyer le payload via l'IP de la PS4 (trouvable dans Paramètres ➜ Réseau).</li>
+                <li>Vérifiez le succès : GoldHEN est chargé si vous voyez l'icône. Vous pouvez maintenant lancer des homebrews, cheats, etc.</li>
+            </ul>
+            <div class="indic">
+                <p class="indic-text">Durée estimée par tentative : environ <strong>2–5 minutes</strong>.</p>
+            </div>
+
+            <div class="disclaimer">
+                <p class="indic-text"><strong>Remarque :</strong> Nous ne garantissons pas le succès et déclinons toute responsabilité en cas de dommages, pertes de données ou bannissements en ligne. N'utilisez que des sources fiables pour les téléchargements.</p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripts -->
+    <script src="../../../scripts/navItemsHighlights_docs.js"></script>
+    <script src="../../../scripts/maintenance_Toggler.js"></script>
+    <script src="../../../scripts/navigationBar_creation.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
