@@ -1,13 +1,6 @@
 {
     "dropdownsItems": [
         {
-            "name": "Nintendo DSi",
-            "url": "https://homebrewfrance.fr/docs/dsi",
-            "id": "dsi-doc",
-            "dropdownId": "docsDrop",
-            "iconLink": "https://cdn.homebrew-france.fun/docs/icons/dsi_icon.png"
-        },
-        {
             "name": "Nintendo 3DS",
             "url": "https://homebrewfrance.fr/docs/3ds/",
             "id": "pretendo-doc",
@@ -57,7 +50,7 @@
             "iconLink": "https://cdn.homebrew-france.fun/docs/icons/revanced_icon.png"
         },
         {
-            "name": "YouTube Lite+",
+            "name": "YouTube Plus",
             "url": "https://homebrewfrance.fr/docs/revanced#ios-alternative",
             "id": "ytliteplus-doc",
             "dropdownId": "docsDrop",

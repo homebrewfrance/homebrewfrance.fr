@@ -18,7 +18,6 @@
             "category": "Thèmes Luma3DS",
             "lienDL": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/emilien_douze_coups.zip",
             "image": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/emilien_douze_coups_preview.png", 
-            "qr": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/qr.png",
             "date": "9 Août 2025"
         },
         {
@@ -30,6 +29,7 @@
             "lienDL": "https://cdn.homebrew-france.fun/themes/minimalist_purple/minimalist_purple.zip",
             "image": "https://cdn.homebrew-france.fun/themes/minimalist_purple/minimalist_purple_preview.png", 
             "qr": "https://cdn.homebrew-france.fun/themes/minimalist_purple/qr.png",
+            "themeplaza": "https://themeplaza.art/item/112946",
             "date": "8 Août 2025"
         },
         {
@@ -61,6 +61,7 @@
             "lienDL": "https://cdn.homebrew-france.fun/themes/ascendance_of_a_bookworm_luma/ascendance_of_a_bookworm_luma.zip",
             "image": "https://cdn.homebrew-france.fun/themes/ascendance_of_a_bookworm_luma/ascendance_of_a_bookworm_luma_preview.png",
             "qr": "https://cdn.homebrew-france.fun/themes/ascendance_of_a_bookworm_luma/qr.png",
+            "themeplaza": "https://themeplaza.art/item/98238",
             "date": "1 Février 2025"
         },
         {
@@ -72,6 +73,7 @@
             "lienDL": "https://themeplaza.art/download/68900",
             "image": "https://cdn.homebrew-france.fun/themes/miku_swimming_in_ramen/miku_swimming_in_ramen_preview.png",
             "qr": "https://cdn.homebrew-france.fun/themes/miku_swimming_in_ramen/qr.png",
+            "themeplaza": "https://themeplaza.art/item/68900",
             "date": "17 Juillet 2023"
         },
         {
@@ -83,6 +85,7 @@
             "lienDL": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_luma/douze_coups_de_midi_luma.zip",
             "image": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_luma/douze_coups_de_midi_luma_preview.png",
             "qr": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_luma/qr.png",
+            "themeplaza": "https://themeplaza.art/item/97937",
             "date": "28 Janvier 2025"
         },
         {
@@ -93,6 +96,7 @@
             "category": "Fonds Unlaunch",
             "lienDL": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_unlaunch/12coups.gif",
             "image": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_unlaunch/douze_coups_de_midi_unlaunch_preview.png",
+            "twlmenuextras": "https://skins.ds-homebrew.com/unlaunch/les-douze-coups-de-midi",
             "date": "5 Juillet 2023"
         },
         {
@@ -103,6 +107,7 @@
             "category": "Thèmes TWiLightMenu++",
             "lienDL": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_twilight/theme.zip",
             "image": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_twilight/douze_coups_de_midi_twilight_preview.png",
+            "twlmenuextras": "https://skins.ds-homebrew.com/nintendo-3ds/les-douze-coups-de-midi",
             "date": "5 Juillet 2023"
         },
         {
@@ -114,6 +119,7 @@
             "lienDL": "https://cdn.homebrew-france.fun/themes/cauet_burger_luma/cauet_burger_luma.zip",
             "image": "https://cdn.homebrew-france.fun/themes/cauet_burger_luma/cauet_burger_luma_preview.png",
             "qr": "https://cdn.homebrew-france.fun/themes/cauet_burger_luma/qr.png",
+            "themeplaza": "https://themeplaza.art/item/38974",
             "date": "27 Août 2021"
         },
         {

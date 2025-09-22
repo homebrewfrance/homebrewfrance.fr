@@ -64,7 +64,7 @@ function createItemShop(themes, packs) {
         div.innerHTML = 
         `
             <img src="${themes[itemIndex].image}" style="width: 70%; height: auto;">
-            <h3 style="font-weight: 700;">${themes[itemIndex].name}</h3>
+            <h3 style="font-weight: 700;">${themes[itemIndex].name}&nbsp;<span class="qrcode-placeholder"></span></h3>
             <small style="text-align: center; padding-bottom: 12px;">${themes[itemIndex].description}</small><br>
             <small style="color: white;"><strong>Console :</strong>&nbsp;${themes[itemIndex].console}</small><small style="color: white;"><strong>Auteur :</strong>&nbsp;${themes[itemIndex].author}</small>
             <small style="color: white;"><strong>Catégorie :</strong>&nbsp;${themes[itemIndex].category}</small>
@@ -93,12 +93,43 @@ function createItemShop(themes, packs) {
             console.log('NO QR');
         }
         else {
-            var itemQRCode = document.createElement('button');
-            var itemBtnContainer = div.querySelector('.btn-container');
-            itemQRCode.className = 'git-button';
-            itemQRCode.innerHTML = '<i class="fa fa-qrcode" aria-hidden="true"></i>&nbsp;QR';
+            var itemQRCode = document.createElement('span');
+            var itemBtnContainer = div.querySelector('.qrcode-placeholder');
+            itemQRCode.className = 'qr-button';
+            itemQRCode.innerHTML = '<i class="fa fa-qrcode" aria-hidden="true"></i>';
             itemQRCode.id = 'QRBtn' + themes[itemIndex].name.replace(/\s/g, '');
             itemBtnContainer.appendChild(itemQRCode);
+        }
+        if (themes[itemIndex].themeplaza == undefined) {
+            console.log('NO TPLINK');
+        }
+        else {
+            var itemTPlink = document.createElement('a');
+            itemTPlink.href = themes[itemIndex].themeplaza;
+            var itemTP = document.createElement('button');
+            var itemBtnContainer = div.querySelector('.btn-container');
+            itemTP.className = 'git-button';
+            itemTP.innerHTML = '<i class="fa-solid fa-paintbrush"></i>&nbsp; ThemePlaza';
+            itemTP.id = 'TPBTn' + themes[itemIndex].name.replace(/\s/g, '');
+            itemTPlink.appendChild(itemTP);
+            itemBtnContainer.appendChild(itemTPlink);
+        }
+        themesDownload.appendChild(div);
+
+        
+        if (themes[itemIndex].twlmenuextras == undefined) {
+            console.log('NO TPLINK');
+        }
+        else {
+            var itemTWLlink = document.createElement('a');
+            itemTWLlink.href = themes[itemIndex].twlmenuextras;
+            var itemTWL = document.createElement('button');
+            var itemBtnContainer = div.querySelector('.btn-container');
+            itemTWL.className = 'git-button';
+            itemTWL.innerHTML = '<i class="fa-solid fa-paintbrush"></i>&nbsp; TWLMenu Extras';
+            itemTWL.id = 'TPBTn' + themes[itemIndex].name.replace(/\s/g, '');
+            itemTWLlink.appendChild(itemTWL);
+            itemBtnContainer.appendChild(itemTWLlink);
         }
         themesDownload.appendChild(div);
     }
