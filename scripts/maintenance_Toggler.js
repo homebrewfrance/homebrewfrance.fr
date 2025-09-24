@@ -91,7 +91,7 @@ for (i = 0; i < annoncesList.length; i++) {
 console.log(pageID);
 
 
-if (pageID.startsWith('DOC') && (!pageID.includes('Revanced'))) {
+if (pageID.startsWith('DOC') && (!pageID.includes('Revanced')) && (!pageID.includes('WIN'))) {
     var doc_warning = document.createElement('div');
     doc_warning.className = 'doc-warning';
     doc_warning.innerHTML = `

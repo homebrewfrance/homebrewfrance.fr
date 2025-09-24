@@ -26,20 +26,20 @@
 		<meta charset="utf-8" />
 		<meta content="ESU Windows 10 (beta) | Lumia Guides" property="og:title"/>
 		<meta content="Un guide complet pour bien appréhender la fin de support de Windows 10." property="og:description"/>
-		<meta content="https://homebrewfrance.fr/docs/windows-10/" property="og:url"/>
+		<meta content="https://homebrewfrance.fr/docs/windows-10/mise-a-niveau-windows-11/" property="og:url"/>
 		<meta content="https://cdn.homebrew-france.fun/docs/lumia-docs.png" property="og:image"/>
 
         
         <!-- Link -->
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="../../style/stylesheets/guide.css" />
-        <link rel="stylesheet" href="../../style/stylesheets/navbar__f.css" />
+		<link rel="stylesheet" href="../../../style/stylesheets/guide.css" />
+        <link rel="stylesheet" href="../../../style/stylesheets/navbar__f.css" />
         <link rel="icon" type="image/png" href="https://cdn.homebrew-france.fun/generic/lumia-guides.png" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
                         
         <!-- Scripts -->
-        <script async src="../../scripts/analyticsServices_manager.js"></script>
+        <script async src="../../../scripts/analyticsServices_manager.js"></script>
 	</head>
     <body data-page-id="DOC-WIN">
         <div class="top-page-donations">
@@ -61,40 +61,47 @@
                 <div class="nav-elements-vert"></div>
 			</div>
 			<div class="page-docu">
-                <h1 class="top">ESU Windows 10 - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Lumia</span>&nbsp;<strong>Guides</strong></span></h1>
-                <div class="indic">
+				<h1 class="top">ESU Windows 10 - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Lumia</span>&nbsp;<strong>Guides</strong></span></h1>
+				<div class="indic">
 					<p class="indic-text">Rejoignez <a href="https://discord.homebrewfrance.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
 				</div>
                 <h2 class="titles" id="preambule">Préambule</h2>
-                <p>Le support des éditions classiques de Windows 10 cessera dès le 14 octobre 2025.
-                    Ce guide vous permettra plusieurs solutions adaptées à vos besoins pour avoir un système d'exploitation toujours supporté.</p>
+                <p>Ce guide vous permettra de mettre à niveau Windows 10 vers Windows 11, même si votre PC n'est pas officiellement compatible avec Windows 11.</p>
 
+                <h1 class="titles" id="windows11-upgrade">I. Mise à niveau vers Windows 11</h1>
+                <p>Cette section vous permettra de passer de Windows 10 à Windows 11, même si votre ordinateur ne respecte pas les exigences minimales officielles (sauf l’architecture 64 bits, qui reste obligatoire).</p>
+                <div class="disclaimer">
+                    <p class="indic-text">Microsoft ne recommande pas la mise à niveau vers Windows 11 sur du matériel incompatible. Certaines fonctionnalités pourraient ne plus fonctionner après un certain nombre de mise à jour.</p>
+                </div>
+                <div class="prerequis">
+                    <h3>PRÉREQUIS :</h3>
+                    <ul>
+                        <li><a href="https://www.microsoft.com/software-download/windows11">L’ISO officiel de Windows 11 (multi-édition)</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li>Un PC en 64 bits avec Windows 10 installé et activé</li>
+                    </ul>
+                </div>
 
-                <h2 class="titles">Trouver la solution adaptée</h2>
-                <p>Les cas suivants ne sont pas précis et sont fournis à titre indicatif uniquement.<br>
-                Il est préférable de vous rendre sur le serveur Discord pour savoir quel cas est le plus adapté pour votre situation.</p>
-                <h class="subtitles">Cas 1 :</h><br>
-                <strong>Je souhaite rester sur Windows 10 :</strong>
-                <p>Vous pouvez poursuivre vers <a href="https://homebrewfrance.fr/docs/windows-10/conserver-windows-10/">Options de conservation de Windows 10</a></p>
+                <ul style="list-style-type: decimal;">
+                    <li>Téléchargez l’ISO de Windows 11 depuis le site officiel Microsoft.</li>
+                    <li>Faites un clic droit sur le fichier ISO et sélectionnez <strong>"Monter"</strong>.</li>
+                    <li>Dans la liste des lecteurs, l’ISO apparaît comme un disque d’installation virtuel.</li>
+                    <li>Appuyez sur la touche Windows, recherchez <strong>"Invite de commandes"</strong>, puis exécutez-la en tant qu’administrateur.</li>
+                    <li>Dans l’invite de commandes, tapez la commande suivante :<br>
+                        <code>reg add "HKLM\SYSTEM\Setup\MoSetup" /v AllowUpgradesWithUnsupportedTPMOrCPU /t REG_DWORD /d 1 /f</code></li>
+                    <li>Accédez au disque d’installation monté à l’étape <strong>2.</strong> et lancez <code>setup.exe</code>.</li>
+                    <li>Poursuivez les étapes d’installation et sélectionnez l’option <strong>"Conserver les fichiers personnels et applications"</strong>.</li>
+                </ul>
 
-                <h class="subtitles">Cas 2 :</h><br>
-               <strong>Ma machine date de 2019 ou plus et je souhaite migrer vers Windows 11 :</strong> 
-               <p>Vous pouvez poursuivre vers <a href="https://homebrewfrance.fr/docs/windows-10/mise-a-niveau-windows-11">mise à niveau de Windows 10 vers Windows 11</a></p>
-
-               <h class="subtitles">Cas 3 :</h><br>
-               <strong>Ma machine est ancienne mais je souhaite passer à Windows 11 :</strong> 
-               <p>Vous pouvez poursuivre vers <a href="https://homebrewfrance.fr/docs/windows-10/mise-a-niveau-windows-11">installation de Windows 11 sur une machine non-supportée</a></p>
-                <div class="spacer">&nbsp;</div>
+                <p>Votre ordinateur sera ensuite mis à niveau vers Windows 11, même si celui-ci ne respecte pas toutes les spécifications minimales.</p>
             </div>            
         </div>
         
         <!-- Scripts -->
-        <script src="../../scripts/navItemsHighlights_docs.js"></script>
-        <script src="../../scripts/maintenance_Toggler.js"></script>
-        <script src="../../scripts/navigationBar_creation.js"></script>
+        <script src="../../../scripts/navItemsHighlights_docs.js"></script>
+        <script src="../../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../../scripts/navigationBar_creation.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
     </body>
 </html>
-
