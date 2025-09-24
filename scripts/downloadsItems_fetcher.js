@@ -37,6 +37,7 @@ function createItemShop(themes, packs) {
         var div = document.createElement('div');
         div.className = "grid-downloads " + packs[itemIndex].console + "-grid " + packs[itemIndex].exploit;
         div.id = packs[itemIndex].itemID;
+        if (packs[itemIndex].console != 'dsi') {
         div.innerHTML =     
             `
                 <h3 id="consolePack" style="font-weight: 700;">${packs[itemIndex].name}</h3>
@@ -54,6 +55,29 @@ function createItemShop(themes, packs) {
                     </a>
                 </div>
             `;
+        }
+
+        else {
+            div.innerHTML =     
+            `
+                <p class="warning-griddl"><i class="fa-solid fa-triangle-exclamation"></i> Ce pack n'est plus maintenu</p>
+                <h3 id="consolePack" style="font-weight: 700;">${packs[itemIndex].name}</h3>
+                <h4 id="exploitPack" style="text-align: center; margin-top: 4px;">${packs[itemIndex].exploit}</h4>
+                <small id="compatPack" style="color: white; margin-top: 4px"><strong>Compatibilité :</strong>&nbsp;${packs[itemIndex].compatibility}</small>
+                <small style="color: white; margin-top: 4px"><strong>Auteur :</strong>&nbsp;<a href="${packs[itemIndex].authorLink}">${packs[itemIndex].author}</a></small>
+                <div class="btn-container">
+                    <!--a href="${packs[itemIndex].lienDL}" id="${packs[itemIndex].console}">
+                        <button class="default-button grayed">
+                        <i class="fa fa-download" aria-hidden="true"></i>
+                        &nbsp;Télécharger</button>
+                    </a>
+                    <a href="${packs[itemIndex].gitLink}">
+                        <button class="default-button grayed">${itemGitButton}&nbsp;</button>
+                    </a-->
+                </div>
+            `;
+        }
+
 
         packsDownload.appendChild(div)
     }

@@ -557,6 +557,15 @@ $title-font: 'Sora', sans-serif;
 
 /* ---- DEBUT STYLES GENERIQUES ---- */
 
+.warning-griddl {
+	background: rgba(156, 0, 0, 0.2);
+	padding-inline: 7px;
+	padding-block: 4px;
+	color: white;
+	border: none;
+	border-radius: 10px;
+}
+
 .fa-check {
 	color: #f9cb00!important;
 }

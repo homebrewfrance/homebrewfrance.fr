@@ -161,10 +161,10 @@
             "author": "Homebrew France",
             "authorLink" : "https://github.com/homebrewfrance/",
             "compatibility": "11.17",
-            "lienDL": "https://github.com/Le-Homebrew-France/Packs-Homebrew-France/releases/latest/download/3DS_AIO_KARTMINER.zip",
+            "lienDL": "https://github.com/homebrewfrance/LumiAIO/releases/download/V1/LumiAIO-KARTMINER7.zip",
             "console": "ds3",
             "gitType": "github",
-            "gitLink": "https://github.com/homebrewfrance/Packs-Homebrew-France"
+            "gitLink": "https://github.com/homebrewfrance/LumiAIO"
         },
         {
             "name": "New Nintendo 3DS",
@@ -173,10 +173,10 @@
             "author": "Homebrew France",
             "authorLink" : "https://github.com/homebrewfrance/",
             "compatibility": "11.15, 11.16 et 11.17",
-            "lienDL": "https://github.com/Le-Homebrew-France/Packs-Homebrew-France/releases/latest/download/3DS_AIO_BROWSERHAX.zip",
+            "lienDL": "https://github.com/homebrewfrance/LumiAIO/releases/download/V1/LumiAIO-BROWSERHAX.zip",
             "console": "ds3",
             "gitType": "github",
-            "gitLink": "https://github.com/homebrewfrance/Packs-Homebrew-France"
+            "gitLink": "https://github.com/homebrewfrance/LumiAIO"
             
         },
         {
@@ -186,10 +186,10 @@
             "author": "Homebrew France",
             "authorLink" : "https://github.com/homebrewfrance/",
             "compatibility": "Toutes les versions",
-            "lienDL": "https://github.com/Le-Homebrew-France/Packs-Homebrew-France/releases/latest/download/3DS_AIO_NTRBOOTHAX.zip",
+            "lienDL": "https://github.com/homebrewfrance/LumiAIO/releases/download/V1/LumiAIO-NTRBOOTHAX.zip",
             "console": "ds3",
             "gitType": "github",
-            "gitLink": "https://github.com/homebrewfrance/Packs-Homebrew-France"
+            "gitLink": "https://github.com/homebrewfrance/LumiAIO"
         },
         {
             "name": "(New) Nintendo 3DS",
@@ -198,10 +198,22 @@
             "author": "Homebrew France",
             "authorLink" : "https://github.com/homebrewfrance/",
             "compatibility": "Toutes les versions",
-            "lienDL": "https://github.com/Le-Homebrew-France/Packs-Homebrew-France/releases/latest/download/3DS_AIO_VANILLA.zip",
+            "lienDL": "https://github.com/homebrewfrance/LumiAIO/releases/download/V1/LumiAIO-VANILLA.zip",
             "console": "ds3",
             "gitType": "github",
-            "gitLink": "https://github.com/homebrewfrance/Packs-Homebrew-France"
+            "gitLink": "https://github.com/homebrewfrance/LumiAIO"
+        },
+        {
+            "name": "(New) Nintendo 3DS",
+            "itemID": "3DSMSET",
+            "exploit": "MSET9",
+            "author": "Homebrew France",
+            "authorLink" : "https://github.com/homebrewfrance/",
+            "compatibility": "11.4 à 11.17",
+            "lienDL": "https://github.com/homebrewfrance/LumiAIO/releases/download/V1/LumiAIO-MSET9.zip",
+            "console": "ds3",
+            "gitType": "github",
+            "gitLink": "https://github.com/homebrewfrance/LumiAIO"
         },
         {
             "name": "Nintendo Switch",
@@ -214,18 +226,6 @@
             "console": "switch",
             "gitType": "codeberg",
             "gitLink": "https://codeberg.org/Zoria/AtmoPack-Vanilla/"
-        },
-        {
-            "name": "Nintendo DSi",
-            "itemID": "DSIMPIT",
-            "exploit": "Memory Pit",
-            "author": "Homebrew France",
-            "authorLink" : "https://github.com/homebrewfrance/",
-            "compatibility": "Toutes les versions",
-            "lienDL": "DSI_AIO_MEMORYPIT.zip",
-            "console": "dsi",
-            "gitType": "github",
-            "gitLink": "https://github.com/homebrewfrance/Packs-Homebrew-France"
         }
     ]
 }
