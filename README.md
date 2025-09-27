@@ -21,11 +21,11 @@ Un site web conçu pour la communauté Homebrew France.
 - Développement du site.
 - Création des packs Nintendo 3DS et DSi.
 - Ajouts et compléments sur la documentation PlayStation 2.
-- Mise à jour et compléments sur la documentation Xbox. 
-- Rédaction de la documentation PlayStation 1.
-- Rédaction de la documentation Nintendo DSi.
-- Rédaction de la documentation YouTube ReVanced.
-- Rédaction de la documentation Sideloading iOS.
+- Mise à jour et compléments sur le guide Xbox. 
+- Rédaction du guide Nintendo DSi.
+- Rédaction du guide YouTube ReVanced/YouTube Plus.
+- Rédaction du guide Sideloading iOS.
+- Rédaction du guide ESU Windows 10.
 - Rédaction de la documentation Nintendo 3DS.
 - Financement des domaines et de l'hébergement.
 - Mise en page des documentations PS4, PSVita, Xbox et Nintendo Switch sur le site Internet.
@@ -35,9 +35,9 @@ Un site web conçu pour la communauté Homebrew France.
 - Création du pack Nintendo Switch (AtmoPack Vanilla).
 - Rédaction de la documentation Nintendo Switch.
 - Rédaction de la documentation PlayStation 2 originale, utilisée comme référence.
-- Rédaction de la documentation PlayStation 4 (la procédure en 9.00).
+- Rédaction de la documentation PlayStation 4 (les procédures en 9.00 et 12.02).
 - Rédacteur de Hacktuality, relayé sur la page d'accueil.
-- Icône de SigHya et Hacktuality.
+- Icônes de SigHya et Hacktuality.
 
 [numbersix](https://discordapp.com/users/808332687433007114) :
 - Ajouts et compléments sur la documentation Nintendo Switch.
@@ -79,7 +79,6 @@ Aide-PlayStation FR :
 ## Docs :
 Tous les guides et les documentations. 
 - [Nintendo 3DS](https://homebrewfrance.fr/docs/3ds)
-- [Nintendo DSi](https://homebrewfrance.fr/docs/dsi) (obsolète)
 - [Nintendo Switch](https://homebrewfrance.fr/docs/switch)
 - [PlayStation 2](https://homebrewfrance.fr/docs/ps2)
 - [PlayStation 4](https://homebrewfrance.fr/docs/ps4)
@@ -88,6 +87,7 @@ Tous les guides et les documentations.
 - [YouTube ReVanced](https://homebrewfrance.fr/docs/revanced)
 - [YouTube Lite Plus](https://homebrewfrance.fr/docs/ytliteplus)
 - [Sideloading](https://homebrewfrance.fr/docs/sideloading)
+- [ESU Windows 10](https://homebrewfrance.fr/docs/windows-10)
 ## Checker :
 Des outils en ligne permettant de vérifier la compatibilité de votre console avec certains guides ou exploits.
 - [Nintendo Switch](https://homebrewfrance.fr/checker/switch) (vérificateur de numéro de série)
