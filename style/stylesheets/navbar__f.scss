@@ -1,5 +1,5 @@
 /* 
-	Homebrew France Web V4.1.0
+	Homebrew France Web V5.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -17,7 +17,8 @@
 */
 
 @import 'fonts.scss';
-
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Syne:wght@400..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Syne:wght@400..800&display=swap');
 /**/
 
 /* ----- DEBUT GESTION DE L'ACCEPTATION DES COOKIES ----- */
@@ -60,19 +61,34 @@
 
 /**/
 
+.partner-category {
+	font-size: 16px;
+	border-radius: 7px;
+	padding-inline: 5px;
+	padding-block: 2px;
+	font-family: 'Inter', sans-serif;
+	align-items: center;
+	margin-left: 6px;
+	transform: translateY(-2px);
+}
+
+.partner-classic {
+	color: #ffffff;
+	background: linear-gradient(135deg,#67158a,#a32aff);
+}
 
 
 .hbf-version {
-	color: #9a78d8;
-	background-color:  #362744 ;
+	color: #ffffff;
+	background: linear-gradient(135deg,#67158a,#a32aff);
 	font-size: 12px;
 	border-radius: 7px;
 	padding-inline: 5px;
 	padding-block: 2px;
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Inter', sans-serif;
 	align-items: center;
 	margin-left: 6px;
-	transform: translateY(5px);
+	transform: translateY(8px);
     width: fit-content;
     height: fit-content;
 }
@@ -125,9 +141,9 @@ html, body {
     top: 0;
     display: flex; 
     height: 80px auto; 
-    background-color: #1515189a;
-    backdrop-filter: blur(10px);
-    border: 0.8px solid rgba(66, 66, 66, 0.425);
+    background-color: #1515186d;
+    backdrop-filter: blur(14px) saturate(1.2);
+    border: 2px solid rgba(66, 66, 66, 0.425);
     padding-block: 12px; 
     z-index: 550;
     overflow: visible;
@@ -196,8 +212,8 @@ html, body {
 }
 
 .nav-link, .dropdown-item {
-    @include MainEL-Regular;
-    font-weight: 600;
+    font-family: 'Instrument Sans';
+    font-weight: 700;
     color: rgb(206, 206, 206);
     text-decoration: none;
     display: flex;
@@ -211,6 +227,7 @@ html, body {
 .nav-link:hover {
     text-shadow: 1px 1px 7px rgba(255, 255, 255, 0.295);
     color: white;
+    transform: translateY(-2px);
 }
 
 .dropdown-item {
@@ -263,7 +280,7 @@ html, body {
 
     .nav-link, .dropdown-item {
         margin-inline: 25px;
-        font-size: 16px;
+        font-size: 19px;
     }
 
     @mixin globalNavIcons {
@@ -281,11 +298,10 @@ html, body {
 
     .dropdown-menu {
         position: absolute; 
-        background-color: #1515189a;
+        background-color: #1515186d;
+        backdrop-filter: blur(14px) saturate(1.2);
+        border: 2px solid rgba(66, 66, 66, 0.425);
         box-shadow: 0px 10px 15px -4px #0000005e;
-        backdrop-filter: blur(10px)!important;
-        -webkit-backdrop-filter: blur(10px);
-        border: 0.8px solid rgba(66, 66, 66, 0.425);
         border-radius: 15px;
         transition: 0.3s;
         font-family: 'Sora', sans-serif;
@@ -524,12 +540,13 @@ html, body {
     transition: 0.2s;
     padding-block: 7px;
     padding-inline: 12px;
-    font-size: 16px;
+    font-size: 17px;
     display: inline-flex;
     align-items: center;
     margin-block: 2px;
     margin-inline: 4px;
     border-radius: 11px;
+    font-family: 'Instrument Sans';
 
     img {
         vertical-align: middle;
@@ -580,6 +597,7 @@ html, body {
 
 .dropdown-item:hover {
     cursor: pointer;
+    transform: translateY(-2px);
 }
 
 .dropdown-item span {
@@ -661,11 +679,12 @@ footer {
 }
 
 /* ---  ICONS MANAGEMENT  --- */
-@mixin globalNavIcons {
+/*@mixin globalNavIcons {
     font-family: "Font Awesome 6 Free";
-    font-weight: 900;
+    font-weight: 700;
     margin-right: 7px;
     color: #c5c5c598;
+    font-size: 13px;
 }
 #accueilLinkSpan::before {
     content: "\f015"; 
@@ -705,3 +724,4 @@ footer {
     content: "\f05a"; 
     @include globalNavIcons();
 }
+*/

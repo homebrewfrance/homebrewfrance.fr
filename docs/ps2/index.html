@@ -1,5 +1,5 @@
 <!--    
-	Homebrew France Web V4.1.0
+	Homebrew France Web V5.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -53,15 +53,16 @@
         <div id="navSpace"></div>
 		<div class="docu-container">
 			<div class="nav-menu-horiz" style="overflow: scroll;">
-				<h class="subtitles">Navigation :</h><br>
+				<p class="navigation-header">Navigation</p>
                 <div class="nav-elements-horiz"></div>
 			</div>
 			<div class="nav-menu-vert">
-				<h class="subtitles">Navigation :</h><br>
+				<p class="navigation-header">Navigation</p>
                 <div class="nav-elements-vert"></div>
 			</div>
             <div class="page-docu">
-				<h1 class="top">PlayStation 2&trade; - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Lumia</span>&nbsp;<strong>Guides</strong></span></h1>
+				<h1 class="top"><img src="https://cdn.homebrew-france.fun/generic/lumia-guides.png" width="41px" style="transform: translateY(7px);"><span class="top-info">GUIDE</span>・PlayStation 2</h1>
+                <p class="top-txt">Un guide complet pour le softmod de votre PlayStation 2 via FreeDVDBoot.</p>
                 <div class="doc-header">
                     <div class="doc-header-section">
                         <strong style="color: white!important;">Temps de lecture : &nbsp;</strong>
@@ -77,19 +78,25 @@
                         &nbsp;Zoria
                     </div>
                 </div>
-				<div class="indic">
-					<p class="indic-text">Rejoignez <a href="https://discord.homebrewfrance.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
-				</div>
+				<div class="button-container">
+                    <a href="https://discord.homebrewfrance.fr/"><button class="ds-button"><i class="fa-brands fa-discord"></i>&nbsp;Assistance</button></a>
+                    <a href="https://github.com/homebrewfrance/homebrewfrance.fr"><button class="git-button"><i class="fa-brands fa-github"></i>&nbsp;Contribuer</button></a>
+                    <a>
+                        <button id="downloadPDF">
+                            <i class="fa fa-download"></i>&nbsp;Télécharger en PDF
+                        </button>
+                    </a>
+                </div>
                 <div class="wiki-console">
                     <img width="250px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/PS2-Versions.png/245px-PS2-Versions.png">
                     <div style="margin-left: 35px;">
                         <p><strong>Nom :</strong> PlayStation 2 (PS2)</p>
                         <p><strong>Constructeur :</strong> Sony</p>
                         <p><strong>Année de sortie (EU) :</strong> 2000</p>
-                        <p><strong></strong></p>
+                        <p><strong>Dernière mise à jour :</strong> 14 avril 2025</p>
                     </div>
                 </div>
-                <h2 class="titles">Préambule</h2>
+                <h2 class="top-titles">Préambule</h2>
                 <p>La PlayStation 2&trade; peut être moddée simplement et rapidement par le biais de l'exploit FreeDVDBoot. <br>
                     Une PlayStation 2&trade; moddée permet de lancer des jeux via un périphérique USB par exemple, ou encore de lancer des applications Homebrew pour utiliser des mods ou des cheats.</p>
 				<h2 class="titles" id="premier-hack" style="margin-bottom: 15px;">I. Vérifier la compatibilité de votre console</h2>
@@ -227,7 +234,7 @@
 				<p>Si un ISO existe pour le numéro de version de votre lecteur DVD alors votre console est compatible avec FreeDVDBoot.</p>
 				<h2 class="titles" id="prepa-usb" style="margin-bottom: 15px;">II. Préparation de la clé USB</h2>
                 <div class="prerequis">
-                    <h3>PRÉREQUIS :</h3>
+                    <h3 class="prereq-txt">PRÉREQUIS :</h3>
                     <ul>
                         <li>L'ISO de la dernière version de FreeDVDBoot</br><i>Note: choisissez l'ISO en fonction de votre modèle et votre version du lecteur DVD dans le tableau précédent.</i></li>
                         <li><a href="https://download.imgburn.com/SetupImgBurn_2.5.8.0.exe">La dernière version du logiciel ImgBurn</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
@@ -271,7 +278,7 @@
 					<li>Sélectionnez le fichier <code>fmcbinstaller.elf</code></br><i>Note: le programme d'installation de FreeMCBoot devrait démarrer.</i></li>
 					<li>Utilisez <img src="https://cdn.homebrew-france.fun/docs/buttons/ps_r1.png" class="console-buttons"/> et <img src="https://cdn.homebrew-france.fun/docs/buttons/ps_l1.png" class="console-buttons"/> pour naviguer jusqu'à "Utilitaire carte mémoire".</li>
 					<div class="disclaimer">
-						<p class="indic-text"><strong>Attention :</strong>&nbsp;la prochaine étape va supprimer tout le contenu de votre carte mémoire. Pensez à faire une copie de vos données au préalable.</p>
+						<p class="indic-text">la prochaine étape va supprimer tout le contenu de votre carte mémoire. Pensez à faire une copie de vos données au préalable.</p>
 					</div>
 					<li style="margin-bottom: 15px;">Cliquez sur "Formater" avec le bouton<img src="https://cdn.homebrew-france.fun/docs/buttons/ps_cross.png" class="console-buttons"/></li>
 					<img src="https://cdn.homebrew-france.fun/docs/ps2/fmcb-format.png" class="img-border" />
@@ -294,7 +301,7 @@
                 <h2 class="titles" id="install-opl">VI. Installation de OpenPS2Loader</h2>
                 <p>Dans cette partie, nous allons installer le homebrew "OpenPS2Loader" sur la console. OpenPS2Loader permet de lancer des jeux depuis une clé USB, un disque dur externe USB, un disque dur interne (adaptateur réseau) ou encore depuis un serveur SAMBA.</p>
                 <div class="prerequis">
-                    <h3>PRÉREQUIS :</h3>
+                    <h3 class="prereq-txt">PRÉREQUIS :</h3>
                     <ul>
                         <li><a href="https://github.com/ps2homebrew/Open-PS2-Loader/releases/latest/download/OPNPS2LD.7z">La dernière version de OpenPS2Loader</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>
                         <li><a href="https://github.com/ps2homebrew/Open-PS2-Loader/releases/download/v1.1.0/OPNPS2LD-LANGUAGES-AND-FONTS-v1.1.0.7z">Le fichier de langues et polices de OpenPS2Loader</a>&nbsp;<i class="fa fa-download" aria-hidden="true"></i></li>

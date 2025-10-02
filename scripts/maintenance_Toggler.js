@@ -1,5 +1,5 @@
 /* 
-	Homebrew France Web V4.1.0
+	Homebrew France Web V5.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -24,6 +24,7 @@ const warningsList = [
 
 const annoncesList = [
     //'<strong>Homebrew France</strong> fête ses 4 ans d\'existence ! La communauté a été créée le 4 septembre 2021 !'
+    //'Nouveau guide disponible : <a href="https://homebrewfrance.fr/docs/windows-10">ESU Windows 10</a>'
 ]
 
 const global_doc_warning = 'Ce guide ne doit pas être utilisé dans le but de contourner des protections et d\'exécuter des logiciels piratés.';

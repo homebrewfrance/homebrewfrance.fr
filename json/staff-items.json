@@ -180,6 +180,21 @@
             ]
         },
         {
+            "name": "ClazzerX",
+            "role": "Helper",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "discord",
+                    "link": "https://discord.gg/lbxmb",
+                    "username": "LB'XMB"
+                }
+            ]
+        },
+        {
             "name": "ElghisJoestar",
             "role": "Helper",
             "avatarFormat": "jpg",
@@ -230,6 +245,21 @@
             ]
         },
         {
+            "name": "Kilyan",
+            "role": "Helper",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "discord",
+                    "link": "https://discord.gg/lbxmb",
+                    "username": "LB'XMB"
+                }
+            ]
+        },
+        {
             "name": "Luigi31",
             "role": "Helper",
             "avatarFormat": "png",
@@ -271,6 +301,21 @@
                     "name": "x",
                     "link": "https://x.com/Cimmerian_Iter",
                     "username": "@Cimmerian_Iter"
+                }
+            ]
+        },
+        {
+            "name": "Sean64",
+            "role": "Helper",
+            "avatarFormat": "png",
+            "musicName": "",
+            "musicLink": "",
+            "musicPlatform": "",
+            "socials": [
+                {
+                    "name": "discord",
+                    "link": "https://discord.gg/lbxmb",
+                    "username": "LB'XMB"
                 }
             ]
         },

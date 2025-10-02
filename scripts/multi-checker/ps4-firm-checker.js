@@ -22,6 +22,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 window.location = 'https://homebrewfrance.fr/docs/ps4/11.00';
             }
         }
+        else if (majorVersion < 9) {
+            window.location = 'https://homebrewfrance.fr/docs/ps4/9.00';
+        }
         else if (majorVersion === 10) {
             window.location = 'https://homebrewfrance.fr/docs/ps4/11.00';
         }
@@ -34,5 +37,5 @@ document.addEventListener('DOMContentLoaded', function () {
             alert(warning_incompatible);
         }
     });
-    resultat.innerHTML = "<img src=\"https://cdn.homebrew-france.fun/generic/lumia-guides.png\" width=\"18px\" height=\"18px\"><p>Lumia Checker v0.5b</p>";
+    resultat.innerHTML = "<img src=\"https://cdn.homebrew-france.fun/generic/lumia-guides.png\" width=\"18px\" height=\"18px\"><p>Lumia Checker v0.5.1b</p>";
 });

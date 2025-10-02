@@ -1,5 +1,5 @@
 <!--    
-	Homebrew France Web V4.1.0
+	Homebrew France Web V5.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -49,6 +49,7 @@
                 <div class="indicator">Ressources</div>
 				<div class="indicator-desc">Des ressources téléchargeables pour vos consoles préférées.</div>
 			</div>
+			<div id="warn-manual"></div>
 			<h3 class="titles">Packs all-in-one</h3>
 			<p class="titles-desc">Des packs prêts à l'emploi pour faciliter la configuration de vos consoles.</p>
 			<div class="tags-selector packs-selector">
@@ -76,6 +77,29 @@
 					<img src="https://cdn.homebrew-france.fun/generic/loading.gif" width="65px" height="auto" />&nbsp;<h2>Chargement...</h2>
 				</div>
 			</div>
+
+		<script>
+			(function(){
+				const warnManual = document.getElementById('warn-manual');
+				if (!warnManual) return;
+
+				function showWarning(){
+					warnManual.innerHTML = `
+					<div class="warning-inpage">
+						<i class="fa-solid fa-triangle-exclamation"></i>
+						Les manuels d'utilisation ne sont plus disponibles au téléchargement.
+						Consultez nos docs et guides : 
+						<a href="https://homebrewfrance.fr/docs/">cliquez ici</a>
+					</div>`;
+				}
+
+				const params = new URLSearchParams(window.location.search);
+				if (params.get('from') === 'manuel') {
+					showWarning();
+				}
+			})();
+		</script>
+
 		</div>
 
         <!-- Scripts -->

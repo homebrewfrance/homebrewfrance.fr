@@ -22,13 +22,13 @@ else {
     cookieBox.innerHTML = `
         <div style="display:flex; flex-direction: column;">
             <!--img src="https://homebrewfrance.fr/hbf-web.png" width="170px"-->
-            <div style="font-family: 'Sora'; font-size: 21px;">Homebrew<strong>France</strong> Web</div>
+            <div style="font-family: 'Sora'; font-size: 21px;">Accepter les cookies ?</div>
             <div style="color: #aaaaaa;">Ce site utilise des cookies tiers afin d’optimiser votre expérience de navigation et d’améliorer la qualité de nos services.</div>
         </div>
         <div style="display: flex; flex-direction: row">
             <div id="accepterCookies" class="cookie-button">Accepter</div>
             <div id="refuserCookies" class="cookie-button">Refuser</div>
-            <div id="enSavoirPlus" class="cookie-button">Plus d'infos</div>
+            <div id="enSavoirPlus" class="cookie-button">Infos</div>
         </div>
     `;
 	console.log(pageID);

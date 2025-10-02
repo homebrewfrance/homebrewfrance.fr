@@ -1,5 +1,5 @@
 /* 
-	Homebrew France Web V4.1.0
+	Homebrew France Web V5.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -17,10 +17,12 @@
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@500&display=swap&family=Unbounded:wght@800&display=swap&family=Montserrat:wght@700&display=swap&family=Gabarito&display=swap&family=Lexend:wght@100..900&display=swap&family=Sora:wght@100..800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&family=Space+Grotesk:wght@300..700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap&family=Space+Grotesk:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Plus Jakarta Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&family=Sora:wght@100..800&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Wix+Madefor+Display:wght@400..800&display=swap&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-$primary-font: 'Poppins', sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans:ital,wght@0,400..700;1,400..700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Syne:wght@400..800&display=swap');
+
+$primary-font: 'Plus Jakarta Sans', sans-serif;
 $secondary-font: 'Space Grotesk', sans-serif;
 $title-font: 'Sora', sans-serif;
 
@@ -39,7 +41,7 @@ $title-font: 'Sora', sans-serif;
 		justify-content: space-between;
 	}
 	.partner-image {
-		max-width: 100px; max-height: 100px; margin-right: 10px;
+		max-width: 100px; max-height: 100px; margin-right: 25px;
 	}
 	.pres {
 		display: flex;
@@ -251,7 +253,7 @@ $title-font: 'Sora', sans-serif;
 		font-size: 19px; 
 		text-justify: inter-word;
 		margin-top: 18px;
-		font-family: 'Poppins', sans-serif;
+		font-family: 'Plus Jakarta Sans', sans-serif;
 	}
 
 	.discord-title, .error-title {
@@ -423,7 +425,7 @@ $title-font: 'Sora', sans-serif;
 
 	#presentation-communaute, #presentation-fup {
 		font-size: 29px; 
-		font-family: 'Poppins', sans-serif;
+		font-family: 'Plus Jakarta Sans', sans-serif;
 	}
 
 	#presentation-communaute {
@@ -512,10 +514,12 @@ $title-font: 'Sora', sans-serif;
 	.grid-shop:hover, .grid-downloads:hover, .add-infos-shop:hover {
 			transform: scale(1.02);
             cursor: default;
+	}
 
-			img {
-				transform: rotate(0.01turn) scale(1.09);
-			}
+	.grid-downloads:hover {
+		img {
+			transform: rotate(0.01turn) scale(1.09);
+		}
 	}
 
 	.pres, .pres-fup {
@@ -531,7 +535,7 @@ $title-font: 'Sora', sans-serif;
 	.pres:hover {
 		cursor: pointer;
 		transform: scale(1.01);
-		border: 1px solid rgba(153, 153, 153, 0.192);
+		border: 2px solid rgba(153, 153, 153, 0.192);
 
 	}
 	.pres-fup:hover {
@@ -660,12 +664,48 @@ ul {
 	padding: 16px;
 	height: auto;
 	overflow-wrap: anywhere;
-	border: 1px solid rgba(153, 153, 153, 0);
-	align-items: center;
+	border: 2px solid rgba(153, 153, 153, 0);
+	align-items: center;		
+}
 
-	h3 {
-		transition: 0.3s;
+.pres-name {
+	color: white;
+	word-break: break-word;
+	font-family: "Instrument Sans", sans-serif!important;
+	transition: 0.3s;
+	font-size: 27px!important;
+	margin-bottom: 6px;
+}
+
+.pres {
+	p {
+		font-size: 15px!important;
 	}
+}
+
+.partner-container {
+	.pres {
+		padding-top: 20px;
+		padding-bottom: 22px;
+	}
+}
+
+
+.pres, 	.pres-fup {
+	p {
+		color: #9e9e9e;
+	}
+	border-radius: 25px;
+	background-color: #1f202350;	
+	box-shadow: 0px 10px 15px -4px #0000005e;
+}
+
+.partner-image {
+	background-color: #30313550;	
+	border: 2px solid rgba(107, 107, 107, 0.458);
+	border-radius: 17px;
+	box-shadow: 0px 10px 15px -4px #0000005e;
+	padding: 11px;
 }
 
 .page {
@@ -695,9 +735,10 @@ body {
 	-webkit-background-attachment: fixed;
     animation: moveBackground 5s infinite alternate ease-in-out;
 	-webkit-animation: moveBackground 5s infinite alternate ease-in-out;
-    font-family: 'Poppins', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     color: white;
 	z-index: 4500;
+	line-height: 1.47;
 }
 
 .popup {
@@ -783,21 +824,29 @@ img {
 }
 
 .titles {
-	background: rgb(255,255,255);
-	background: linear-gradient(180deg, rgba(255,255,255,1) 33%, rgb(216, 216, 216) 50%, rgb(8, 8, 8) 100%);
+	background: rgb(243, 206, 255);
+	background: linear-gradient(0deg, rgb(242, 218, 255) 33%, rgb(181, 151, 200) 50%, rgb(116, 64, 144) 100%);
 	--webkit-background-clip: text;
 	background-clip: text;
 	color: transparent;
-	font-weight: 700;
-	margin-top: 45px;
-	margin-bottom: 5px;
+	margin-top: 80px;
+	margin-bottom: 0px;
 	word-break: break-word;
+	font-family: "Syne", sans-serif!important;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
 }
 
 .titles-desc {
-	color: rgb(133, 133, 133);
+	color: rgb(212, 198, 217);
 	font-size: 16px;
 	margin-bottom: 17px;
+	text-align: center;
+	width: 100%;
 }
 
 .credits-container {
@@ -827,15 +876,15 @@ img {
 	border-radius: 7px;
 	padding-inline: 5px;
 	padding-block: 2px;
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Inter', sans-serif;
 	align-items: center;
 	margin-left: 6px;
 	transform: translateY(-2px);
 }
 
 .partner-classic {
-	color: #9a78d8;
-	background-color:  #362744 ;
+	color: #ffffff;
+	background: linear-gradient(135deg,#67158a,#a32aff);
 }
 
 .partner-orange {
@@ -862,13 +911,6 @@ img {
 	word-break: break-word;
 }
 
-.pres, 	.pres-fup {
-	p {
-		color: #9e9e9e;
-	}
-	border-radius: 25px;
-	background-color: #1f202350;	
-}
 
 .fondator::after {
 	font-family: "Font Awesome 6 Free";
@@ -931,7 +973,7 @@ img {
 }
 
 .indicator-desc {
-	font-family: 'Poppins', sans-serif;
+	font-family: 'Plus Jakarta Sans', sans-serif;
 	font-weight: 250;
 	margin-top: 11px;
 	text-align: center;
@@ -1080,7 +1122,7 @@ img {
 
 .page button:hover {
 	cursor: pointer;
-	transform: scale(1.05);
+	transform: scale(1.05) translateY(-2px);
 }
 
 .page button:active {
@@ -1534,7 +1576,7 @@ img {
 	padding-inline: 10px;
 	padding-block: 4px;
 	color: white;
-	font-family: 'Poppins';
+	font-family: 'Plus Jakarta Sans';
 	margin-right: 6px;
 	transition: 0.3s;
 	font-size: 15px!important;

@@ -25,12 +25,6 @@
             "category": "dropdown-item"
         },
         {
-            "name": "Boutique",
-            "url": "https://homebrewfrance.fr/boutique/",
-            "id": "boutiqueLink",
-            "category": "nav-link"
-        },
-        {
             "name": "À propos",
             "url": "https://homebrewfrance.fr/a-propos/",
             "id": "aproposLink",

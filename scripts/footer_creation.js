@@ -1,5 +1,5 @@
 /* 
-	Homebrew France Web V4.1.0
+	Homebrew France Web V5.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -24,9 +24,9 @@ footer.innerHTML = `
     <div class="left-footer">
         <div class="hbf-logo-container" style="padding: 0px; margin: 0px; cursor: pointer;">
             <p style="font-family: Sora; font-size: 24px; color: white;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong></p>
-            <div class="hbf-version">Version : 4.1.0</div>
+            <a href="https://github.com/homebrewfrance/homebrewfrance.fr"><div class="hbf-version">Version : 5.0.0</div></a>
         </div>
-        <small style="color: rgb(210, 210, 210); font-family: 'Poppins',sans-serif;"><a class="alcool" href="https://homebrewfrance.fr/multi-checker/alcoolemie">©</a> 2021 - 2025&nbsp;<span style="color: rgb(173, 173, 173)">|</span>&nbsp;Distribué sous licence <a href="https://homebrewfrance.fr/licence/">GNU GPLv3</a></small>
+        <small style="color: rgb(210, 210, 210); font-family: 'Plus Jakarta Sans',sans-serif;"><a class="alcool" href="https://homebrewfrance.fr/multi-checker/alcoolemie">©</a> 2021 - 2025&nbsp;<span style="color: rgb(173, 173, 173)">|</span>&nbsp;Distribué sous licence <a href="https://homebrewfrance.fr/licence/">GNU GPLv3</a></small>
     </div>
     <div class="right-footer">   
         <div class="footer-column" style="margin-right: 25px;">

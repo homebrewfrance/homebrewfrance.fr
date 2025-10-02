@@ -1,5 +1,5 @@
 <!--    
-	Homebrew France Web V4.1.0
+	Homebrew France Web V5.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -52,15 +52,16 @@
         <div id="navSpace"></div>
 		<div class="docu-container">
 			<div class="nav-menu-horiz" style="overflow: scroll;">
-				<h class="subtitles">Navigation :</h><br>
+				<p class="navigation-header">Navigation</p>
                 <div class="nav-elements-horiz"></div>
 			</div>
 			<div class="nav-menu-vert">
-				<h class="subtitles">Navigation :</h><br>
+				<p class="navigation-header">Navigation</p>
                 <div class="nav-elements-vert"></div>
 			</div>
 			<div class="page-docu">
-				<h1 class="top">Nintendo Switch - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Lumia</span>&nbsp;<strong>Guides</strong></span></h1>
+				<h1 class="top"><img src="https://cdn.homebrew-france.fun/generic/lumia-guides.png" width="41px" style="transform: translateY(7px);"><span class="top-info">GUIDE</span>・Nintendo Switch</h1>
+				<p class="top-txt">Guide complet et documentation pour le jailbreak des Nintendo Switch V1.</p>
 				<div class="doc-header">
 					<div class="doc-header-section">
 						<strong style="color: white!important;">Temps de lecture : &nbsp;</strong>
@@ -76,16 +77,17 @@
 						&nbsp;numbersix
 					</div>
 				</div>
-				<div class="indic">
-					<p class="indic-text">Rejoignez <a href="https://discord.homebrewfrance.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
-				</div>
+                <div class="button-container">
+                    <a href="https://discord.homebrewfrance.fr/"><button class="ds-button"><i class="fa-brands fa-discord"></i>&nbsp;Assistance</button></a>
+                    <a href="https://github.com/homebrewfrance/homebrewfrance.fr"><button class="git-button"><i class="fa-brands fa-github"></i>&nbsp;Contribuer</button></a>
+                </div>
 				<div class="wiki-console">
                     <img class="wiki-image" width="250px" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5e/Nintendo_Switch_Console.png/260px-Nintendo_Switch_Console.png">
                     <div>
                         <p><strong>Nom :</strong> Nintendo Switch</p>
                         <p><strong>Constructeur :</strong> Nintendo</p>
                         <p><strong>Année de sortie (EU) :</strong> 2017</p>
-                        <p><strong></strong></p>
+                        <p><strong>Dernière mise à jour :</strong> 27 avril 2024</p>
                     </div>
                 </div>
                 <h2 class="titles">Préambule :</h2>
@@ -93,7 +95,7 @@
                 Cette documentation est mise à jour régulièrement, les informations contenues peuvent toutefois s'avérer inexactes après plusieurs mois ou années.</p>
                 <h2 class="titles" id="apps-de-base-lexique">I. Applications de base et lexique</h2>
                 <p>Lors du jailbreak de votre console de la famille Nintendo 3DS, vous serez ammené(e) à installer certaines applications, mais bien souvent le rôle de chacune d'entre elles n'est pas expliqué.</p>
-                <h class="subtitles" style="font-size: 20px;">1) Applications de base :</h>
+                <h class="subtitles">1) Applications de base :</h>
                 <ul style="list-style-type: none;">
                     <li>
                         <strong>1) Atmosphere :</strong>
@@ -196,7 +198,7 @@
                 </ul>
 				<h2 class="titles" id="premier-hack">II. Mettre à jour Atmosphère / Premier hack</h2>
 				<div class="prerequis">
-					<h3>PRÉREQUIS :</h3>
+					<h3 class="prereq-txt">PRÉREQUIS :</h3>
 					<ul>
 						<li>Un carte micro SD de minimum 8GB. (privilégiez les grandes marques telles que <strong>Sandisk</strong>, <strong>PNY</strong>, <strong>Samsung</strong>, etc.)</p></li>
 							<ul>
@@ -302,7 +304,7 @@
 					<p class="indic-text">Il est nécessaire de posséder une carte micro SD de minimum 128Go (256Go recommandés) avec un pack Atmosphère sécurisé copié sur la carte micro SD.</p>
 				</div>
 				<div class="prerequis">
-					<h3>PRÉREQUIS :</h3>
+					<h3 class="prereq-txt">PRÉREQUIS :</h3>
 					<ul>
 						<li><p>Un câble USB-C vers USB-A ou un câble USB-C vers USB-C permettant le transfert de données.</p>
 						<i>Note: si vous ne possédez pas de câble, continuez vers l'<a href="#switch_step0bis">étape 0-bis</a>.</i></li>
@@ -362,7 +364,7 @@
 					<li>Appuyez sur "Create emuMMC" puis "SD Partition" et enfin sur "Part1"</li>
 				</ul>
 				<div class="disclaimer">
-					<p class="indic-text"><strong>Attention :</strong> Ne sélectionnez pas "SD Files".</p>
+					<p class="indic-text">Ne sélectionnez pas "SD Files".</p>
 				</div>
 				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_6.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_7.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
@@ -387,7 +389,7 @@
                 <center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_13.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<h2 class="titles" id="maj-daybreak">IV. Mise à jour via Daybreak</h2>
 				<div class="prerequis">
-					<h3>PRÉREQUIS :</h3>
+					<h3 class="prereq-txt">PRÉREQUIS :</h3>
 					<p>Avoir un pack CFW à jour compatible avec le dernier firmware de Nintendo. (Le pack conseillé est celui de Zoria disponible sur <a href="https://homebrewfrance.fr/telechargements/#SWITCHATMOPACK">la page des packs</a>).</p>
 				</div>
 				<div class="os-container">
@@ -420,7 +422,7 @@
 					<h3>PRÉREQUIS PRÉCÉDENTS</h3>
 				</div>
 				<div class="disclaimer">
-					<p class="indic-text"><strong>Attention :</strong>&nbsp;cette étape supprimera les jeux et sauvegardes présents sur l'emuNAND mais cela permet de repartir sur une base saine.</p>
+					<p class="indic-text">cette étape supprimera les jeux et sauvegardes présents sur l'emuNAND mais cela permet de repartir sur une base saine.</p>
 				</div>
                 <ul style="list-style-type: decimal;">
                     <li>Récupérez les sauvegardes de son emuNAND (via DBI ou JKSV) que l'on pourra restaurer dans l'emuNAND par la suite.</li>

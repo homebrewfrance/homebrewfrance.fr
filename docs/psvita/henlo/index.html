@@ -1,5 +1,5 @@
 <!--    
-	Homebrew France Web V4.1.0
+	Homebrew France Web V5.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -54,22 +54,36 @@
         <div id="navSpace"></div>
 		<div class="docu-container">
 			<div class="nav-menu-horiz" style="overflow: scroll;">
-				<h class="subtitles">Navigation :</h><br>
+				<p class="navigation-header">Navigation</p>
                 <div class="nav-elements-horiz"></div>
 			</div>
 			<div class="nav-menu-vert">
-				<h class="subtitles">Navigation :</h><br>
+				<p class="navigation-header">Navigation</p>
                 <div class="nav-elements-vert"></div>
 			</div>
 			<div class="page-docu">
-				<h1 class="top">PlayStation Vita - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Lumia</span>&nbsp;<strong>Guides</strong></span></h1>
-                <div class="indic">
-                    <p class="indic-text">Rejoignez <a href="https://discord.homebrewfrance.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
+				<h1 class="top"><img src="https://cdn.homebrew-france.fun/generic/lumia-guides.png" width="41px" style="transform: translateY(7px);"><span class="top-info">GUIDE</span>・PlayStation Vita</h1>
+				<div class="button-container">
+                    <a href="https://discord.homebrewfrance.fr/">
+                        <button class="ds-button">
+                            <i class="fa-brands fa-discord"></i>&nbsp;Assistance
+                        </button>
+                    </a>
+                    <a href="https://github.com/homebrewfrance/homebrewfrance.fr">
+                        <button class="git-button">
+                            <i class="fa-brands fa-github"></i>&nbsp;Contribuer
+                        </button>
+                    </a>
+                    <a>
+                        <button id="downloadPDF">
+                            <i class="fa fa-download"></i>&nbsp;Télécharger en PDF
+                        </button>
+                    </a>
                 </div>
                 <p>Ce guide vous permettra de jailbreak votre PS Vita (TV) et d'installer des applications non officielles via HENlo, HENkaku et VitaDeploy.</p>
                 <p style="margin-bottom: 13px;">Ce guide est applicable sur les versions de firmware 3.65 à 3.74.</p>
                 <div class="prerequis">
-                    <h3>PRÉREQUIS :</h3>
+                    <h3 class="prereq-txt">PRÉREQUIS :</h3>
                     <ul>
                         <li style="list-style-type: decimal;">Une connexion Internet stable sur votre PS Vita (TV).</li>
                         <li style="list-style-type: decimal;">Une PS Vita reliée au secteur via son câble de charge.</li>
@@ -137,11 +151,11 @@
                 <p>C'est plus pratique que HENkaku car cela ne nécessite pas de déclencher manuellement une faille sur votre appareil après chaque redémarrage.</p>
                 <p>Dans ce guide, nous utiliserons VitaDeploy pour installer à la fois HENkaku Ensō et la version 3.65 du firmware.</p>
                 <div class="disclaimer">
-                    <p class="indic-text"><strong>Attention :</strong>&nbsp;Cette modification apportera des modifications <strong>PERMANENTES</strong> à votre appareil. En cas de problème, il n'y a pas de possibilité de récupération.</p>
+                    <p class="indic-text">Cette modification apportera des modifications <strong>PERMANENTES</strong> à votre appareil. En cas de problème, il n'y a pas de possibilité de récupération.</p>
                 </div>
                 <h2 class="titles" id="installer-hack-permanent">V. Installer le hack permanent et les drivers SD2Vita</h2>
                 <div class="prerequis">
-                    <h3>PRÉREQUIS :</h3>
+                    <h3 class="prereq-txt">PRÉREQUIS :</h3>
                     <ul>
                         <li>Le mode veille réglé à son maximum.</li>
                         <li>La console branchée sur secteur.</li>
@@ -177,7 +191,7 @@
                 </ul>
                 <h2 class="titles" id="finalisation">VI. Finalisation de la configuration</h2>
                 <div class="prerequis">
-                    <h3>PRÉREQUIS :</h3>
+                    <h3 class="prereq-txt">PRÉREQUIS :</h3>
                     <ul>
                         <li>L'application VitaDeploy installée sur votre appareil.</li>
                     </ul>
@@ -228,7 +242,7 @@
                 </ul>
                 
                 <div class="disclaimer">
-                    <p class="indic-text"><strong>Attention :</strong>&nbsp;Pour la suite, il n'est pas recommandé de modifier votre installation de Custom Firmware en installant des applications non officielles destinées aux utilisateurs avancés (telles que "Enso EX").</br>
+                    <p class="indic-text">Pour la suite, il n'est pas recommandé de modifier votre installation de Custom Firmware en installant des applications non officielles destinées aux utilisateurs avancés (telles que "Enso EX").</br>
                     Le faire sans comprendre pleinement le système peut entraîner un <strong>BRICK</strong> de votre PS Vita !</p>
                 </div>
                 <h2 class="titles" id="configuration-yamt">VII. Configurer sa SD2Vita avec YAMT</h2>
@@ -241,7 +255,7 @@
                 <p>Si vous utilisez une clé USB, un adaptateur psvsd, ou si cette méthode ne fonctionne pas pour vous, suivez le guide <strong>StorageMgr</strong>.</p>
                 <p><strong>YAMT est compatible uniquement avec les versions du firmware 3.60 et 3.65 sous HENkaku Ensō.</strong></p>
                 <div class="prerequis">
-                    <h3>PRÉREQUIS :</h3>
+                    <h3 class="prereq-txt">PRÉREQUIS :</h3>
                     <ul>
                         <li>Un dispositif de stockage compatible avec votre système.</li>
                         <li>Une memory card Sony physique ou virtuelle déjà configurée.</li>

@@ -1,5 +1,5 @@
 <!--    
-	Homebrew France Web V4.1.0
+	Homebrew France Web V5.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -41,7 +41,7 @@
         <!-- Scripts -->
         <script async src="../../../scripts/analyticsServices_manager.js"></script>
 	</head>
-    <body data-page-id="DOC-WIN">
+    <body data-page-id="DOC-WIN-WIN11">
         <div class="top-page-donations">
             <a href="https://ko-fi.com/G2G3INK2N"><div class="donation-button" title="Faire un don">
                 <img src="https://storage.ko-fi.com/cdn/cup-border.png"></i>
@@ -53,30 +53,46 @@
         <div id="navSpace"></div>
 		<div class="docu-container">
 			<div class="nav-menu-horiz" style="overflow: scroll;">
-				<h class="subtitles">Navigation :</h><br>
+				<p class="navigation-header">Navigation</p>
                 <div class="nav-elements-horiz"></div>
 			</div>
 			<div class="nav-menu-vert">
-				<h class="subtitles">Navigation :</h><br>
+				<p class="navigation-header">Navigation</p>
                 <div class="nav-elements-vert"></div>
 			</div>
 			<div class="page-docu">
 				<h1 class="top">ESU Windows 10 - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Lumia</span>&nbsp;<strong>Guides</strong></span></h1>
-				<div class="indic">
-					<p class="indic-text">Rejoignez <a href="https://discord.homebrewfrance.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
-				</div>
+				<div class="button-container">
+                    <a href="https://discord.homebrewfrance.fr/">
+                        <button class="ds-button">
+                            <i class="fa-brands fa-discord"></i>&nbsp;Assistance
+                        </button>
+                    </a>
+                    <a href="https://github.com/homebrewfrance/homebrewfrance.fr">
+                        <button class="git-button">
+                            <i class="fa-brands fa-github"></i>&nbsp;Contribuer
+                        </button>
+                    </a>
+                    <a>
+                        <button id="downloadPDF">
+                            <i class="fa fa-download"></i>&nbsp;Télécharger en PDF
+                        </button>
+                    </a>
+                </div>
                 <h2 class="titles" id="preambule">Préambule</h2>
-                <p>Ce guide vous permettra de mettre à niveau Windows 10 vers Windows 11, même si votre PC n'est pas officiellement compatible avec Windows 11.</p>
+                <p>Ce guide vous permettra de mettre à niveau Windows 10 vers Windows 11.</p>
+                <p class="flexible">Dans le cas où votre ordinateur n'est pas officiellement compatible avec Windows 11, ce guide sera quand même applicable.</p>
 
                 <h1 class="titles" id="windows11-upgrade">I. Mise à niveau vers Windows 11</h1>
-                <p>Cette section vous permettra de passer de Windows 10 à Windows 11, même si votre ordinateur ne respecte pas les exigences minimales officielles (sauf l’architecture 64 bits, qui reste obligatoire).</p>
-                <div class="disclaimer">
+                <p>Dans cette section, vous apprendez à mettre à niveau Windows 10 vers Windows 11.</p>
+                <p class="flexible">Cette section est applicable même si votre ordinateur ne respecte pas les exigences minimales officielles (sauf l’architecture 64 bits, qui reste obligatoire).</p>
+                <div class="disclaimer flexible">
                     <p class="indic-text">Microsoft ne recommande pas la mise à niveau vers Windows 11 sur du matériel incompatible. Certaines fonctionnalités pourraient ne plus fonctionner après un certain nombre de mise à jour.</p>
                 </div>
                 <div class="prerequis">
-                    <h3>PRÉREQUIS :</h3>
+                    <h3 class="prereq-txt">PRÉREQUIS :</h3>
                     <ul>
-                        <li><a href="https://www.microsoft.com/software-download/windows11">L’ISO officiel de Windows 11 (multi-édition)</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li><a href="https://drive.massgrave.dev/fr-fr_windows_11_consumer_editions_version_24h2_updated_sep_2025_x64_dvd_6d1ad20d.iso">L’ISO officiel de Windows 11 (en français)</a> <i class="fa fa-download" aria-hidden="true"></i></li>
                         <li>Un PC en 64 bits avec Windows 10 installé et activé</li>
                     </ul>
                 </div>
@@ -85,14 +101,31 @@
                     <li>Téléchargez l’ISO de Windows 11 depuis le site officiel Microsoft.</li>
                     <li>Faites un clic droit sur le fichier ISO et sélectionnez <strong>"Monter"</strong>.</li>
                     <li>Dans la liste des lecteurs, l’ISO apparaît comme un disque d’installation virtuel.</li>
-                    <li>Appuyez sur la touche Windows, recherchez <strong>"Invite de commandes"</strong>, puis exécutez-la en tant qu’administrateur.</li>
-                    <li>Dans l’invite de commandes, tapez la commande suivante :<br>
-                        <code>reg add "HKLM\SYSTEM\Setup\MoSetup" /v AllowUpgradesWithUnsupportedTPMOrCPU /t REG_DWORD /d 1 /f</code></li>
+                    <li class="flexible">Appuyez sur la touche Windows, recherchez <strong>"Invite de commandes"</strong>, puis exécutez-la en tant qu’administrateur.</li>
+                    <li class="flexible">Dans l’invite de commandes, tapez la commande suivante :<br>
+                        <code class="flexible">reg add "HKLM\SYSTEM\Setup\MoSetup" /v AllowUpgradesWithUnsupportedTPMOrCPU /t REG_DWORD /d 1 /f</code></li>
                     <li>Accédez au disque d’installation monté à l’étape <strong>2.</strong> et lancez <code>setup.exe</code>.</li>
                     <li>Poursuivez les étapes d’installation et sélectionnez l’option <strong>"Conserver les fichiers personnels et applications"</strong>.</li>
                 </ul>
 
-                <p>Votre ordinateur sera ensuite mis à niveau vers Windows 11, même si celui-ci ne respecte pas toutes les spécifications minimales.</p>
+                <p>Votre ordinateur sera ensuite mis à niveau vers Windows 11.</p>
+
+                <script>
+                    (function(){
+                        var flexibleElements = document.getElementsByClassName('flexible');
+
+                        function hideFlexible() {
+                            for (var index=0 ; index<flexibleElements.length ; index++) {
+                                flexibleElements[index].style.display = 'none';
+                            }
+                        }
+
+                        const params = new URLSearchParams(window.location.search);
+                        if (params.get('cas') === '2') {
+                            hideFlexible();
+                        }
+                    })();
+                </script>
             </div>            
         </div>
         

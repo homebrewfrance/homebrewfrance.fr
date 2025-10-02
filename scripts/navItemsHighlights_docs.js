@@ -1,5 +1,5 @@
 /* 
-	Homebrew France Web V4.1.0
+	Homebrew France Web V5.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -40,17 +40,17 @@ function createNavMenu() {
             navElementsContainerVert.appendChild(clonedNavMenuItem);
         }
     }
-    if ((!pageID.includes('Switch')) && (!pageID.includes('Revanced')) && (!pageID.includes('3DS')) && (pageID != 'DOC-PS4') && (pageID != 'DOC-PSV')) {
-        var downloadPDFBtn = document.createElement('div');
+    if ((!pageID.includes('Switch')) && (!pageID.includes('Revanced')) && (!pageID.includes('3DS')) && (pageID != 'DOC-PS4') && (pageID != 'DOC-PSV') && (pageID != 'DOC-WIN')) {
+        /*var downloadPDFBtn = document.createElement('div');
         downloadPDFBtn.className = 'nav-menu-item';
         downloadPDFBtn.id = 'downloadPDF';
         downloadPDFBtn.title = 'Téléchargez ce guide en PDF pour le consulter partout! (Fonction expérimentale)';
         downloadPDFBtn.innerHTML = `
-            <i class="fa-solid fa-download"></i> Télécharger en PDF&nbsp;<sup style="color: rgb(165, 165, 165);">beta</sup>
+            <i class="fa-solid fa-download"></i> Télécharger en PDF&nbsp;<!--sup style="color: rgb(165, 165, 165);">beta</sup-->
         `;
         navElementsContainerHoriz.appendChild(downloadPDFBtn);
         var clonedDLBTN = downloadPDFBtn.cloneNode(true);
-        navElementsContainerVert.appendChild(clonedDLBTN);
+        navElementsContainerVert.appendChild(clonedDLBTN);*/
         downloadPDF();
     }
 

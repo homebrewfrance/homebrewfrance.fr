@@ -1,5 +1,5 @@
 /* 
-	Homebrew France Web V4.1.0
+	Homebrew France Web V5.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -25,6 +25,7 @@ function fetchArticles(items) {
         var nobuyoshiItem = document.createElement('div');
         nobuyoshiItem.className = 'nobuyoshi-item';
         nobuyoshiItem.setAttribute('title', decodeHTML(items[itemIndex].description));
+
         const rawDate = items[itemIndex].pubDate;
         const dateObject = new Date(rawDate);
         const options = {
@@ -33,10 +34,16 @@ function fetchArticles(items) {
             year: 'numeric',
         };
         const formattedDate = new Intl.DateTimeFormat('fr-FR', options).format(dateObject);
+
+        // 🔎 Extraire l'URL de l'image du champ description
+        let description = decodeHTML(items[itemIndex].description);
+        let imageUrlMatch = description.match(/<img[^>]+src="([^"]+)"/);
+        let imageUrl = imageUrlMatch ? imageUrlMatch[1] : "";
+
         nobuyoshiItem.innerHTML = `
             <div>
                 <div class="article-image-container">
-                    <img src="${items[itemIndex].enclosure.link}" class="article-image">
+                    <img src="${imageUrl}" class="article-image">
                 </div>
                 <div class="article-author">
                     <div class="article-date">
@@ -51,13 +58,14 @@ function fetchArticles(items) {
                 <h3 style="font-family: 'Sora', sans-serif; margin-bottom: 9px;">${decodeHTML(items[itemIndex].title)}</h3>
                 <!--p style="color: #cecece; font-size: 15px!important;">${decodeHTML(items[itemIndex].description)}</p-->
             </div>
-        `
+        `;
         nobuyoshiItem.addEventListener('click', function () {
             window.location.href = items[itemIndex].link;
         });
         rssFeed.appendChild(nobuyoshiItem);
     }
 }
+
 
 function decodeHTML(html) {
     var txt = document.createElement('textarea');
@@ -75,24 +83,11 @@ var refreshBtn = document.getElementsByClassName('refresh-btn')[0];
 var plusBtn = document.getElementsByClassName('more-btn')[0];
 
 document.addEventListener('DOMContentLoaded', function () {
-    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://hacktuality.com/rss.xml')
+    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://rss.app/feeds/628y2TBA26358Wna.xml')
         .then(response => response.json())
         .then(data => {
             items = data.items;
             fetchArticles(items);
-        })
-        .catch(error => generateError(error));
-});
-
-refreshBtn.addEventListener('click', function () {
-    fetch('https://api.rss2json.com/v1/api.json?rss_url=https://hacktuality.com/rss.xml')
-        .then(response => response.json())
-        .then(data => {
-            items = data.items; 
-            rssFeed.innerHTML = "";
-            setTimeout(() => {
-                fetchArticles(items);
-            }, 900);
         })
         .catch(error => generateError(error));
 });

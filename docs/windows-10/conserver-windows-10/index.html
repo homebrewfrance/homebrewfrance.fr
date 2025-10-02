@@ -1,5 +1,5 @@
 <!--    
-	Homebrew France Web V4.1.0
+	Homebrew France Web V5.0.0
     Copyright (C) 2025  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
@@ -41,7 +41,7 @@
         <!-- Scripts -->
         <script async src="../../../scripts/analyticsServices_manager.js"></script>
 	</head>
-    <body data-page-id="DOC-WIN">
+    <body data-page-id="DOC-WIN-WIN10">
         <div class="top-page-donations">
             <a href="https://ko-fi.com/G2G3INK2N"><div class="donation-button" title="Faire un don">
                 <img src="https://storage.ko-fi.com/cdn/cup-border.png"></i>
@@ -53,28 +53,44 @@
         <div id="navSpace"></div>
 		<div class="docu-container">
 			<div class="nav-menu-horiz" style="overflow: scroll;">
-				<h class="subtitles">Navigation :</h><br>
+				<p class="navigation-header">Navigation</p>
                 <div class="nav-elements-horiz"></div>
 			</div>
 			<div class="nav-menu-vert">
-				<h class="subtitles">Navigation :</h><br>
+				<p class="navigation-header">Navigation</p>
                 <div class="nav-elements-vert"></div>
 			</div>
 			<div class="page-docu">
-                <div class="warning">Ce guide est en version beta, il peut se révéler peu compréhensible et comporter des fautes de frappe ou de français.</div>
 				<h1 class="top">ESU Windows 10 - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Lumia</span>&nbsp;<strong>Guides</strong></span></h1>
-				<div class="indic">
-					<p class="indic-text">Rejoignez <a href="https://discord.homebrewfrance.fr/">Homebrew France</a> pour obtenir de l'assistance ou nous aider à développer le guide.</p>
-				</div>
+				<div class="button-container">
+                    <a href="https://discord.homebrewfrance.fr/">
+                        <button class="ds-button">
+                            <i class="fa-brands fa-discord"></i>&nbsp;Assistance
+                        </button>
+                    </a>
+                    <a href="https://github.com/homebrewfrance/homebrewfrance.fr">
+                        <button class="git-button">
+                            <i class="fa-brands fa-github"></i>&nbsp;Contribuer
+                        </button>
+                    </a>
+                    <a>
+                        <button id="downloadPDF">
+                            <i class="fa fa-download"></i>&nbsp;Télécharger en PDF
+                        </button>
+                    </a>
+                </div>
                 <h2 class="titles" id="preambule">Préambule</h2>
                 <p>Dans ce guide nous allons voir les différents moyens de garder Windows 10 tout en recevant encore des mises à jour de sécurité.</p>
                 <p>Encore une fois, plusieurs options s'offrent à vous :</p>
                 <ul>
-                    <li><strong>Option 1 :</strong> permet de conserver votre installation Windows 10 à jour jusqu'octobre 2026 en quelques clics. (voir <a href="#support-etendu">Section I.</a>)</li>
-                    <li><strong>Option 2 :</strong> permet de mettre à niveau vers la version Entreprise IoT de Windows 10 pour recevoir des mises à jour de sécurité jusque 2032 (nécessite un peu de temps). (voir <a href="#windows-entreprise">Section II.</a>)</li>
+                    <li><strong>Option 1 :</strong> permet de conserver votre installation Windows 10 à jour jusqu'octobre 2026 en quelques clics. (voir "<a href="#support-etendu">Activation du support étendu</a>")</li>
+                    <li><strong>Option 2 :</strong> permet de mettre à niveau vers la version Entreprise IoT de Windows 10 pour recevoir des mises à jour de sécurité jusque 2032 (nécessite un peu de temps). (voir "<a href="#windows-entreprise">Mise à niveau vers une édition Entreprise LTSC</a>")</li>
                 </ul>
 
-                <h1 class="titles" id="support-etendu">I. Activation du support étendu gratuit.</h3>
+                <h1 class="titles" id="support-etendu">🇪🇺 Activation du support étendu gratuit.</h3>
+                <div class="disclaimer">
+                    <p class="indic-text">Cette section n'est faisable que pour les utilisateurs résidant dans l'Union Européenne. Pour les utilisateurs hors-UE, référez vous à la <a href="#windows-entreprise">deuxième option</a>.</p>
+                </div>
                 <p>Cette section vous permettra de bénéficier d'un support étendu d'un an pour votre installation actuelle de Windows 10, jusque octobre 2026.</p>
                 <ul style="list-style-type: decimal;">
                     <li>Rendez vous dans les Paramètres de Windows 10.</li>
@@ -87,12 +103,12 @@
                 </div>
 
                 
-                <h1 class="titles" id="windows-entreprise">II. Mise à niveau vers une version Entreprise LTSC</h3>
+                <h1 class="titles" id="windows-entreprise">Mise à niveau vers une version Entreprise LTSC</h3>
                 <p>Cette section vous permettra de bénéficier d'un support étendu de 7 ans pour Windows 10 en changeant d'édition, jusque janvier 2032.</p>
                 <div class="prerequis">
-                <h3>PRÉREQUIS :</h3>
+                <h3 class="prereq-txt">PRÉREQUIS :</h3>
                     <ul>
-                        <li><a href="https://homebrewfrance.fr/downloads/Windows%2010%20-%20Entreprise%20IoT%20LTSC%202021.iso">L'ISO de Windows 10 IoT Entreprise LTSC 2021</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                        <li><a href="https://drive.massgrave.dev/fr-fr_windows_10_enterprise_ltsc_2021_x64_dvd_bda01eb0.iso">L'ISO de Windows 10 IoT Entreprise LTSC 2021</a> <i class="fa fa-download" aria-hidden="true"></i></li>
                     </ul>
                 </div>
                 <ul style="list-style-type: decimal;">
