@@ -1,0 +1,674 @@
+/* 
+	Homebrew France Web V5.0.0
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+*/
+
+@import 'fonts';
+@import 'variables';
+@import 'mixins';
+@import 'responsive';
+
+$primary-font: 'Plus Jakarta Sans', sans-serif;
+$secondary-font: 'Inter', sans-serif;
+$title-font: 'Instrument Sans', sans-serif;
+
+/**
+========================================================================
+Début des styles génériques
+**/
+#navList, #docList, #checkerList {
+    @include flex-column;
+    @include center;
+}
+
+.services-guides {
+    font-weight: 700;
+	font-family: 'Syne', sans-serif!important;
+	font-optical-sizing: auto;
+	font-style: normal;
+}
+
+.fa-check {
+	color: #f9cb00!important;
+}
+
+.legal {
+	margin-block: 18px;
+	font-family: 'Inter';
+}
+
+.warning {
+	background: rgba(0, 0, 0, 0.5);
+	font-size: 17px;
+	font-family: 'Inter', sans-serif;
+	border: 2px solid #75418d;
+	width: var(--navbar-width);
+	font-weight: 400;
+	padding-block: 8px;
+	padding-inline: 20px;
+	margin-top: 25px;
+	border-radius: 18px;
+}
+
+
+.warning-inpage {
+	background: rgba(171, 0, 0, 0.2);
+	font-size: 17px;
+	font-family: 'Inter', sans-serif;
+	border: 1px solid #8d4141;
+	width: 100%;
+	font-weight: 400;
+	padding-block: 8px;
+	padding-inline: 20px;
+	box-shadow: 0 0 10px rgba(255, 150, 150, 0.3);
+	margin-top: 17px;
+	border-radius: 18px;
+}
+
+.annonce {
+	background: rgba(0, 0, 0, 0.2);
+	font-size: 17px;
+	font-family: 'Inter', sans-serif;
+	border: 1px solid #8d7f41;
+	width: var(--navbar-width);
+	font-weight: 400;
+	padding-block: 8px;
+	padding-inline: 20px;
+	box-shadow: 0 0 10px rgba(255, 243, 150, 0.3);
+	margin-top: 17px;
+	border-radius: 18px;
+	margin-inline: -10px;
+}
+
+.warning-container, .annonce-container {
+	display: flex;
+	justify-content: center;
+	margin-top: 8px;
+}
+
+.alcool:hover {
+	cursor: default;
+}
+
+ul {
+	margin-left: 30px;
+	margin-block: 13px;
+}
+
+.coordonnees-el {
+    @include flex-column;
+	justify-content: center;
+	align-items: center;
+	padding-inline: 16px;
+	padding-block: 25px;
+	background-color: #10101363;
+	border-radius: 38px;
+	border: 2px solid #272727;
+	box-shadow: 0px 10px 15px -4px #0000005e;
+
+	i {
+		color: #a8a7a7;
+	}
+
+	.fa, .fa-solid, .fa-brands {
+		color: white;
+	}
+}
+
+.pres, .pres-fup {
+	transition: 0.3s;
+	padding: 16px;
+	height: auto;
+	overflow-wrap: anywhere;
+	border: 2px solid rgba(153, 153, 153, 0);
+	align-items: center;		
+}
+
+.pres-name {
+	color: white;
+	word-break: break-word;
+	font-family: "Instrument Sans", sans-serif!important;
+	transition: 0.3s;
+	font-size: 27px!important;
+	margin-bottom: 6px;
+}
+
+.pres {
+	p {
+		font-size: 15px!important;
+	}
+}
+
+.partner-container {
+	.pres {
+		padding-top: 20px;
+		padding-bottom: 22px;
+	}
+}
+
+
+.pres, 	.pres-fup {
+	p {
+		color: #9e9e9e;
+	}
+	border-radius: 25px;
+	background-color: #1f202350;	
+	box-shadow: 0px 10px 15px -4px #0000005e;
+}
+
+.partner-image {
+	background-color: #1a1b1d50;	
+	border: 2px solid rgba(61, 61, 61, 0.458);
+	border-radius: 17px;
+	box-shadow: 0px 10px 15px -4px #0000005e;
+	padding: 11px;
+}
+
+.page {
+	a:hover {
+		text-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+		text-decoration: none;
+	}
+	margin-bottom: 12px;
+}
+
+
+html {
+	scroll-behavior: smooth;
+	height: auto;
+}
+
+a {
+	color : #ffffff;
+	transition: 0.3s;
+	text-decoration: none;
+}
+
+.about-end {
+	text-align: center;
+}
+
+body {
+    width: 100%;
+    background: radial-gradient(circle, rgba(138, 43, 226, 0.6), rgba(32, 0, 54, 0.15), transparent 70%), #070809;
+    background-attachment: fixed;
+	-webkit-background-attachment: fixed;
+    animation: moveBackground 5s infinite alternate ease-in-out;
+	-webkit-animation: moveBackground 5s infinite alternate ease-in-out;
+    font-family: 'Plus Jakarta Sans', sans-serif;
+    color: white;
+	z-index: 4500;
+	line-height: 1.47;
+}
+
+.popup {
+	background-color: #1f2023a1;
+	backdrop-filter: blur(10px);
+	border-radius: 35px;
+	border: 2px solid #333;
+	transition: 0.3s;
+	padding: 23px;
+	display: none;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+	position: fixed;
+	z-index: 6600;
+	height: auto;
+}
+
+.show {
+    @include flex-column;
+}
+
+@keyframes moveBackground {
+    0% {
+        background-size: 180% 180%;
+    }
+    100% {
+        background-size: 220% 220%;
+    }
+}
+
+p, ul, li, code {
+	font-size: 17px;
+	font-family: $primary-font;
+}
+h1, h2, h3, h4, h5 {
+	font-family: 'DM Sans', sans-serif;
+}
+
+.required-fields {
+    color: rgb(255, 133, 133);
+}
+
+.discord-title, .error-title {
+	background: rgb(255,255,255);
+	--webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	font-family: 'Instrument Sans', sans-serif;
+}
+
+.discord-title-mobile {
+	background: rgb(156, 156, 156);
+	--webkit-background-clip: text;
+	background-clip: text;
+}
+
+div.page-forms {
+	padding-right: 7%;
+	padding-left: 7%;
+	width: 100%;
+}
+
+.about {
+	text-align: justify;
+	padding-left: 150px;
+	padding-right: 150px;
+}
+.head {
+	background-color:#ffe600;
+	color:#000000;
+}
+
+img {
+		max-width: 100%;
+		height: auto;
+}
+
+
+.cat-separator {
+	margin-top: 5%;
+}
+
+.titles {
+	background: rgb(243, 206, 255);
+	background: linear-gradient(0deg, rgb(242, 218, 255) 33%, rgb(181, 151, 200) 50%, rgb(170, 170, 171) 100%);
+	--webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+	margin-top: 80px;
+	margin-bottom: 0px;
+	word-break: break-word;
+	font-family: "Syne", sans-serif!important;
+	font-optical-sizing: auto;
+	font-weight: 700;
+	font-style: normal;
+	text-transform: uppercase;
+	width: 100%;
+	text-align: center;
+}
+
+
+.titles-ontop {
+	background: #1010108d;
+	border-radius: 50px;
+	padding-inline: 13px;
+	padding-block: 4px;
+	border: 2px solid #67007c;
+}
+
+.titles-ontop-sect {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	justify-items: center;
+	margin-bottom: -75px;
+	margin-top: 150px;
+}
+
+.titles-desc {
+	color: rgb(212, 198, 217);
+	font-size: 16px;
+	margin-bottom: 17px;
+	text-align: center;
+	width: 100%;
+}
+
+.credits {
+    @include flex-column;
+	width: 100%;
+	padding-inline: 10%;
+}
+
+.credits-container {
+	border-radius: 25px;
+	background-color: #1f202350;	
+	box-shadow: 0px 10px 15px -4px #0000005e;
+	padding: 20px;
+	margin-block: 12px;
+}
+
+#latest-commit {
+	background-color: #151518c4;
+	border-radius: 25px;
+	border: 1px solid #333;
+	box-shadow: 0px 10px 15px -4px #0000005e;
+	backdrop-filter: blur(16px);
+	margin: 5px; padding: 20px; 
+	backdrop-filter: blur(10px);
+}
+
+.blurred {
+	filter: blur(8px);
+}
+
+.partner-category {
+	font-size: 13px;
+	border-radius: 7px;
+	padding-inline: 7px;
+	padding-block: 3px;
+	font-family: 'Plus Jakarta Sans', sans-serif;
+	align-items: center;
+	margin-left: 6px;
+	transform: translateY(-2px);
+}
+
+.partner-classic {
+	color: #ffffff;
+	background: linear-gradient(135deg,#67158a,#a32aff);
+}
+
+.partner-orange {
+	color: #d8ab78;
+	background-color:  #443727 ;
+}
+
+.partner-red {
+	color: #d87878;
+	background-color:  #442727 ;
+}
+
+.docs {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+}
+
+.socials-container {
+	justify-content: space-between;
+}
+
+.coordonnees-container {
+	word-break: break-word;
+}
+
+
+.fondator::after {
+	font-family: "Font Awesome 6 Free";
+	font-weight: 900; 
+	content: "\f521"; 
+	margin-left: 5px; 
+	color: rgb(141, 141, 141); 
+}
+
+.qrcode {
+	border-radius: 13px;
+	width: 305px;
+	align-self: center;
+}
+
+.music-link:hover {
+	cursor: pointer;
+}
+/**
+Fin des styles génériques
+========================================================================
+**/
+
+
+/**
+========================================================================
+Début des styles "grids"
+**/
+@keyframes gridAnim {
+	from {
+	  transform: translateY(20px); 
+	  opacity: 0; 
+	}
+	to {
+	  transform: translateY(0); 
+	  opacity: 1; 
+	}
+}
+
+.grid-container {
+    @include flex-row;
+	flex-wrap: wrap;
+	-ms-flex-wrap: wrap;
+}
+/**
+Fin des styles "grids"
+========================================================================
+**/
+
+
+
+/**
+========================================================================
+Début des styles de la page "A PROPOS"
+Lien : https://homebrewfrance.fr/a-propos
+**/
+.grid-downloads, .grid-shop {
+	animation-name: gridAnim;
+	animation-duration: 2s;
+	animation-delay: 0s;
+	animation-fill-mode: backwards;
+	position: relative;
+	transition: 0.3s;
+}
+
+.grid-staff {
+    @include grid-generic;
+    width: 355px;
+	height: 285px auto;
+    float: left;
+	margin: 8px auto;
+    display: flex;
+	flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+	h3 {
+		font-size: 22px;
+		font-family: 'Instrument Sans';
+		font-weight: 500;
+	}
+
+	.fa-crown {
+		color: #a0a0a0;
+	}
+
+	small {
+		color:rgb(163, 163, 163);
+	}
+
+	img {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border-radius: 25px;
+		border: 2px solid rgba(121, 121, 121, 0.568);
+	}
+
+	.staff-desc-container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.role {
+		font-size: 14px;
+		border-radius: 20px;
+		margin-inline: 6px;
+	}
+
+	.modératrice, .modérateur {
+		color: #74da87;
+		background-color:  #1c3521 ;
+		border-radius: 7px;
+		padding-inline: 5px;
+		padding-block: 2px;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		align-items: center;
+		transform: translateY(5px);
+		width: fit-content;
+		height: fit-content;
+	}
+
+	.administrateur {
+		color: #9349b1;
+		background-color:  #301a38 ;
+		border-radius: 7px;
+		padding-inline: 5px;
+		padding-block: 2px;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		align-items: center;
+		transform: translateY(5px);
+		width: fit-content;
+		height: fit-content;
+	}
+
+	.helper {
+		color: #3bb4b6;
+		background-color:  #113131 ;
+		border-radius: 7px;
+		padding-inline: 5px;
+		padding-block: 2px;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		align-items: center;
+		transform: translateY(5px);
+		width: fit-content;
+		height: fit-content;
+	}
+}
+/**
+Fin des styles "A PROPOS"
+========================================================================
+**/
+
+
+/**
+========================================================================
+Début des styles de la page "RESSOURCES"
+Lien : https://homebrewfrance.fr/ressources
+**/
+.grid-downloads {
+    @include grid-generic;
+    padding-block: 17px;
+	padding-inline: 8px;
+    transition: 0.3s;
+	justify-content: center!important;
+	align-items: center!important;
+    @include flex-column;
+	height: auto!important;
+
+	h3 {
+		font-size: 25px;
+		font-family: 'Instrument Sans', sans-serif;
+		font-weight: 500;
+		word-break: break-all;
+	}
+
+	h4 {
+		color: #707070;
+	}
+
+	img {
+		margin-bottom: 6px;
+	}
+
+	.qrcode-placeholder {
+		color: #b7b7b7;
+		transition: 0.3s;
+	}
+
+	.qrcode-placeholder:hover {
+		color: #ffffff;
+		text-shadow: 0 0 10px rgba(214, 214, 214, 0.5);
+	}
+}
+
+.dsi-grid {
+	background-image: url('https://cdn.homebrew-france.fun/telechargements/dsi.png');
+    @include grid-bg;
+}
+
+.ds3-grid {
+	background-image: url('https://cdn.homebrew-france.fun/telechargements/3ds.png');
+    @include grid-bg;
+}
+
+.switch-grid {
+	background-image: url('https://cdn.homebrew-france.fun/telechargements/switch.png');
+    @include grid-bg;
+}
+
+
+.grid-staff {
+	.btn-container {
+		margin-bottom: 4px;
+	}
+} 
+
+.btn-container {
+	margin-top: 15px;
+}
+
+#packSearch, #themeSearch, .search-icon {
+	background: rgba(26, 28, 31, 0.26);
+    border-radius: 15px!important;
+    border: var(--main-border);
+	padding-inline: 12px;
+	padding-block: 6px;
+	color: white;
+	font-family: 'Plus Jakarta Sans';
+	transition: 0.3s;
+	font-size: 15px!important;
+	align-self: center;
+}
+
+.tags-selector {
+	display: flex;
+    @include center;
+	justify-content: center;
+	margin-bottom: 25px;
+}
+
+#themeSearch:focus, #packSearch:focus {
+	outline: none;
+	transform: scale(1.03);
+	box-shadow: 0px 2px 3px #000000;
+}
+
+#compteurResultats {
+	font-size: 14px;
+	margin-top: 5px;
+	color:rgb(141, 141, 141)
+}
+
+.search-icon:hover {
+	transform: scale(1.09);
+}
+
+.search-icon:active {
+	transform: scale(0.98);
+}
+/**
+Fin des styles "RESSOURCES"
+========================================================================
+**/
+

@@ -1,0 +1,154 @@
+/* ---- DEBUT STYLES BOUTONS ---- */
+
+.page button, .grid-downloads button, .grid-staff button, .popup button {
+	border-radius: 16px;
+	font-weight: 400;
+	padding-inline: 18px;
+	padding-block: 8px;
+	color: rgb(233, 233, 233);
+	margin-inline: 4px;
+	margin-block: 5px;
+	transition: 0.3s;
+	font-size: 17px;
+	font-family: 'Inter', sans-serif!important;
+}
+
+.btn-container-home {
+	margin-top: 12px;
+}
+
+.grid-staff button {
+	margin-bottom: 7px;
+}
+
+.home-header button {
+	padding-inline: 25px;
+	padding-block: 9px;
+	font-size: 17px;
+}
+
+.home-header-2 button {
+	padding-inline: 25px;
+	padding-block: 9px;
+	font-size: 17px;
+}
+
+.blank-button {
+	height: 15px;
+}
+
+.refresh-btn, .more-btn, .close-btn, .music-stream-btn {
+	background: rgba(34, 30, 30, 0.5);
+	border: 1px solid #616161;
+	backdrop-filter: blur(10px);
+	width: auto;
+	border-radius: 20px;
+	color: white;
+	text-align: center;
+	padding-block: 10px;
+	margin-top: 15px;
+	transition: 0.3s;
+	font-size: 19px!important;
+}
+
+.refresh-btn:hover, .more-btn:hover, .close-btn:hover, .music-stream-btn:hover {
+	box-shadow: 0 0 8px rgba(255, 255, 255, 0.308);
+	cursor: pointer;
+	transform: scale(1.05) translateY(-2px);
+}
+
+.page button:hover {
+	cursor: pointer;
+	transform: scale(1.05) translateY(-2px);
+}
+
+.page button:active {
+	transform: scale(0.89);
+}
+
+.default-button, .form-button {
+	background: rgba(0, 0, 0, 0.5);
+	border: 1px solid #75418d;
+}
+
+.form-button {
+	margin-left: 0!important;
+	width: 70%!important;
+	padding: 10px!important;
+	font-size: 24px!important;
+}
+
+.form-button:hover {
+	box-shadow: 0 0 10px rgba(222, 150, 255, 0.5);
+	transform: none!important;
+}
+
+.default-button:hover {
+	box-shadow: 0 0 10px rgba(222, 150, 255, 0.5);
+}
+
+.git-button, .twitter-button, .tiktok-button, .tp-button {
+	background: rgba(22, 22, 22, 0.5);
+	border: 1px solid #fcfcfc;
+}
+
+.git-button:hover, .twitter-button:hover, .tiktok-button:hover {
+	box-shadow: 0 0 10px rgba(214, 214, 214, 0.5);
+}
+
+.ds-button {
+	background: rgba(40, 89, 248, 0.5);
+	border: 1px solid #006ec9;
+}
+
+.tel-button {
+	border-radius: 11px!important;
+	padding-inline: 11px!important;
+	padding-block: 8px!important;
+	background-color: #44444463!important;
+	backdrop-filter: blur(10px)!important;
+	border: none;
+	font-size: 19px!important;
+	margin-top: 18px;
+}
+
+.linkedin-button {
+	background: rgba(63, 107, 250, 0.5);
+	border: 1px solid #2983cc;
+}
+
+.linkedin-button:hover {
+	box-shadow: 0 0 10px rgba(80, 141, 255, 0.5);
+}
+
+.ds-button:hover {
+	box-shadow: 0 0 10px rgba(80, 141, 255, 0.5);
+}
+
+.insta-button {
+	background: rgb(131,58,180);
+	background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+	border: 1px solid #ff00f2;
+}
+
+.insta-button:hover {
+	box-shadow: 0 0 10px rgba(181, 54, 255, 0.5);
+}
+
+.yt-button {
+	background: rgba(201, 0, 0, 0.5);
+	border: 1px solid #ff0000;
+}
+
+.yt-button:hover {
+	box-shadow: 0 0 10px rgba(255, 54, 54, 0.5);
+}
+
+.twitch-button {
+	background: rgba(154, 0, 201, 0.5);
+	border: 1px solid #c300ff;
+}
+
+.twitch-button:hover {
+	box-shadow: 0 0 10px rgba(118, 1, 134, 0.5);
+}

@@ -1,0 +1,500 @@
+@media only screen and (min-width:  1380px) {
+	.btn-container {
+		flex-direction: row;
+		-ms-flex-direction: row;
+	}
+	.coordonnees-el {
+		width: 350px;
+	}
+	.coordonnees-fup {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.partner-image {
+		max-width: 100px; max-height: 100px; margin-right: 25px;
+	}
+	.pres {
+		display: flex;
+		flex-direction: row!important;
+	}
+
+	.pres:hover {
+		.it::after {
+			content: "\f08e";
+			font-family: "Font Awesome 6 Free";
+			font-weight: 900; 
+			margin-left: 7px; 
+			color: rgba(90, 90, 90, 0.705);
+			font-size: 19px;
+		}	
+	}
+	
+	.home-header {
+		margin-top: 12%;
+		margin-left: 3%;
+		height: var(--device-height);
+		justify-content: center;
+	}
+
+	.home-header-2 {
+		justify-content: center;
+	}
+	
+	.home-header, .error-container, .home-header-2 {
+		display: flex;
+		flex-direction: row;
+	}
+	.discord-img, .error-img {
+		display: flex;
+		align-items: center; 
+		justify-content: center; 
+		max-height: 450px;
+		width: 50%;
+		padding: 25px;
+	}
+
+	.discord-img2 {
+		display: flex;
+		align-items: center; 
+		justify-content: center; 
+		max-height: 450px;
+		width: 50%;
+	}
+
+	.grid-shop {
+		width: 260px;
+	}
+
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1380px) {
+	.home-header, .error-container, .home-header-2 {
+		display: flex;
+	}
+	.discord-img, .error-img {
+		display: none;
+	}
+	.home-header {
+		margin-top: 20%;
+		height: var(--device-height);
+		justify-content: center;
+
+		.discord-title, .discord-desc {
+			text-align: center;
+		}
+
+		.btn-container-home {
+			justify-self: center;
+			align-self: center;
+			margin-left: -4px;
+		}
+	}
+
+	.home-header-2 {
+		margin-top: 20%;
+		justify-content: center;
+
+		.discord-title, .discord-desc {
+			text-align: center;
+		}
+
+		.btn-container-home {
+			justify-self: center;
+			align-self: center;
+			margin-left: -4px;
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.btn-container {
+		flex-direction: column;
+		-ms-flex-direction: column;
+		align-items: center;
+		justify-items: center;
+		display: flex;
+	}
+	.btn-container-home {
+		display: flex; 
+		flex-direction: column;
+		width: 100%;
+	}
+
+	.tags-selector {
+		flex-direction: column; 
+		display: flex;
+	}
+	.coordonnees-el {
+		width: 100%;
+		margin-block: 12px;
+	}
+	.coordonnees-fup {
+		@include flex-column;
+	}
+	.grid-shop {
+		width: 100%;
+	}
+		
+	.article-image-container {
+		width: 100%;
+		height: 125px;
+		aspect-ratio: 1 / 1; 
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+		border-radius: 15px;
+		box-shadow: 0 0 10px rgba(214, 214, 214, 0.5);
+	}
+	.pres {
+		@include flex-column;
+	}
+
+	.partner-image {
+		align-self: center;
+		justify-self: center;
+		display: flex;
+		height: 95px;
+	}
+	.it {
+		@include flex-column;
+		align-items: center;
+
+		.partner-category {
+			width: auto!important;
+			align-self: center;
+		}
+	}
+	.home-header {
+		margin-top: 40%;
+		height: var(--device-height);
+		justify-content: center;
+	}
+	.discord-img, .error-img {
+		display: none;
+	}
+	.btn-container-home {
+		align-items: center;
+		justify-content: center;
+		margin-left: 0px!important;
+	}
+
+	.indicator {
+		font-size: 40px;
+		word-break: break-all;
+	}
+
+	#fup-indicator { 
+		width: 45px;
+	}
+
+	#presentation-communaute, #presentation-fup {
+		font-size: 19px; 
+		text-justify: inter-word;
+		margin-top: 18px;
+		font-family: 'Poppins', sans-serif;
+	}
+
+	.discord-title, .error-title {
+		display: none;
+		color: white;
+	}
+
+	.discord-desc, .error-desc {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		color: #cacaca;
+
+		strong {
+			color: white;
+		}
+	}
+
+	.discord-title-mobile {
+		line-height: 1.0;
+		margin-bottom: 12px;
+		margin-top: 20%;
+		text-align: center;
+		font-size: 55px;
+		color: white;
+	}
+
+    .titles {
+        font-size: 23px;
+    }
+	.banner-container {
+		margin-left: 3%;
+		margin-right: 3%;
+	}
+    .partner-container {
+		@include flex-column;
+        -ms-flex-direction: column;
+	}
+	div.page {
+		padding-left: 5.5%;
+		padding-right: 5.5%;
+		width: 100%;
+	}
+	.container-staff {
+		flex-direction: column;
+        -ms-flex-direction: column;
+		display: flex;
+		align-items: center;
+	}
+	.grid-staff {
+		width: 270px;
+		margin-left: 10%;
+		margin-right: 10%;
+	}
+	.container-presta {
+		flex-direction: column;
+        -ms-flex-direction: column;
+    }
+    .grid-shop {
+		width:100%;
+        margin-bottom: 10px;
+        margin-top: 10px;
+	}
+	.grid-downloads {
+		width: 100%;
+		margin-top: 10px;
+		margin-bottom: 10px;
+		margin-left: 2%;
+		margin-right: 2%;
+
+		h3 {
+			font-size: 17px!important;		
+		}
+
+		small {
+			font-size: 11px!important;
+		}
+
+	}
+	.pres, .pres-fup {
+		width: 100%;
+		margin-top: 5px;
+		margin-bottom: 5px;
+	}
+	.article-author {
+		@include flex-column;
+		text-align: center;
+		width: 100%;
+	}
+
+	.indicator-container {
+		margin-top: 120px;
+		margin-bottom: 65px;
+	}
+	.popup {
+		width: 80%;
+	}
+	.tags-search-container {
+		flex-direction: column; 
+		display: flex;
+	}
+	
+}
+
+
+@media only screen and (min-width: 800px) {
+	.pres {
+		@include flex-column;
+	}
+		
+	.it {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+	}
+	.discord-title-mobile {
+		display: none;
+	}
+	.popup {
+		width: auto;
+	}
+	.indicator-container {
+		margin-top: 200px;
+		margin-bottom: 100px;
+	}
+	
+	.article-image {
+		object-fit: cover; 
+		object-position: center; 
+		width: 100%;
+		height: 100%;
+		margin-block: 12px;
+		border-radius: 15px;
+		
+	}
+	
+	.article-image-container {
+		width: 100%;
+		height: 125px;
+		aspect-ratio: 1 / 1; 
+		overflow: hidden;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 10px;
+		border-radius: 15px;
+		box-shadow: 0 0 10px rgba(214, 214, 214, 0.5);
+	}
+	.indicator {
+		font-size: 65px;
+	}
+
+	#fup-indicator {
+		width: 80px;
+	}
+
+	.grid-shop:hover, .grid-downloads:hover {
+		transform: scale(1.02); 
+		background-color: #111113d5;
+		-webkit-box-shadow: 0px 10px 15px -4px #00000093; 
+		box-shadow: 0px 10px 15px -4px #00000093;
+
+		img {
+			transform: scale(1.01);
+			transform: rotate(3px);
+		}
+	}
+
+	#presentation-communaute, #presentation-fup {
+		font-size: 29px; 
+		font-family: 'Poppins', sans-serif;
+	}
+
+	#presentation-communaute {
+		margin-top: 195px;
+	}
+
+
+	.discord-desc, .error-desc {
+		justify-content: center;
+		align-items: center;
+		display: flex;
+		max-height: 450px;
+		width: 50%;
+		color: #cacaca;
+
+		strong {
+			color: white;
+		}
+	}
+
+	.img-ds-ratio {
+		height: 100%; 
+		width: auto;
+		object-fit: contain; 
+		transition: 0.8s;
+	}
+	.img-ds-ratio:hover {
+		transform: rotate(0.02turn) scale(1.09);
+	}
+
+
+	.error-container {
+		justify-content: center;
+		justify-items: center;
+		justify-self: center;
+		align-content: center;
+		align-items: center;
+		align-self: center;
+	}
+	
+    .titles {
+        font-size: 44px;
+    }
+	.banner-container {
+		margin-left: 7%;
+		margin-right: 7%;
+	}
+	div.page {
+		padding-left: 8.6%;
+		padding-right: 8.6%;
+		width: 100%;
+	}
+	.container-presta {
+		display: flex;
+		flex-direction: row;
+        -ms-flex-direction: row;
+		align-items: center;
+		margin-bottom: 10px;
+	}
+	.partner-container {
+		display: flex;
+		flex-direction: row;
+        -ms-flex-direction: row;
+	}
+	.grid-downloads {
+		margin: 10px;
+		flex-grow: 1;
+		float: left;
+		cursor: pointer;
+		width: 350px;
+		padding-inline: 15px!important;
+
+		img {
+			transition: 0.3s;
+		}
+
+		small {
+			color: #b5b5b5!important;
+		}
+
+		strong {
+			color: white!important;
+		}
+	}
+
+	.grid-shop:hover, .grid-downloads:hover, .add-infos-shop:hover {
+			transform: scale(1.02);
+            cursor: default;
+	}
+
+	.grid-downloads:hover {
+		img {
+			transform: rotate(0.01turn) scale(1.09);
+		}
+	}
+
+	.pres, .pres-fup {
+		width: 50%;
+		margin: 5px;
+	}
+	.row-basic {
+		display: flex; 
+		flex-direction: row;
+        -ms-flex-direction: row;
+	}
+
+	.pres:hover {
+		cursor: pointer;
+		transform: scale(1.01);
+		border: 2px solid rgba(153, 153, 153, 0.192);
+
+	}
+	.pres-fup:hover {
+		cursor: pointer;
+		background-color: #1f202350;
+		transform: scale(1.02);
+		border: 1px solid rgba(153, 153, 153, 0.192);
+	}
+
+	.discord-title, .error-title {
+		font-size: 65px;
+	}
+
+	.article-author {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		bottom: 0!important;
+		margin-bottom: 15px;
+		margin-top: 8px;
+	}
+}	

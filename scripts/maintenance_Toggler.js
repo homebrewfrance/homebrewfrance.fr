@@ -20,6 +20,7 @@ const warningsList = [
     //"Voici la nouvelle version des services web Homebrew France !<br> Voir le <a style=\"color: #ade5ff;\" href=\"https://github.com/homebrewfrance/homebrewfrance.fr/releases/tag/V4.0.0\">changelog</a> sur GitHub.",
     // '<strong>ANNONCE :</strong> Nous recrutons des nouveaux modérateurs pour la communauté ! Postulez maintenant sur <a style="color:rgb(142, 179, 255)" href="https://homebrewfrance.fr/devenir-modo">cette page</a>'
     //'<strong>ANNONCE :</strong> La session de recrutements de modérateurs 2025-2026 ouvrira Jeudi 7 août 2025 à 15h30 (UTC+1:00)'
+    '<strong>MAINTENANCE :</strong>&nbsp;Une maintenance pour le déploiement de la version 5.0.0 des services est prévue du 1er novembre 2025 à 17h30 jusqu\'au 2 novembre à 18h'
 ]
 
 const annoncesList = [
@@ -27,7 +28,7 @@ const annoncesList = [
     //'Nouveau guide disponible : <a href="https://homebrewfrance.fr/docs/windows-10">ESU Windows 10</a>'
 ]
 
-const global_doc_warning = 'Ce guide ne doit pas être utilisé dans le but de contourner des protections et d\'exécuter des logiciels piratés.';
+const global_doc_warning = 'Nos guides ne doivent pas être utilisés dans le but de contourner des protections et d\'exécuter des logiciels piratés.';
 var bodyElement = document.querySelector('body');
 var html = document.querySelector('html');
 var pageID = bodyElement.getAttribute("data-page-id");

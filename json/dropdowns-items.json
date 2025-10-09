@@ -5,7 +5,7 @@
             "url": "https://homebrewfrance.fr/docs/3ds/",
             "id": "pretendo-doc",
             "dropdownId": "docsDrop",
-            "iconLink": "https://cdn.homebrew-france.fun/docs/icons/3ds_icon.png"
+            "iconLink": "https://cdn.homebrew-france.fun/beta/3ds_icon.png"
         },
         {
             "name": "Nintendo Switch",
@@ -19,21 +19,21 @@
             "url": "https://homebrewfrance.fr/docs/ps2",
             "id": "ps2-doc",
             "dropdownId": "docsDrop",
-            "iconLink": "https://cdn.homebrew-france.fun/docs/icons/ps2_icon.png"
+            "iconLink": "https://cdn.homebrew-france.fun/beta/ps2_icon.png"
         },
         {
             "name": "PlayStation 4",
             "url": "https://homebrewfrance.fr/docs/ps4",
             "id": "ps4-doc",
             "dropdownId": "docsDrop",
-            "iconLink": "https://cdn.homebrew-france.fun/docs/icons/ps4_icon.png"
+            "iconLink": "https://cdn.homebrew-france.fun/beta/ps4_icon.png"
         },
         {
             "name": "PlayStation Vita",
             "url": "https://homebrewfrance.fr/docs/psvita",
             "id": "psvita-doc",
             "dropdownId": "docsDrop",
-            "iconLink": "https://cdn.homebrew-france.fun/docs/icons/psvita_icon.png"
+            "iconLink": "https://cdn.homebrew-france.fun/beta/psvita_icon.png"
         },
         {
             "name": "Xbox",
@@ -64,7 +64,7 @@
             "iconLink": "https://cdn.homebrew-france.fun/docs/icons/apple_icon.png"
         },
         {
-            "name": "ESU Windows 10 (beta)",
+            "name": "ESU Windows 10",
             "url": "https://homebrewfrance.fr/docs/windows-10",
             "id": "win-doc",
             "dropdownId": "docsDrop",

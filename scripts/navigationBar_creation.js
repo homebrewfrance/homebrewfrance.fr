@@ -227,7 +227,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             otherDrop.classList.remove('showDropdown');
                         }
 
-                        /*if (usrAgent.includes('Chrome')) {*/
+                        if (usrAgent.includes('Chrome')) {
                             if (allDrops.length > 0) {
                                 var navbar = document.getElementsByClassName('navbar')[0];
                                 navbar.style.backdropFilter = 'none';
@@ -237,7 +237,7 @@ document.addEventListener('DOMContentLoaded', function () {
                                 var navbar = document.getElementsByClassName('navbar')[0];
                                 navbar.style.backdropFilter = 'blur(10px)';
                             }
-                        /*}*/
+                        }
                     });
                 }
 

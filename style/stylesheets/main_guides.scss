@@ -249,16 +249,19 @@
 }
 
 .checker {
-	border: 1px solid #272727;
-	background-color: #0f1318a4;
-	border-radius: 20px;
+	border: 2px solid #0027466f;
+	background-color: #151b2269;
+	border-radius: 35px;
 	margin-left: 0%;
 	margin-right: 0%;
 	margin-bottom: 10px;
 	margin-top: 5px;
 	padding: 25px;
-}
 
+	h3 {
+		font-family: 'Syne', sans-serif;
+	}
+}
 
 .fa, .fa-solid {
 	color: white;
@@ -362,12 +365,17 @@ footer a:hover {
 	align-items: center;
 	justify-content: space-between;
 	padding-inline: 15px;
-	background-color: #57000059;
+	background-color: #570000a0;
 	backdrop-filter: blur(10px);
 	padding-bottom: 23px;
 	padding-top: 15px;
 	margin: 7px;
-	border-radius: 15px;
+	border-radius: 30px;
+	margin-inline: 30%;
+	line-height: 1.45;
+	border: 1px solid #6e0000;
+	box-shadow: 0px 10px 15px -4px #320000ca;
+	margin-bottom: 15px;
 }
 
 ::-webkit-scrollbar {
@@ -376,24 +384,25 @@ footer a:hover {
 
 .submit {
 	padding-inline: 8px;
-	background-color: #1f2023a1;
 	border-radius: 10px;
-	border: 1px solid #333;
-	backdrop-filter: blur(16px);
-	color: rgb(187, 187, 187);
 	text-align: center;
 	padding-block: 10px;
-    transition: 0.5s;
-	font-family: 'Plus Jakarta Sans', sans-serif;
+	background: linear-gradient(135deg,#154e8a,#2aa0ff);
+	transition: 0.6s;
+	color:#ffffff;
+	font-family: 'Instrument Sans';
 	margin-top: 12px;
+	border: none;
+	border: 2px solid #004183;
 }
 
+
 .submit:hover {
-	background-color: #2d2f33a1;
 	transform: scale(1.04);
-	font-family: 'Plus Jakarta Sans', sans-serif;
-	-webkit-box-shadow: 0px 10px 15px -4px #00000093; 
-	box-shadow: 0px 10px 15px -4px #00000093;
+	background: linear-gradient(135deg,#154e8a,#2aa0ff);
+	-webkit-box-shadow: 0px 10px 15px -4px #7c7c7c93; 
+	box-shadow: 0px 3px 8px -4px #ffffff93;
+	border: 2px solid #70e5ff;
 }
 
 #playstationVita, #playstation4 {
@@ -464,9 +473,9 @@ select:active {
 
 .input-switch, .input-ps3 {
 	padding-inline: 8px;
-	background-color: #1f2023a1;
+	background-color: #343d5800;
 	border-radius: 10px;
-	border: 1px solid #333;
+	border: 1px solid #69a4e4;
 	backdrop-filter: blur(16px);
     transition: 0.3s;
 	font-family: 'Plus Jakarta Sans', sans-serif;
@@ -489,7 +498,7 @@ select:active {
 
 input {
 	color: white;
-	background-color: #12131600;
+	background-color: #4a4e5b00;
 	border: none;
 	width: 100%;
 	height: 100%;
@@ -1009,6 +1018,10 @@ td, th {
 	bottom: 18px;
 	z-index: 5000;
 	position: fixed;
+
+	#arrowTop {
+		transition: 0.7s;
+	}
 }
 
 .top-page-button:hover, .donation-button:hover {
@@ -1016,6 +1029,10 @@ td, th {
 	box-shadow:
     0 6px 10px rgba(201, 201, 201, 0.45),  
     0 18px 40px rgba(255, 255, 255, 0.12);
+	
+	#arrowTop {
+		transform: rotate(360deg);
+	}
 }
 
 .top-page-button:hover {
@@ -1089,7 +1106,7 @@ html {
 }  
 
 body {
-    background: radial-gradient(circle, rgba(43, 125, 226, 0.4), rgba(0, 17, 54, 0.15), transparent 70%), #121316;
+    background: radial-gradient(circle, rgba(43, 125, 226, 0.4), rgba(0, 17, 54, 0.15), transparent 70%), #070809;
     background-attachment: fixed;
 	-webkit-background-attachment: fixed;
     animation: moveBackground 5s infinite alternate ease-in-out;
@@ -1137,7 +1154,7 @@ strong {
 		font-weight: 900; 
 		content: "INFO :"; 
 		margin-right: 9px; 
-		color: rgb(196, 196, 196); 
+		color: rgb(252, 238, 238); 
 	}
 }
 

@@ -1,0 +1,204 @@
+
+@media only screen and (min-width: 1380px) {
+    .cookie-button {
+        font-size: 17px;
+    }
+    .cookie-box {
+        flex-direction: row;
+    }
+
+    .dropdown-item::after {
+        content: "\f0d7"; 
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        margin-left: 8px;
+    }
+
+
+    .nav-link, .dropdown-item {
+        margin-inline: 25px;
+        font-size: 19px;
+    }
+
+    @mixin globalNavIcons {
+        font-size: 16px;
+    }
+    
+
+    #navbarToggler {
+        display: none;
+    }
+    #mobileItems {
+        display: none;
+    }
+    
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer {
+        padding-inline: 7%;
+    }
+    .ua-flag {
+        width: 16px;
+        height: auto;
+    }
+    .hbf-logo-container {
+        display: flex;
+        flex-direction: row;
+    }
+    
+}
+
+@media only screen and (max-width: 800px) {
+    .navbar {
+        width: 95%;
+    }
+    .nav-link, .dropdown-item {
+        margin-inline: 25px;
+        font-size: 15px;
+    }
+
+    @mixin globalNavIcons {
+        font-size: 15px;
+    }
+
+    .right-footer {
+        margin-top: 15px;
+    }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1000px) {
+    .navbar {
+        width: 85%;
+        margin-inline: 11px;
+    }
+    .nav-link, .dropdown-item {
+        margin-inline: 25px;
+        font-size: 15px;
+    }
+
+    @mixin globalNavIcons {
+        font-size: 15px;
+    }
+}
+
+
+@media only screen and (min-width: 1000px) and (max-width: 1380px) {
+    .cookie-button {
+        font-size: 17px;
+    }
+    .cookie-box {
+        flex-direction: row;
+    }
+
+    .dropdown-item::after {
+        content: "\f0d7"; 
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        margin-left: 8px;
+    }
+
+
+    .nav-link, .dropdown-item {
+        margin-inline: 25px;
+        font-size: 14px;
+    }
+
+    #navbarToggler {
+        display: none;
+    }
+    #mobileItems {
+        display: none;
+    }
+
+    .footer-container {
+        display: flex;
+        justify-content: space-between;
+    }
+    footer {
+        padding-inline: 7%;
+    }
+
+} 
+
+@media only screen and (max-width: 1000px) {
+    .cookie-button {
+        font-size: 14px;
+    }
+    .cookie-box {
+        flex-direction: column;
+    }
+    .nav-item-content::after {
+        content: "\f0d7"; 
+        font-family: "Font Awesome 6 Free";
+        font-weight: 900;
+        margin-left: 8px;
+    }
+
+    .nav-item-content {
+        align-self: self-start!important;
+    }
+
+    .hbf-version {
+        display: none;
+    }
+
+    .hbf-logo-container {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #desktopItems {
+        display: none;
+    }
+    #mobileItems {
+        display: none;
+    }
+    #mobileItems.showLinks {
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px; 
+        align-items: flex-start;
+        padding: 0;
+        position: relative;
+        z-index: 1; 
+    }
+    
+    .navbar {
+        display: flex;
+        flex-direction: column;
+    }
+    .dropdown-item {
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        text-align: left;
+    }
+
+    .footer-container {
+        margin-top: 12px;
+        display: flex;
+        flex-direction: column;
+        height: auto;
+    }
+    .right-footer {
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+        font-size: 12px;
+    }
+    .ua-flag {
+        width: 12px;
+        height: auto;
+    }
+    .left-footer {
+        text-align: center;
+    }
+    footer {
+        padding-inline: 3%;
+    }
+    .nav-link, .dropdown-item {
+        margin: 0px 0px 8px 0px;
+    }
+}
