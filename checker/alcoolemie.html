@@ -1,0 +1,152 @@
+<!--    
+	Homebrew France Web V5.0.0
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEBV5-LWS">
+	<head>
+		<title>Alcool | Alcoolemie-Checker</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<meta charset="utf-8" />
+		<meta content="Alcoolémie Checker" property="og:title"/>
+		<meta content="Un outil pour vérifier votre taux d'alcoolémie." property="og:description"/>
+		<meta content="https://homebrewfrance.fr/checker/alcoolemie" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.fun/multi-checker/alcool-checker.png" property="og:image"/>
+
+		
+        <!-- Link -->
+        <link rel="icon" type="image/x-icon" href="https://cdn.homebrew-france.fun/generic/fav.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../style/stylesheets/main_guides.css" />
+		<link rel="stylesheet" href="../../style/stylesheets/navbar/navbar__f.css" />
+        
+        <!-- Scripts -->
+        <script async src="../../scripts/analyticsServices_manager.js"></script>
+	</head>
+	<body data-page-id="MLTI-Alcool" id="alcool">
+        <div id="navSpace"></div>
+        <div style="margin-top: 65px;">&nbsp;</div>
+        <h1 class="top"><img src="https://cdn.homebrew-france.fun/generic/lumia-guides.png" width="41px" style="transform: translateY(7px);"><span class="top-info">CHECKER</span>・Alcoolémie Checker</h1>
+        <p class="top-txt">Un outil pour vérifier votre taux d'alcoolémie en g/L.</p>
+        <div style="margin-bottom: 40px;">&nbsp;</div>
+        <div class="page">	
+            <div class="indic">
+                <p class="indic-text">Rejoignez <a href="https://alcooliques-anonymes.fr/">Les Alcooliques Anonymes</a> pour obtenir de l'assistance.</p>
+            </div>
+            <pre></pre>
+            <div class="checker">
+                <h3><i class="fa-solid fa-circle-play"></i>&nbsp;&nbsp;Renseignez les informations suivantes</h3>
+                <p>Selon le résultat, continuez à boire ou non.<span style="color: rgb(255, 67, 67);">*</span</p>
+                    <center>
+                        <div class="input-switch"><input type="number" name="numberInput" id="litrage" required placeholder="Le nombre de mL d'alcool ingérés."></div>
+                        <br>
+                        <div class="input-switch"><input type="number" name="numberInput" id="degre" required placeholder="Le degré d'alcool de votre boisson."></div>
+                        <br>
+                        <div class="input-switch"><input type="number" name="numberInput" id="poids" required placeholder="Votre poids en Kilogrammes."></div>
+                        <select id="sexe" name="sexe" required>
+                            <option value="homme">Homme</option>
+                            <option value="femme">Femme</option>
+                        </select>
+                        <button class="submit" id="soumettre">Vérifier l'alcoolémie ></button>
+                    </center>
+                <center><div style="margin-top: 6px; font-size: 16px;" id="resultat" class="resultat"></div></center>
+            </div>
+            <small><span style="color: rgb(255, 67, 67);">*</span><strong>Message sérieux : </strong><i>L'abus d'alcool est dangereux pour la santé, à consommer avec modération.</i></small>
+        </div>	
+        <div class="spacer">&nbsp;</div>
+        <script>
+            const bouton = document.getElementById('soumettre');
+            const resultat = document.getElementById('resultat');
+
+            function compatible(alcoolemie) {
+                resultat.innerHTML = '';
+                var container = document.createElement('div');
+                container.className = 'compatible-container';
+                var divCompatible = document.createElement('div');
+                divCompatible.className = 'compatible';
+                divCompatible.innerHTML = '<i class="fas fa-check-circle"></i>&nbsp;&nbsp;<strong>Vous êtes déjà bien !</strong>';
+                container.appendChild(divCompatible);
+                var infos = document.createElement('div');
+                infos.className = 'infos';
+                infos.innerHTML = '<p>Votre taux d\'alcoolémie est de ' + alcoolemie.toFixed(2) + ' grammes/Litre ! C\'est très bien. Continuez ainsi.</p>';
+                var modelType = document.createElement('small');
+                modelType.className = 'model-type';
+                container.appendChild(infos);
+                container.appendChild(modelType);
+                resultat.appendChild(container);
+            }
+
+            function incompatible(alcoolemie) {
+                resultat.innerHTML = '';
+                var container = document.createElement('div');
+                container.className = 'incompatible-container';
+                var divIncompatible = document.createElement('div');
+                divIncompatible.className = 'incompatible';
+                divIncompatible.innerHTML = '<i class="fa-solid fa-circle-exclamation"></i>&nbsp;&nbsp;<strong>Continuez à boire</strong>';
+                container.appendChild(divIncompatible);
+                var infos = document.createElement('div');
+                infos.className = 'infos';
+                infos.innerHTML = '<p>Votre taux d\'alcoolémie n\'est que de ' + alcoolemie.toFixed(2) + ' grammes/Litre ! C\'est trop peu...</p>';
+                var modelType = document.createElement('small');
+                modelType.className = 'model-type';
+                container.appendChild(infos);
+                container.appendChild(modelType);
+                resultat.appendChild(container);
+            }
+
+            bouton.addEventListener('click', function() {
+                var litrage = document.getElementById('litrage').value / 1000;
+                var degre = document.getElementById('degre').value;
+                var poids = document.getElementById('poids').value; 
+                var sexe = document.getElementById('sexe').value; 
+                var r = 0;
+
+                if (!litrage || !degre || !poids) {
+
+                }
+                else {
+                    if (sexe == 'homme') {
+                        r = 0.7;
+                    } else if (sexe == 'femme') {
+                        r = 0.6;
+                    }
+                    var alcoolemie = (litrage * degre * 0.8) / (poids * r).toFixed(2);
+                    alcoolemie = alcoolemie*10;
+
+                    if (alcoolemie < 0.6) {
+                        incompatible(alcoolemie);
+                    }
+                    else {
+                        compatible(alcoolemie);
+                    }
+                }
+            })
+        </script>
+        
+
+        <!-- Scripts -->
+        <script src="../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../scripts/navigationBar_creation.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	</body>
+</html>
+

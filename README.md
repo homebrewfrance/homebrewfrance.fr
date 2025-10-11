@@ -102,8 +102,8 @@ Des outils en ligne permettant de vérifier la compatibilité de votre console a
   <a href="https://sighya.fr"><img src="https://cdn.homebrew-france.fun/partner/sighya.png" width="100px"></a>
   <a href="https://hacktuality.com/"><img src="https://cdn.homebrew-france.fun/partner/hacktuality.png" width="100px"></a>
   <a href="https://jtech-informatique.fr"><img src="https://cdn.homebrew-france.fun/partner/jtech-informatique.png" width="100px"></a>
-  <a href="https://www.instant-gaming.com/fr/?igr=homebrewfrance%2F"><img src="https://cdn.homebrew-france.fun/partner/instant-gaming.png" width="100px"></a>
-  <a href="https://fixurphone.fr"><img src="https://cdn.homebrew-france.fun/partner/fixurphone.png" width="100px"></a>
+  <a href="https://lbxmb.fr"><img src="https://cdn.homebrew-france.fun/partner/lbxmb.png" width="100px"></a>
+  <a href="https://twitch.tv/cestjohan"><img src="https://cdn.homebrew-france.fun/partner/journalhardware.png" width="100px"></a>
   <a href="https://luminix.app"><img src="https://cdn.homebrew-france.fun/partner/neochronix.png" width="100px"></a>
 </div>
 
@@ -129,3 +129,12 @@ Pour plus d'informations, veuillez consulter le texte intégral de la licence GN
 Les fonctionnalités suivantes ont été conçues à l'aide de l'intelligence artificielle :
 - Surbrillance de l'élément en cours de lecture dans les Docs.
 
+# Checklist V5.0.0 (au 5 octobre 2025)
+- ❌ Améliorations en mode mobile et tablette.
+- ❌ Nettoyage et simplification du SCSS.
+- ✅ Nouveau design pour l'ensemble du site.
+- ✅ Nouveau design pour les Guides, Docs et Checkers.
+- ✅ Mise à jour de tous les Guides et Docs.
+- ✅ Correction de tous les bugs des Checkers.
+- ❌ Automatisation de tout ce qu'il est possible d'automatiser.
+- ❌ Passage des documentations au markdown ou HTML simplifié.

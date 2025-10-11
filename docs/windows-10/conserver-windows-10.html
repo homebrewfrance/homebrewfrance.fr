@@ -1,0 +1,135 @@
+<!--    
+	Homebrew France Web V5.0.0
+    Copyright (C) 2025  Homebrew France
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <https://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="fr" data-website-id="HBFWEBV5-LWS">
+	<head>
+        <title>ESU Windows 10 (beta) | Guides</title>
+
+        <!-- Meta -->
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta charset="utf-8" />
+		<meta content="ESU Windows 10 (beta) | Lumia Guides" property="og:title"/>
+		<meta content="Un guide complet pour bien appréhender la fin de support de Windows 10." property="og:description"/>
+		<meta content="https://homebrewfrance.fr/docs/windows-10/conserver-windows-10/" property="og:url"/>
+		<meta content="https://cdn.homebrew-france.fun/docs/lumia-docs.png" property="og:image"/>
+
+        
+        <!-- Link -->
+        <link rel="icon" type="image/x-icon" href="https://cdn.homebrew-france.fun/generic/fav.ico" />
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+		<link rel="stylesheet" href="../../../style/stylesheets/main_guides.css" />
+		<link rel="stylesheet" href="../../../style/stylesheets/navbar/navbar__f.css" />
+                        
+        <!-- Scripts -->
+        <script async src="../../../scripts/analyticsServices_manager.js"></script>
+	</head>
+    <body data-page-id="DOC-WIN-WIN10">
+        <div class="top-page-donations">
+            <a href="https://ko-fi.com/G2G3INK2N"><div class="donation-button" title="Faire un don">
+                <img src="https://storage.ko-fi.com/cdn/cup-border.png"></i>
+            </div></a>
+            <a href="#"><div class="top-page-button" title="Remonter en haut de la page">
+                <div id="arrowTop">&#9650;</div>
+            </div></a>
+        </div>
+        <div id="navSpace"></div>
+		<div class="docu-container">
+			<div class="nav-menu-horiz" style="overflow: scroll;">
+				<p class="navigation-header">Navigation</p>
+                <div class="nav-elements-horiz"></div>
+			</div>
+			<div class="nav-menu-vert">
+				<p class="navigation-header">Navigation</p>
+                <div class="nav-elements-vert"></div>
+			</div>
+			<div class="page-docu">
+				<h1 class="top">ESU Windows 10 - <span style="font-family: 'Sora'"><span style="font-weight: 300;">Lumia</span>&nbsp;<strong>Guides</strong></span></h1>
+				<div class="button-container">
+                    <a href="https://discord.homebrewfrance.fr/">
+                        <button class="ds-button">
+                            <i class="fa-brands fa-discord"></i>&nbsp;Assistance
+                        </button>
+                    </a>
+                    <a href="https://github.com/homebrewfrance/homebrewfrance.fr">
+                        <button class="git-button">
+                            <i class="fa-brands fa-github"></i>&nbsp;Contribuer
+                        </button>
+                    </a>
+                    <a>
+                        <button id="downloadPDF">
+                            <i class="fa fa-download"></i>&nbsp;Télécharger en PDF
+                        </button>
+                    </a>
+                </div>
+                <h2 class="titles" id="preambule">Préambule</h2>
+                <p>Dans ce guide nous allons voir les différents moyens de garder Windows 10 tout en recevant encore des mises à jour de sécurité.</p>
+                <p>Encore une fois, plusieurs options s'offrent à vous :</p>
+                <ul>
+                    <li><strong>Option 1 :</strong> permet de conserver votre installation Windows 10 à jour jusqu'octobre 2026 en quelques clics. (voir "<a href="#support-etendu">Activation du support étendu</a>")</li>
+                    <li><strong>Option 2 :</strong> permet de mettre à niveau vers la version Entreprise IoT de Windows 10 pour recevoir des mises à jour de sécurité jusque 2032 (nécessite un peu de temps). (voir "<a href="#windows-entreprise">Mise à niveau vers une édition Entreprise LTSC</a>")</li>
+                </ul>
+
+                <h1 class="titles" id="support-etendu">🇪🇺 Activation du support étendu gratuit.</h3>
+                <div class="disclaimer">
+                    <p class="indic-text">Cette section n'est faisable que pour les utilisateurs résidant dans l'Union Européenne. Pour les utilisateurs hors-UE, référez vous à la <a href="#windows-entreprise">deuxième option</a>.</p>
+                </div>
+                <p>Cette section vous permettra de bénéficier d'un support étendu d'un an pour votre installation actuelle de Windows 10, jusque octobre 2026.</p>
+                <ul style="list-style-type: decimal;">
+                    <li>Rendez vous dans les Paramètres de Windows 10.</li>
+                    <li>Allez dans "Mise à jour et sécurité", ouvrez Windows Update et veillez à être sur la version 22H2, si ce n'est pas le cas, effectuez la mise à jour.</li>
+                    <li>Retournez à l'accueil des Paramètres et sélectionnez "Comptes" puis "Sauvegarde Windows", il ne vous reste plus qu'à cocher les options de synchronisation souhaitées, les paramètres sélectionnés seront synchronisés avec OneDrive.</li>
+                </ul>
+
+                <div class="indic">
+                    <p class="indic-text">L'activation du support étendu (ESU) ne se fera pas de façon instantanée, vous serez mis sur liste d'attente.</p>
+                </div>
+
+                
+                <h1 class="titles" id="windows-entreprise">Mise à niveau vers une version Entreprise LTSC</h3>
+                <p>Cette section vous permettra de bénéficier d'un support étendu de 7 ans pour Windows 10 en changeant d'édition, jusque janvier 2032.</p>
+                <div class="prerequis">
+                <h3 class="prereq-txt">PRÉREQUIS :</h3>
+                    <ul>
+                        <li><a href="https://drive.massgrave.dev/fr-fr_windows_10_enterprise_ltsc_2021_x64_dvd_bda01eb0.iso">L'ISO de Windows 10 IoT Entreprise LTSC 2021</a> <i class="fa fa-download" aria-hidden="true"></i></li>
+                    </ul>
+                </div>
+                <ul style="list-style-type: decimal;">
+                    <li>Dans l'Explorateur de Fichiers faites clic-droit sur le fichier ISO de Windows 10 IoT Entreprise LTSC puis sélectionnez "Monter".</li>
+                    <li>Dans la liste des lecteurs, le fichier ISO apparaît comme un disque d'installation.</li>
+                    <li>Appuyez sur la touche Windows et recherchez "Invite de Commandes", une fois que vous l'avez trouvé faites "Exécuter en tant qu'administrateur".</li>
+                    <li>Dans l'invite de commandes tapez la commande suivant :<br>
+                    <code>reg add "HKLM\SOFTWARE\Microsoft\Windows NT\CurrentVersion" /v EditionID /d IoTEnterpriseS /f</code></li>
+                    <li>Accédez rapidement au disque d'installation que vous avez monté dans l'étape <strong>1.</strong> et lancez <code>setup.exe</code></li>
+                    <li>Poursuivez l'étape de l'installation et assurez-vous d'avoir l'option "Keep personal files and apps", si c'est le cas, cliquez-dessus et poursuivez.</li>
+                    <p>Votre édition de Windows 10 sera ensuite mise à niveau vers Windows 10 IoT Entreprise LTSC 2021.</p>
+                </ul>
+            </div>            
+        </div>
+        
+        <!-- Scripts -->
+        <script src="../../../scripts/navItemsHighlights_docs.js"></script>
+        <script src="../../../scripts/maintenance_Toggler.js"></script>
+        <script src="../../../scripts/navigationBar_creation.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    </body>
+</html>

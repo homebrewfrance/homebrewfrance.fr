@@ -45,28 +45,21 @@
 	<body data-page-id="ERR-503">
         <nav id="navSpace">&nbsp;</nav>
 		<div class="page">
-            <div class="indicator-container">
-                <div class="indicator">Erreur : 503</div>
-                <div class="indicator-desc">Une maintenance est en cours sur le site web.</div>
-            </div>
-            <h3 class="titles">Nous revenons bientôt !</h3>
-			<p>Une mise à jour du site Internet arrive prochainement ! La maintenance durera jusqu'au <strong>16 avril à 15h30 (UTC+2:00)</strong>.</p>
+            <center><h3 class="titles">Nous revenons bientôt !</h3>
+			<p>Une mise à jour du site Internet arrive prochainement ! La maintenance durera jusqu'au <strong>2 novembre 2025 à 18h00 (UTC+2:00)</strong>.</p>
             <div id="countdown">
                 <p>Temps restant avant la fin de la maintenance : <span id="time-remaining">Calcul en cours...</span></p>
             </div>
             <p><i style="font-weight: 200;">Merci de votre compréhension.</i></p>
             <h3 class="titles">Besoin d'aide ?</h3>
             <p>Retrouvez-nous sur notre serveur Discord ! Vous pouvez rejoindre en <a href="https://discord.homebrewfrance.fr">cliquant ici</a>.</p>
-            <h3 class="titles">Ces pages sont toujours accessibles :</h3>
-            <div>
-                <a href="http://homebrewfrance.fr/recrutements"><button class="default-button">Devenir Helper</button></a>
-            </div>
+            </center>
 		</div>
 
         <!-- Scripts -->
         <script>
             function updateCountdown() {
-                const maintenanceEnd = new Date("2025-04-16T15:30:00+02:00").getTime();
+                const maintenanceEnd = new Date("2025-11-02T18:00:00+02:00").getTime();
                 const now = new Date().getTime();
                 const timeLeft = maintenanceEnd - now;
 
