@@ -15,7 +15,7 @@
             "category": "nav-link"
         },
         {
-            "name": "Docs",
+            "name": "Guides",
             "id": "docsDrop",
             "category": "dropdown-item"
         },

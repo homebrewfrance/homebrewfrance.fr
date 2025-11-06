@@ -43,7 +43,7 @@ footer.innerHTML = `
                     <a href="https://homebrewfrance.fr/discord/" title="Notre serveur Discord"><i class="fa-brands fa-discord"></i></a>
                     <a href="https://instagram.com/homebrewfrance" title="Notre compte Instagram"><i class="fa-brands fa-instagram"></i></a>
                     <a href="https://www.linkedin.com/company/homebrewfrance" title="Notre page LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
-                    <a href="https://x.com/homebrewfrance" title="Notre compte X"><i class="fa-brands fa-x-twitter"></i></a>
+                    <a href="https://tiktok.com/@homebrewfrance" title="Notre compte TikTok"><i class="fa-brands fa-tiktok"></i></a>
             </div>
         </div>
     </div>

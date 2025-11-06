@@ -428,8 +428,8 @@ footer a:hover {
 
 	p {
 		color: #aaaaaa;
-		font-family: 'Sora', sans-serif;
-		font-size: 14px;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		font-size: 16px;
 	}
 
 	img {
@@ -791,7 +791,7 @@ strong {
 .warning, .header_discord {
 	background: rgba(0, 0, 0, 0.2);
 	font-size: 17px;
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Plus Jakarta Sans', sans-serif;
 	border: 1px solid #75418d;
 	width: 100%;
 	font-weight: 400;
@@ -805,7 +805,7 @@ strong {
 .annonce {
 	background: rgba(0, 0, 0, 0.2);
 	font-size: 17px;
-	font-family: 'Space Grotesk', sans-serif;
+	font-family: 'Plus Jakarta Sans', sans-serif;
 	border: 1px solid #8d7f41;
 	width: var(--navbar-width);
 	font-weight: 400;
@@ -937,8 +937,8 @@ td, th {
 	padding: 12px;
 	text-align: left;
 	margin-left: 11px;
-	margin-top: 9px;
-	font-family: 'Sora', sans-serif;
+	margin-top: 7px;
+	font-family: 'Instrument Sans', sans-serif;
 }
 
 .model-type {
@@ -950,24 +950,27 @@ td, th {
     display: flex;
 	flex-direction: column;
 	color: white;
-	margin-top: 15px;
+	margin-top: 25px;
 	background-color: #1f2023a1;
-	border-radius: 13px;
+	border-radius: 25px;
 }
 
 .compatible-container {
 	background-color: #43ff5321;
 	border: 1px solid #47ff50cb;
+	box-shadow: 0 0 10px rgba(152, 255, 150, 0.5);
 }
 
 .maybe-compatible-container {
 	background-color: #ffb44321;
 	border: 1px solid #ffa947cb;
+	box-shadow: 0 0 10px rgba(255, 222, 150, 0.5);
 }
 
 .incompatible-container {
 	background-color: #ff434321;
 	border: 1px solid #ff4747cb;
+	box-shadow: 0 0 10px rgba(255, 150, 150, 0.5);
 }
 
 
@@ -987,7 +990,6 @@ td, th {
 
 .top-page-button, .donation-button {
 	border-radius: 50%;
-	//background-color: #1f202370;
 	background: linear-gradient(135deg,#154e8a,#2aa0ff);
 	width: 48px;
 	height: 48px;
@@ -1338,7 +1340,7 @@ form {
 	border-radius: 9px;
 	border: none;
 	font-size: 35px;
-	font-family: 'Sora', sans-serif;
+	font-family: 'Instrument Sans', sans-serif;
 	text-align: center;
 }
 
