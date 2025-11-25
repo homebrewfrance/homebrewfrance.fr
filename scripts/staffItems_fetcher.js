@@ -210,13 +210,8 @@ function createMusicEmbed(staff) {
 
 
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://homebrewfrance.fr/json/staff-items.json')
-    .then(response => response.json())
-    .then(data => {
-        const staff = data.staff;
+    const json = JSON.parse(document.getElementById("staffData").textContent);
 
-        createItemStaff(staff);
-        createMusicEmbed(staff);
-    })
-    .catch(error => console.error('Erreur:', error));
+    createItemStaff(json.staff);
+    createMusicEmbed(json.staff);
 });

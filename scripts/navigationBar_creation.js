@@ -15,6 +15,32 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
+const navigationItems = [
+    { name: "Accueil", url: "https://homebrewfrance.fr/", id: "accueilLink", icon: "<i class=\"fa-solid fa-house\"></i>", category: "nav-link" },
+    { name: "Ressources", url: "https://homebrewfrance.fr/ressources/", id: "telechargementsLink", icon: "<i class=\"fas fa-file-download\"></i>", category: "nav-link" },
+    { name: "Guides", id: "docsDrop", category: "dropdown-item" },
+    { name: "Checker", id: "multicheckerDrop", category: "dropdown-item" },
+    { name: "À propos", url: "https://homebrewfrance.fr/a-propos/", id: "aproposLink", category: "nav-link" }
+];
+
+const dropdownsItems = [
+    { name: "Nintendo 3DS", url: "https://homebrewfrance.fr/docs/3ds/", id: "pretendo-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/3ds_icon.png" },
+    { name: "Nintendo Switch", url: "https://homebrewfrance.fr/docs/switch", id: "switch-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/nintendoswitch_icon.png" },
+    { name: "PlayStation 2", url: "https://homebrewfrance.fr/docs/ps2", id: "ps2-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/ps2_icon.png" },
+    { name: "PlayStation 4", url: "https://homebrewfrance.fr/docs/ps4", id: "ps4-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/ps4_icon.png" },
+    { name: "PlayStation Vita", url: "https://homebrewfrance.fr/docs/psvita", id: "psvita-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/psvita_icon.png" },
+    { name: "Xbox", url: "https://homebrewfrance.fr/docs/xbox", id: "xbox-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/xbox_icon.png" },
+    { name: "YouTube ReVanced", url: "https://homebrewfrance.fr/docs/revanced", id: "revanced-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/revanced_icon.png" },
+    { name: "YouTube Plus", url: "https://homebrewfrance.fr/docs/revanced#ios-alternative", id: "ytliteplus-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/ytliteplus_icon.png" },
+    { name: "Sideloading", url: "https://homebrewfrance.fr/docs/sideloading-ios", id: "sideloading-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/apple_icon.png" },
+    { name: "ESU Windows 10", url: "https://homebrewfrance.fr/docs/windows-10", id: "win-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/windows_icon.png" },
+    { name: "Nintendo Switch", url: "https://homebrewfrance.fr/checker/switch", id: "switch-checker", dropdownId: "multicheckerDrop", iconLink: "https://cdn.homebrew-france.fun/generic/lumia-guides.png" },
+    { name: "PlayStation 3", url: "https://homebrewfrance.fr/checker/ps3", id: "ps3-checker", dropdownId: "multicheckerDrop", iconLink: "https://cdn.homebrew-france.fun/generic/lumia-guides.png" },
+    { name: "PlayStation 4", url: "https://homebrewfrance.fr/checker/ps4", id: "ps4-checker", dropdownId: "multicheckerDrop", iconLink: "https://cdn.homebrew-france.fun/generic/lumia-guides.png" },
+    { name: "PlayStation 5", url: "https://homebrewfrance.fr/checker/ps5", id: "ps5-checker", dropdownId: "multicheckerDrop", iconLink: "https://cdn.homebrew-france.fun/generic/lumia-guides.png" },
+    { name: "PlayStation Vita", url: "https://homebrewfrance.fr/checker/psvita", id: "psv-checker", dropdownId: "multicheckerDrop", iconLink: "https://cdn.homebrew-france.fun/generic/lumia-guides.png" }
+];
+
 function isValidNavigationItem(item) {
     return typeof item === 'object' &&
            typeof item.id === 'string' &&
@@ -200,106 +226,75 @@ document.addEventListener('DOMContentLoaded', function () {
         mobileNavMenu.classList.toggle("showLinks");
     });
 
+    if (validateNavigationItems(navigationItems)) {
+        createNavbarItemsDesktop(navigationItems);
+        createNavbarItemsMobile(navigationItems);
+    } else {
+        console.error('Erreur : données de navigation invalides.');
+    }
 
-    fetch('https://homebrewfrance.fr/json/navigation-items.json')
-        .then(response => response.json())
-        .then(data => {
-            const navigationItems = data.navigationItems;
-            if (validateNavigationItems(navigationItems)) {
-                createNavbarItemsDesktop(navigationItems);
-                createNavbarItemsMobile(navigationItems);
-            } else {
-                console.error('Erreur : données de navigation invalides.');
-            }
-            updateNavbarWidth();
-            window.addEventListener('resize', updateNavbarWidth);
+    if (validateDropdownItems(dropdownsItems)) {
+        createDropdownItemsDesktop(dropdownsItems);
+        createDropdownItemsMobile(dropdownsItems);
+    } else {
+        console.error('Erreur : données de dropdown invalides.');
+    }
 
-            document.querySelectorAll('.dropdown-item').forEach(item => {
-                const dropdownMenuDesktop = document.querySelector('#desktopItems div#' + item.id + '-menu');
-                if (dropdownMenuDesktop) {
-                    item.addEventListener('click', function() {
-                        var desktopItemsCheck = document.getElementById('desktopItems');
-                        var otherDrop = desktopItemsCheck.getElementsByClassName('showDropdown')[0];
-                        var allDrops = desktopItemsCheck.getElementsByClassName('showDropdown');
-                        dropdownMenuDesktop.classList.toggle('showDropdown');
+    updateNavbarWidth();
+    window.addEventListener('resize', updateNavbarWidth);
 
-                        if (otherDrop) {
-                            otherDrop.classList.remove('showDropdown');
-                        }
+    document.querySelectorAll('.dropdown-item').forEach(item => {
+        const dropdownMenuDesktop = document.querySelector('#desktopItems div#' + item.id + '-menu');
+        if (dropdownMenuDesktop) {
+            item.addEventListener('click', function() {
+                var desktopItemsCheck = document.getElementById('desktopItems');
+                var otherDrop = desktopItemsCheck.getElementsByClassName('showDropdown')[0];
+                var allDrops = desktopItemsCheck.getElementsByClassName('showDropdown');
+                dropdownMenuDesktop.classList.toggle('showDropdown');
 
-                        if (usrAgent.includes('Chrome')) {
-                            if (allDrops.length > 0) {
-                                var navbar = document.getElementsByClassName('navbar')[0];
-                                navbar.style.backdropFilter = 'none';
-                                navbar.style.backgroundColor = '#151518e5';
-                            }
-                            else {
-                                var navbar = document.getElementsByClassName('navbar')[0];
-                                navbar.style.backdropFilter = 'blur(10px)';
-                            }
-                        }
-                    });
+                if (otherDrop) {
+                    otherDrop.classList.remove('showDropdown');
                 }
 
-                const dropdownMenuMobile = document.querySelector('#mobileItems div#' + item.id + '-menu');
-                if (dropdownMenuMobile) {
-                    item.addEventListener('click', function() {
-                        var mobileItemsCheck = document.getElementById('mobileItems');
-                        var otherDrop = mobileItemsCheck.getElementsByClassName('showDropdown')[0];
-                        dropdownMenuMobile.classList.toggle('showDropdown');
-                        if (otherDrop) {
-                            otherDrop.classList.remove('showDropdown');
-                        }
-                    });
+                if (usrAgent.includes('Chrome')) {
+                    var navbar = document.getElementsByClassName('navbar')[0];
+                    navbar.style.backdropFilter = (allDrops.length > 0) ? 'none' : 'blur(10px)';
+                    if (allDrops.length > 0) navbar.style.backgroundColor = '#151518e5';
                 }
             });
-        })
-        .catch(error => console.error('Erreur:', error));
-        var navbarEl = document.getElementsByClassName('navbar')[0];
-        if (mobileNavMenu.className == '') {
+        }
 
+        const dropdownMenuMobile = document.querySelector('#mobileItems div#' + item.id + '-menu');
+        if (dropdownMenuMobile) {
+            item.addEventListener('click', function() {
+                var mobileItemsCheck = document.getElementById('mobileItems');
+                var otherDrop = mobileItemsCheck.getElementsByClassName('showDropdown')[0];
+                dropdownMenuMobile.classList.toggle('showDropdown');
+                if (otherDrop) otherDrop.classList.remove('showDropdown');
+            });
         }
-        else {
-            navbarEl.classList.toggle('navbarMobileRadius');
+    });
+
+    var navbarEl = document.getElementsByClassName('navbar')[0];
+    if (mobileNavMenu.className != '') navbarEl.classList.toggle('navbarMobileRadius');
+
+    // Activation des liens "actifs"
+    var navLinks = document.getElementsByClassName('nav-link');
+    var dropLinks = document.getElementsByClassName('dropdown-item');
+
+    for (var index=0; index<navLinks.length; index++) {
+        if ((navLinks[index].id == 'accueilLink' && pageID == 'HBF-Home') ||
+            (navLinks[index].id == 'telechargementsLink' && pageID == 'TELECHARGEMENTS') ||
+            (navLinks[index].id == 'recrutementsLink' && pageID == 'RECRUTEMENTS') ||
+            (navLinks[index].id == 'boutiqueLink' && pageID == 'BOUTIQUE') ||
+            (navLinks[index].id == 'aproposLink' && pageID == 'A-PROPOS')) {
+            navLinks[index].className = "nav-link active";
         }
-        
-    fetch('https://homebrewfrance.fr/json/dropdowns-items.json')
-        .then(response => response.json())
-        .then(data => {
-            const dropdownsItems = data.dropdownsItems;
-            var dropdownItemNavbar = document.getElementsByClassName('dropdown-item')[0];
-            if (dropdownItemNavbar) {
-                if (validateDropdownItems(dropdownsItems)) {
-                    createDropdownItemsDesktop(dropdownsItems);
-                    createDropdownItemsMobile(dropdownsItems);
-                } else {
-                    console.error('Erreur : données de navigation invalides.');
-                }
-                var navLinks = document.getElementsByClassName('nav-link');
-                var dropLinks = document.getElementsByClassName('dropdown-item');
-            
-                for (var index=0; index<navLinks.length; index++) {
-                    if ((navLinks[index].id == 'accueilLink' && pageID == 'HBF-Home') || (navLinks[index].id == 'telechargementsLink' && pageID == 'TELECHARGEMENTS') || (navLinks[index].id == 'recrutementsLink' && pageID == 'RECRUTEMENTS') || (navLinks[index].id == 'boutiqueLink' && pageID == 'BOUTIQUE') || (navLinks[index].id == 'aproposLink' && pageID == 'A-PROPOS')) {
-                        navLinks[index].className = "nav-link active";
-                    }
-                    else {
-                    }
-                }
-                for (var index=0; index<dropLinks.length; index++) {
-                    if ((dropLinks[index].id == 'docsDrop' && pageID.startsWith('DOC')) || (dropLinks[index].id == 'multicheckerDrop' && pageID.startsWith('MLTI'))) {
-                        dropLinks[index].className = "dropdown-item active";
-                    }
-                    else {
-                    }
-                }
-                
-            }
-            else {
-                setTimeout(function() {
-                    createDropdownItemsDesktop(dropdownsItems);
-                    createDropdownItemsMobile(dropdownsItems);
-                }, 2000);
-            }
-        })
-        .catch(error => console.error('Erreur:', error));
+    }
+    for (var index=0; index<dropLinks.length; index++) {
+        if ((dropLinks[index].id == 'docsDrop' && pageID.startsWith('DOC')) ||
+            (dropLinks[index].id == 'multicheckerDrop' && pageID.startsWith('MLTI'))) {
+            dropLinks[index].className = "dropdown-item active";
+        }
+    }
 });

@@ -239,18 +239,17 @@ function searchTheme() {
     });
 }
 
-document.addEventListener('DOMContentLoaded', function() {
-    fetch('https://homebrewfrance.fr/json/download-items.json')
-    .then(response => response.json())
-    .then(data => {
-        const themes = data.themes;
-        const packs = data.packs;
+document.addEventListener('DOMContentLoaded', function () {
+    const jsonData = JSON.parse(document.getElementById("downloadData").textContent);
 
-        createItemShop(themes, packs);
-        createQRPopups(themes);
-        searchPack();
-        searchTheme();
-    })
-    .catch(error => console.error('Error loading navigation data:', error));
+    const themes = jsonData.themes;
+    const packs = jsonData.packs;
+
+    createItemShop(themes, packs);
+    createQRPopups(themes);
+
+    searchPack();
+    searchTheme();
 });
+
 
