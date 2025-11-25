@@ -1,0 +1,231 @@
+{
+    "themes": [
+        {
+            "name": "Emilien des Douze Coups DSi",
+            "description": "Un thème Emilien des Douze Coups de Midi pour Nintendo DSi.",
+            "author": "Homebrew France - Dhalian",
+            "console": "DSi",
+            "category": "Thèmes TWiLightMenu++",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups_dsi/emilien_douze_coups_dsi.7z",
+            "image": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups_dsi/emilien_douze_coups_dsi_preview.png", 
+            "date": "24 Août 2025"
+        },
+        {
+            "name": "Emilien des Douze Coups 3DS",
+            "description": "Un thème Emilien des Douze Coups de Midi.",
+            "author": "Homebrew France - Dhalian",
+            "console": "3DS",
+            "category": "Thèmes Luma3DS",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/emilien_douze_coups.zip",
+            "image": "https://cdn.homebrew-france.fun/themes/emilien_douze_coups/emilien_douze_coups_preview.png", 
+            "date": "9 Août 2025"
+        },
+        {
+            "name": "Minimalist Purple",
+            "description": "Un thème minimaliste aux couleurs sombres et aux lueurs violettes.",
+            "author": "Homebrew France - Dhalian",
+            "console": "3DS",
+            "category": "Thèmes Luma3DS",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/minimalist_purple/minimalist_purple.zip",
+            "image": "https://cdn.homebrew-france.fun/themes/minimalist_purple/minimalist_purple_preview.png", 
+            "qr": "https://cdn.homebrew-france.fun/themes/minimalist_purple/qr.png",
+            "themeplaza": "https://themeplaza.art/item/112946",
+            "date": "8 Août 2025"
+        },
+        {
+            "name": "Cyberpunk Edgerunners 2",
+            "description": "Un autre thème dans l'univers Cyberpunk Edgerunners.",
+            "author": "Xanatel",
+            "console": "Nintendo Switch",
+            "category": "Thèmes Nintendo Switch",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners2/cyberpunk_edgerunners2.nxtheme",
+            "image": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners2/cyberpunk_edgerunners2_preview.png", 
+            "date": "14 Mars 2025"
+        },
+        {
+            "name": "Cyberpunk Edgerunners 1",
+            "description": "Un thème dans l'univers Cyberpunk Edgerunners.",
+            "author": "Xanatel",
+            "console": "Nintendo Switch",
+            "category": "Thèmes Nintendo Switch",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners1/cyberpunk_edgerunners1.nxtheme",
+            "image": "https://cdn.homebrew-france.fun/themes/cyberpunk_edgerunners1/cyberpunk_edgerunners1_preview.png",
+            "date": "14 Mars 2025"
+        },
+        {
+            "name": "Ascendance of a Bookworm",
+            "description": "Un thème sur Ascendance of a Bookworm, avec la musique du troisième opening.",
+            "author": "FireChat",
+            "console": "3DS",
+            "category": "Thèmes Luma3DS",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/ascendance_of_a_bookworm_luma/ascendance_of_a_bookworm_luma.zip",
+            "image": "https://cdn.homebrew-france.fun/themes/ascendance_of_a_bookworm_luma/ascendance_of_a_bookworm_luma_preview.png",
+            "qr": "https://cdn.homebrew-france.fun/themes/ascendance_of_a_bookworm_luma/qr.png",
+            "themeplaza": "https://themeplaza.art/item/98238",
+            "date": "1 Février 2025"
+        },
+        {
+            "name": "Miku Swimming In Ramen",
+            "description": "Littéralement juste Miku nageant dans un bol de ramen.",
+            "author": "sweetnsourtower",
+            "console": "3DS",
+            "category": "Thèmes Luma3DS",
+            "lienDL": "https://themeplaza.art/download/68900",
+            "image": "https://cdn.homebrew-france.fun/themes/miku_swimming_in_ramen/miku_swimming_in_ramen_preview.png",
+            "qr": "https://cdn.homebrew-france.fun/themes/miku_swimming_in_ramen/qr.png",
+            "themeplaza": "https://themeplaza.art/item/68900",
+            "date": "17 Juillet 2023"
+        },
+        {
+            "name": "Les Douze Coups de Midi",
+            "description": "Un thème basé sur le jeu télévisé \"Les Douze Coups de Midi\".",
+            "author": "Homebrew France - Dhalian",
+            "console": "3DS",
+            "category": "Thèmes Luma3DS",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_luma/douze_coups_de_midi_luma.zip",
+            "image": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_luma/douze_coups_de_midi_luma_preview.png",
+            "qr": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_luma/qr.png",
+            "themeplaza": "https://themeplaza.art/item/97937",
+            "date": "28 Janvier 2025"
+        },
+        {
+            "name": "Les Douze Coups de Midi",
+            "description": "Un fond d'écran basé sur le jeu télévisé \"Les Douze Coups de Midi\".",
+            "author": "Dhalian",
+            "console": "DSi",
+            "category": "Fonds Unlaunch",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_unlaunch/12coups.gif",
+            "image": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_unlaunch/douze_coups_de_midi_unlaunch_preview.png",
+            "twlmenuextras": "https://skins.ds-homebrew.com/unlaunch/les-douze-coups-de-midi",
+            "date": "5 Juillet 2023"
+        },
+        {
+            "name": "Les Douze Coups de Midi",
+            "description": "Un thème basé sur le jeu télévisé \"Les Douze Coups de Midi\".",
+            "author": "Dhalian",
+            "console": "DSi",
+            "category": "Thèmes TWiLightMenu++",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_twilight/theme.zip",
+            "image": "https://cdn.homebrew-france.fun/themes/douze_coups_de_midi_twilight/douze_coups_de_midi_twilight_preview.png",
+            "twlmenuextras": "https://skins.ds-homebrew.com/nintendo-3ds/les-douze-coups-de-midi",
+            "date": "5 Juillet 2023"
+        },
+        {
+            "name": "Cauet Burger",
+            "description": "Un thème basé sur le célèbre Cauet Burger de Quick.",
+            "author": "Arkomega",
+            "console": "3DS",
+            "category": "Thèmes Luma3DS",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/cauet_burger_luma/cauet_burger_luma.zip",
+            "image": "https://cdn.homebrew-france.fun/themes/cauet_burger_luma/cauet_burger_luma_preview.png",
+            "qr": "https://cdn.homebrew-france.fun/themes/cauet_burger_luma/qr.png",
+            "themeplaza": "https://themeplaza.art/item/38974",
+            "date": "27 Août 2021"
+        },
+        {
+            "name": "Cauet Burger (Original)",
+            "description": "Un splash screen basé sur le célèbre Cauet Burger de Quick.",
+            "author": "Dhalian",
+            "console": "DSi",
+            "category": "Splash Screen HiyaCFW",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/cauet_burger_2006_hiya/splash.zip",
+            "image": "https://cdn.homebrew-france.fun/themes/cauet_burger_2006_hiya/cauet_burger_2006_hiya_preview.png",
+            "date": "6 Août 2022"
+        },
+        {
+            "name": "Cauet Burger (Le retour)",
+            "description": "Un splash screen basé sur le célèbre Cauet Burger de Quick.",
+            "author": "Dhalian",
+            "console": "DSi",
+            "category": "Splash Screen HiyaCFW",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/cauet_burger_2022_hiya/splash.zip",
+            "image": "https://cdn.homebrew-france.fun/themes/cauet_burger_2022_hiya/cauet_burger_2022_hiya_preview.png",
+            "date": "6 Août 2022"
+        },
+        {
+            "name": "Cauet Burger",
+            "description": "Un fond d'écran basé sur le célèbre Cauet Burger de Quick.",
+            "author": "Dhalian",
+            "console": "DSi",
+            "category": "Fonds Unlaunch",
+            "lienDL": "https://cdn.homebrew-france.fun/themes/cauet_burger_unlaunch/unlaunch_bg.zip",
+            "image": "https://cdn.homebrew-france.fun/themes/cauet_burger_unlaunch/cauet_burger_unlaunch_preview.png",
+            "date": "6 Août 2022"
+        }
+    ],
+    "packs": [
+        {
+            "name": "Nintendo 3DS",
+            "itemID": "3DSKART",
+            "exploit": "KartMiner7",
+            "author": "Homebrew France",
+            "authorLink" : "https://github.com/homebrewfrance/",
+            "compatibility": "11.17",
+            "lienDL": "https://github.com/homebrewfrance/LumiAIO/releases/download/V1/LumiAIO-KARTMINER7.zip",
+            "console": "ds3",
+            "gitType": "github",
+            "gitLink": "https://github.com/homebrewfrance/LumiAIO"
+        },
+        {
+            "name": "New Nintendo 3DS",
+            "itemID": "3DSBROWSER",
+            "exploit": "BrowserHax",
+            "author": "Homebrew France",
+            "authorLink" : "https://github.com/homebrewfrance/",
+            "compatibility": "11.15, 11.16 et 11.17",
+            "lienDL": "https://github.com/homebrewfrance/LumiAIO/releases/download/V1/LumiAIO-BROWSERHAX.zip",
+            "console": "ds3",
+            "gitType": "github",
+            "gitLink": "https://github.com/homebrewfrance/LumiAIO"
+            
+        },
+        {
+            "name": "Nintendo 3DS",
+            "itemID": "3DSNTR",
+            "exploit": "NTRBOOTHAX",
+            "author": "Homebrew France",
+            "authorLink" : "https://github.com/homebrewfrance/",
+            "compatibility": "Toutes les versions",
+            "lienDL": "https://github.com/homebrewfrance/LumiAIO/releases/download/V1/LumiAIO-NTRBOOTHAX.zip",
+            "console": "ds3",
+            "gitType": "github",
+            "gitLink": "https://github.com/homebrewfrance/LumiAIO"
+        },
+        {
+            "name": "(New) Nintendo 3DS",
+            "itemID": "3DSVAN",
+            "exploit": "VANILLA",
+            "author": "Homebrew France",
+            "authorLink" : "https://github.com/homebrewfrance/",
+            "compatibility": "Toutes les versions",
+            "lienDL": "https://github.com/homebrewfrance/LumiAIO/releases/download/V1/LumiAIO-VANILLA.zip",
+            "console": "ds3",
+            "gitType": "github",
+            "gitLink": "https://github.com/homebrewfrance/LumiAIO"
+        },
+        {
+            "name": "(New) Nintendo 3DS",
+            "itemID": "3DSMSET",
+            "exploit": "MSET9",
+            "author": "Homebrew France",
+            "authorLink" : "https://github.com/homebrewfrance/",
+            "compatibility": "11.4 à 11.17",
+            "lienDL": "https://github.com/homebrewfrance/LumiAIO/releases/download/V1/LumiAIO-MSET9.zip",
+            "console": "ds3",
+            "gitType": "github",
+            "gitLink": "https://github.com/homebrewfrance/LumiAIO"
+        },
+        {
+            "name": "Nintendo Switch",
+            "itemID": "SWITCHATMOPACK",
+            "exploit": "Atmopack-Vanilla",
+            "author": "THZoria",
+            "authorLink" : "https://github.com/THZoria/",
+            "compatibility": "Toutes les versions",
+            "lienDL": "https://pack.sighya.fr",
+            "console": "switch",
+            "gitType": "codeberg",
+            "gitLink": "https://codeberg.org/Zoria/AtmoPack-Vanilla/"
+        }
+    ]
+}

@@ -15,58 +15,44 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
-const navigationItems = [
-    { name: "Accueil", url: "https://homebrewfrance.fr/", id: "accueilLink", icon: "<i class=\"fa-solid fa-house\"></i>", category: "nav-link" },
-    { name: "Ressources", url: "https://homebrewfrance.fr/ressources/", id: "telechargementsLink", icon: "<i class=\"fas fa-file-download\"></i>", category: "nav-link" },
-    { name: "Guides", id: "docsDrop", category: "dropdown-item" },
-    { name: "Checker", id: "multicheckerDrop", category: "dropdown-item" },
-    { name: "À propos", url: "https://homebrewfrance.fr/a-propos/", id: "aproposLink", category: "nav-link" }
-];
 
-const dropdownsItems = [
-    { name: "Nintendo 3DS", url: "https://homebrewfrance.fr/docs/3ds/", id: "pretendo-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/3ds_icon.png" },
-    { name: "Nintendo Switch", url: "https://homebrewfrance.fr/docs/switch", id: "switch-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/nintendoswitch_icon.png" },
-    { name: "PlayStation 2", url: "https://homebrewfrance.fr/docs/ps2", id: "ps2-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/ps2_icon.png" },
-    { name: "PlayStation 4", url: "https://homebrewfrance.fr/docs/ps4", id: "ps4-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/ps4_icon.png" },
-    { name: "PlayStation Vita", url: "https://homebrewfrance.fr/docs/psvita", id: "psvita-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/psvita_icon.png" },
-    { name: "Xbox", url: "https://homebrewfrance.fr/docs/xbox", id: "xbox-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/xbox_icon.png" },
-    { name: "YouTube ReVanced", url: "https://homebrewfrance.fr/docs/revanced", id: "revanced-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/revanced_icon.png" },
-    { name: "YouTube Plus", url: "https://homebrewfrance.fr/docs/revanced#ios-alternative", id: "ytliteplus-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/ytliteplus_icon.png" },
-    { name: "Sideloading", url: "https://homebrewfrance.fr/docs/sideloading-ios", id: "sideloading-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/apple_icon.png" },
-    { name: "ESU Windows 10", url: "https://homebrewfrance.fr/docs/windows-10", id: "win-doc", dropdownId: "docsDrop", iconLink: "https://cdn.homebrew-france.fun/docs/icons/windows_icon.png" },
-    { name: "Nintendo Switch", url: "https://homebrewfrance.fr/checker/switch", id: "switch-checker", dropdownId: "multicheckerDrop", iconLink: "https://cdn.homebrew-france.fun/generic/lumia-guides.png" },
-    { name: "PlayStation 3", url: "https://homebrewfrance.fr/checker/ps3", id: "ps3-checker", dropdownId: "multicheckerDrop", iconLink: "https://cdn.homebrew-france.fun/generic/lumia-guides.png" },
-    { name: "PlayStation 4", url: "https://homebrewfrance.fr/checker/ps4", id: "ps4-checker", dropdownId: "multicheckerDrop", iconLink: "https://cdn.homebrew-france.fun/generic/lumia-guides.png" },
-    { name: "PlayStation 5", url: "https://homebrewfrance.fr/checker/ps5", id: "ps5-checker", dropdownId: "multicheckerDrop", iconLink: "https://cdn.homebrew-france.fun/generic/lumia-guides.png" },
-    { name: "PlayStation Vita", url: "https://homebrewfrance.fr/checker/psvita", id: "psv-checker", dropdownId: "multicheckerDrop", iconLink: "https://cdn.homebrew-france.fun/generic/lumia-guides.png" }
-];
+var htmlpage = document.getElementsByTagName('html')[0];
+var websiteIcon = "https://cdn.homebrew-france.fun/generic/beta_website-icon.png";
+var websiteIconTitle = "Homebrew France";
+var optionalClass = "";
 
-function isValidNavigationItem(item) {
-    return typeof item === 'object' &&
-           typeof item.id === 'string' &&
-           typeof item.name === 'string' &&
-           typeof item.category === 'string' &&
-           (typeof item.url === 'string' || item.url === undefined);
+if (pageID && pageID.startsWith('DOC')) {
+    websiteIcon = "https://cdn.homebrew-france.fun/generic/lumia-guides.png";
+    websiteIconTitle = "Lumia Guides - par Homebrew France";
+    optionalClass = 'class="lumiaIconNav"';
 }
 
-function validateNavigationItems(data) {
-    if (!Array.isArray(data)) return false;
-    return data.every(isValidNavigationItem);
-}
-
-function isValidDropdownItem(item) {
-    return typeof item === 'object' &&
-           typeof item.id === 'string' &&
-           typeof item.name === 'string' &&
-           typeof item.dropdownId === 'string' &&
-           (typeof item.url === 'string' || item.id.includes('grayed')) &&
-           (typeof item.iconLink === 'string' || item.iconLink === undefined);
-}
-
-function validateDropdownItems(data) {
-    if (!Array.isArray(data)) return false;
-    return data.every(isValidDropdownItem);
-}
+htmlpage.insertAdjacentHTML('afterbegin', `
+<div class="navbar-container">
+  <div class="navbar">
+    <div id="navContainer">
+      <img id="navIcon" src="${websiteIcon}" ${optionalClass} style="height: 45px; width: 45px;" title="${websiteIconTitle}">
+      <div id="navbarToggler">
+        <img id="hamburgerMenu" src="https://cdn.homebrew-france.fun/generic/hamburger-icon.png" style="height: 38px; width: 38px;">
+      </div>
+    </div>
+    <span id="desktopItems">
+      <a class="nav-link" id="accueilLink" href="https://homebrewfrance.fr/"><span id="accueilLinkSpan">Accueil</span></a>
+      <a class="nav-link" id="telechargementsLink" href="https://homebrewfrance.fr/ressources/"><span id="telechargementsLinkSpan">Ressources</span></a>
+      <a class="dropdown-item" id="docsDrop"><span class="nav-item-content">Guides</span><div class="dropdown-menu animated fadeIn" id="docsDrop-menu"></div></a>
+      <a class="dropdown-item" id="multicheckerDrop"><span class="nav-item-content">Checker</span><div class="dropdown-menu animated fadeIn" id="multicheckerDrop-menu"></div></a>
+      <a class="nav-link" id="aproposLink" href="https://homebrewfrance.fr/a-propos/"><span id="aproposLinkSpan">À propos</span></a>
+    </span>
+    <span id="mobileItems">
+      <a class="nav-link" id="accueilLink" href="https://homebrewfrance.fr/"><span id="accueilLinkSpan">Accueil</span></a>
+      <a class="nav-link" id="telechargementsLink" href="https://homebrewfrance.fr/ressources/"><span id="telechargementsLinkSpan">Ressources</span></a>
+      <a class="dropdown-item" id="docsDrop"><span class="nav-item-content">Guides</span><div class="dropdown-menu animated fadeIn" id="docsDrop-menu"></div></a>
+      <a class="dropdown-item" id="multicheckerDrop"><span class="nav-item-content">Checker</span><div class="dropdown-menu animated fadeIn" id="multicheckerDrop-menu"></div></a>
+      <a class="nav-link" id="aproposLink" href="https://homebrewfrance.fr/a-propos/"><span id="aproposLinkSpan">À propos</span></a>
+    </span>
+  </div>
+</div>
+`);
 
 var htmlpage = document.getElementsByTagName('html')[0];
 const body = document.getElementsByTagName('body')[0];
@@ -79,24 +65,6 @@ if (pageID.startsWith('DOC')) {
     var optionalClass = "class=\"lumiaIconNav\"";
 }
 
-const nav = document.createElement('div');
-nav.className = 'navbar-container'
-nav.innerHTML = `
-<div class="navbar">
-    <div id="navContainer">
-        <img id="navIcon" src="${websiteIcon}" ${optionalClass} style="height: 45px; width: 45px;" title="${websiteIconTitle}">
-        <div id="navbarToggler">
-            <img id="hamburgerMenu" src="https://cdn.homebrew-france.fun/generic/hamburger-icon.png" style="height: 38px; width: 38px;">
-        </div>
-    </div>
-    <span id="desktopItems">
-    </span>
-    <span id="mobileItems">
-    </span>
-</div>
-`;
-
-htmlpage.appendChild(nav);
 
 const navIcon = document.getElementById('navIcon');
 navIcon.onclick = function() {
@@ -107,106 +75,6 @@ const mobileItems = document.getElementById('mobileItems');
 
 const desktopItems = document.getElementById('desktopItems');
 
-function createNavbarItemsDesktop(navigationItems) {
-    for (let index = 0; index < navigationItems.length; index++) {
-        const navItem = document.createElement('a');
-        navItem.className = navigationItems[index].category;
-        navItem.id = navigationItems[index].id;
-        if (navigationItems[index].url) {
-            navItem.href = navigationItems[index].url;
-        }
-        if (navItem.className === 'dropdown-item') {
-            navItem.innerHTML = `
-            <span class="nav-item-content">
-                ${navigationItems[index].name}
-            </span>
-            <div class="dropdown-menu animated fadeIn" id="${navigationItems[index].id + '-menu'}">
-            `;
-        }
-        else {
-            navItem.innerHTML = `<span id="${navigationItems[index].id + "Span"}">${navigationItems[index].name}</span>`;
-        }
-        desktopItems.appendChild(navItem);
-    }
-}
-
-function createNavbarItemsMobile(navigationItems) {
-    for (let index = 0; index < navigationItems.length; index++) {
-        const navItem = document.createElement('a');
-        navItem.className = navigationItems[index].category;
-        navItem.id = navigationItems[index].id;
-        if (navigationItems[index].url) {
-            navItem.href = navigationItems[index].url;
-        }
-        if (navItem.className === 'dropdown-item') {
-            navItem.innerHTML = `
-            <span class="nav-item-content">
-                ${navigationItems[index].name}
-            </span>
-            <div class="dropdown-menu animated fadeIn" id="${navigationItems[index].id + '-menu'}">
-            `;
-        }
-        else {
-            navItem.innerHTML = `<span id="${navigationItems[index].id + "Span"}">${navigationItems[index].name}</span>`;
-        }
-        mobileItems.appendChild(navItem);
-    }
-}
-
-function createDropdownItemsDesktop(dropdownsItems) {
-    for (let index = 0; index < dropdownsItems.length; index++) {
-        const dropItem = document.createElement('a');
-        if (dropdownsItems[index].id.includes('grayed')) {
-            dropItem.className = 'drop-item grayed';
-            dropItem.title = 'Bientôt disponible!';
-        }
-        else {
-            dropItem.className = 'drop-item';
-            dropItem.href = dropdownsItems[index].url;
-        }
-        dropItem.id = dropdownsItems[index].id;
-        if (dropdownsItems[index].iconLink) {
-            dropItem.innerHTML = `
-            <img src="${dropdownsItems[index].iconLink}" width="20px" height="20px" style="margin-right: 9px;">
-            ${dropdownsItems[index].name}
-        `;
-        } else {
-            dropItem.innerHTML = dropdownsItems[index].name;
-        }
-        const dropdownTargetId = dropdownsItems[index].dropdownId + '-menu';
-        const dropdownTarget = document.querySelector('#desktopItems div#' + dropdownTargetId);
-        if (dropdownTarget) {
-            dropdownTarget.appendChild(dropItem);
-        }
-    }
-}
-
-function createDropdownItemsMobile(dropdownsItems) {
-    for (let index = 0; index < dropdownsItems.length; index++) {
-        const dropItem = document.createElement('a');
-        dropItem.href = dropdownsItems[index].url;
-        if (dropdownsItems[index].id.includes('grayed')) {
-            dropItem.className = 'drop-item grayed';
-        }
-        else {
-            dropItem.className = 'drop-item';
-        }
-        dropItem.id = dropdownsItems[index].id;
-        if (dropdownsItems[index].iconLink) {
-            dropItem.innerHTML = `
-            <img src="${dropdownsItems[index].iconLink}" width="20px" height="20px" style="margin-right: 9px;">
-            ${dropdownsItems[index].name}
-        `;
-        } else {
-            dropItem.innerHTML = dropdownsItems[index].name;
-        }
-        const dropdownTargetId = dropdownsItems[index].dropdownId + '-menu';
-        const dropdownTarget = document.querySelector('#mobileItems div#' + dropdownTargetId);
-        if (dropdownTarget) {
-            dropdownTarget.appendChild(dropItem);
-        }
-    }
-}
 
 function updateNavbarWidth() {
     var navbarElement = document.getElementsByClassName('navbar')[0];
@@ -225,20 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
     navbarToggler.addEventListener("click", function() {
         mobileNavMenu.classList.toggle("showLinks");
     });
-
-    if (validateNavigationItems(navigationItems)) {
-        createNavbarItemsDesktop(navigationItems);
-        createNavbarItemsMobile(navigationItems);
-    } else {
-        console.error('Erreur : données de navigation invalides.');
-    }
-
-    if (validateDropdownItems(dropdownsItems)) {
-        createDropdownItemsDesktop(dropdownsItems);
-        createDropdownItemsMobile(dropdownsItems);
-    } else {
-        console.error('Erreur : données de dropdown invalides.');
-    }
 
     updateNavbarWidth();
     window.addEventListener('resize', updateNavbarWidth);
@@ -278,7 +132,6 @@ document.addEventListener('DOMContentLoaded', function () {
     var navbarEl = document.getElementsByClassName('navbar')[0];
     if (mobileNavMenu.className != '') navbarEl.classList.toggle('navbarMobileRadius');
 
-    // Activation des liens "actifs"
     var navLinks = document.getElementsByClassName('nav-link');
     var dropLinks = document.getElementsByClassName('dropdown-item');
 
