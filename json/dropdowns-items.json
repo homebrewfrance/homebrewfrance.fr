@@ -1,0 +1,109 @@
+{
+    "dropdownsItems": [
+        {
+            "name": "Nintendo 3DS",
+            "url": "https://homebrewfrance.fr/docs/3ds/",
+            "id": "pretendo-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/beta/3ds_icon.png"
+        },
+        {
+            "name": "Nintendo Switch",
+            "url": "https://homebrewfrance.fr/docs/switch",
+            "id": "switch-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/docs/icons/nintendoswitch_icon.png"
+        },
+        {
+            "name": "PlayStation 2",
+            "url": "https://homebrewfrance.fr/docs/ps2",
+            "id": "ps2-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/beta/ps2_icon.png"
+        },
+        {
+            "name": "PlayStation 4",
+            "url": "https://homebrewfrance.fr/docs/ps4",
+            "id": "ps4-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/beta/ps4_icon.png"
+        },
+        {
+            "name": "PlayStation Vita",
+            "url": "https://homebrewfrance.fr/docs/psvita",
+            "id": "psvita-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/beta/psvita_icon.png"
+        },
+        {
+            "name": "Xbox",
+            "url": "https://homebrewfrance.fr/docs/xbox",
+            "id": "xbox-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/docs/icons/xbox_icon.png"
+        },
+        {
+            "name": "YouTube ReVanced",
+            "url": "https://homebrewfrance.fr/docs/revanced",
+            "id": "revanced-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/docs/icons/revanced_icon.png"
+        },
+        {
+            "name": "YouTube Plus",
+            "url": "https://homebrewfrance.fr/docs/revanced#ios-alternative",
+            "id": "ytliteplus-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/docs/icons/ytliteplus_icon.png"
+        },
+        {
+            "name": "Sideloading",
+            "url": "https://homebrewfrance.fr/docs/sideloading-ios",
+            "id": "sideloading-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/docs/icons/apple_icon.png"
+        },
+        {
+            "name": "ESU Windows 10",
+            "url": "https://homebrewfrance.fr/docs/windows-10",
+            "id": "win-doc",
+            "dropdownId": "docsDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/docs/icons/windows_icon.png"
+        },
+        {
+            "name": "Nintendo Switch",
+            "url": "https://homebrewfrance.fr/checker/switch",
+            "id": "switch-checker",
+            "dropdownId": "multicheckerDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/generic/lumia-guides.png"            
+        },
+        {
+            "name": "PlayStation 3",
+            "url": "https://homebrewfrance.fr/checker/ps3",
+            "id": "ps3-checker",
+            "dropdownId": "multicheckerDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/generic/lumia-guides.png"            
+        },
+        {
+            "name": "PlayStation 4",
+            "url": "https://homebrewfrance.fr/checker/ps4",
+            "id": "ps4-checker",
+            "dropdownId": "multicheckerDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/generic/lumia-guides.png"            
+        },
+        {
+            "name": "PlayStation 5",
+            "url": "https://homebrewfrance.fr/checker/ps5",
+            "id": "ps5-checker",
+            "dropdownId": "multicheckerDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/generic/lumia-guides.png"            
+        },
+        {
+            "name": "PlayStation Vita",
+            "url": "https://homebrewfrance.fr/checker/psvita",
+            "id": "psv-checker",
+            "dropdownId": "multicheckerDrop",
+            "iconLink": "https://cdn.homebrew-france.fun/generic/lumia-guides.png"            
+        }
+    ]
+}
