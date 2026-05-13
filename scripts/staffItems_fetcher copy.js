@@ -89,9 +89,11 @@ function createItemStaff(staff) {
         }
 
         var music;
+
         if (staff[itemIndex].musicLink && staff[itemIndex].musicLink !== "") {
-            var music;
-            music =
+            var musicLinkElement = document.createElement('span');
+            musicLinkElement.style.marginBottom = '8px';
+            musicLinkElement.innerHTML =
             `
                 <a class="music-link" id="${staff[itemIndex].name}MusicLink">
                     <small>
@@ -126,14 +128,13 @@ function createItemStaff(staff) {
                     <i class="fa-brands fa-youtube"></i>&nbsp;Écouter sur YouTube
                 `;
             }
-        }
-
-        else {
-            music="";
-        }
+            
+        };
+        
         
 
         gridStaff.innerHTML = `
+        
         <div class="left-row-staff-items">
             <div>
                 <img src="${'https://homebrewfrance.github.io/cdn/a-propos/staff/' + staff[itemIndex].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + '.png'}" width='190' height='190'>
@@ -149,8 +150,12 @@ function createItemStaff(staff) {
             </div>
             <div>${music}</div>
         </div>
+        
+        
+        
         `;
         gridContainer.appendChild(gridStaff);
+        
     } 
 }
 

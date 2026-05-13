@@ -613,15 +613,22 @@ Lien : https://homebrewfrance.fr/a-propos
 
 .grid-staff {
     @include grid-generic;
-    width: 355px;
+    width: 48%;
 	height: 285px auto;
     float: left;
 	margin: 8px auto;
     display: flex;
-	/*flex-direction: column;
+	flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center;*/
+    //text-align: center;
+
+	.right-row-staff-items {
+		align-items: center;
+		justify-content: center;
+		text-align: center;
+		width: 45%;
+	}
 
 	h3 {
 		font-size: 22px;
@@ -651,47 +658,16 @@ Lien : https://homebrewfrance.fr/a-propos
 
 	.role {
 		font-size: 14px;
-		border-radius: 20px;
-		margin-inline: 6px;
-	}
-
-	.modératrice, .modérateur {
-		color: #74da87;
-		background-color:  #1c3521 ;
 		border-radius: 7px;
-		padding-inline: 5px;
-		padding-block: 2px;
-		font-family: 'Plus Jakarta Sans', sans-serif;
-		align-items: center;
-		transform: translateY(5px);
-		width: fit-content;
-		height: fit-content;
-	}
-
-	.administrateur {
-		color: #9349b1;
-		background-color:  #301a38 ;
-		border-radius: 7px;
-		padding-inline: 5px;
-		padding-block: 2px;
-		font-family: 'Plus Jakarta Sans', sans-serif;
-		align-items: center;
-		transform: translateY(5px);
-		width: fit-content;
-		height: fit-content;
-	}
-
-	.helper {
-		color: #3bb4b6;
-		background-color:  #113131 ;
-		border-radius: 7px;
-		padding-inline: 5px;
-		padding-block: 2px;
-		font-family: 'Plus Jakarta Sans', sans-serif;
-		align-items: center;
-		transform: translateY(5px);
-		width: fit-content;
-		height: fit-content;
+		//margin-inline: 6px;
+		width: 45%;
+		margin: auto;
+		margin-bottom: 5px;
+		margin-top: 8px;
+		transform: rotate(-0.005turn);
+		border: 1px solid rgb(70, 70, 70);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
 	}
 }
 /**
