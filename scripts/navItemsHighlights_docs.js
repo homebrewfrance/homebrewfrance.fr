@@ -40,56 +40,6 @@ function createNavMenu() {
             navElementsContainerVert.appendChild(clonedNavMenuItem);
         }
     }
-    if ((!pageID.includes('Switch')) && (!pageID.includes('Revanced')) && (!pageID.includes('3DS')) && (pageID != 'DOC-PS4') && (pageID != 'DOC-PSV') && (pageID != 'DOC-WIN')) {
-        /*var downloadPDFBtn = document.createElement('div');
-        downloadPDFBtn.className = 'nav-menu-item';
-        downloadPDFBtn.id = 'downloadPDF';
-        downloadPDFBtn.title = 'Téléchargez ce guide en PDF pour le consulter partout! (Fonction expérimentale)';
-        downloadPDFBtn.innerHTML = `
-            <i class="fa-solid fa-download"></i> Télécharger en PDF&nbsp;<!--sup style="color: rgb(165, 165, 165);">beta</sup-->
-        `;
-        navElementsContainerHoriz.appendChild(downloadPDFBtn);
-        var clonedDLBTN = downloadPDFBtn.cloneNode(true);
-        navElementsContainerVert.appendChild(clonedDLBTN);*/
-        downloadPDF();
-    }
-
-    /*var navBottom = document.createElement('div');
-    navBottom.className = "nav-bottom";
-    navBottom.innerHTML = `
-        <h4 style="font-family: 'Sora', sans-serif; font-size: 18px; align-items: center; display: flex;">
-            <img src="https://cdn.homebrew-france.fun/generic/lumia-guides.png" width="24px">
-            <span style="font-weight: 300;">Lumia</span>&nbsp;Guides
-        </h4>
-        <p style="font-size: 15px; color: rgb(210, 210, 210);">Made by Homebrew France</p>
-    `;
-    navMenuHoriz.appendChild(navBottom);*/
-}
-
-function downloadPDF() {
-    var dlPDFicon = document.getElementById('dlPDFicon');
-    document.getElementById("downloadPDF").addEventListener("click", function() {
-        window.location.href= "#";
-        setTimeout(() => {
-            let element = document.querySelector(".page-docu").cloneNode(true);
-            let buttonToRemove = element.querySelector("#downloadPDF");
-            if (buttonToRemove) buttonToRemove.remove();
-        
-            element.style.width = "100%";
-            element.style.margin = "0%";
-            element.style.maxWidth = "210mm"; 
-            element.style.height = "auto";
-            element.style.maxHeight = "none";
-        
-            html2pdf(element, {
-                margin: 0, 
-                filename: pageID + '_' + Date.now() + '.pdf',
-                image: { type: 'jpeg', quality: 1 },
-                html2canvas: { scale: 3, useCORS: true },
-                jsPDF: { unit: 'mm', format: 'a4', orientation: 'portrait' }
-            });     
-        }, "2000");
-    });
 }
 
 function highlightNavMenu() {

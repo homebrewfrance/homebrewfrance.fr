@@ -37,5 +37,5 @@ document.addEventListener('DOMContentLoaded', function () {
             alert(warning_incompatible);
         }
     });
-    resultat.innerHTML = "<img src=\"https://cdn.homebrew-france.fun/generic/lumia-guides.png\" width=\"18px\" height=\"18px\"><p>Lumia Checker v1.0</p>";
+    resultat.innerHTML = "<img src=\"https://homebrewfrance.github.io/cdn/generic/lumia-guides.png\" width=\"18px\" height=\"18px\"><p>Lumia Checker v1.0</p>";
 });

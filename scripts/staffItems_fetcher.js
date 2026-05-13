@@ -26,11 +26,40 @@ function createItemStaff(staff) {
     for (var itemIndex = 0; itemIndex < staff.length; itemIndex++) {
         var gridStaff = document.createElement('div');
         gridStaff.className = 'grid-staff';
-        var nameValue = staff[itemIndex].name;
+
+
+        var rolesList;
+        if (staff[itemIndex].role2) {
+            rolesList = `
+            <div class="role ${staff[itemIndex].role.toLowerCase()}">${staff[itemIndex].role}</div>
+            <div class="role ${staff[itemIndex].role2.toLowerCase()}">${staff[itemIndex].role2}</div>
+            `;
+        }
+        else {
+            rolesList = `<div class="role ${staff[itemIndex].role.toLowerCase()}">${staff[itemIndex].role}</div>`;
+        }
+
+        gridStaff.innerHTML = `
+        
+        <div class="left-row-staff-items">
+            <div>
+                <img src="${'https://homebrewfrance.github.io/cdn/a-propos/staff/' + staff[itemIndex].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + '.png'}" width='100' height='100'>
+                <h3 id="staffNameValue">${staff[itemIndex].name}</h3>
+                <div class="staff-roles">
+                ${rolesList}
+                </div>
+            </div>
+        
+        
+        
+        `
+
+
+        /*var nameValue = staff[itemIndex].name;
 
         var avatar = document.createElement('img');
         
-        var avatarLink = 'https://cdn.homebrew-france.fun/a-propos/staff/' + staff[itemIndex].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + '.png';
+        var avatarLink = 'https://homebrewfrance.github.io/cdn/a-propos/staff/' + staff[itemIndex].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + '.png';
         
         avatar.src = avatarLink;
         avatar.width = '100';
@@ -39,25 +68,16 @@ function createItemStaff(staff) {
 
         var name = document.createElement('h3'); 
         name.innerHTML = nameValue;
-        gridStaff.appendChild(name);
+        gridStaff.appendChild(name);*/
 
+        /*var staffNameValueTK = document.getElementById('staffNameValue');
         if (staff[itemIndex].admin) {
-            name.className = "fondator";
-        }
+            staffNameValueTK.className = "fondator";
+        }*/
 
-        var description = document.createElement('div');
-        description.className = 'staff-desc-container';
-        if (staff[itemIndex].role2) {
-            description.innerHTML = `
-            <div class="role ${staff[itemIndex].role.toLowerCase()}">${staff[itemIndex].role}</div>
-            <div class="role ${staff[itemIndex].role2.toLowerCase()}">${staff[itemIndex].role2}</div>
-            `;
-        }
-        else {
-            description.innerHTML = `<div class="role ${staff[itemIndex].role.toLowerCase()}">${staff[itemIndex].role}</div>`;
-        }
 
-        gridStaff.appendChild(description);
+
+        /*gridStaff.appendChild(description);
 
         var btnContainer = document.createElement('div');
         btnContainer.className = 'btn-container';
@@ -151,12 +171,13 @@ function createItemStaff(staff) {
                 `;
             }
         }
-
+*/
         gridContainer.appendChild(gridStaff);
+        
     } 
 }
 
-function createMusicEmbed(staff) {
+/*function createMusicEmbed(staff) {
     for (let itemIndex3 = 0; itemIndex3 < staff.length; itemIndex3++) {
         var musicLinkVal = staff[itemIndex3].musicLink;
 
@@ -206,12 +227,12 @@ function createMusicEmbed(staff) {
             }
         }, 0); 
     }
-}
+}*/
 
 
 document.addEventListener('DOMContentLoaded', function() {
     const json = JSON.parse(document.getElementById("staffData").textContent);
 
     createItemStaff(json.staff);
-    createMusicEmbed(json.staff);
+    //createMusicEmbed(json.staff);
 });

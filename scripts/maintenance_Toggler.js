@@ -17,6 +17,7 @@
 */
 
 const warningsList = [
+    //'La disponibilité des services n\'est pas garantie en raison d\'un changement d\'hébergement récent.'
     //"Voici la nouvelle version des services web Homebrew France !<br> Voir le <a style=\"color: #ade5ff;\" href=\"https://github.com/homebrewfrance/homebrewfrance.fr/releases/tag/V4.0.0\">changelog</a> sur GitHub.",
     // '<strong>ANNONCE :</strong> Nous recrutons des nouveaux modérateurs pour la communauté ! Postulez maintenant sur <a style="color:rgb(142, 179, 255)" href="https://homebrewfrance.fr/devenir-modo">cette page</a>'
     //'<strong>ANNONCE :</strong> La session de recrutements de modérateurs 2025-2026 ouvrira Jeudi 7 août 2025 à 15h30 (UTC+1:00)'
@@ -97,7 +98,7 @@ if (pageID.startsWith('DOC') && (!pageID.includes('Revanced')) && (!pageID.inclu
     var doc_warning = document.createElement('div');
     doc_warning.className = 'doc-warning';
     doc_warning.innerHTML = `
-        <div><img src="https://cdn.homebrew-france.fun/generic/lumia-guides.png" id="lumia_ic_warn">&nbsp;${global_doc_warning} (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020740345">Art. L335-3 du <span title="Code de la propriété intellectuelle">C.P.I</span>)</a></div> <div id="closeWarning" title="Fermer" style="margin-left: 15px;"><i class="fas fa-times-circle"></i></div>
+        <div><img src="https://homebrewfrance.github.io/cdn/generic/lumia-guides.png" id="lumia_ic_warn">&nbsp;${global_doc_warning} (<a href="https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000020740345">Art. L335-3 du <span title="Code de la propriété intellectuelle">C.P.I</span>)</a></div> <div id="closeWarning" title="Fermer" style="margin-left: 15px;"><i class="fas fa-times-circle"></i></div>
     `
     bodyElement.appendChild(doc_warning);
 }

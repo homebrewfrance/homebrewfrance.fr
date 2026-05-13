@@ -17,7 +17,7 @@
 -->
 
 <!DOCTYPE html>
-<html lang="fr" data-website-id="HBFWEBV5-LWS">
+<html lang="fr" data-website-id="HBFWEBV5-OVH">
 	<head>
         <title>Nintendo Switch | Docs</title>
 
@@ -27,18 +27,18 @@
 		<meta content="Nintendo Switch | Lumia Docs" property="og:title"/>
 		<meta content="Documentation complète sur la Nintendo Switch et comment bien utiliser le jailbreak et les applications Homebrew." property="og:description"/>
 		<meta content="https://homebrewfrance.fr/docs/switch" property="og:url"/>
-		<meta content="https://cdn.homebrew-france.fun/docs/lumia-docs.png" property="og:image"/>
+		<meta content="https://homebrewfrance.github.io/cdn/docs/lumia-docs.png" property="og:image"/>
         
         <!-- Link -->
-        <link rel="icon" type="image/x-icon" href="https://cdn.homebrew-france.fun/generic/fav.ico" />
+        <link rel="icon" type="image/x-icon" href="https://homebrewfrance.github.io/cdn/generic/fav.ico" />
 		<link rel="preconnect" href="https://fonts.googleapis.com" />
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-		<link rel="stylesheet" href="../../style/stylesheets/main_guides.css" />
-		<link rel="stylesheet" href="../../style/stylesheets/navbar/navbar__f.css" />
+		<link rel="stylesheet" href="../style/stylesheets/main_guides.css" />
+		<link rel="stylesheet" href="../style/stylesheets/navbar/navbar__f.css" />
                                         
         <!-- Scripts -->
-        <script async src="../../scripts/analyticsServices_manager.js"></script>
+        <script async src="../scripts/analyticsServices_manager.js"></script>
 	</head>
     <body data-page-id="DOC-Switch">
         <div class="top-page-donations">
@@ -60,7 +60,7 @@
                 <div class="nav-elements-vert"></div>
 			</div>
 			<div class="page-docu">
-				<h1 class="top"><img src="https://cdn.homebrew-france.fun/generic/lumia-guides.png" width="41px" style="transform: translateY(7px);"><span class="top-info">GUIDE</span>・Nintendo Switch</h1>
+				<h1 class="top"><img src="https://homebrewfrance.github.io/cdn/generic/lumia-guides.png" width="41px" style="transform: translateY(7px);"><span class="top-info">GUIDE</span>・Nintendo Switch</h1>
 				<p class="top-txt">Guide complet et documentation pour le jailbreak des Nintendo Switch V1.</p>
 				<div class="doc-header">
 					<div class="doc-header-section">
@@ -70,12 +70,17 @@
 					</div>
 					<div class="doc-header-section">
 						<strong style="color: white!important;">Auteurs : &nbsp;</strong>
-						<img src="https://cdn.homebrew-france.fun/a-propos/staff/zoria.png" width="18px">
+						<img src="https://homebrewfrance.github.io/cdn/a-propos/staff/zoria.png" width="18px">
 						&nbsp;Zoria
 						<span class="spacer-invert"></span>
-						<img src="https://cdn.homebrew-france.fun/a-propos/credits/numbersix.png" width="18px">
-						&nbsp;numbersix
+						<img src="https://homebrewfrance.github.io/cdn/a-propos/credits/numbersix.png" width="18px">
+						&nbsp;numbersix <span class="spacer"></span>
 					</div>
+					<div class="doc-header-section">
+                        <strong style="color: white!important;">Dernière MAJ : &nbsp;</strong>
+                        <i class="fas fa-redo"></i>
+                        &nbsp;18 janvier 2026
+                    </div>
 				</div>
                 <div class="button-container">
                     <a href="https://discord.homebrewfrance.fr/"><button class="ds-button"><i class="fa-brands fa-discord"></i>&nbsp;Assistance</button></a>
@@ -214,7 +219,7 @@
 					<p>Tapez le ensuite ci-dessous pour savoir si votre console est compatible avec la faille RCM.</p>
 					<multi-checker id="nintendoSwitch">
 						<center><form style="margin-block: 12px;" method="get">
-							<div class="input-switch"><input type="text" name="numberInput" required  placeholder="Ex: XAJ10046000000"><i class="fa-solid fa-magnifying-glass"></i></div>
+							<div class="input-switch"><input type="text" name="numberInput" id="inputSwitchField" required  placeholder="Ex: XAJ10046000000" maxlength="14"><i class="fa-solid fa-magnifying-glass"></i></div>
 							<input class="submit" type="submit" value="Vérifier la compatibilité >">
 						</center>
 					</multi-checker>
@@ -236,29 +241,29 @@
 				</ul>
 			<div class="gallery-container">
 				<div class="gallery">
-				<a href="https://cdn.homebrew-france.fun/docs/switch/broches.png">
-					<img src="https://cdn.homebrew-france.fun/docs/switch/broches.png" alt="Broches" width="600" height="400" />
+				<a href="https://homebrewfrance.github.io/cdn/docs/switch/broches.png">
+					<img src="https://homebrewfrance.github.io/cdn/docs/switch/broches.png" alt="Broches" width="600" height="400" />
 				</a>
 				<div class="desc">Les broches n°9 et n°10 du joycon droit.</div>
 				</div>
 
 				<div class="gallery">
-				<a href="https://cdn.homebrew-france.fun/docs/switch/jig.png">
-					<img src="https://cdn.homebrew-france.fun/docs/switch/jig.png" alt="Jig" width="600" height="400" />
+				<a href="https://homebrewfrance.github.io/cdn/docs/switch/jig.png">
+					<img src="https://homebrewfrance.github.io/cdn/docs/switch/jig.png" alt="Jig" width="600" height="400" />
 				</a>
 				<div class="desc">Ce à quoi ressemble normalement un JIG.</div>
 				</div>
 
 				<div class="gallery">
-				<a href="https://cdn.homebrew-france.fun/docs/switch/aluminium.png">
-					<img src="https://cdn.homebrew-france.fun/docs/switch/aluminium.png" alt="Ruban adhésif" width="600" height="400" />
+				<a href="https://homebrewfrance.github.io/cdn/docs/switch/aluminium.png">
+					<img src="https://homebrewfrance.github.io/cdn/docs/switch/aluminium.png" alt="Ruban adhésif" width="600" height="400" />
 				</a>
 				<div class="desc">Alumnium appliqué sur les broches.</div>
 				</div>
 
 				<div class="gallery">
-				<a href="https://cdn.homebrew-france.fun/docs/switch/ruban.png">
-					<img src="https://cdn.homebrew-france.fun/docs/switch/ruban.png" alt="Ruban adhésif" width="600" height="400" />
+				<a href="https://homebrewfrance.github.io/cdn/docs/switch/ruban.png">
+					<img src="https://homebrewfrance.github.io/cdn/docs/switch/ruban.png" alt="Ruban adhésif" width="600" height="400" />
 				</a>
 				<div class="desc">Ruban adhésif à bien appliquer.</div>
 				</div>
@@ -273,7 +278,7 @@
 				<p><strong>2.</strong>&nbsp;Réglage du RCM Loader</p>
 				<ul>
 					<li>Appuyez longuement sur le bouton + pour modifier la couleur de la LED jusqu'au rouge.</li>
-					<img src="https://cdn.homebrew-france.fun/docs/switch/rcm_plus.png" id="rcm-plus" width="155" />
+					<img src="https://homebrewfrance.github.io/cdn/docs/switch/rcm_plus.png" id="rcm-plus" width="155" />
 					<li>Vérifiez l'insertion de la carte SD dans la console.</li>
 					<li>Insérez le RCM Loader dans le port USB-C de la console.</li>
 					<li>La Switch démarrera sous Hekate, réglez à date et heure correcte puis sauvegarder.</li>
@@ -332,16 +337,16 @@
 					<li>Passez en mode RCM et injectez le payload Hekate si la console est éteinte ou redémarrez sur Hekate via "Reboot-to-payload.nro" si la console est déjà en CFW SysNAND.</li>
 					<li>Sélectionnez le menu "Tools" d'Hekate.</li>
 				</ul>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_1.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_1.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<ul>
 					<li>Sélectionnez "eMMC / SD Partitions / USB" puis "Partition SD Card" puis "OK"</li>
 				</ul>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_2.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_3.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_2.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_3.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<ul>
 					<li>Faites glisser le curseur de la ligne rouge de l'option "emuMMC RAW" jusque "29 FULL" puis appuyez sur "Next Step".</li>
 				</ul>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_4.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_4.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<p>Hekate vous avertira, faites "START" pour créer la partition; la carte micro SD est alors formatée en FAT32, un système de fichiers qui, contrairement à l'exFAT n'est pas sujet aux corruptions de données pouvant empêcher le bon fonctionnement des jeux. Les "gros" dossiers de la carte micro SD seront effacés, ce qui justifie la sauvegarde du dossier "Nintendo" effectuée précédemment.</p>
 				<p><strong>2.</strong> Vérification de la carte micro SD</p>
 				<div class="indic">
@@ -359,34 +364,34 @@
 				<ul>
 					<li>Retournez dans l'onglet "Home" de Hekate, puis allez dans la section "emuMMC".</li>
 				</ul>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_5.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_5.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<ul>
 					<li>Appuyez sur "Create emuMMC" puis "SD Partition" et enfin sur "Part1"</li>
 				</ul>
 				<div class="disclaimer">
 					<p class="indic-text">Ne sélectionnez pas "SD Files".</p>
 				</div>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_6.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_7.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_8.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_6.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_7.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_8.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<ul>
 					<li>La création de l'emuNAND prendra entre 10 et 30 minutes selon la vitesse d'écriture de votre carte micro SD, une fois terminé, appuyez sur "Close" après avoir bien vérifié qu'il est bien écrit "Enabled!" dans l'onglet "emuMMC Info & Selection".<br />
 					<i>Note: si ce n'est pas le cas; appuyez sur "Change emuMMC" puis "SD RAW1".</i></li>
 				</ul>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_9.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_9.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<ul>
 					<li>Pour démarrer en emuNAND, apuyez sur "Close" et allez dans "Launch" puis "CFW (emuMMC)" ou "Switch V1" ou "Atmosphere-nx" (l'emuNAND sera automatiquement détectée) en cas de configuration "fusee.bin" ou "Atmosphere emuNAND" pour le pack LS-AIO.</li>
 				</ul>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_10.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_11.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_10.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_11.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<ul>
 					<li>Allez dans les paramètres de la console pour vérifier la présence d'un <strong>E</strong> après "AMS" dans l'onglet "Console" qui confirme le démarrage correct en emuNAND.</li>
 				</ul>
-                <center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_12.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+                <center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_12.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
                 <ul>
 					<li>Pour bien différencier <strong>E</strong>muNAND et <strong>S</strong>ysNAND, appliquez un thème différent pour l'emuNAND et la SysNAND.</li>
 				</ul>
-                <center><img src="https://cdn.homebrew-france.fun/docs/switch/hekate_13.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+                <center><img src="https://homebrewfrance.github.io/cdn/docs/switch/hekate_13.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<h2 class="titles" id="maj-daybreak">IV. Mise à jour via Daybreak</h2>
 				<div class="prerequis">
 					<h3 class="prereq-txt">PRÉREQUIS :</h3>
@@ -416,7 +421,7 @@
 				</ul>
 				<p><strong>6.</strong> "DayBreak" va installer votre mise à jour, cliquez sur "Reboot" pour démarrer votre console en CFW emuNAND via "Launch" d'Hekate.</p>
 				<p><strong>7.</strong> Allez dans "Paramètres" &#10140; "Mise à jour" pour vérifier que le console est bien en <span class="switchVer">X.X.X</span> avec un <strong>E</strong> ou un <strong>S</strong> à la fin.</p>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/ns_1.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/ns_1.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<h2 class="titles" id="reset-emunand">V. Réinitialiser son emuNAND via Daybreak</h2>
 				<div class="prerequis">
 					<h3>PRÉREQUIS PRÉCÉDENTS</h3>
@@ -439,7 +444,7 @@
 				<ul>
 					<li>Allez dans "Paramètres" &#10140; "Console" &#10140; "Mise à jour" pour vérifier que la Switch est bien en firmware <span class="switchVer">X.X.X</span> mais avec un <strong>E</strong> à la fin.</li>
 				</ul>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/ns_1.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/ns_1.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<p><strong>5.</strong> Allez dans le menu "Album" de la console et lancez l'Homebrew "DayBreak".</p>
 				<ul>
 					<li>Cliquez sur "Install".</li>
@@ -449,13 +454,13 @@
 				<p><strong>6.</strong> S'il est indiqué "Update is valid", cliquez sur "Continue" puis "Reset to Factory settings" puis "Install" (FAT32 + exFAT) puis une nouvelle fois sur "Continue" sinon reprendre à l'étape <strong>1.</strong>.</p>
 				<p><strong>7.</strong> "DayBreak" va installer votre mise à jour, cliquez sur "Reboot" pour redémarrer votre Switch en CFW emuNAND via "Launch" d'Hekate.</p>
 				<ul>
-					<li>Créez un (ou des) utilisateur(s), faites<img src="https://cdn.homebrew-france.fun/docs/buttons/switch_x_button.png" class="console-buttons">pour passer la connexion et mettre un thème sombre pour différencier emuNAND et sysNAND.</li>
+					<li>Créez un (ou des) utilisateur(s), faites<img src="https://homebrewfrance.github.io/cdn/docs/buttons/switch_x_button.png" class="console-buttons">pour passer la connexion et mettre un thème sombre pour différencier emuNAND et sysNAND.</li>
 				</ul>
 				<p><strong>8.</strong> Aller dans "Paramètres" &#10140; "Console" &#10140; "Mise à jour" pour vérifier que la Switch est bien en <span class="switchVer">X.X.X</span> avec <strong>E</strong> à la fin.
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/ns_3.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/ns_3.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<h2 class="titles" id="saves-dbi">VI. Gestion des sauvegardes via DBI</h2>
 				<p><strong>1.</strong> Vérifiez si DBI n'est pas déjà présent en allant dans le menu "Album". S'il est déjà présent, passez à l'étape <strong>3.</strong>.</p>
-				<center><img src="https://cdn.homebrew-france.fun/docs/switch/ns_4.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
+				<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/ns_4.png" style="margin-bottom: 10px;" width="681" height="354" class="img-border" /></center>
 				<p><strong>2.</strong> Installation de DBI.</p>
 				<ul>
 					<li>Montez la carte micro SD sur le PC, et, dans le dossier <code>Switch</code>, créez un dossier <code>dbi</code>.
@@ -480,7 +485,7 @@
 					<li>Faites "Run MTP responder".</li>
 					<li>Allez dans le dossier <code>switch/saves</code> qui devrait monter sur le PC (si rien ne se passe, changez de port USB et/ou tester un autre câble).</li>
 
-					<center><img src="https://cdn.homebrew-france.fun/docs/switch/ns_5.png" width="681" height="354" class="img-border" /></center>
+					<center><img src="https://homebrewfrance.github.io/cdn/docs/switch/ns_5.png" width="681" height="354" class="img-border" /></center>
 
 					<li> Puis allez dans le dossier précédent du PC <code>switch/saves</code>, Copiez/Collez son contenu dans le dossier <code>switch/saves</code> de la console.</li>
 				</ul>
@@ -488,29 +493,30 @@
                 <ul style="list-style-type: decimal;">
                     <li>Lancez l'Homebrew "DBI" depuis l'album photos de la console.</li>
                     <li>Allez dans "Browse Installed Applications".</li>
-                    <center><img src="https://cdn.homebrew-france.fun/docs/switch/dbi_down1.jpg" width="681" height="354" class="img-border" /></center>
-                    <li>Déplacez-vous sur le jeu à downgrader puis appuyez sur<img src="https://cdn.homebrew-france.fun/docs/buttons/switch_a_button.png" class="console-buttons">.</li>
-                    <center><img src="https://cdn.homebrew-france.fun/docs/switch/dbi_down2.jpg" width="681" height="354" class="img-border" /></center>
+                    <center><img src="https://homebrewfrance.github.io/cdn/docs/switch/dbi_down1.jpg" width="681" height="354" class="img-border" /></center>
+                    <li>Déplacez-vous sur le jeu à downgrader puis appuyez sur<img src="https://homebrewfrance.github.io/cdn/docs/buttons/switch_a_button.png" class="console-buttons">.</li>
+                    <center><img src="https://homebrewfrance.github.io/cdn/docs/switch/dbi_down2.jpg" width="681" height="354" class="img-border" /></center>
                     <li id="step4">Déplacez-vous vers la mise à jour que vous souhaitez supprimer.</li>
-                    <center><img src="https://cdn.homebrew-france.fun/docs/switch/dbi_down3.jpg" width="681" height="354" class="img-border" /></center>
+                    <center><img src="https://homebrewfrance.github.io/cdn/docs/switch/dbi_down3.jpg" width="681" height="354" class="img-border" /></center>
                     <li>Appuyez sur "+" pour faire apparaître le menu contextuel puis validez "Delete".</li>
-                    <center><img src="https://cdn.homebrew-france.fun/docs/switch/dbi_down4.jpg" width="681" height="354" class="img-border" /></center>
+                    <center><img src="https://homebrewfrance.github.io/cdn/docs/switch/dbi_down4.jpg" width="681" height="354" class="img-border" /></center>
                     <i>Note: Si des DLCs sont liés à cette mise à jour, il faudra aussi les effacer en les sélectionnant et en reprenant à <a href="#step4">l'étape 4</a>.</i>
                     <li>Validez "Reset required version" pour valider le downgrade.</li>
-                    <center><img src="https://cdn.homebrew-france.fun/docs/switch/dbi_down5.jpg" width="681" height="354" class="img-border" /></center>
+                    <center><img src="https://homebrewfrance.github.io/cdn/docs/switch/dbi_down5.jpg" width="681" height="354" class="img-border" /></center>
                     <i>Note: Le downgrade peut-être utile pour ceux qui cherchent à profiter des glitchs patchés par mise à jour comme dans </i>The Legend Of Zelda : Tears of the Kingdom.<i></i>
                 </ul>
+				<div class="spacer">&nbsp;</div>
             </div>
 		</div>
 
         <!-- Scripts -->
-		<script src="../../scripts/navItemsHighlights_docs.js"></script>
-        <script src="../../scripts/maintenance_Toggler.js"></script>
-        <script src="../../scripts/navigationBar_creation.js"></script>
-        <script src="../../scripts/multi-checker/switch.js"></script>
+		<script src="../scripts/navItemsHighlights_docs.js"></script>
+        <script src="../scripts/maintenance_Toggler.js"></script>
+        <script src="../scripts/navigationBar_creation.js"></script>
+        <script src="../scripts/multi-checker/switch-serial-checker.js"></script>
 		<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
         <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha384-tsQFqpEReu7ZLhBV2VZlAu7zcOV+rXbYlF2cqB8txI/8aZajjp4Bqd+V6D5IgvKT" crossorigin="anonymous"></script>
-        <script async src="../../scripts/switchVersion_fetcher.js"></script>
+        <script async src="../scripts/switchVersion_fetcher.js"></script>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 	</body>		
 </html>	

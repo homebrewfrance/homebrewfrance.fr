@@ -45,10 +45,10 @@ function validateDropdownItems(data) {
 var htmlpage = document.getElementsByTagName('html')[0];
 const body = document.getElementsByTagName('body')[0];
 const usrAgent = navigator.userAgent;
-var websiteIcon = "https://cdn.homebrew-france.fun/generic/beta_website-icon.png";
+var websiteIcon = "https://homebrewfrance.github.io/cdn/generic/beta_website-icon.png";
 var websiteIconTitle = "Homebrew France";
 if (pageID.startsWith('DOC')) {
-    websiteIcon = "https://cdn.homebrew-france.fun/generic/lumia-guides.png";
+    websiteIcon = "https://homebrewfrance.github.io/cdn/generic/lumia-guides.png";
     websiteIconTitle = "Lumia Guides - par Homebrew France";
     var optionalClass = "class=\"lumiaIconNav\"";
 }
@@ -60,7 +60,7 @@ nav.innerHTML = `
     <div id="navContainer">
         <img id="navIcon" src="${websiteIcon}" ${optionalClass} style="height: 45px; width: 45px;" title="${websiteIconTitle}">
         <div id="navbarToggler">
-            <img id="hamburgerMenu" src="https://cdn.homebrew-france.fun/generic/hamburger-icon.png" style="height: 38px; width: 38px;">
+            <img id="hamburgerMenu" src="https://homebrewfrance.github.io/cdn/generic/hamburger-icon.png" style="height: 38px; width: 38px;">
         </div>
     </div>
     <span id="desktopItems">

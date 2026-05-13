@@ -44,7 +44,7 @@ function createItemShop(modifConsoles, consolesPucees) {
                 </a>
             </div-->
             <div class="reductions">${calculReduc(modifConsoles[itemIndex])}</div>
-            <div class="fup-icon-small"><img src="https://cdn.homebrew-france.fun/partner/fixurphone.png" width="75px"></div>
+            <div class="fup-icon-small"><img src="https://homebrewfrance.github.io/cdn/partner/fixurphone.png" width="75px"></div>
         `;
 
         function calculReduc() {
@@ -76,7 +76,7 @@ function createItemShop(modifConsoles, consolesPucees) {
                 </a>
             </div-->
             <div class="reductions">${calculReduc(consolesPucees[itemIndex2])}</div>
-            <div class="fup-icon-small"><img src="https://cdn.homebrew-france.fun/partner/fixurphone.png" width="75px"></div>
+            <div class="fup-icon-small"><img src="https://homebrewfrance.github.io/cdn/partner/fixurphone.png" width="75px"></div>
         `;
 
         function calculReduc() {

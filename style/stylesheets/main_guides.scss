@@ -19,6 +19,11 @@
 @import 'fonts';
 
 @media only screen and (max-width: 1041px) {
+	.doc-warning {
+		margin-inline: 3%;
+		width: 80%;
+	}
+
 	.indicator-container {
 		margin-top: 120px;
 		margin-bottom: 25px;
@@ -26,7 +31,11 @@
 	}
 	.doc-header {
 		display: flex;
-		flex-direction: column;
+		flex-direction: row;
+	}
+
+	.doc-header-section {
+		margin-right: 8px;
 	}
 
 	.spacer-invert {
@@ -120,6 +129,11 @@
 }
 
 @media only screen and (min-width: 1041px) {
+	.doc-warning {
+		margin-inline: 25%;
+		width: 40%;
+	}
+
 	.indicator-container {
 		margin-top: 110px;
 		margin-bottom: 25px;
@@ -355,7 +369,6 @@ footer a:hover {
 	display: flex;
 	flex-direction: row;
 	height: 45px auto;
-	width: 40%;
 	z-index: 6000;
 	align-items: center;
 	justify-content: space-between;
@@ -366,7 +379,6 @@ footer a:hover {
 	padding-top: 15px;
 	margin: 7px;
 	border-radius: 30px;
-	margin-inline: 30%;
 	line-height: 1.45;
 	border: 1px solid #6e0000;
 	box-shadow: 0px 10px 15px -4px #320000ca;
@@ -554,7 +566,7 @@ input {
 }
 
 .navigation-header {
-	font-family: "Syne", sans-serif;
+	font-family: "DM Sans", sans-serif;
 	font-optical-sizing: auto;
 	font-weight: 700;
 	font-style: normal;
@@ -657,15 +669,15 @@ h5 {
 
 
 .prerequis {
-	background: #151c28ad;
-	border-radius: 20px;
-	border: 1px solid #4b7aca;
+	background: #151c286e;
+	border-radius: 30px;
+	border: 1px solid #4b7aca36;
 	backdrop-filter: blur(35px);
 	border-radius: 20px;
 	margin-left: 0%;
 	margin-right: 0%;
-	margin-bottom: 10px;
-	margin-top: 5px;
+	margin-bottom: 20px;
+	margin-top: 10px;
 	padding-top: 25px;
 	padding-bottom: 21px;
 	padding-inline: 19px;
@@ -710,21 +722,21 @@ h5 {
 .subtitles {
 	position: relative;
 	display: inline-block;
-    font-weight: 600;
-    margin-top: 25px;
-	margin-bottom: 7px;
-	font-size: 32px;
-	font-family: 'Syne';
+    font-weight: 500;
+    margin-top: 10px;
+	margin-bottom: 12px;
+	font-size: 28px;
+	font-family: 'DM Sans';
 }
 
 .titles {
 	position: relative;
 	display: inline-block;
-    font-weight: 700;
-    margin-top: 100px;
+    font-weight: 800;
+    margin-top: 35px;
 	margin-bottom: 12px;
-	font-size: 37px!important;
-	font-family: 'Syne', sans-serif!important;
+	font-size: 38px!important;
+	font-family: 'DM Sans', sans-serif!important;
 	font-optical-sizing: auto;
 	font-style: normal;
 }
@@ -743,14 +755,14 @@ h5 {
     margin-top: 70px;
 	margin-bottom: 12px;
 	font-size: 37px!important;
-	font-family: 'Syne', sans-serif!important;
+	font-family: 'DM Sans', sans-serif!important;
 	font-optical-sizing: auto;
 	font-style: normal;
 }
 
 .prereq-txt {
 	font-weight: 750;
-	font-family: 'Syne', sans-serif!important;
+	font-family: 'DM Sans', sans-serif!important;
 	font-optical-sizing: auto;
 	font-style: normal;
 	font-size: 25px;
@@ -1147,7 +1159,7 @@ strong {
 	padding: 5px;
 
 	.indic-text::before {
-		font-family: 'Syne';
+		font-family: 'DM Sans';
 		font-weight: 900; 
 		content: "INFO :"; 
 		margin-right: 9px; 
@@ -1168,9 +1180,9 @@ h2, h4 {
 p, ul, li, small {
 	color: #d7d7d7;
 	font-weight: 400;
-	line-height: 1.8;
+	line-height: 1.4;
 	font-family: 'Inter';
-	font-size: 18px;
+	font-size: 16px;
 }
 
 li::marker {
@@ -1196,10 +1208,10 @@ a {
 	border: 1px solid #ff4545;
 	padding: 5px;
 	margin-bottom: 10px;
-	margin-top: 6px;
+	margin-top: 10px;
 
 	.indic-text::before {
-		font-family: 'Syne';
+		font-family: 'DM Sans';
 		font-weight: 900; 
 		content: "ATTENTION :"; 
 		margin-right: 9px; 

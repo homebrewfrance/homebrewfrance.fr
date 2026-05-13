@@ -1,6 +1,6 @@
 [![Discord](https://img.shields.io/discord/883623179979984896?logo=discord&label=Homebrew%20France)](https://discord.gg/le-homebrew-france-883623179979984896) ![GitHub Repo stars](https://img.shields.io/github/stars/homebrewfrance/homebrewfrance.fr)
 
-<img src="https://cdn.homebrew-france.fun/generic/hbf-web2025.png">
+<img src="https://homebrewfrance.github.io/cdn/generic/hbf-web2025.png">
 
 # Homebrew France - Web Services
 Un site web conçu pour la communauté Homebrew France.
@@ -99,12 +99,12 @@ Des outils en ligne permettant de vérifier la compatibilité de votre console a
 
 # Nos partenaires :
 <div style="display: flex; flex-direction: row;">
-  <a href="https://sighya.fr"><img src="https://cdn.homebrew-france.fun/partner/sighya.png" width="100px"></a>
-  <a href="https://hacktuality.com/"><img src="https://cdn.homebrew-france.fun/partner/hacktuality.png" width="100px"></a>
-  <a href="https://jtech-informatique.fr"><img src="https://cdn.homebrew-france.fun/partner/jtech-informatique.png" width="100px"></a>
-  <a href="https://www.instant-gaming.com/fr/?igr=homebrewfrance%2F"><img src="https://cdn.homebrew-france.fun/partner/instant-gaming.png" width="100px"></a>
-  <a href="https://fixurphone.fr"><img src="https://cdn.homebrew-france.fun/partner/fixurphone.png" width="100px"></a>
-  <a href="https://luminix.app"><img src="https://cdn.homebrew-france.fun/partner/neochronix.png" width="100px"></a>
+  <a href="https://sighya.fr"><img src="https://homebrewfrance.github.io/cdn/partner/sighya.png" width="100px"></a>
+  <a href="https://hacktuality.com/"><img src="https://homebrewfrance.github.io/cdn/partner/hacktuality.png" width="100px"></a>
+  <a href="https://jtech-informatique.fr"><img src="https://homebrewfrance.github.io/cdn/partner/jtech-informatique.png" width="100px"></a>
+  <a href="https://www.instant-gaming.com/fr/?igr=homebrewfrance%2F"><img src="https://homebrewfrance.github.io/cdn/partner/instant-gaming.png" width="100px"></a>
+  <a href="https://fixurphone.fr"><img src="https://homebrewfrance.github.io/cdn/partner/fixurphone.png" width="100px"></a>
+  <a href="https://luminix.app"><img src="https://homebrewfrance.github.io/cdn/partner/neochronix.png" width="100px"></a>
 </div>
 
 # Copyrights :

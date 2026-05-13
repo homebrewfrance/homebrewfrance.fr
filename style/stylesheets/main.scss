@@ -129,36 +129,49 @@ ul {
 }
 
 .pres, .pres-fup {
-	transition: 0.3s;
-	padding: 16px;
+	transition: 0.5s;
+	//padding: 16px;
 	height: auto;
+	margin-inline: 35px;
 	overflow-wrap: anywhere;
 	border: 2px solid rgba(153, 153, 153, 0);
 	align-items: center;		
+	transform: rotate(0.01turn) scale(1.09);
 }
 
+.pres-bottom {
+	display: none;
+	width: 100%;
+	height: 2px;
+	background: #ffffff;
+	background: linear-gradient(90deg,rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.71) 51%, rgba(255, 255, 255, 0) 100%);
+}
 .pres-name {
 	color: white;
 	word-break: break-word;
 	font-family: "Instrument Sans", sans-serif!important;
 	transition: 0.3s;
 	font-size: 27px!important;
-	margin-bottom: 6px;
+	//margin-bottom: 6px;
 }
 
 .pres {
 	p {
 		font-size: 15px!important;
 	}
-}
 
-.partner-container {
-	.pres {
-		padding-top: 20px;
-		padding-bottom: 22px;
+	h3 {
+		margin-top: 8px;
 	}
 }
 
+.partner-container {
+	padding-top: 30px;
+	.pres {
+		padding-top: 20px;
+		//padding-bottom: 22px;
+	}
+}
 
 .pres, 	.pres-fup {
 	p {
@@ -167,14 +180,17 @@ ul {
 	border-radius: 25px;
 	background-color: #1f202350;	
 	box-shadow: 0px 10px 15px -4px #0000005e;
+	border: 1px solid #242424;
+}
+
+.partner-header {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
 }
 
 .partner-image {
-	background-color: #1a1b1d50;	
-	border: 2px solid rgba(61, 61, 61, 0.458);
-	border-radius: 17px;
-	box-shadow: 0px 10px 15px -4px #0000005e;
-	padding: 11px;
+	height: 53px;
 }
 
 .page {
@@ -203,15 +219,16 @@ a {
 
 body {
     width: 100%;
-    background: radial-gradient(circle, rgba(138, 43, 226, 0.6), rgba(32, 0, 54, 0.15), transparent 70%), #070809;
-    background-attachment: fixed;
-	-webkit-background-attachment: fixed;
-    animation: moveBackground 5s infinite alternate ease-in-out;
-	-webkit-animation: moveBackground 5s infinite alternate ease-in-out;
+    //background: radial-gradient(circle, rgba(138, 43, 226, 0.6), rgba(32, 0, 54, 0.15), transparent 70%), #070809;
+    //background-attachment: fixed;
+	//-webkit-background-attachment: fixed;
+    //animation: moveBackground 5s infinite alternate ease-in-out;
+	//-webkit-animation: moveBackground 5s infinite alternate ease-in-out;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: white;
 	z-index: 4500;
 	line-height: 1.47;
+	background-color: #000000;
 }
 
 .popup {
@@ -296,20 +313,14 @@ img {
 }
 
 .titles {
-	background: rgb(243, 206, 255);
-	background: linear-gradient(0deg, rgb(242, 218, 255) 33%, rgb(181, 151, 200) 50%, rgb(170, 170, 171) 100%);
-	--webkit-background-clip: text;
-	background-clip: text;
-	color: transparent;
+	color: #7d7d7d;
 	margin-top: 80px;
 	margin-bottom: 0px;
 	word-break: break-word;
-	font-family: "Syne", sans-serif!important;
+	font-family: "DM Sans", sans-serif!important;
 	font-optical-sizing: auto;
-	font-weight: 700;
+	font-weight: 500;
 	font-style: normal;
-	text-transform: uppercase;
-	width: 100%;
 	text-align: center;
 }
 
@@ -332,11 +343,17 @@ img {
 }
 
 .titles-desc {
-	color: rgb(212, 198, 217);
-	font-size: 16px;
-	margin-bottom: 17px;
+	color: #636363;
+	font-size: 14px;
+	margin-bottom: 0px;
 	text-align: center;
-	width: 100%;
+}
+
+.titles-delimit {
+	background-color: #212121;
+	height: 0.5px;
+	margin-top: 33px;
+	margin-bottom: 25px;
 }
 
 .credits {
@@ -367,6 +384,85 @@ img {
 	filter: blur(8px);
 }
 
+.services-cont {
+	flex-direction: column;
+	display: flex;	
+	width: 100%;
+	margin-top: 35px;
+	justify-content: center;
+	align-items: center;
+}
+
+.pres-service {
+	flex-direction: row;
+	display: flex;
+	width: 60%;
+	padding-inline: 33px;
+	padding-top: 19px;
+	border: 0.5px solid rgba(67, 67, 67, 0.484);
+	box-shadow: inset 0 0 20px 5px rgba(148, 148, 148, 0);
+	border-radius: 15px;	
+	transition: 0.5s;
+
+	img {
+		transition: 0.7s;
+	}
+}
+
+.pres-service:hover {
+	cursor: pointer;
+
+	img {
+		transform: rotate(-0.01turn) scale(1.08);		
+	}
+}
+
+.svc-one:hover {
+	transform: translateX(-88px) rotate(-0.007turn) scale(1.03);
+	box-shadow: inset 0 0 45px 5px rgba(255, 255, 255, 0.111);
+}
+
+.svc-two:hover {
+	transform: translateX(92px) rotate(-0.005turn) scale(1.03);
+	box-shadow: inset 0 0 45px 5px rgba(185, 82, 253, 0.144);
+}
+
+.svc-three:hover {
+	transform: translateX(-73px) rotate(-0.004turn) scale(1.03);
+	box-shadow: inset 0 0 45px 5px rgba(255, 193, 69, 0.111);
+}
+
+.svc-title {
+	color: white;
+	word-break: break-word;
+	font-family: "Instrument Sans", sans-serif!important;
+	font-size: 21px!important;
+	font-weight: 700;
+}
+
+.svc-desc {
+	color: #767676;
+	font-size: 14px;
+}
+
+.svc-one {
+	transform: translateX(-85px) rotate(-0.006turn);
+	margin-bottom: 17px;
+	padding-bottom: 22px;
+}
+
+.svc-two {
+	transform: translateX(85px) rotate(-0.006turn);
+	margin-bottom: 27px;
+	padding-bottom: 5px;
+}
+
+.svc-three {
+	transform: translateX(-65px) rotate(-0.006turn);
+	margin-bottom: 17px;
+	padding-bottom: 7px;
+}
+
 .partner-category {
 	font-size: 13px;
 	border-radius: 7px;
@@ -375,12 +471,50 @@ img {
 	font-family: 'Plus Jakarta Sans', sans-serif;
 	align-items: center;
 	margin-left: 6px;
-	transform: translateY(-2px);
+	//transform: translateY(-2px);
+	border: 1px solid rgb(70, 70, 70);
+}
+
+.partner-desc {
+	color: #767676;
+	font-size: 14px;
 }
 
 .partner-classic {
-	color: #ffffff;
-	background: linear-gradient(135deg,#67158a,#a32aff);
+	//color: #ffffff;
+	//background: linear-gradient(135deg,#67158a,#a32aff);
+}
+
+.partner-pres {
+	display: flex;
+	flex-direction: column;
+	width: 33%;
+	padding-inline: 33px;
+	padding-top: 19px;
+	padding-bottom: 26px;
+	border: 0.5px solid rgba(67, 67, 67, 0.484);
+	box-shadow: inset 0 0 20px 5px rgba(148, 148, 148, 0);
+	border-radius: 15px;
+	margin-inline: 8px;
+	transition: 0.3s;
+}
+
+.partner-pres:hover {
+	box-shadow: inset 0 0 20px 5px rgba(148, 148, 148, 0.147);
+	cursor: pointer;
+	transform: translateY(-7px);
+}
+
+.partner-cat {
+	margin-left: 11px;
+	font-family: 'DM Sans', sans-serif;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	font-size: 10px;
+	padding-inline: 7px;
+	padding-block: 4px;
+	border: 1px solid rgb(59, 59, 59);
+	border-radius: 35px;
 }
 
 .partner-orange {
@@ -470,6 +604,11 @@ Lien : https://homebrewfrance.fr/a-propos
 	animation-fill-mode: backwards;
 	position: relative;
 	transition: 0.3s;
+
+	h3 {
+		word-break: break-word!important;
+		text-align: center;
+	}
 }
 
 .grid-staff {
@@ -479,10 +618,10 @@ Lien : https://homebrewfrance.fr/a-propos
     float: left;
 	margin: 8px auto;
     display: flex;
-	flex-direction: column;
+	/*flex-direction: column;
     justify-content: center;
     align-items: center;
-    text-align: center;
+    text-align: center;*/
 
 	h3 {
 		font-size: 22px;
@@ -569,7 +708,7 @@ Lien : https://homebrewfrance.fr/ressources
 .grid-downloads {
     @include grid-generic;
     padding-block: 17px;
-	padding-inline: 8px;
+	padding-inline: 0px;
     transition: 0.3s;
 	justify-content: center!important;
 	align-items: center!important;
@@ -591,7 +730,7 @@ Lien : https://homebrewfrance.fr/ressources
 		margin-bottom: 6px;
 	}
 
-	.qrcode-placeholder {
+	/*.qrcode-placeholder {
 		color: #b7b7b7;
 		transition: 0.3s;
 	}
@@ -599,21 +738,46 @@ Lien : https://homebrewfrance.fr/ressources
 	.qrcode-placeholder:hover {
 		color: #ffffff;
 		text-shadow: 0 0 10px rgba(214, 214, 214, 0.5);
+	}*/
+
+	.console, .category, .author, .qrcode-placeholder  {
+		font-size: 13px;
+		border-radius: 7px;
+		padding-inline: 7px;
+		padding-block: 3px;
+		font-family: 'Plus Jakarta Sans', sans-serif;
+		align-items: center;
+		margin-left: 6px;
+		//transform: translateY(-2px);
+		border: 1px solid rgb(56, 56, 56);
+		background-color: #000000;
+		
+		
+	}
+
+	.qrcode-placeholder {
+		display: none;
+	}
+
+	.tab-cont {
+		display: flex;
+		flex-direction: row;
+		margin-bottom: 11px;
 	}
 }
 
 .dsi-grid {
-	background-image: url('https://cdn.homebrew-france.fun/telechargements/dsi.png');
+	background-image: url('https://homebrewfrance.github.io/cdn/telechargements/dsi.png');
     @include grid-bg;
 }
 
 .ds3-grid {
-	background-image: url('https://cdn.homebrew-france.fun/telechargements/3ds.png');
+	background-image: url('https://homebrewfrance.github.io/cdn/telechargements/3ds.png');
     @include grid-bg;
 }
 
 .switch-grid {
-	background-image: url('https://cdn.homebrew-france.fun/telechargements/switch.png');
+	background-image: url('https://homebrewfrance.github.io/cdn/telechargements/switch.png');
     @include grid-bg;
 }
 
@@ -629,9 +793,9 @@ Lien : https://homebrewfrance.fr/ressources
 }
 
 #packSearch, #themeSearch, .search-icon {
-	background: rgba(26, 28, 31, 0.26);
-    border-radius: 15px!important;
-    border: var(--main-border);
+	background: rgba(26, 28, 31, 0);
+    border-radius: 10px!important;
+    border: 0.5px solid rgb(73, 73, 73);
 	padding-inline: 12px;
 	padding-block: 6px;
 	color: white;
@@ -639,6 +803,8 @@ Lien : https://homebrewfrance.fr/ressources
 	transition: 0.3s;
 	font-size: 15px!important;
 	align-self: center;
+	margin-top: 10px;
+	margin-right: 6px;
 }
 
 .tags-selector {

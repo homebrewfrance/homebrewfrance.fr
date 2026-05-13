@@ -125,14 +125,14 @@ html, body {
     position: fixed;
     top: 0;
     display: flex; 
-    height: 80px auto; 
+    height: auto; 
     background-color: #1515186d;
     backdrop-filter: blur(14px) saturate(1.2);
-    border: 2px solid rgba(66, 66, 66, 0.425);
+    border: 0.5px solid rgba(66, 66, 66, 0.425);
     padding-block: 12px; 
     z-index: 550;
     overflow: visible;
-    border-radius: 25px;
+    border-radius: 20px;
     padding-inline: 15px;
     margin-top: 25px;
     box-shadow: 0px 10px 15px -4px #0000005e;
@@ -264,8 +264,8 @@ html, body {
     background: rgba(21, 21, 24, 0.799);
     backdrop-filter: blur(14px) !important; 
     -webkit-backdrop-filter: blur(14px); 
-    border: 2px solid rgba(66, 66, 66, 0.425);
-    border-radius: 25px;
+    border: 0.5px solid rgba(66, 66, 66, 0.425);
+    border-radius: 20px;
     box-shadow: 0px 10px 15px -4px #0000009b;
     transition: 0.3s ease;
     font-family: 'Instrument Sans', sans-serif;
@@ -292,7 +292,7 @@ html, body {
     color: white;
     text-decoration: none;
     font-weight: 500;
-    transition: 0.2s;
+    transition: 0.5s;
     padding-block: 7px;
     padding-inline: 12px;
     font-size: 18px;
@@ -300,8 +300,10 @@ html, body {
     align-items: center;
     margin-block: 2px;
     margin-inline: 4px;
-    border-radius: 14px;
+    border-radius: 12px;
     font-family: 'Instrument Sans';
+    box-shadow: 0px 0px 8px 0px rgba(255, 255, 255, 0);
+    border: 0.5px solid rgba(104, 104, 104, 0);
 
     img {
         vertical-align: middle;
@@ -336,9 +338,10 @@ html, body {
     background: none;
     text-shadow: none;
     transform: scale(1.05);
-    background-color: #313337;
-    -webkit-box-shadow: 0px 10px 15px -4px #0000009a;
-	box-shadow: 0px 10px 15px -4px #0000009a;
+    //background-color: #313337;
+    //-webkit-box-shadow: 0px 10px 15px -4px #0000009a;
+	box-shadow: 0px 0px 8px 0px #ffffff84;
+    border: 0.5px solid rgb(104, 104, 104);
 }
 
 .drop-item:hover::after {

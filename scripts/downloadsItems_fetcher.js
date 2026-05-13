@@ -40,20 +40,22 @@ function createItemShop(themes, packs) {
         if (packs[itemIndex].console != 'dsi') {
         div.innerHTML =     
             `
-                <h3 id="consolePack" style="font-weight: 700;">${packs[itemIndex].name}</h3>
-                <h4 id="exploitPack" style="text-align: center; margin-top: 4px;">${packs[itemIndex].exploit}</h4>
-                <small id="compatPack" style="color: white; margin-top: 4px"><strong>Compatibilité :</strong>&nbsp;${packs[itemIndex].compatibility}</small>
-                <small style="color: white; margin-top: 4px"><strong>Auteur :</strong>&nbsp;<a href="${packs[itemIndex].authorLink}">${packs[itemIndex].author}</a></small>
-                <div class="btn-container">
-                    <a href="${packs[itemIndex].lienDL}" id="${packs[itemIndex].console}">
-                        <button class="default-button">
-                        <i class="fa fa-download" aria-hidden="true"></i>
-                        &nbsp;Télécharger</button>
-                    </a>
-                    <a href="${packs[itemIndex].gitLink}">
-                        <button class="default-button git-button">${itemGitButton}&nbsp;</button>
-                    </a>
-                </div>
+            <h3 style="font-weight: 700;">${packs[itemIndex].exploit}</h3>
+            <small style="text-align: center; padding-bottom: 12px;">Extraire le contenu de l'archive à la <a href="https://homebrewfrance.fr/sdroot">racine</a> de la carte SD.</small><br>
+            <div class="tab-cont">
+                <div class="console">${packs[itemIndex].name}</div>
+                <div class="author"><strong>Par :</strong>&nbsp;${packs[itemIndex].author}</div>
+            </div>
+            <div class="btn-container-mxn">
+                <a href="${packs[itemIndex].lienDL}" id="${packs[itemIndex].console}">
+                    <button class="default-button">
+                    <i class="fa fa-download" aria-hidden="true"></i>
+                    &nbsp;Télécharger</button>
+                </a>
+                <a href="${packs[itemIndex].gitLink}">
+                    <button class="git-button">${itemGitButton}&nbsp;</button>
+                </a>
+            </div>
             `;
         }
 
@@ -65,7 +67,7 @@ function createItemShop(themes, packs) {
                 <h4 id="exploitPack" style="text-align: center; margin-top: 4px;">${packs[itemIndex].exploit}</h4>
                 <small id="compatPack" style="color: white; margin-top: 4px"><strong>Compatibilité :</strong>&nbsp;${packs[itemIndex].compatibility}</small>
                 <small style="color: white; margin-top: 4px"><strong>Auteur :</strong>&nbsp;<a href="${packs[itemIndex].authorLink}">${packs[itemIndex].author}</a></small>
-                <div class="btn-container">
+                <div class="btn-container-mxn">
                     <!--a href="${packs[itemIndex].lienDL}" id="${packs[itemIndex].console}">
                         <button class="default-button grayed">
                         <i class="fa fa-download" aria-hidden="true"></i>
@@ -88,12 +90,16 @@ function createItemShop(themes, packs) {
         div.innerHTML = 
         `
             <img src="${themes[itemIndex].image}" style="width: 70%; height: auto;">
-            <h3 style="font-weight: 700;">${themes[itemIndex].name}&nbsp;<span class="qrcode-placeholder"></span></h3>
+            <h3 style="font-weight: 700;">${themes[itemIndex].name}</h3>
             <small style="text-align: center; padding-bottom: 12px;">${themes[itemIndex].description}</small><br>
-            <small style="color: white;"><strong>Console :</strong>&nbsp;${themes[itemIndex].console}</small><small style="color: white;"><strong>Auteur :</strong>&nbsp;${themes[itemIndex].author}</small>
-            <small style="color: white;"><strong>Catégorie :</strong>&nbsp;${themes[itemIndex].category}</small>
-            <small style="color: white;"><strong>Création :</strong>&nbsp;${themes[itemIndex].date}</small>
-            <div class="btn-container">
+            <div class="tab-cont">
+                <div class="console">${themes[itemIndex].console}</div>
+                <div class="category">${themes[itemIndex].category}</div>
+                <div class="author"><strong>Par :</strong>&nbsp;${themes[itemIndex].author}</div>
+                <span class="qrcode-placeholder"></span>
+            </div>
+            <!--small style="color: white;"><strong>Création :</strong>&nbsp;${themes[itemIndex].date}</small-->
+            <div class="btn-container-mxn">
                 <a href="${themes[itemIndex].lienDL}"><button class="default-button"><i class="fa fa-download" aria-hidden="true"></i>&nbsp;Télécharger</button></a>
             </div>
         `;
@@ -117,26 +123,27 @@ function createItemShop(themes, packs) {
             console.log('NO QR');
         }
         else {
-            var itemQRCode = document.createElement('span');
+            var itemQRCode = document.createElement('div');
             var itemBtnContainer = div.querySelector('.qrcode-placeholder');
             itemQRCode.className = 'qr-button';
             itemQRCode.innerHTML = '<i class="fa fa-qrcode" aria-hidden="true"></i>';
             itemQRCode.id = 'QRBtn' + themes[itemIndex].name.replace(/\s/g, '');
             itemBtnContainer.appendChild(itemQRCode);
+            itemBtnContainer.style.display = 'block';
         }
         if (themes[itemIndex].themeplaza == undefined) {
             console.log('NO TPLINK');
         }
         else {
-            var itemTPlink = document.createElement('a');
+            /*var itemTPlink = document.createElement('a');
             itemTPlink.href = themes[itemIndex].themeplaza;
             var itemTP = document.createElement('button');
             var itemBtnContainer = div.querySelector('.btn-container');
             itemTP.className = 'git-button';
-            itemTP.innerHTML = '<i class="fa-solid fa-paintbrush"></i>&nbsp; ThemePlaza';
+            itemTP.innerHTML = '<i class="fa-solid fa-paintbrush"></i>&nbsp; Source';
             itemTP.id = 'TPBTn' + themes[itemIndex].name.replace(/\s/g, '');
             itemTPlink.appendChild(itemTP);
-            itemBtnContainer.appendChild(itemTPlink);
+            itemBtnContainer.appendChild(itemTPlink);*/
         }
         themesDownload.appendChild(div);
 
@@ -145,15 +152,15 @@ function createItemShop(themes, packs) {
             console.log('NO TPLINK');
         }
         else {
-            var itemTWLlink = document.createElement('a');
+            /*var itemTWLlink = document.createElement('a');
             itemTWLlink.href = themes[itemIndex].twlmenuextras;
             var itemTWL = document.createElement('button');
             var itemBtnContainer = div.querySelector('.btn-container');
             itemTWL.className = 'git-button';
-            itemTWL.innerHTML = '<i class="fa-solid fa-paintbrush"></i>&nbsp; TWLMenu Extras';
+            itemTWL.innerHTML = '<i class="fa-solid fa-paintbrush"></i>&nbsp; Source';
             itemTWL.id = 'TPBTn' + themes[itemIndex].name.replace(/\s/g, '');
             itemTWLlink.appendChild(itemTWL);
-            itemBtnContainer.appendChild(itemTWLlink);
+            itemBtnContainer.appendChild(itemTWLlink);*/
         }
         themesDownload.appendChild(div);
     }
@@ -209,9 +216,14 @@ function searchPack() {
                 compteurElements++;
             }
             var packNumResults = document.getElementById('packNumResults');
+            if (packSearchValue == '') {
+                packNumResults.innerHTML = '';
+            }
+            else {
             packNumResults.innerHTML = `
                 <p id="compteurResultats">${compteurElements} résultats</p>
             `;
+            }
         });
     });
 }

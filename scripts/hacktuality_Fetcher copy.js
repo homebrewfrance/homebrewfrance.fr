@@ -111,7 +111,7 @@ function generateError(error) {
             <p style="color: #cecece">Erreur: ${error}</p>
         </div>
         <div class="article-image-container">
-            <img src="https://cdn.homebrew-france.fun/generic/hacktuality_error.png" class="article-image">
+            <img src="https://homebrewfrance.github.io/cdn/generic/hacktuality_error.png" class="article-image">
         </div>
     `
     nobuyoshiItem.addEventListener('click', function () {
