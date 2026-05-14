@@ -14,7 +14,7 @@ document.addEventListener('DOMContentLoaded', function () {
             container.className = 'compatible-container';
             var divCompatible = document.createElement('div');
             divCompatible.className = 'compatible';
-            divCompatible.innerHTML = '<i class="fas fa-check-circle"></i>&nbsp;&nbsp;<strong>Console non patchée</strong>';
+            divCompatible.innerHTML = '<i class="fas fa-check-circle"></i>&nbsp;&nbsp;<strong>Bonne nouvelle !</strong>';
             container.appendChild(divCompatible);
             var infos = document.createElement('div');
             infos.className = 'infos';

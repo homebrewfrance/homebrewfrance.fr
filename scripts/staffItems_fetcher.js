@@ -1,6 +1,6 @@
 /* 
-	Homebrew France Web V5.0.0
-    Copyright (C) 2025  Homebrew France
+	Homebrew France Web V6.0.0
+    Copyright (C) 2026  Homebrew France
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -126,7 +126,9 @@ function createItemStaff(staff) {
             `
                 <div class="popup" id="${popupID}">
                 <div class="close-btn" id="${staff[itemIndex].name}MusicBtn"><p><i class="fas fa-window-close"></i>&nbsp;&nbsp;Fermer</p></div>
-                <a href="${staff[itemIndex].musicLink}" title="Écouter ${staff[itemIndex].musicName} sur la plateforme de streaming"><div class="music-stream-btn" id="${staff[itemIndex].name}MusicStreamBtn"><p id="${staff[itemIndex].name}MusicStreamBtnContent"></p></div></a>
+                <div onclick="window.open('${staff[itemIndex].musicLink}', '_blank');" title="Écouter ${staff[itemIndex].musicName} sur la plateforme de streaming">
+                    <div class="music-stream-btn" id="${staff[itemIndex].name}MusicStreamBtn"><p id="${staff[itemIndex].name}MusicStreamBtnContent"></p></div>
+                </div>
 
             `
             var html = document.getElementsByTagName('html')[0];
@@ -185,8 +187,6 @@ function createMusicEmbed(staff) {
             var findBtnId = document.getElementById(staff[itemIndex3].name + "MusicBtn");
             var musicPlatform = staff[itemIndex3].musicPlatform;
 
-            console.log(findPopupId, findBtnId, findMusicLinkId);
-
             if (findPopupId && findBtnId && findMusicLinkId) {
                 
                 if (musicLinkVal && musicPlatform == 'spotify') {
@@ -204,7 +204,7 @@ function createMusicEmbed(staff) {
                     musicStaffName.innerHTML = "Musique de <strong>" + staff[itemIndex3].name + "</strong>";
                     musicStaffName.style.color = 'white';
                     musicStaffName.style.textAlign = 'center';
-                    musicStaffName.style.fontFamily = 'Sora';
+                    musicStaffName.style.fontFamily = 'Instrument Sans';
                     musicStaffName.style.marginBottom = '11px';
                     findPopupId.prepend(musicStaffName);
 
