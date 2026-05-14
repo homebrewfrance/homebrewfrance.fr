@@ -31,6 +31,17 @@ function createItemStaff(staff) {
         btnContainer.className = 'btn-container-in';
         var socialButton;
 
+        if (staff[itemIndex].socials.length < 1) {
+            var socialLink = document.createElement('a');
+            var socialBtn = document.createElement('button');
+            socialBtn.className = 'ds-button';
+            socialLink.href = "https://discordapp.com/users/" + staff[itemIndex].socials[itemIndex2].discordID;
+            socialBtn.innerHTML = '<i class="fa-brands fa-discord"></i>&nbsp;' + staff[itemIndex].name;
+            
+            socialLink.appendChild(socialBtn);
+            btnContainer.appendChild(socialLink);
+            socialButton = btnContainer.innerHTML;
+        }
         for (var itemIndex2=0; itemIndex2 < staff[itemIndex].socials.length; itemIndex2++) {
             var socialLink = document.createElement('a');
             var socialBtn = document.createElement('button');
@@ -74,6 +85,7 @@ function createItemStaff(staff) {
                 socialLink.href = staff[itemIndex].socials[itemIndex2].link;
                 socialBtn.innerHTML = '<i class="fa fa-globe"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
             }
+
             socialLink.appendChild(socialBtn);
             btnContainer.appendChild(socialLink);
             socialButton = btnContainer.innerHTML;

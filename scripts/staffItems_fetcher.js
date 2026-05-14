@@ -27,59 +27,78 @@ function createItemStaff(staff) {
         var gridStaff = document.createElement('div');
         gridStaff.className = 'grid-staff';
 
+        var role2 = staff[itemIndex].role2;
+        var addStyle = '';
+        var role2Content = '';
+        if (role2) {
+            role2Content = ' <span style="color:#4D4D4D;">•</span> ' + role2;
+            addStyle = 'style="width: 63%!important;" ';
+        }
+        
         var btnContainer = document.createElement('div');
         btnContainer.className = 'btn-container-in';
-        var socialButton;
+        var socialButton = '';
+        if (staff[itemIndex].socials) {
+                for (var itemIndex2=0; itemIndex2 < staff[itemIndex].socials.length; itemIndex2++) {
+                    var socialLink = document.createElement('a');
+                    var socialBtn = document.createElement('button');
+                    if (staff[itemIndex].socials[itemIndex2].name == 'youtube') {
+                        socialBtn.className = 'yt-button';
+                        socialLink.href = staff[itemIndex].socials[itemIndex2].link;
+                        socialBtn.innerHTML = '<i class="fa-brands fa-youtube"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
+                    }
+                    else if (staff[itemIndex].socials[itemIndex2].name == 'x') {
+                        socialBtn.className = 'twitter-button';
+                        socialLink.href = staff[itemIndex].socials[itemIndex2].link;
+                        socialBtn.innerHTML = '<i class="fa-brands fa-x-twitter"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
+                    }
+                    else if (staff[itemIndex].socials[itemIndex2].name == 'twitch') {
+                        socialBtn.className = 'twitch-button';
+                        socialLink.href = staff[itemIndex].socials[itemIndex2].link;
+                        socialBtn.innerHTML = '<i class="fa-brands fa-twitch"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
+                    }
+                    else if (staff[itemIndex].socials[itemIndex2].name == 'tiktok') {
+                        socialBtn.className = 'tiktok-button';
+                        socialLink.href = staff[itemIndex].socials[itemIndex2].link;
+                        socialBtn.innerHTML = '<i class="fa-brands fa-tiktok"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
+                    }
+                    else if (staff[itemIndex].socials[itemIndex2].name == 'discord') {
+                        socialBtn.className = 'ds-button';
+                        socialLink.href = staff[itemIndex].socials[itemIndex2].link;
+                        socialBtn.innerHTML = '<i class="fa-brands fa-discord"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
+                    }
+                    else if (staff[itemIndex].socials[itemIndex2].name == 'github') {
+                        socialBtn.className = 'git-button';
+                        socialLink.href = staff[itemIndex].socials[itemIndex2].link;
+                        socialBtn.innerHTML = '<i class="fa-brands fa-github"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
+                    }
+                    else if (staff[itemIndex].socials[itemIndex2].name == 'linkedin') {
+                        socialBtn.className = 'linkedin-button';
+                        socialLink.href = staff[itemIndex].socials[itemIndex2].link;
+                        socialBtn.innerHTML = '<i class="fa-brands fa-linkedin"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
+                    }
+                    else if (staff[itemIndex].socials[itemIndex2].name == 'website') {
+                        socialBtn.className = 'default-button';
+                        socialLink.href = staff[itemIndex].socials[itemIndex2].link;
+                        socialBtn.innerHTML = '<i class="fa fa-globe"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
+                    }
+                }
 
-        for (var itemIndex2=0; itemIndex2 < staff[itemIndex].socials.length; itemIndex2++) {
+                socialLink.appendChild(socialBtn);
+                btnContainer.appendChild(socialLink);
+                socialButton = btnContainer.innerHTML;
+        }
+        else {
             var socialLink = document.createElement('a');
             var socialBtn = document.createElement('button');
-            if (staff[itemIndex].socials[itemIndex2].name == 'youtube') {
-                socialBtn.className = 'yt-button';
-                socialLink.href = staff[itemIndex].socials[itemIndex2].link;
-                socialBtn.innerHTML = '<i class="fa-brands fa-youtube"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
-            }
-            else if (staff[itemIndex].socials[itemIndex2].name == 'x') {
-                socialBtn.className = 'twitter-button';
-                socialLink.href = staff[itemIndex].socials[itemIndex2].link;
-                socialBtn.innerHTML = '<i class="fa-brands fa-x-twitter"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
-            }
-            else if (staff[itemIndex].socials[itemIndex2].name == 'twitch') {
-                socialBtn.className = 'twitch-button';
-                socialLink.href = staff[itemIndex].socials[itemIndex2].link;
-                socialBtn.innerHTML = '<i class="fa-brands fa-twitch"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
-            }
-            else if (staff[itemIndex].socials[itemIndex2].name == 'tiktok') {
-                socialBtn.className = 'tiktok-button';
-                socialLink.href = staff[itemIndex].socials[itemIndex2].link;
-                socialBtn.innerHTML = '<i class="fa-brands fa-tiktok"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
-            }
-            else if (staff[itemIndex].socials[itemIndex2].name == 'discord') {
-                socialBtn.className = 'ds-button';
-                socialLink.href = staff[itemIndex].socials[itemIndex2].link;
-                socialBtn.innerHTML = '<i class="fa-brands fa-discord"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
-            }
-            else if (staff[itemIndex].socials[itemIndex2].name == 'github') {
-                socialBtn.className = 'git-button';
-                socialLink.href = staff[itemIndex].socials[itemIndex2].link;
-                socialBtn.innerHTML = '<i class="fa-brands fa-github"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
-            }
-            else if (staff[itemIndex].socials[itemIndex2].name == 'linkedin') {
-                socialBtn.className = 'linkedin-button';
-                socialLink.href = staff[itemIndex].socials[itemIndex2].link;
-                socialBtn.innerHTML = '<i class="fa-brands fa-linkedin"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
-            }
-            else if (staff[itemIndex].socials[itemIndex2].name == 'website') {
-                socialBtn.className = 'default-button';
-                socialLink.href = staff[itemIndex].socials[itemIndex2].link;
-                socialBtn.innerHTML = '<i class="fa fa-globe"></i>&nbsp;' + staff[itemIndex].socials[itemIndex2].username;
-            }
+            socialBtn.className = 'ds-button';
+            socialLink.href = "https://discordapp.com/users/" + staff[itemIndex].discordID;
+            socialBtn.innerHTML = '<i class="fa-brands fa-discord"></i>&nbsp;' + staff[itemIndex].name;
             socialLink.appendChild(socialBtn);
             btnContainer.appendChild(socialLink);
             socialButton = btnContainer.innerHTML;
-            console.log(btnContainer.innerHTML);
-            
         }
+
         var staffStatus;
         if (staff[itemIndex].admin) {
             staffStatus = "fondator";
@@ -132,17 +151,17 @@ function createItemStaff(staff) {
             music="";
         }
         
-
+        var imgURL = 'https://homebrewfrance.github.io/cdn/a-propos/staff/' + staff[itemIndex].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + '.png';
         gridStaff.innerHTML = `
         <div class="left-row-staff-items">
             <div>
-                <img src="${'https://homebrewfrance.github.io/cdn/a-propos/staff/' + staff[itemIndex].name.toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g, "") + '.png'}" width='190' height='190'>
+                <img src="${imgURL}" width="190" height="190" title="Photo de profil de ${staff[itemIndex].name}" onclick="window.open('${imgURL}', '_blank')">
             </div>
         </div>
         <div class="right-row-staff-items">
             <h3 id="staffNameValue" class="${staffStatus}">${staff[itemIndex].name}</h3>
             <div class="staff-roles">
-                <div class="role ${staff[itemIndex].role.toLowerCase()}">${staff[itemIndex].role}</div>
+                <div class="role ${staff[itemIndex].role.toLowerCase()}" ${addStyle}>${staff[itemIndex].role}${role2Content}</div>
             </div>
             <div class="btn-container">
                 ${socialButton}

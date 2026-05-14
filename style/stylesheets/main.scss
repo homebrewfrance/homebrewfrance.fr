@@ -630,6 +630,13 @@ Lien : https://homebrewfrance.fr/a-propos
 		width: 45%;
 	}
 
+	.left-row-staff-items img:hover {
+		box-shadow: 0 0 35px 15px rgba(255, 255, 255, 0.111);
+		cursor: pointer;
+		filter: grayscale(0.3);
+		transform: rotate(-0.005turn);
+	}
+
 	h3 {
 		font-size: 22px;
 		font-family: 'Instrument Sans';
@@ -648,7 +655,7 @@ Lien : https://homebrewfrance.fr/a-propos
 		margin-top: 15px;
 		margin-bottom: 15px;
 		border-radius: 25px;
-		border: 2px solid rgba(121, 121, 121, 0.568);
+		transition: 0.5s;
 	}
 
 	.staff-desc-container {
