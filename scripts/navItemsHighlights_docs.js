@@ -19,13 +19,12 @@
 var updtDate = document.querySelector('updtdate');
 var navMenuBottom = document.createElement('div');
 navMenuBottom.innerHTML = `
-    <hr class="nav-menu-separator">
+    <div class="nav-menu-separator"></div>
     <div class="nav-menu-item">Crédits des guides</div>
     <div class="nav-menu-item">Faire un don</div>
     <div class="nav-menu-item">Prérequis</div>
-    <div>&nbsp;</div>
     <div class="nav-menu-item-date"><strong>Mis à jour le :</strong> ${updtDate.innerHTML}</div>
-    <div class="nav-item-copy"><img src=\"https://homebrewfrance.github.io/cdn/generic/lumia-guides.png\" width=\"18px\" height=\"18px\">&nbsp;&copy; Homebrew France</div>
+    <div class="nav-item-copy">&nbsp;&copy; Homebrew France</div>
 `;
 
 function createNavMenu() {

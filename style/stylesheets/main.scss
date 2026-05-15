@@ -612,6 +612,84 @@ Lien : https://homebrewfrance.fr/a-propos
 	}
 }
 
+.grid-docs-container {
+	display: flex;
+	flex-direction: column;
+	padding-inline: 10%;
+}
+
+.grid-docs {
+    @include grid-generic;
+    width: 48%;
+	height: 285px auto;
+    float: left;
+	margin: 8px auto;
+    display: flex;
+	flex-direction: row;
+    justify-content: center;
+    align-items: center;
+	padding-block: 18px;
+    //text-align: center;
+
+	.right-row-docs-items {
+		align-items: center;
+		justify-content: center;
+		width: 45%;
+		padding-left: 30px;
+	}
+
+	.left-row-docs-items img:hover {
+		box-shadow: 0 0 35px 15px rgba(255, 255, 255, 0.111);
+		cursor: pointer;
+		filter: grayscale(0.3);
+		transform: rotate(-0.005turn);
+	}
+
+	h3 {
+		font-size: 22px;
+		font-family: 'Instrument Sans';
+		font-weight: 500;
+	}
+
+	small {
+		color:rgb(163, 163, 163);
+	}
+
+	img {
+		margin-top: 15px;
+		margin-bottom: 15px;
+		border-radius: 25px;
+		transition: 0.5s;
+	}
+
+	.docs-desc-container {
+		display: flex;
+		flex-direction: row;
+	}
+
+	.docs-description {
+		color: #6b6b6b!important;
+	}
+
+	.btn-container {
+		margin-left: -8px!important;
+	}
+
+	.docs-category {
+		font-size: 14px;
+		border-radius: 7px;
+		//margin-inline: 6px;
+		width: 45%;
+		margin: auto;
+		margin-bottom: 5px;
+		margin-top: 8px;
+		transform: rotate(-0.005turn);
+		border: 1px solid rgb(70, 70, 70);
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+}
+
 .grid-staff {
     @include grid-generic;
     width: 48%;
