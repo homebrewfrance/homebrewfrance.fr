@@ -24,7 +24,8 @@ footer.innerHTML = `
     <div class="left-footer">
         <div class="hbf-logo-container" style="padding: 0px; margin: 0px; cursor: pointer;">
             <p style="font-family: Sora; font-size: 24px; color: white; margin-bottom: 3px;"><span style="font-weight: 300;">Homebrew</span><strong>France</strong></p>
-            <a href="https://github.com/homebrewfrance/homebrewfrance.fr"><div class="hbf-version">Version : 6.0.0-BETA1-042026</div></a>
+            <a href="https://github.com/homebrewfrance/homebrewfrance.fr"><div class="hbf-version">Version : 6.0.0-BETA2-052026</div></a>
+            <div class="hbf-version">GUIDE-UPDATEB2</div>
         </div>
         <small style="color: rgb(210, 210, 210); font-family: 'Plus Jakarta Sans',sans-serif;"><a class="alcool" href="https://homebrewfrance.fr/multi-checker/alcoolemie">©</a> 2021 - 2026&nbsp;<span style="color: rgb(173, 173, 173)">・</span>&nbsp;Distribué sous licence <a href="https://homebrewfrance.fr/licence/">GNU GPLv3</a></small>
     </div>

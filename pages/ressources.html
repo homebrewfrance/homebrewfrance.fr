@@ -77,6 +77,20 @@
 				</div>
 			</div>
 
+			<h3 class="titles"><i data-lucide="book-marked"></i>&nbsp;Guides</h3>
+			<p class="titles-desc">Des guides et documentations créées pour et par la communauté.</p>
+			<div class="tags-selector guides-selector">
+				<div>
+					<input type="text" placeholder="Rechercher un guide..." id="guideSearch">&nbsp;&nbsp;<i class="fa-solid fa-magnifying-glass" style="font-size: 16px;"></i>
+					<span id="guideNumResults"></span>
+				</div>
+			</div>
+			<div class="grid-container" id="guides-download">
+				<!--div class="chargementTelechargements">
+					<img src="https://homebrewfrance.github.io/cdn/generic/loading.gif" width="65px" height="auto" />&nbsp;<h2>Chargement...</h2>
+				</div-->
+			</div>
+
 		<script>
 			(function(){
 				const warnManual = document.getElementById('warn-manual');
@@ -335,6 +349,38 @@
 				]
 			}
 		</script>
+        <script type="application/json" id="docsData">
+            {
+                "docs": [
+                    {
+                        "name": "switch",
+                        "displayName": "Nintendo Switch",
+                        "description": "Le jailbreak de votre Nintendo Switch via la faille RCM"
+                    },
+                    {
+                        "name": "xbox",
+                        "displayName": "Microsoft Xbox",
+                        "description": "Le Softmod de votre Xbox via la méthode Rocky5 !"
+                    },
+                    {
+                        "name": "ps2",
+                        "displayName": "PlayStation 2",
+                        "description": "Le softmod de votre PS2 grâce à un DVD gravé !"
+                    },
+                    {
+                        "name": "ps4",
+                        "displayName": "PlayStation 4",
+                        "description": "Jailbreak PlayStation 4 selon le firmware installé !"
+                    },
+                    {
+                        "name": "psvita",
+                        "displayName": "PlayStation Vita",
+                        "description": "Installation d'Henlo ou Henkaku sur PSVita et PSTV !"
+                    }
+                ]
+            }
+        </script>
+
 		<script src="../scripts/downloadsItems_fetcher.js"></script>
 		<script src="../scripts/maintenance_Toggler.js"></script>
         <script src="../scripts/navigationBar_creation.js"></script>

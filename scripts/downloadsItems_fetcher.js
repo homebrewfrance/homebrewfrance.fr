@@ -166,6 +166,35 @@ function createItemShop(themes, packs) {
     }
 }
 
+
+const gridContainerDocs = document.getElementById('guides-download');
+function createItemDocs(docs) {
+    //var chargementTelechargements3 = document.getElementsByClassName('chargementTelechargements')[2];
+    //gridContainerDocs.removeChild(chargementTelechargements3);
+    for (var itemIndex = 0; itemIndex < docs.length; itemIndex++) {
+        var gridDocs = document.createElement('div');
+        gridDocs.className = 'grid-docs';
+        gridDocs.innerHTML = `
+            <div class="left-row-docs-items">
+                <div>
+                    <img src="https://homebrewfrance.github.io/cdn/docs/${docs[itemIndex].name}/main.png" width='190'>
+                </div>
+            </div>
+            <div class="right-row-docs-items">
+                <h3>${docs[itemIndex].displayName}</h3>
+                <div class="dosc-description">
+                    ${docs[itemIndex].description}
+                </div>
+                <div class="btn-container">
+                    <a href="https://homebrewfrance.fr/docs/${docs[itemIndex].name}"><button class="git-button">Consulter <i class="fa fa-external-link" aria-hidden="true"></i></button></a>
+                </div>
+            </div>
+        
+        `
+        gridContainerDocs.appendChild(gridDocs);
+    }
+}
+
 function createQRPopups(themes) {
     setTimeout(function() {  
         for (let itemIndex3 = 0; itemIndex3 < themes.length; itemIndex3++) { 
@@ -253,7 +282,6 @@ function searchTheme() {
 
 document.addEventListener('DOMContentLoaded', function () {
     const jsonData = JSON.parse(document.getElementById("downloadData").textContent);
-
     const themes = jsonData.themes;
     const packs = jsonData.packs;
 
@@ -264,4 +292,25 @@ document.addEventListener('DOMContentLoaded', function () {
     searchTheme();
 });
 
+/*document.addEventListener('DOMContentLoaded', function() {
+    fetch('/docs')
+        .then(response => response.text())
+        .then(html => {
+            const parser = new DOMParser();
+            const docDistant = parser.parseFromString(html, 'text/html');
+            const json = JSON.parse(docDistant.getElementById("docsData").textContent);
+            createItemDocs(json.docs);
+        });
+});*/
 
+document.addEventListener('DOMContentLoaded', function() {
+    // temporaire
+    const jsonElement = document.getElementById("docsData");
+    
+    if (jsonElement) {
+        const json = JSON.parse(jsonElement.textContent);
+        createItemDocs(json.docs);
+    } else {
+        console.error("Balise <script id='docsData'> introuvable dans cette page.");
+    }
+});
