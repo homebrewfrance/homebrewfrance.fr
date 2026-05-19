@@ -22,6 +22,7 @@ const warningsList = [
     // '<strong>ANNONCE :</strong> Nous recrutons des nouveaux modérateurs pour la communauté ! Postulez maintenant sur <a style="color:rgb(142, 179, 255)" href="https://homebrewfrance.fr/devenir-modo">cette page</a>'
     //'<strong>ANNONCE :</strong> La session de recrutements de modérateurs 2025-2026 ouvrira Jeudi 7 août 2025 à 15h30 (UTC+1:00)'
     //'<strong>MAINTENANCE :</strong>&nbsp;Une maintenance pour le déploiement de la version 5.0.0 des services est prévue du 1er novembre 2025 à 17h30 jusqu\'au 2 novembre à 18h'
+    '<strong>MAINTENANCE :</strong> Une maintenance pour le déploiement de la version 6.0.0 de nos services est prévue du 19 juillet 2026 à 17h30 jusqu\'au 21 juillet 2026 à 11h. Le site sera indisponible pendant la durée de l\'opération.'
 ]
 
 const annoncesList = [

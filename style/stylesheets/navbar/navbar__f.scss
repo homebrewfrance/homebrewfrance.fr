@@ -65,17 +65,17 @@
 
 .hbf-version {
 	color: #ffffff;
-	background: linear-gradient(135deg,#67158a,#a32aff);
+	background: linear-gradient(135deg,#67158a00,#a32aff00);
+    border: 0.5px solid rgb(78, 78, 78);
 	font-size: 12px;
-	border-radius: 7px;
-	padding-inline: 5px;
+	border-radius: 30px;
+	padding-inline: 7px;
 	padding-block: 2px;
 	font-family: 'Inter', sans-serif;
 	align-items: center;
-	margin-left: 6px;
-	transform: translateY(8px);
     width: fit-content;
-    height: fit-content;
+    margin: auto;
+    margin-top: 5px;
 }
 
 html, body {
@@ -379,10 +379,12 @@ html, body {
 }
 
 footer {
+    margin-top: 35px;
     background-color: #1515186d;
     backdrop-filter: blur(14px) saturate(1.2);
-    border-top: 2px solid rgba(66, 66, 66, 0.425);
-    padding-block: 18px;
+    border-top: 0.5px solid rgba(66, 66, 66, 0.425);
+    padding-bottom: 18px;
+    padding-top: 35px;
     align-items: center;
 
     a:hover {
@@ -392,10 +394,10 @@ footer {
 
     .right-footer a {
         transition: 0.4s;
-        font-family: 'Instrument Sans', 'sans-serif';
-        color: rgba(221, 221, 221, 0.801);
+        font-family: 'Plus Jakarta Sans', 'sans-serif';
+        color: rgba(131, 131, 131, 0.801);
         font-weight: 400;
-        font-size: 16px;
+        font-size: 13px;
     }
 
     .right-footer a:hover {
@@ -412,6 +414,24 @@ footer {
     }
 }
 
+.footer-first-row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-second-row {
+    display: flex;
+    flex-direction: column;
+    margin-top: 18px;
+    align-items: center;
+    justify-content: center;
+    small, a {
+        color: #949494!important;
+        font-family: "Plus Jakarta Sans", sans-serif!important;
+        font-size: 12px;
+    }
+}
+
 .footer-p {
     text-align: center;
     color: white;
@@ -419,7 +439,7 @@ footer {
 
 .footer-container p {
     font-family: 'Lexend', 'sans-serif';
-    color: white;
+    //color: white;
 }
 .footer-container small {
     font-family: 'Lexend', 'sans-serif';
@@ -477,10 +497,10 @@ footer {
     
     .footer-container {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
     }
     footer {
-        padding-inline: 7%;
+        padding-inline: 20%;
     }
     .ua-flag {
         width: 16px;
@@ -488,8 +508,34 @@ footer {
     }
     .hbf-logo-container {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        color: #949494!important;
+        margin-bottom: 15px;
+        margin-right: 18px;
+
+        p {
+            margin-bottom: -8px!important;
+        }
+
+        #footer-logo {
+            border-radius: 50%;
+            transform: translateY(6px);
+        }
     }
+
+    #slogan-hbf {
+        font-family: 'Sora', sans-serif;
+        font-size: 12px;
+        color: #707070!important;
+        margin-left: 1px;
+        margin-bottom: 15px;
+        width: 100%;
+        text-align: center;
+    }
+
+    /*.left-footer {
+        margin-top: 20px;
+    }*/
     
 }
 

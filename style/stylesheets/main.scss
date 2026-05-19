@@ -51,10 +51,10 @@ Début des styles génériques
 }
 
 .warning {
-	background: rgba(0, 0, 0, 0.5);
-	font-size: 17px;
+	background: rgba(39, 0, 0, 0.5);
+	font-size: 14px;
 	font-family: 'Inter', sans-serif;
-	border: 2px solid #75418d;
+	border: 0.5px solid #8d4141;
 	width: var(--navbar-width);
 	font-weight: 400;
 	padding-block: 8px;
@@ -68,7 +68,7 @@ Début des styles génériques
 	background: rgba(171, 0, 0, 0.2);
 	font-size: 17px;
 	font-family: 'Inter', sans-serif;
-	border: 1px solid #8d4141;
+	border: 0.5px solid #8d4141;
 	width: 100%;
 	font-weight: 400;
 	padding-block: 8px;
@@ -80,16 +80,16 @@ Début des styles génériques
 
 .annonce {
 	background: rgba(0, 0, 0, 0.2);
-	font-size: 17px;
+	font-size: 14px;
 	font-family: 'Inter', sans-serif;
-	border: 1px solid #8d7f41;
+	border: 0.2px solid #8d7f41;
 	width: var(--navbar-width);
 	font-weight: 400;
 	padding-block: 8px;
 	padding-inline: 20px;
-	box-shadow: 0 0 10px rgba(255, 243, 150, 0.3);
-	margin-top: 17px;
-	border-radius: 18px;
+	//box-shadow: 0 0 10px rgba(255, 243, 150, 0.3);
+	margin-top: 25px;
+	border-radius: 15px;
 	margin-inline: -10px;
 }
 
@@ -219,16 +219,17 @@ a {
 
 body {
     width: 100%;
-    //background: radial-gradient(circle, rgba(138, 43, 226, 0.6), rgba(32, 0, 54, 0.15), transparent 70%), #070809;
-    //background-attachment: fixed;
-	//-webkit-background-attachment: fixed;
+    background: radial-gradient(circle, rgba(223, 220, 226, 0.164), rgba(58, 56, 59, 0.15), transparent 70%), #0708093d;
+    background-attachment: fixed;
+	background-size: 180% 180%;
+	-webkit-background-attachment: fixed;
     //animation: moveBackground 5s infinite alternate ease-in-out;
 	//-webkit-animation: moveBackground 5s infinite alternate ease-in-out;
     font-family: 'Plus Jakarta Sans', sans-serif;
     color: white;
 	z-index: 4500;
 	line-height: 1.47;
-	background-color: #000000;
+	background-color: #0c0c0c;
 }
 
 .popup {
@@ -331,7 +332,11 @@ img {
 	border-radius: 50px;
 	padding-inline: 13px;
 	padding-block: 4px;
-	border: 2px solid #67007c;
+	border: 0.5px solid #3d3d3d;
+	text-transform: uppercase;
+	font-family: "DM Sans", sans-serif!important;
+	letter-spacing: 3px;
+	color: rgb(173, 173, 173);
 }
 
 .titles-ontop-sect {
@@ -339,14 +344,14 @@ img {
 	align-items: center;
 	justify-content: center;
 	justify-items: center;
-	margin-bottom: -75px;
+	margin-bottom: -65px;
 	margin-top: 150px;
 }
 
 .titles-desc {
 	color: #636363;
 	font-size: 14px;
-	margin-bottom: 0px;
+	margin-bottom: 27px;
 	text-align: center;
 }
 
@@ -404,6 +409,7 @@ img {
 	box-shadow: inset 0 0 20px 5px rgba(148, 148, 148, 0);
 	border-radius: 15px;	
 	transition: 0.5s;
+	background-color: #0c0c0c73;
 
 	img {
 		transition: 0.7s;
@@ -497,7 +503,7 @@ img {
 	box-shadow: inset 0 0 20px 5px rgba(148, 148, 148, 0);
 	border-radius: 15px;
 	margin-inline: 8px;
-	transition: 0.3s;
+	transition: 0.3s;background-color: #0c0c0c73;
 }
 
 .partner-pres:hover {
@@ -605,6 +611,7 @@ Lien : https://homebrewfrance.fr/a-propos
 	animation-fill-mode: backwards;
 	position: relative;
 	transition: 0.3s;
+	background-color: #0c0c0c73;
 
 	h3 {
 		word-break: break-word!important;
@@ -629,8 +636,8 @@ Lien : https://homebrewfrance.fr/a-propos
     justify-content: center;
     align-items: center;
 	padding-block: 18px;
-    //text-align: center;
-
+    transition: 0.5s;
+	background-color: #0c0c0c73;
 	.right-row-docs-items {
 		align-items: center;
 		justify-content: center;
@@ -843,6 +850,11 @@ Lien : https://homebrewfrance.fr/ressources
     @include grid-bg;
 }
 
+/*#guides-download {
+	.grid-docs:hover {
+
+	}
+}*/
 
 .grid-staff {
 	.btn-container {
@@ -865,8 +877,13 @@ Lien : https://homebrewfrance.fr/ressources
 	transition: 0.3s;
 	font-size: 15px!important;
 	align-self: center;
-	margin-top: 10px;
+	margin-top: -10px;
 	margin-right: 6px;
+}
+
+#themeNoResult, #packNoResult {
+	margin: auto;
+	text-align: center;
 }
 
 .tags-selector {

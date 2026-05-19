@@ -16,6 +16,16 @@
     along with this program.  If not, see <https://www.gnu.org/licenses/>.
 */
 
+var NoResultPart1 = `<h2>Aucun résultat pour "`;
+var NoResultPart2 = `"</h2><p>Vérifiez l'orthographe puis réessayez.</p>`;
+var WtfResult = `
+    <img src="https://homebrewfrance.github.io/cdn/telechargements/nword.png" width="125px">
+    <h2>Euh.... ça va ?</h2>
+    <p>Et non.. on n'a pas de `;
+var WtfResult2 = `
+    <h2>T'insultes qui comme ça ?</h2>
+    <p>Oublie pas... on a ton IP.....</p>`;
+
 function createItemShop(themes, packs) {
     var themesDownload = document.getElementById('themes-download');
     var packsDownload = document.getElementById('packs-download');
@@ -231,6 +241,7 @@ function createQRPopups(themes) {
 
 function searchPack() {
     var packSearch = document.getElementById('packSearch');
+    packNoResult.style.display = "none";
     packSearch.addEventListener('keyup', function () {
         var packSearchValue = document.getElementById('packSearch').value.toLowerCase();
         var packsDownloadContainer = document.getElementById('packs-download');
@@ -245,13 +256,30 @@ function searchPack() {
                 compteurElements++;
             }
             var packNumResults = document.getElementById('packNumResults');
+            var packNoResult = document.getElementById('packNoResult');
             if (packSearchValue == '') {
                 packNumResults.innerHTML = '';
             }
             else {
-            packNumResults.innerHTML = `
-                <p id="compteurResultats">${compteurElements} résultats</p>
-            `;
+                packNumResults.innerHTML = `
+                    <p id="compteurResultats">${compteurElements} résultats</p>
+                `;
+            }
+
+            if (compteurElements === 0) {
+                if (packSearchValue.includes('negro') || packSearchValue.includes('nigga') || packSearchValue.includes('hitler')) {
+                    packNoResult.innerHTML = WtfResult + 'pack "' + packSearchValue + '"</p>';
+                }
+                else if (packSearchValue.includes('fils de') || packSearchValue.includes('fdp') || packSearchValue.includes('connard')) {
+                    packNoResult.innerHTML = WtfResult2;
+                }
+                else {
+                    packNoResult.style.display = "block";
+                    packNoResult.innerHTML = NoResultPart1 + packSearchValue + NoResultPart2;
+                }
+            }
+            else {
+                packNoResult.style.display = "none";
             }
         });
     });
@@ -259,23 +287,48 @@ function searchPack() {
 
 function searchTheme() {
     var themeSearch = document.getElementById('themeSearch');
+    themeNoResult.style.display = "none";
     themeSearch.addEventListener('keyup', function () {
         var themeSearchValue = document.getElementById('themeSearch').value.toLowerCase();
         var themesDownloadContainer = document.getElementById('themes-download');
         var searchGridItems = themesDownloadContainer.querySelectorAll('.grid-downloads')
+        var themeNoResult = document.getElementById('themeNoResult');
+
         var compteurElements = 0;
 
         Array.from(searchGridItems).forEach(function (item) {
             if (!item.innerHTML.toLowerCase().includes(themeSearchValue)) {
                 item.style.display = "none";
             } else {
-                item.style.display = ""; 
+                item.style.display = "";
                 compteurElements++;
             }
             var themeNumResults = document.getElementById('themeNumResults');
-            themeNumResults.innerHTML = `
-                <p id="compteurResultats">${compteurElements} résultats</p>
-            `;
+            
+            if (themeSearchValue == '') {
+                themeNumResults.innerHTML = '';
+            }
+            else {
+                themeNumResults.innerHTML = `
+                    <p id="compteurResultats">${compteurElements} résultats</p>
+                `;
+            }
+
+            if (compteurElements === 0) {
+                if (themeSearchValue.includes('negro') || themeSearchValue.includes('nigga') || themeSearchValue.includes('hitler')) {
+                    themeNoResult.innerHTML = WtfResult + 'thème "' + themeSearchValue + '"</p>';
+                }
+                else if (themeSearchValue.includes('fils de') || themeSearchValue.includes('fdp') || themeSearchValue.includes('connard')) {
+                    themeNoResult.innerHTML = WtfResult2;
+                }
+                else {
+                    themeNoResult.style.display = "block";
+                    themeNoResult.innerHTML = NoResultPart1 + themeSearchValue + NoResultPart2;
+                }
+            }
+            else {
+                themeNoResult.style.display = "none";
+            }
         });
     });
 }

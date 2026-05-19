@@ -364,12 +364,28 @@
 
 	.grid-shop:hover, .grid-downloads:hover {
 		transform: scale(1.02); 
-		//background-color: #111113d5;
 		box-shadow: inset 0 0 45px 5px rgba(255, 255, 255, 0.112);
 
 		img {
 			transform: scale(1.01);
 			transform: rotate(3px);
+		}
+	}
+
+	#guides-download {
+		.grid-docs:hover {
+			transform: scale(1.02); 
+			box-shadow: inset 0 0 45px 5px rgba(255, 255, 255, 0.112);
+			cursor: pointer;
+
+			img {
+				transform: rotate(-0.008turn) scale(1.08)!important;
+			}
+		}
+
+		img:hover {
+			transform: none!important;
+			box-shadow: none!important;
 		}
 	}
 
